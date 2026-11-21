@@ -38,6 +38,10 @@ LEDGER_FIELDS = [
     # Added with the Wayback backfill. Rows written before it read as nyc.gov.
     "source",
     "wayback_timestamp",
+    # Where the original file lives once published: raw/ is not kept in git,
+    # each file goes into a zip attached to a GitHub Release (see release.py).
+    "release_tag",
+    "release_asset",
 ]
 
 
@@ -67,11 +71,13 @@ def read_ledger(path: Path) -> list[dict[str, str]]:
     for r in rows:
         r["source"] = r.get("source") or "nyc.gov"
         r["wayback_timestamp"] = r.get("wayback_timestamp") or ""
+        r["release_tag"] = r.get("release_tag") or ""
+        r["release_asset"] = r.get("release_asset") or ""
     return rows
 
 
 def append_ledger(path: Path, row: dict[str, str]) -> None:
-    row = {"source": "nyc.gov", "wayback_timestamp": "", **row}
+    row = {"source": "nyc.gov", "wayback_timestamp": "", "release_tag": "", "release_asset": "", **row}
     new = not path.exists()
     if not new:
         with path.open(newline="") as f:
@@ -108,6 +114,9 @@ def capture(
 ) -> CaptureResult:
     ledger = read_ledger(ledger_path)
     last: dict[str, dict[str, str]] = {}
+    # Everything "already captured" is decided from the ledger, never from
+    # files on disk: in CI raw/ is empty (originals live in GitHub Releases).
+    taken = {r["path"] for r in ledger}
     for r in ledger:
         last[r["url"]] = r
     # Latest week_end known for each (series, stem) of an xlsx, for PDFs.
@@ -163,8 +172,9 @@ def capture(
             wk, src = (sib, "sibling_xlsx") if sib else (fetch_day, "fetch_date")
 
         dest = root / m.series / wk / name
-        if dest.exists() and hashlib.sha256(dest.read_bytes()).hexdigest() != sha:
-            # NYPD revised a file within the same week: keep both.
+        if dest.relative_to(root.parent).as_posix() in taken or dest.exists():
+            # NYPD revised a file within the same week: keep both, under
+            # different names, whether or not the earlier one is on disk.
             dest = dest.with_name(f"{dest.stem}.{sha[:8]}{dest.suffix}")
         dest.parent.mkdir(parents=True, exist_ok=True)
         tmp.replace(dest)
@@ -181,6 +191,7 @@ def capture(
             "date_source": src,
         }
         append_ledger(ledger_path, row)
+        taken.add(row["path"])
         last[m.url] = row
         result.new.append(row)
         log("captured", series=m.series, path=row["path"], week_end=wk, date_source=src)

@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .ruff_cache/
-raw/.incoming/
 data/**/*.tmp
-raw/trafficstat_dashboard/*/responses.jsonl
+# Original files live in GitHub Releases, not git (see README, "Where the originals are").
+raw/
+dist/

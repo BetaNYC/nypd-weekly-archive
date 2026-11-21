@@ -164,3 +164,39 @@ def test_stale_file_flagged_by_in_file_week() -> None:
     ]
     out = stale_files(ledger)
     assert [r["file"] for r in out] == ["cs-en-us-pbbx"] and out[0]["days_behind"] == "182"
+
+
+def _empty_raw(raw: Path) -> None:
+    """Simulate a CI checkout: the ledger is in git, raw/ is not."""
+    import shutil
+
+    shutil.rmtree(raw)
+    raw.mkdir()
+
+
+def test_ci_empty_raw_existing_ledger_stores_nothing(tmp_path, fixtures) -> None:
+    raw, ledger, site = setup(tmp_path, fixtures)
+    capture(make_fetcher(site), MANIFEST, raw, ledger)
+    build(raw.parent, ledger, raw.parent / "data")
+    csv_before = (raw.parent / "data" / "trafficstat" / "2026-11-15.csv").read_text()
+    ledger_before = ledger.read_text()
+    _empty_raw(raw)
+
+    res = capture(make_fetcher(site), MANIFEST, raw, ledger)  # server ignores If-Modified-Since
+    assert res.new == [] and res.unchanged == 2
+    assert files_under(raw) == [] and ledger.read_text() == ledger_before
+
+    assert build(raw.parent, ledger, raw.parent / "data") == []
+    assert (raw.parent / "data" / "trafficstat" / "2026-11-15.csv").read_text() == csv_before
+
+
+def test_ci_revision_gets_its_own_name_when_earlier_file_is_absent(tmp_path, fixtures) -> None:
+    raw, ledger, site = setup(tmp_path, fixtures)
+    capture(make_fetcher(site), MANIFEST, raw, ledger)
+    _empty_raw(raw)
+    site.files[PDF] = b"%PDF-1.4 revised"
+    res = capture(make_fetcher(site), MANIFEST, raw, ledger)
+    assert len(res.new) == 1
+    paths = [r["path"] for r in read_ledger(ledger)]
+    assert len(paths) == len(set(paths)) == 3
+    assert res.new[0]["path"] != "raw/trafficstat/2026-11-15/ts-en-us-034.pdf"

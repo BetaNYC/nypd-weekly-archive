@@ -1,7 +1,8 @@
 name: Weekly capture
 
 # Git-scraping: fetch NYPD's weekly files, keep the ones that changed, rebuild
-# the tidy CSVs, and commit. Safe to re-run: unchanged files are skipped by
+# the tidy CSVs, put the originals in a GitHub Release, and commit the CSVs
+# and ledger. Safe to re-run: unchanged files are skipped by
 # hash (and usually by a 304 to If-Modified-Since).
 #
 # Timing, from the Last-Modified headers of all 528 files on 2026-11-21 (week
@@ -45,14 +46,24 @@ jobs:
           set +e
           uv run --python 3.14 nypd-archive run ${{ inputs.save_to_wayback && '--save-to-wayback' || '' }}
           echo "status=$?" >> "$GITHUB_OUTPUT"
-      # Commit whatever was captured even when some files failed or did not
-      # parse: preserving the raw file is the point. The job still goes red
-      # below so a person looks.
+      # Originals are not kept in git. Zip this run's new files (one zip per
+      # series per report week) and attach them to the release week-<week
+      # ending>, creating it if needed. captures.csv records tag and asset.
+      # Upload happens before the commit: if it fails, the ledger is not
+      # committed and the next run captures the same files again.
+      - name: Package originals
+        run: uv run --python 3.14 nypd-archive package
+      - name: Upload originals to GitHub Releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/upload-release-assets.sh
+      # Commit even when some files failed or did not parse: what was saved
+      # is already in a release. The job still goes red below so a person looks.
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add manifest.csv captures.csv raw data
+          git add manifest.csv captures.csv backfills.csv data
           if git diff --cached --quiet; then
             echo "No changes."
           else

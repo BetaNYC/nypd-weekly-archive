@@ -8,6 +8,11 @@ rows a week). Concatenate the weekly files to get the full series.
 Rows of NYPD's files that disagree with themselves but did not stop the
 parse are listed in data/anomalies.csv.
 
+A week is rebuilt only when all of its original files are on disk. In CI,
+raw/ holds just the files captured in that run (the rest live in GitHub
+Releases), so weeks whose files are absent keep their existing CSV, and
+their lines in anomalies.csv are carried over.
+
 Only the latest capture of each (series, file, week) is used, so a mid-week
 revision by NYPD replaces the earlier numbers rather than duplicating them.
 The earlier file stays in raw/ and in captures.csv.
@@ -40,8 +45,15 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
     """Write one CSV per (series, week). Returns layout errors (empty if none)."""
     errors: list[str] = []
     anomalies: list[dict[str, str]] = []
+    rebuilt: set[tuple[str, str]] = set()
     groups = latest_xlsx(read_ledger(ledger_path))
     for (series, wk), entries in sorted(groups.items()):
+        missing = [e["path"] for e in entries if not (repo / e["path"]).exists()]
+        if missing:
+            log("build_skipped_week", series=series, week_end=wk, missing=len(missing),
+                reason="originals not on disk; existing CSV kept")
+            continue
+        rebuilt.add((series, wk))
         rows: list[Row] = []
         for e in entries:
             try:
@@ -67,7 +79,12 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
                 w.writerow(r.as_dict())
         tmp.replace(out)
         log("built", series=series, week_end=wk, files=len(entries), rows=len(rows))
-    _write_anomalies(data_dir / "anomalies.csv", anomalies)
+    path = data_dir / "anomalies.csv"
+    if path.exists():
+        with path.open(newline="") as f:
+            kept = [a for a in csv.DictReader(f) if (a["series"], a["week_end"]) not in rebuilt]
+        anomalies = sorted(kept + anomalies, key=lambda a: (a["series"], a["week_end"], a["source_file"], a["note"]))
+    _write_anomalies(path, anomalies)
     _write_stale(data_dir / "stale_files.csv", read_ledger(ledger_path))
     return errors
 

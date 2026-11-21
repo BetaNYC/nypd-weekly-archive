@@ -1,6 +1,7 @@
 """Command line.
 
 Weekly: discover, capture, build, or run (all three); redate after a parser fix.
+package zips originals not yet released into dist/ for GitHub Releases.
 One-off backfills: backfill-dashboard, backfill-wayback.
 """
 
@@ -31,7 +32,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="nypd-archive", description=__doc__)
     ap.add_argument(
         "command",
-        choices=["discover", "capture", "build", "run", "redate", "backfill-dashboard", "backfill-wayback"],
+        choices=["discover", "capture", "build", "run", "redate", "package", "backfill-dashboard", "backfill-wayback"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
     ap.add_argument("--series", nargs="+", choices=sorted(SERIES), default=sorted(SERIES))
@@ -51,6 +52,17 @@ def main(argv: list[str] | None = None) -> int:
     p = _paths(root)
     status = 0
     log("start", command=args.command, series=args.series, root=str(root))
+
+    if args.command == "package":
+        from .release import PackageError, package
+
+        try:
+            plan = package(root, root / "dist")
+        except PackageError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        log("finish", status=0, assets=len(plan))
+        return 0
 
     if args.command == "backfill-dashboard":
         from .dashboard import ShapeError, backfill, build_dashboard
