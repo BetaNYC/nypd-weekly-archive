@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Borough and Precinct Crime Stats - NYPD</title>
+<!--fixed-layout-->
+<!--ls:begin[stylesheet]-->
+<link href="/iwov-resources/fixed-layout/3-Row Simple.css" type="text/css" rel="stylesheet">
+<!--ls:end[stylesheet]-->
+<!--ls:begin[meta-keywords]-->
+<meta name="keywords" content="">
+<!--ls:end[meta-keywords]-->
+<!--ls:begin[meta-description]-->
+<meta name="description" content="">
+<!--ls:end[meta-description]-->
+<!--ls:begin[custom-meta-data]-->
+<!--ls:end[custom-meta-data]-->
+<!--ls:begin[meta-vpath]-->
+<meta name="vpath" content="">
+<!--ls:end[meta-vpath]-->
+<!--ls:begin[meta-page-locale-name]-->
+<meta name="page-locale-name" content="">
+<!--ls:end[meta-page-locale-name]-->
+<!--
+					ls:begin[pre-head-injection]
+				--><!--
+					ls:end[pre-head-injection]
+				--><!--
+					ls:begin[social_media_injection]
+				--><!--
+					ls:end[social_media_injection]
+				--><!--ls:begin[head-injection]--><meta charset="utf-8" /><!--[if IE]>        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">        <![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- Google Translate Plugin --><meta name="google-translate-customization" content="4707bd7f535893a0-45bca7b6a97e5a2d-g609df9381571b349-c"/><!--[if lt IE 9]>            <script src="/assets/home/js/libs/html5shiv.js" type="text/javascript"></script>        <![endif]--><!-- GLOBAL STYLES --><script type="text/javascript" src="/ruxitagentjs_ICA7NVfqrux_10349261020121938.js" data-dtconfig="app=f936b00c6760395e|srtbv=4|owasp=1|featureHash=ICA7NVfqrux|rdnt=1|uxrgce=1|cuc=x8kxxto7|mel=100000|expw=1|dpvc=1|lastModification=1794946773173|tp=500,50,0|srbbv=3|agentUri=/ruxitagentjs_ICA7NVfqrux_10349261020121938.js|reportUrl=/rb_bf46289yka|rid=RID_636711090|rpid=1375542522|domain=nyc.gov"></script><link href="/assets/home/css/css-min/global.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/home/css/css-min/module.css" media="screen" rel="stylesheet" type="text/css" /><!-- PRINT STYLE --><link rel="stylesheet" href="/assets/home/css/print.css" type="text/css" media="print" /><!-- PAGE SPECIFIC STYLES --><link href="/assets/home/css/includes/header-agencies.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/home/css/modules/news-panel.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/home/css/modules/share-icons.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/home/css/modules/agencies-about-links.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/home/css/modules/programs-and-initiatives.css" media="screen" rel="stylesheet" type="text/css" /><!--<link href="/assets/nypd/css/pages/agencies/inside.css" media="screen" rel="stylesheet" type="text/css" />--><!-- centralized css --><link href="/assets/home/css/pages/agencies/inside.css" media="screen" rel="stylesheet" type="text/css" /><link href="/assets/nypd/css/agency-styles.css" media="screen" rel="stylesheet" type="text/css" /><!--[if (gte IE 6)&(lte IE 8)]>        <script type="text/javascript" src="/assets/home/js/libs/selectivizr.js"></script>        <![endif]--><!--[if IE 8]>        <script type="text/javascript" src="/assets/home/js/libs/respond.min.js"></script>        <![endif]--><script src="/assets/home/js/libs/modernizr-2.6.2.min.js" type="text/javascript"></script><!--ls:end[head-injection]--><!--ls:begin[tracker-injection]--><!--ls:end[tracker-injection]--><!--ls:begin[script]--><!--ls:end[script]-->
+                                <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="QMXLB-WG9C2-LTK58-FW2PB-6ST8X",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"QMXLB-WG9C2-LTK58-FW2PB-6ST8X",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="eyaeaqkymznaajqacqnryaawqvvqclky-f-5de011694-clienttons-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"41","ak.cp":"1071053","ak.ai":parseInt("181928",10),"ak.ol":"0","ak.cr":8,"ak.ipv":6,"ak.proto":"h2","ak.rid":"355abb28","ak.r":47292,"ak.a2":e,"ak.m":"dscb","ak.n":"essl","ak.cport":53334,"ak.gh":"23.195.36.233","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"","ak.t":"1795239256","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==JXeLnbsIa6zJtPj65XM8TOusQhQ5ESsIy00BSpIyitTkkBgjPKzpS11q43rPNAWkGfgGiO5u80ETKGbwBn2yQf1UNFDcHKynHF0pEohhm21ixJOJdIzZf+Oltqx7otjQFlEUgprP58DHnhG2lnDyddszhKOYoGvA8TnUbjnIOAbvfz2buDxk0wxyU5xUTC3Z7sm1cECn9aOhojVLOGJN4e0I//XAPDhw2b1eVLrGestCNgzOr8OkXNaWODdSOTlkksOQBC4z28PQRMFiEMD175VugFE9BqNkuphH1/+z0WCTbQVekeO7m5WvU+ufy3YgH+4uiWqrMBG6/SkBfFRcZqPOyCWwy7yZWYX4/MkiGtHrrhvyvROqHYq4tRCdIqsFPtCluzgxNVSpxN+LYxp2EzbSfpQ4rLq4VO/LsPRBf5M=","ak.pv":"125","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body id="page">
+<!--ls:begin[body]--><div class="ls-canvas page" id="outer-wrap">
+<div class="ls-row" id="inner-wrap">
+<div class="ls-fxr" id="ls-gen96290124-ls-fxr">
+<div class="ls-col" id="ls-row-1-col-1">
+<div class="ls-col-body" id="ls-gen96290125-ls-col-body">
+<div class="ls-row main-header" id="top">
+<div class="ls-fxr" id="ls-gen96290126-ls-fxr">
+<div class="ls-col block" id="ls-row-1-col-1-row-1-col-1">
+<div class="ls-col-body" id="ls-gen96290127-ls-col-body">
+<div class="ls-row" id="ls-row-1-col-1-row-1-col-1-row-1">
+<div class="ls-fxr" id="ls-gen96290128-ls-fxr">
+<div class="ls-area" id="ls-row-1-col-1-row-1-col-1-row-1-area-1">
+<div class="ls-area-body" id="ls-gen96290129-ls-area-body">
+<div class="ls-cmp-wrap ls-1st" id="w1444777587703">
+<!--ls:begin[component-1444777587703]-->
+<div class="iw_component" id="1444777587703">
+</div>
+<!--ls:end[component-1444777587703]-->
+</div>
+<div class="ls-cmp-wrap" id="w1444777587706">
+<!--ls:begin[component-1444777587706]-->
+<div class="iw_component" id="1444777587706"><div class="agency-header">
+<div class="upper-header-black">
+<div class="container">
+<span class="upper-header-left"><a href="http://www1.nyc.gov"><img src="/assets/home/images/global/nyc_white.png" alt="NYC" class="small-nyc-logo"></a><img src="/assets/home/images/global/upper-header-divider.gif" alt=""><span class="upper-header-black-title">New York City Police Department</span></span><span class="upper-header-padding"></span><span class="upper-header-right"><span class="upper-header-three-one-one"><a href="/311/index.page">311</a></span><img src="/assets/home/images/global/upper-header-divider.gif" alt=""><span class="upper-header-search"><a href="/home/search/index.page">Search all NYC.gov websites</a></span></span>
+</div>
+</div>
+</div><div role="banner" class="main-header">
+<div class="block">
+<div class="header-top">
+<div class="container">
+<a href="#" class="toggle-mobile-side-nav visible-phone" id="nav-open-btn">Menu</a><span class="welcome-text hidden-phone agency-header">New York's Finest</span>
+<div class="agency-logo-wrapper">
+<a href="/site/nypd/index.page"><img class="agency-logo" src="/assets/nypd/images/content/header/logo.png" alt="NYPD New York City Police Department"></a>
+</div>
+<div class="hidden-phone" id="header-links">
+<div class="language-gif">
+<img src="/assets/home/images/global/language.gif" alt="Language"></div>
+<div class="language-selector">
+<div id="google_translate_element"></div>
+</div>
+<a class="text-size hidden-phone" href="http://www1.nyc.gov/home/text-size.page">Text-Size</a>
+</div>
+<a href="#" class="visible-phone nav-sprite-mobile" id="toggle-mobile-search"><span class="hidden">Search</span></a>
+</div>
+</div>
+<div class="container nav-outer">
+<nav role="navigation" class="hidden-phone" id="nav">
+<div class="block">
+<h2 class="block-title visible-phone">New York's Finest</h2>
+<ul>
+<li class="nav-home hidden-phone">
+<a href="/site/nypd/index.page">
+                      Home</a>
+</li>
+<li>
+<a href="/site/nypd/about/about-nypd/about-nypd-landing.page">About</a>
+</li>
+<li>
+<a href="/site/nypd/bureaus/bureaus.page">Bureaus</a>
+</li>
+<li>
+<a href="/site/nypd/services/services.page">Services</a>
+</li>
+<li class="active">
+<a href="/site/nypd/stats/stats.page">Stats</a>
+</li>
+<li>
+<a href="/site/nypd/media/media.page">Media</a>
+</li>
+<li>
+<a href="/site/nypd/careers/careers.page">Careers</a>
+</li>
+<li>
+<a href="/site/nypd/about/about-nypd/public-comment.page">Policies</a>
+</li>
+<li class="hidden-phone toggle-search-wide-background-ico-search" id="toggle-search-wide"></li>
+</ul>
+</div>
+</nav>
+<div class="global-input-search">
+<form method="GET" action="/home/search/index.page" name="filter-search-form" class="hidden hidden-phone" id="global-search-form1">
+<div class="field-search">
+<input style="color: transparent" type="submit" class="ico-search btn-filter-search" value="submit" aria-hidden="true">
+<div class="input-padding">
+<label for="search-header" class="sr-only">Search</label><input id="search-header" type="text" name="search-terms" placeholder="Search" class="input-search input-black filter-item placeholder"><input type="hidden" name="sitesearch" value="www1.nyc.gov/site/nypd"><span class="reader-only"><input value="submit" aria-label="Submit" type="submit"></span>
+</div>
+</div>
+</form>
+</div>
+<div class="global-input-search visible-phone hidden-phone" id="nav-top-searches">
+<div class="block">
+<form class="hidden" method="GET" action="/home/search/index.page" name="filter-search-form" id="global-search-form2">
+<div class="field-search">
+<input style="color: transparent" aria-label="Submit" value="Submit" class="ico-search btn-filter-search" type="submit">
+<div class="input-padding">
+<label for="search-header-2" class="sr-only">Search</label><input id="search-header-2" class="input-search input-black filter-item" placeholder="Search" name="search-terms" type="text"><input type="hidden" name="sitesearch" value="www1.nyc.gov/site/nypd">
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--ls:end[component-1444777587706]-->
+</div>
+</div>
+</div>
+<div class="ls-row-clr"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="ls-row-clr"></div>
+</div>
+</div>
+<div class="ls-row main" id="main">
+<div class="ls-fxr" id="ls-gen96290130-ls-fxr">
+<div class="ls-area" id="ls-row-1-col-1-row-2-area-1">
+<div class="ls-area-body" id="ls-gen96290131-ls-area-body">
+<div class="ls-cmp-wrap ls-1st" id="w1444777587704">
+<!--ls:begin[component-1444777587704]-->
+<div class="iw_component" id="1444777587704"><div class="row">
+<div class="subheader">
+<div class="container">
+<div class="subheader-button-row quatro">
+<a class="main-filter-category active" href="/site/nypd/stats/crime-statistics/crime-statistics-landing.page">Crime Statistics</a><a class="main-filter-category" href="/site/nypd/stats/traffic-data/traffic-data-landing.page">Traffic Data</a><a class="main-filter-category" href="/site/nypd/stats/reports-analysis/reports-landing.page">Reports &amp; Dashboards</a><a class="main-filter-category" href="/site/nypd/stats/research/research-landing.page">Research</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--ls:end[component-1444777587704]-->
+</div>
+<div class="ls-cmp-wrap" id="w1444777587707">
+<!--ls:begin[component-1444777587707]-->
+<div class="iw_component" id="1444777587707"><!-- Left nav component --><div class="row">
+<div class="container content-container">
+<div class="span3 agencies-about-links">
+<div class="agencies-about-links">
+<select onChange="document.location.href=this.options[this.selectedIndex].value" class="visible-phone"><option value="">Select</option><option value="/site/nypd/stats/crime-statistics/citywide-crime-stats.page">Citywide Crime Statistics</option><option value="/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">Citywide Quality of Life Statistics</option><option value="/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page">Borough and Precinct Crime Statistics</option><option value="/site/nypd/stats/crime-statistics/park-crime-stats.page">NYC Parks Crime Statistics</option><option value="/site/nypd/stats/crime-statistics/historical.page">Historical NYC Crime Data</option><option value="/site/nypd/stats/crime-statistics/compstat.page">COMPStat 2.0</option></select>
+<ul class="clearfix hidden-phone">
+<li>
+<a href="/site/nypd/stats/crime-statistics/citywide-crime-stats.page">Citywide Crime Statistics</a>
+</li>
+<li>
+<a href="/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">Citywide Quality of Life Statistics</a>
+</li>
+<li class="active">
+<a href="/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page">Borough and Precinct Crime Statistics</a>
+</li>
+<li>
+<a href="/site/nypd/stats/crime-statistics/park-crime-stats.page">NYC Parks Crime Statistics</a>
+</li>
+<li>
+<a href="/site/nypd/stats/crime-statistics/historical.page">Historical NYC Crime Data</a>
+</li>
+<li>
+<a href="/site/nypd/stats/crime-statistics/compstat.page">COMPStat 2.0</a>
+</li>
+</ul>
+</div>
+<div class="agencies-about-share">
+<div class="share">
+<a aria-label="Share on facebook" target="_blank" href="#"><span aria-hidden="true" class="facebook_custom" data-url="https://www1.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page?" data-title="Borough and Precinct Crime Stats - NYPD"></span></a><a aria-label="Share on twitter" target="_blank" href="#"><span aria-hidden="true" class="twitter_custom" data-url="https://www1.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page?" data-title="Borough and Precinct Crime Stats - NYPD"></span></a><a aria-label="Share on google plus" target="_blank" href="#"><span aria-hidden="true" class="googleplus_custom" data-url="https://www1.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page?" data-title="Borough and Precinct Crime Stats - NYPD"></span></a><a aria-label="Share on tumblr" target="_blank" href="#"><span aria-hidden="true" class="tumblr_custom" data-url="https://www1.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page?" data-title="Borough and Precinct Crime Stats - NYPD"></span></a><a aria-label="Share in email" href="#"><span aria-hidden="true" class="email_custom" data-url="https://www1.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page?" data-title="Borough and Precinct Crime Stats - NYPD"></span></a>
+          Share
+  </div>
+<div class="print-event hidden-phone hidden-tablet">
+<img alt="Print icon" src="/assets/home/images/global/print.png"><span class="print-label"> Print </span>
+</div>
+</div>
+</div>
+<div class="span9 about-main-image">
+<div class="span6 about-description"><h1>Borough and Precinct Crime Statistics</h1>
+<p><a name="thetop"></a></p>
+<h2>Boroughs</h2>
+<p>The NYPD provides statistics that are categorized by police borough and precinct. These reports are updated weekly and can be viewed below. The department's advanced digital version can be viewed at <a href="https://compstat.nypdonline.org">CompStat 2.0</a>.</p>
+<ul>
+<li><a href="#bronx">Bronx</a></li>
+<li><a href="#brooklyn">Brooklyn</a></li>
+<li><a href="#manhattan">Manhattan</a></li>
+<li><a href="#queens">Queens</a></li>
+<li><a href="#statenisland">Staten Island</a></li>
+</ul>
+<hr />
+<h2>Bronx</h2>
+<p><a name="bronx"></a></p>
+<h3>Patrol Borough Bronx South</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbxs.pdf" title="Bronx South (PDF)">Bronx South (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbxs.xlsx" title="Bronx South (Excel)">Bronx South (Excel)</a></p>
+</li>
+<!--<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbxs.pdf" target="_blank" rel="noopener">Bronx South (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbxs.xlsx" target="_blank" rel="noopener">Bronx South (Excel)</a></p>
+</li>-->
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-040pct.pdf" target="_blank" rel="noopener">40th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-040pct.xlsx" target="_blank" rel="noopener">40th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-041pct.pdf" target="_blank" rel="noopener">41st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-041pct.xlsx" target="_blank" rel="noopener">41st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-042pct.pdf" target="_blank" rel="noopener">42nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-042pct.xlsx" target="_blank" rel="noopener">42nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-043pct.pdf" target="_blank" rel="noopener">43rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-043pct.xlsx" target="_blank" rel="noopener">43rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-044pct.pdf" target="_blank" rel="noopener">44th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-044pct.xlsx" target="_blank" rel="noopener">44th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-045pct.pdf" target="_blank" rel="noopener">45th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-045pct.xlsx" target="_blank" rel="noopener">45th Precinct (Excel)</a></p>
+</li>
+</ul>
+<h3>Patrol Borough Bronx North</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbxn.pdf" title="Bronx North (PDF)">Bronx North (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbxn.xlsx" title="Bronx North (Excel)">Bronx North (Excel)</a></p>
+</li>
+<!--<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbxn.pdf" target="_blank" rel="noopener">Bronx North (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbxn.xlsx" target="_blank" rel="noopener">Bronx North (Excel)</a></p>
+</li>-->
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-046pct.pdf" target="_blank" rel="noopener">46th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-046pct.xlsx" target="_blank" rel="noopener">46th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-047pct.pdf" target="_blank" rel="noopener">47th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-047pct.xlsx" target="_blank" rel="noopener">47th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-048pct.pdf" target="_blank" rel="noopener">48th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-048pct.xlsx" target="_blank" rel="noopener">48th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-049pct.pdf" target="_blank" rel="noopener">49th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-049pct.xlsx" target="_blank" rel="noopener">49th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-050pct.pdf" target="_blank" rel="noopener">50th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-050pct.xlsx" target="_blank" rel="noopener">50th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-052pct.pdf" target="_blank" rel="noopener">52nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-052pct.xlsx" target="_blank" rel="noopener">52nd Precinct (Excel)<br /></a></p>
+</li>
+</ul>
+<p><a href="#thetop">Return to the top</a></p>
+<hr />
+<h2>Brooklyn</h2>
+<p><a name="brooklyn"></a></p>
+<h3>Patrol Borough Brooklyn South</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbbs.pdf" target="_blank" rel="noopener"><strong>Brooklyn South (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbbs.xlsx" target="_blank" rel="noopener"><strong>Brooklyn South (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-060pct.pdf" target="_blank" rel="noopener">60th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-060pct.xlsx" target="_blank" rel="noopener">60th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-061pct.pdf" target="_blank" rel="noopener">61st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-061pct.xlsx" target="_blank" rel="noopener">61st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-062pct.pdf" target="_blank" rel="noopener">62nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-062pct.xlsx" target="_blank" rel="noopener">62nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-063pct.pdf" target="_blank" rel="noopener">63rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-063pct.xlsx" target="_blank" rel="noopener">63rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-066pct.pdf" target="_blank" rel="noopener">66th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-066pct.xlsx" target="_blank" rel="noopener">66th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-067pct.pdf" target="_blank" rel="noopener">67th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-067pct.xlsx" target="_blank" rel="noopener">67th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-068pct.pdf" target="_blank" rel="noopener">68th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-068pct.xlsx" target="_blank" rel="noopener">68th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-069pct.pdf" target="_blank" rel="noopener">69th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-069pct.xlsx" target="_blank" rel="noopener">69th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-070pct.pdf" target="_blank" rel="noopener">70th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-070pct.xlsx" target="_blank" rel="noopener">70th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-071pct.pdf" target="_blank" rel="noopener">71st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-071pct.xlsx" target="_blank" rel="noopener">71st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-072pct.pdf" target="_blank" rel="noopener">72nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-072pct.xlsx" target="_blank" rel="noopener">72nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-076pct.pdf" target="_blank" rel="noopener">76th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-076pct.xlsx" target="_blank" rel="noopener">76th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-078pct.pdf" target="_blank" rel="noopener">78th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-078pct.xlsx" target="_blank" rel="noopener">78th Precinct (Excel)<br /></a></p>
+</li>
+</ul>
+<h3>Patrol Borough Brooklyn North</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbbn.pdf" target="_blank" rel="noopener"><strong>Brooklyn North (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbbn.xlsx" target="_blank" rel="noopener"><strong>Brooklyn North (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-073pct.pdf" target="_blank" rel="noopener">73rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-073pct.xlsx" target="_blank" rel="noopener">73rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-075pct.pdf" target="_blank" rel="noopener">75th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-075pct.xlsx" target="_blank" rel="noopener">75th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-077pct.pdf" target="_blank" rel="noopener">77th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-077pct.xlsx" target="_blank" rel="noopener">77th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-079pct.pdf" target="_blank" rel="noopener">79th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-079pct.xlsx" target="_blank" rel="noopener">79th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-081pct.pdf" target="_blank" rel="noopener">81st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-081pct.xlsx" target="_blank" rel="noopener">81st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-083pct.pdf" target="_blank" rel="noopener">83rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-083pct.xlsx" target="_blank" rel="noopener">83rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-084pct.pdf" target="_blank" rel="noopener">84th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-084pct.xlsx" target="_blank" rel="noopener">84th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-088pct.pdf" target="_blank" rel="noopener">88th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-088pct.xlsx" target="_blank" rel="noopener">88th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-090pct.pdf" target="_blank" rel="noopener">90th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-090pct.xlsx" target="_blank" rel="noopener">90th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-094pct.pdf" target="_blank" rel="noopener">94th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-094pct.xlsx" target="_blank" rel="noopener">94th Precinct (Excel)<br /></a></p>
+</li>
+</ul>
+<p><a href="#thetop">Return to the top</a></p>
+<hr />
+<h2>Manhattan</h2>
+<p><a name="manhattan"></a></p>
+<h3>Patrol Borough Manhattan South</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbms.pdf" target="_blank" rel="noopener"><strong>Manhattan South (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbms.xlsx" target="_blank" rel="noopener"><strong>Manhattan South (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-001pct.pdf" target="_blank" rel="noopener">1st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-001pct.xlsx" target="_blank" rel="noopener">1st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-005pct.pdf" target="_blank" rel="noopener">5th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-005pct.xlsx" target="_blank" rel="noopener">5th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-006pct.pdf" target="_blank" rel="noopener">6th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-006pct.xlsx" target="_blank" rel="noopener">6th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-007pct.pdf" target="_blank" rel="noopener">7th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-007pct.xlsx" target="_blank" rel="noopener">7th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-009pct.pdf" target="_blank" rel="noopener">9th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-009pct.xlsx" target="_blank" rel="noopener">9th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-010pct.pdf" target="_blank" rel="noopener">10th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-010pct.xlsx" target="_blank" rel="noopener">10th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-013pct.pdf" target="_blank" rel="noopener">13th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-013pct.xlsx" target="_blank" rel="noopener">13th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-014pct.pdf" target="_blank" rel="noopener">Midtown South Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-014pct.xlsx" target="_blank" rel="noopener">Midtown South Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-017pct.pdf" target="_blank" rel="noopener">17th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-017pct.xlsx" target="_blank" rel="noopener">17th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-018pct.pdf" target="_blank" rel="noopener">Midtown North Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-018pct.xlsx" target="_blank" rel="noopener">Midtown North Precinct (Excel)</a></p>
+</li>
+</ul>
+<h3>Patrol Borough Manhattan North</h3>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbmn.pdf" target="_blank" rel="noopener"><strong>Manhattan North (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbmn.xlsx" target="_blank" rel="noopener"><strong>Manhattan North (Excel)<br /><br /></strong> </a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-019pct.pdf" target="_blank" rel="noopener">19th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-019pct.xlsx" target="_blank" rel="noopener">19th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-020pct.pdf" target="_blank" rel="noopener">20th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-020pct.xlsx" target="_blank" rel="noopener">20th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-022pct.pdf" target="_blank" rel="noopener">Central Park Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-022pct.xlsx" target="_blank" rel="noopener">Central Park Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-023pct.pdf" target="_blank" rel="noopener">23rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-023pct.xlsx" target="_blank" rel="noopener">23rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-024pct.pdf" target="_blank" rel="noopener">24th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-024pct.xlsx" target="_blank" rel="noopener">24th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-025pct.pdf" target="_blank" rel="noopener">25th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-025pct.xlsx" target="_blank" rel="noopener">25th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-026pct.pdf" target="_blank" rel="noopener">26th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-026pct.xlsx" target="_blank" rel="noopener">26th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-028pct.pdf" target="_blank" rel="noopener">28th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-028pct.xlsx" target="_blank" rel="noopener">28th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-030pct.pdf" target="_blank" rel="noopener">30th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-030pct.xlsx" target="_blank" rel="noopener">30th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-032pct.pdf" target="_blank" rel="noopener">32nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-032pct.xlsx" target="_blank" rel="noopener">32nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-033pct.pdf" target="_blank" rel="noopener">33rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-033pct.xlsx" target="_blank" rel="noopener">33rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-034pct.pdf" target="_blank" rel="noopener">34th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-034pct.xlsx" target="_blank" rel="noopener">34th Precinct (Excel)</a></p>
+</li>
+</ul>
+<p><a href="#thetop">Return to the top</a></p>
+<hr />
+<h2>Queens</h2>
+<p><a name="queens"></a></p>
+<h3>Patrol Borough Queens South</h3>
+<ul>
+<ul>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbqs.pdf" target="_blank" rel="noopener"><strong>Queens South (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbqs.xlsx" target="_blank" rel="noopener"><strong>Queens South (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-100pct.pdf" target="_blank" rel="noopener">100th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-100pct.xlsx" target="_blank" rel="noopener">100th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-101pct.pdf" target="_blank" rel="noopener">101st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-101pct.xlsx" target="_blank" rel="noopener">101st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-102pct.pdf" target="_blank" rel="noopener">102nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-102pct.xlsx" target="_blank" rel="noopener">102nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-103pct.pdf" target="_blank" rel="noopener">103rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-103pct.xlsx" target="_blank" rel="noopener">103rd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-105pct.pdf" target="_blank" rel="noopener">105th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-105pct.xlsx" target="_blank" rel="noopener">105th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-106pct.pdf" target="_blank" rel="noopener">106th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-106pct.xlsx" target="_blank" rel="noopener">106th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-107pct.pdf" target="_blank" rel="noopener">107th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-107pct.xlsx" target="_blank" rel="noopener">107th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-113pct.pdf" target="_blank" rel="noopener">113th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-113pct.xlsx" target="_blank" rel="noopener">113th Precinct (Excel)</a></p>
+</li>
+<li><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-116pct.pdf" target="_blank" rel="noopener">116th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-116pct.xlsx" target="_blank" rel="noopener">116th Precinct (Excel)</a></li>
+</ul>
+</ul>
+</ul>
+<p><br /></p>
+<h3>Patrol Borough Queens North</h3>
+<ul>
+<ul>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbqn.pdf" target="_blank" rel="noopener"><strong>Queens North (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbqn.xlsx" target="_blank" rel="noopener"><strong>Queens North (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-104pct.pdf" target="_blank" rel="noopener">104th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-104pct.xlsx" target="_blank" rel="noopener">104th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-108pct.pdf" target="_blank" rel="noopener">108th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-108pct.xlsx" target="_blank" rel="noopener">108th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-109pct.pdf" target="_blank" rel="noopener">109th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-109pct.xlsx" target="_blank" rel="noopener">109th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-110pct.pdf" target="_blank" rel="noopener">110th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-110pct.xlsx" target="_blank" rel="noopener">110th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-111pct.pdf" target="_blank" rel="noopener">111th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-111pct.xlsx" target="_blank" rel="noopener">111th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-112pct.pdf" target="_blank" rel="noopener">112th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-112pct.xlsx" target="_blank" rel="noopener">112th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-114pct.pdf" target="_blank" rel="noopener">114th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-114pct.xlsx" target="_blank" rel="noopener">114th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-115pct.pdf" target="_blank" rel="noopener">115th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-115pct.xlsx" target="_blank" rel="noopener">115th Precinct (Excel)</a></p>
+</li>
+</ul>
+</ul>
+</ul>
+<p><a href="#thetop">Return to the top</a></p>
+<hr />
+<h2>Staten Island</h2>
+<p><a name="statenisland"></a></p>
+<h3>Patrol Borough Staten Island</h3>
+<ul>
+<ul>
+<ul>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-pbsi.pdf" target="_blank" rel="noopener"><strong>Staten Island (PDF)</strong></a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-pbsi.xlsx" target="_blank" rel="noopener"><strong>Staten Island (Excel)</strong></a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-120pct.pdf" target="_blank" rel="noopener">120th Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-120pct.xlsx" target="_blank" rel="noopener">120th Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-121pct.pdf" target="_blank" rel="noopener">121st Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-121pct.xlsx" target="_blank" rel="noopener">121st Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-122pct.pdf" target="_blank" rel="noopener">122nd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-122pct.xlsx" target="_blank" rel="noopener">122nd Precinct (Excel)</a></p>
+</li>
+<li>
+<p><a href="/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-123pct.pdf" target="_blank" rel="noopener">123rd Precinct (PDF)</a> <br /><a href="/assets/nypd/downloads/excel/crime_statistics/cs-en-us-123pct.xlsx" target="_blank" rel="noopener">123rd Precinct (Excel)<br /></a></p>
+</li>
+</ul>
+</ul>
+</ul>
+<p><a href="#thetop">Return to the top</a></p></div>
+</div>
+</div>
+</div>
+</div>
+<!--ls:end[component-1444777587707]-->
+</div>
+<div class="ls-cmp-wrap" id="w1448402837680">
+<!--ls:begin[component-1448402837680]-->
+<div class="iw_component" id="1448402837680">
+</div>
+<!--ls:end[component-1448402837680]-->
+</div>
+<div class="ls-cmp-wrap" id="w1462458829941">
+<!--ls:begin[component-1462458829941]-->
+<div class="iw_component" id="1462458829941"><!--
+         Do not display agency programs. 
+    -->
+</div>
+<!--ls:end[component-1462458829941]-->
+</div>
+</div>
+</div>
+<div class="ls-row-clr"></div>
+</div>
+</div>
+<div class="ls-row" id="ls-row-1-col-1-row-3">
+<div class="ls-fxr" id="ls-gen96290132-ls-fxr">
+<div class="ls-area" id="ls-row-1-col-1-row-3-area-1">
+<div class="ls-area-body" id="ls-gen96290133-ls-area-body">
+<div class="ls-cmp-wrap ls-1st" id="w1462458829942">
+<!--ls:begin[component-1462458829942]-->
+<div class="iw_component" id="1462458829942"><div class="row">
+<footer>
+<div class="container">
+<div class="span9 footer-links">
+<a href="/main">nyc.gov home</a><a href="/main/services">Services</a><a href="/main/events/?">Events</a><a href="/main/your-government">Your government</a><a href="https://portal.311.nyc.gov/">311</a><a href="/main/your-government/contact-nyc-government">Contact NYC government</a><a href="https://www.nycvotes.org/">Register to vote</a><a href="https://a858-nycnotify.nyc.gov/notifynyc/">Emergency alerts </a><a href="https://cityjobs.nyc.gov/">Careers</a><a href="/main/forms/website-feedback">Website feedback</a><a href="https://www.nyc.gov/site/mopd/resources/digital-accessibility.page">Accessibility resources</a><a href="/main/nyc-gov-privacy-policy">Privacy policy</a><a href="/main/terms-of-use">Terms of use</a><a href="/main/about-our-content">About nyc.gov content</a>
+</div>
+<div class="span3">
+<span class="logo-nyc">NYC</span>
+<form class="form-search" method="get" action="/home/search/index.page">
+<label for="footer-search" class="sr-only">Search</label><input id="footer-search" type="text" placeholder="Search" class="input-search placeholder" name="search-terms"><button class="ico-search">Search</button>
+</form>
+<div class="copyright">
+<div><p>&copy; City of New York. 2025 All Rights Reserved. NYC is a trademark and service mark of the City of New York.</p>
+<!-- nyc footer 07-16-2025 --></div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<!--ls:end[component-1462458829942]-->
+</div>
+</div>
+</div>
+<div class="ls-row-clr"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="ls-row-clr"></div>
+</div>
+</div>
+</div><!--ls:end[body]--><!--ls:begin[page_track]--><!--ls:end[page_track]--></body>
+<!--ls:begin[foot-injection]--><!-- GLOBAL JAVASCRIPT INCLUDES (/js/_global.js.html.erb) --><script src="/assets/home/js/libs/jquery-1.9.1.js" type="text/javascript"></script><script src="/assets/home/js/libs/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script><script src="/assets/home/js/libs/i18n/jquery-ui-i18n.js" type="text/javascript"></script><script src="/assets/home/js/utils.js" type="text/javascript"></script><script src="/assets/home/js/libs/class.js" type="text/javascript"></script><script src="/assets/home/js/classes/NYC.MainNav.js" type="text/javascript"></script><script src="/assets/home/js/classes/NYC.MobileNav.js" type="text/javascript"></script><script src="/assets/home/js/classes/NYC.Global.js" type="text/javascript"></script><script src="/assets/home/js/libs/ZeroClipboard.min.js" type="text/javascript"></script><script src="/assets/home/js/classes/NYC.InfoShare.js" type="text/javascript"></script><script src="/assets/home/js/classes/NYC.ProgramsAndInitiatives.js" type="text/javascript"></script><script src="/assets/home/js/share.js" type="text/javascript"></script><script src="/assets/home/js/libs/jquery.colorbox-min.js" type="text/javascript"></script><!-- IE7 support for JSON --><!--[if (gte IE 6)&(lte IE 8)]>        <script src="/assets/home/js/libs/json2.js" type="text/javascript"></script>        <![endif]--><!-- PAGE SPECIFIC JAVASCRIPT --><script src="/assets/home/js/pages/agencies/about.js" type="text/javascript"></script><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script><!-- Google Translate Plugin --><script type="text/javascript">            function googleTranslateElementInit() {                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');            }        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><!-- webtrends --><script type="text/javascript" src="/assets/nypd/js/agencies/agency-wt.js"></script><script type="text/javascript" src="/assets/home/js/webtrends/webtrends_v10.js"></script><!-- End Analytics Tagging 8/4/14 TL. (NYC.gov Specific) --><!--ls:end[foot-injection]--></html></html>

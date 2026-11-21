@@ -1,0 +1,39 @@
+[project]
+name = "nypd-weekly-archive"
+version = "0.1.0"
+description = "Weekly capture of NYPD's overwritten statistics spreadsheets, reshaped into tidy CSVs"
+readme = "README.md"
+authors = [
+    { name = "BetaNYC" }
+]
+requires-python = ">=3.11,<3.15"
+license = "MIT"
+dependencies = [
+    "httpx>=0.27,<1",
+    "openpyxl>=3.1,<4",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "deptry>=0.20,<1",
+    "pytest>=8,<10",
+    "ruff>=0.6,<1",
+]
+
+[project.scripts]
+nypd-archive = "nypd_weekly_archive.cli:main"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "PL"]
+ignore = ["PLR0912", "PLR0913", "PLR0911", "PLR0915", "PLR0917", "PLR2004", "PLC0415"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

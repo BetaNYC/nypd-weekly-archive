@@ -1,0 +1,66 @@
+name: Weekly capture
+
+# Git-scraping: fetch NYPD's weekly files, keep the ones that changed, rebuild
+# the tidy CSVs, and commit. Safe to re-run: unchanged files are skipped by
+# hash (and usually by a 304 to If-Modified-Since).
+#
+# Timing, from the Last-Modified headers of all 528 files on 2026-11-21 (week
+# ending Sunday 2026-11-15): fatalities spreadsheets Monday ~15:30 UTC,
+# CompStat spreadsheets Monday ~17:30 UTC, TrafficStat spreadsheets Tuesday
+# ~16:40 UTC. Some PDFs were replaced again as late as Wednesday ~22:00 UTC.
+# Q-Team spreadsheets were last changed Tuesday 2026-10-27, about three weeks
+# behind. Each file is overwritten the following Monday or Tuesday, so a week
+# can be caught from Thursday until the next Monday morning.
+#   - Thursday 14:23 UTC: after the last Wednesday-night PDF replacements.
+#   - Saturday 14:23 UTC: a second chance for late files (Q-Team especially)
+#     and for a failed Thursday run, still two days before the next overwrite.
+on:
+  schedule:
+    - cron: "23 14 * * 4"
+    - cron: "23 14 * * 6"
+  workflow_dispatch:
+    inputs:
+      save_to_wayback:
+        description: "Also submit new files to the Internet Archive (Save Page Now, anonymous)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capture
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Capture, parse, build
+        id: run
+        run: |
+          set +e
+          uv run --python 3.14 nypd-archive run ${{ inputs.save_to_wayback && '--save-to-wayback' || '' }}
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+      # Commit whatever was captured even when some files failed or did not
+      # parse: preserving the raw file is the point. The job still goes red
+      # below so a person looks.
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.csv captures.csv raw data
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "capture: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+      - name: Fail if the run reported problems
+        if: steps.run.outputs.status != '0'
+        run: |
+          echo "nypd-archive exited ${{ steps.run.outputs.status }}; see the log above (layout change, failed download, or discovery failure)."
+          exit 1

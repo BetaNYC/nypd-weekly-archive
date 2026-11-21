@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths: ["**/*.py", "pyproject.toml", "uv.lock", "tests/fixtures/**", ".github/workflows/ci.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    name: Lockfile, dependencies, lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv lock --check
+      - run: uv run --python 3.14 deptry .
+      - run: uv run --python 3.14 ruff check .
+
+  test:
+    name: pytest (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv run --python ${{ matrix.python }} pytest -q
