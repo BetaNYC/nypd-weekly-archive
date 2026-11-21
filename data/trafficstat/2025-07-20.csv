@@ -1,0 +1,415 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,28d,2025,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,28d,2024,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,ytd,2025,45,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,DWI,ytd,2024,28,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,28d,2025,56,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,28d,2024,30,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,wtd,2025,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,wtd,2024,8,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,ytd,2025,434,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Arrests,VTL 511,ytd,2024,293,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,28d,2025,67,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,28d,2024,91,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,wtd,2025,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,wtd,2024,22,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,ytd,2025,644,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Collisions,ytd,2024,723,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,28d,2025,24,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,28d,2024,35,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,wtd,2024,8,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,ytd,2025,259,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Injury Collisions,ytd,2024,298,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,28d,2025,22,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,28d,2024,21,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,wtd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,wtd,2024,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,ytd,2025,247,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motor Vehicle+,ytd,2024,272,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,28d,2025,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,28d,2024,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,wtd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,ytd,2025,42,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Motorized Two-Wheeler+,ytd,2024,56,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,28d,2025,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,28d,2024,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,ytd,2025,62,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Pedestrian,ytd,2024,83,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,28d,2025,33,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,28d,2024,40,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,wtd,2024,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,ytd,2025,372,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Total Injuries,ytd,2024,430,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,28d,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,28d,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,ytd,2025,21,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Collisions,Traditional Bicycle,ytd,2024,19,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motor Vehicle+,ytd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Motorized Two-Wheeler+,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,ytd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Pedestrian,ytd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,ytd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Total Fatalities,ytd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Fatalities,Traditional Bicycle,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,28d,2025,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,28d,2024,30,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,wtd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,wtd,2024,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,ytd,2025,62,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Cell Phone,ytd,2024,94,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,28d,2025,75,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,28d,2024,186,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,wtd,2025,16,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,wtd,2024,34,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,ytd,2025,973,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Disobey Sign,ytd,2024,1298,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,28d,2025,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,28d,2024,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,wtd,2025,4,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,wtd,2024,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,ytd,2025,166,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Improper Turns,ytd,2024,134,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,28d,2025,25,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,28d,2024,39,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,wtd,2025,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,wtd,2024,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,ytd,2025,228,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Red Light,ytd,2024,262,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,28d,2025,4,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,28d,2024,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,ytd,2025,68,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Right of Way to Peds,ytd,2024,102,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,28d,2025,19,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,28d,2024,53,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,wtd,2025,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,wtd,2024,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,ytd,2025,141,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Safety Belts,ytd,2024,168,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,28d,2025,20,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,28d,2024,19,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,ytd,2025,424,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Speeding,ytd,2024,627,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,28d,2025,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,28d,2024,46,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,wtd,2024,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,ytd,2025,77,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Texting,ytd,2024,104,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,28d,2025,54,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,28d,2024,85,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,wtd,2025,20,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,wtd,2024,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,ytd,2025,412,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Tinted Window,ytd,2024,461,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,28d,2025,270,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,28d,2024,562,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,wtd,2025,76,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,wtd,2024,94,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,ytd,2025,3021,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Hazardous Summonses,Total Hazardous*,ytd,2024,3887,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,28d,2025,35,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,28d,2024,47,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,wtd,2025,11,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,wtd,2024,14,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,ytd,2025,437,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Livery/Taxi,ytd,2024,564,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,28d,2025,48,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,28d,2024,44,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,wtd,2025,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,wtd,2024,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,ytd,2025,289,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Motorized Two-Wheeler+,ytd,2024,497,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,28d,2025,473,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,28d,2024,780,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,wtd,2025,134,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,wtd,2024,123,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,ytd,2025,4864,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Total Movers*,ytd,2024,5720,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,28d,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,28d,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,ytd,2025,13,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Moving Summonses,Traditional Bicycle,ytd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,28d,2025,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,28d,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,wtd,2025,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,ytd,2025,59,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bicycle Lane,ytd,2024,8,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,ytd,2025,14,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Lane,ytd,2024,19,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,28d,2025,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,28d,2024,21,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,wtd,2025,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,ytd,2025,61,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Bus Stop,ytd,2024,153,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,28d,2025,7,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,28d,2024,15,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,ytd,2025,88,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Crosswalk,ytd,2024,103,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,28d,2025,216,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,28d,2024,307,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,wtd,2025,57,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,wtd,2024,36,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,ytd,2025,1346,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Double Parkers,ytd,2024,1769,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,28d,2025,549,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,28d,2024,556,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,wtd,2025,158,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,wtd,2024,80,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,ytd,2025,3590,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page1,Parking Summonses,Total Parkers*,ytd,2024,3955,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,28d,2025,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,28d,2024,13,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,wtd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,wtd,2024,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,ytd,2025,136,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Car,ytd,2024,146,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,28d,2025,67,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,28d,2024,91,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,wtd,2025,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,wtd,2024,22,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,ytd,2025,644,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Collisions,ytd,2024,723,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,28d,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,ytd,2025,7,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,E-bike,ytd,2024,4,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,28d,2025,24,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,28d,2024,35,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,wtd,2024,8,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,ytd,2025,259,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Injury Collisions,ytd,2024,298,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,28d,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,ytd,2025,13,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Moped,ytd,2024,33,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,28d,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,ytd,2025,11,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Motorcycle,ytd,2024,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),28d,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Off Road (Dirt Bike/ATV),ytd,2024,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other Device,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,ytd,2025,20,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Other MV,ytd,2024,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,28d,2025,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,28d,2024,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,wtd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,ytd,2025,62,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Pedestrian,ytd,2024,83,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,28d,2025,12,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,28d,2024,8,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,wtd,2024,3,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,ytd,2025,91,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,SUV,ytd,2024,117,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,28d,2025,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,wtd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,ytd,2025,11,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Stand-up Scooter,ytd,2024,7,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,28d,2025,33,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,28d,2024,40,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,wtd,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,wtd,2024,10,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,ytd,2025,372,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Total Injuries,ytd,2024,430,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,28d,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,28d,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,ytd,2025,21,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Collisions,Traditional Bicycle,ytd,2024,19,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Car,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,E-bike,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Moped,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Motorcycle,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Off Road (Dirt Bike/ATV),ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other Device,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Other MV,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,ytd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Pedestrian,ytd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,SUV,ytd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Stand-up Scooter,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,ytd,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Total Fatalities,ytd,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Fatalities,Traditional Bicycle,ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,28d,2025,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,28d,2024,2,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,ytd,2025,23,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,E-bike,ytd,2024,13,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,28d,2025,35,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,28d,2024,47,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,wtd,2025,11,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,wtd,2024,14,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,ytd,2025,437,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Livery/Taxi,ytd,2024,564,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,28d,2025,46,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,28d,2024,37,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,wtd,2025,9,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,wtd,2024,5,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,ytd,2025,246,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Moped,ytd,2024,436,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,28d,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,ytd,2025,7,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Motorcycle,ytd,2024,20,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),ytd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Off Road (Dirt Bike/ATV),ytd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,28d,2024,4,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,wtd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,ytd,2025,7,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Other Device,ytd,2024,27,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,28d,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,28d,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,ytd,2025,6,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Stand-up Scooter,ytd,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,28d,2025,473,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,28d,2024,780,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,wtd,2025,134,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,wtd,2024,123,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,ytd,2025,4864,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Total Movers*,ytd,2024,5720,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,28d,2025,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,28d,2024,1,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,wtd,2025,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,wtd,2024,0,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,ytd,2025,13,count
+trafficstat,raw/trafficstat/2025-07-20/ts-en-us-044.xlsx,044,44,2025-07-14,2025-07-20,Page2,Moving Summonses,Traditional Bicycle,ytd,2024,2,count
