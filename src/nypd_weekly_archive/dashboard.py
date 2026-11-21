@@ -183,12 +183,28 @@ def run_dir(raw_root: Path, day: str) -> Path:
 
 
 def _done(path: Path) -> set[str]:
+    """Requests already answered in an interrupted run. A process stopped
+    mid-write can leave a partial last line; it is cut off and refetched."""
     keys = set()
-    if path.exists():
-        for line in path.read_text().splitlines():
-            if line.strip():
-                rec = json.loads(line)
-                keys.add(json.dumps(rec["request"], sort_keys=True) + rec["url"])
+    if not path.exists():
+        return keys
+    text = path.read_text()
+    lines = text.split("\n")
+    good: list[str] = []
+    for i, line in enumerate(lines):
+        if not line.strip():
+            continue
+        try:
+            rec = json.loads(line)
+        except json.JSONDecodeError:
+            if i >= len(lines) - 2:  # only the last line may be partial
+                log("dashboard_partial_line_dropped", path=str(path))
+                break
+            raise
+        good.append(line)
+        keys.add(json.dumps(rec["request"], sort_keys=True) + rec["url"])
+    if len(good) != sum(1 for ln in lines if ln.strip()):
+        path.write_text("".join(ln + "\n" for ln in good))
     return keys
 
 

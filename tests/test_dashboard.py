@@ -113,3 +113,13 @@ def test_backfill_end_to_end_with_zero_fill(fixtures: Path, tmp_path: Path) -> N
     assert len(ebike) == 53
     assert sum(ln.endswith(",0,1,2026-11-21") for ln in ebike) == 52
     assert any(",2026-08-23,1,0," in ln for ln in ebike)
+
+
+def test_resume_drops_partial_last_line(tmp_path: Path) -> None:
+    from nypd_weekly_archive.dashboard import _done
+
+    p = tmp_path / "responses.jsonl"
+    rec = {"url": TIMELINE_URL, "request": body("075", "WTD_COLLISIONS_Collisions"), "response": []}
+    p.write_text(json.dumps(rec) + "\n" + '{"url": "trunc')
+    assert len(_done(p)) == 1
+    assert p.read_text() == json.dumps(rec) + "\n"

@@ -20,7 +20,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 ## Where things are
 
 - `raw/<series>/<week ending>/` holds each file exactly as NYPD published it, Excel and PDF. The date is the last day of the report week, read from the spreadsheet. A PDF takes the date of the spreadsheet with the same name. If NYPD changes a file again within the same week, both versions are kept; the later one gets part of its checksum in its name.
-- `captures.csv` is the ledger: one row per file saved, with its address, SHA-256, size, the `Last-Modified` time nyc.gov reported, the week-ending date and where that date came from (`xlsx`, `sibling_xlsx`, or `fetch_date` when it could not be read from the file).
+- `captures.csv` is the ledger, with one row per file saved. Each row has its address, SHA-256, size, the `Last-Modified` time nyc.gov reported, the week-ending date and where that date came from: `xlsx` (read from the spreadsheet), `sibling_xlsx` (a PDF dated by its spreadsheet), `fetch_date` or `fetch_date_layout_error` (the download date, because the file could not be read), or `wayback_capture_date`. The `source` column says whether the copy came from nyc.gov or the Internet Archive.
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
 - `data/stale_files.csv` lists files whose newest week is at least 7 days behind the newest week in their series. nyc.gov can keep serving an old file with a normal response (the Bronx patrol borough file from before the 2026 north/south split is one), so the week printed inside the file is what counts, not the server's answer.
@@ -31,7 +31,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 |---|---|
 | `series` | `trafficstat`, `fatalities`, `compstat` or `qteam` |
 | `source_file` | The file in `raw/` this row came from |
-| `geography` | NYPD's label: `Citywide`, a patrol borough, `034`, `34th Precinct` |
+| `geography` | NYPD's label, such as `Citywide`, a patrol borough, `034` or `34th Precinct` |
 | `precinct` | Precinct number, when the row is for one precinct |
 | `week_start`, `week_end` | The report week. The fatalities files give only the end date. |
 | `sheet`, `section`, `measure` | NYPD's labels, unchanged, footnote marks included (`Total Parkers*`, `Motor Vehicle+`) |
@@ -78,7 +78,7 @@ Requests go one at a time, at least one second apart, with a descriptive user ag
 
 Files are identified by their first bytes, never by the `Content-Type` header: a spreadsheet must start like a ZIP file and a PDF with `%PDF-`. Anything else (an error page served with a 200, say) is reported as a failed download and not saved.
 
-The exit code is 1 if any file failed to download or did not match the layout the parser knows. Files that do not parse are still saved; only `data/` is held back. The parser is strict on purpose: an unfamiliar row label, section, sheet or header stops it, so a change at NYPD shows up as a red run instead of numbers quietly going missing.
+The exit code is 1 if any file failed to download or did not match the layout the parser knows. Files that do not parse are still saved; only `data/` is held back. An unfamiliar row label, section, sheet or header stops the parser, so a change at NYPD shows up as a red run instead of numbers quietly going missing.
 
 After fixing the parser for a file it rejected, `uv run nypd-archive redate` re-reads the files that were filed under their download date, moves them to their report week, and rebuilds `data/`.
 
@@ -95,12 +95,14 @@ The dashboard publishes no documentation for this. The command sends exactly the
 Things to know about that file:
 
 - The dashboard leaves out weeks with a count of zero. Inside the 53 weeks a timeline covers, a missing week is written as 0 with `imputed` set to 1.
-- `window` is `WTD` for the current 53 weeks and `SPLYWTD` for the year before. The earlier window lines up by calendar date, not by weekday: when the current week ends Sunday, November 15, 2026, the earlier one ends Saturday, November 15, 2025. The two windows overlap by a day at the seam and do not join into one even series.
+- `window` is `WTD` for the current 53 weeks and `SPLYWTD` for the year before. The earlier window lines up by calendar date, not by weekday: when the current week ends Sunday, November 15, 2026, the earlier one ends Saturday, November 15, 2025. The two windows therefore do not join into one even series: the first week of the current window (ending Sunday, November 16, 2025) and the last week of the earlier one (ending Saturday, November 15, 2025) share six days.
 - The window moves forward every week and older weeks drop off, so a run saves what is visible on that day and no more.
 
 ### Internet Archive copies
 
-`uv run nypd-archive backfill-wayback --series trafficstat --limit 5` lists the Internet Archive's copies of a series through the [Wayback CDX server](https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md) and downloads each distinct version in its original form. Every download is checked against the archive's own checksum before it is kept. Spreadsheets are dated from their contents like any other capture. PDFs are filed under the date the archive captured them, marked `wayback_capture_date` in the ledger, because that is all that is known about them. Ledger rows from this command have `source` set to `wayback` and the archive's capture timestamp. Requests go at least 3 seconds apart, with a pause of at least a minute after a 429 or 503. Coverage is uneven: TrafficStat copies start in August 2024 and most precincts have fewer than a dozen.
+`uv run nypd-archive backfill-wayback --series trafficstat --limit 5` lists the Internet Archive's copies of a series through the [Wayback CDX server](https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md) and downloads each distinct version in its original form. Every download is checked against the archive's own checksum before it is kept. Spreadsheets are dated from their contents like any other capture. PDFs are filed under the date the archive captured them, marked `wayback_capture_date` in the ledger, because that is all that is known about them. Ledger rows from this command have `source` set to `wayback` and the archive's capture timestamp. Requests go at least 3 seconds apart, with a pause of at least a minute after a 429 or 503. TrafficStat copies start in August 2024, and most precincts have fewer than a dozen.
+
+TrafficStat files from 2024 use an older layout (sheets named `Page1_1` and `Page2_2`, no geography in the title block, and an extra "RMP Collisions" section). The parser does not read it yet. Those files are kept, marked `fetch_date_layout_error`, and `redate` will file them by week once it does.
 
 ## Saving new captures to the Internet Archive
 
@@ -115,7 +117,7 @@ The data comes from the Excel files. The PDFs are kept as published but not read
 - NYPD calls these figures preliminary and subject to change. A later report can revise a number this archive already holds, and the archive keeps both.
 - Collision counts from the dashboard backfill and from the weekly files are both NYPD's, but they come from different products. Check that they agree for the weeks they share before joining them.
 - These are counts NYPD chose to publish, aggregated by precinct and borough. There are no incident records here.
-- This is not an official record. BetaNYC changed the shape of the data (from report layout to one number per row) and changed none of the numbers. For the official figures, go to the NYPD pages linked above.
+- BetaNYC modified this data, so it is not an official record. The spreadsheets are reshaped from NYPD's report layout into one number per row; NYPD's "Change" and short-range "% +/-" columns are dropped; the Port Authority Police row that the PAPD file prints twice is kept once; and in the dashboard backfill, weeks NYPD left out are filled in as zero. The files in `raw/` are NYPD's, unmodified. For the official figures, go to the NYPD pages linked above.
 - Week-ending dates come from the files. If NYPD posts a file with the wrong dates in it, so does this archive.
 
 ## Source
