@@ -145,7 +145,7 @@ Three other people already kept CompStat history, and this archive builds on the
 
 **2026: [joshgreenman1973/nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper).** Josh Greenman's scraper reads NYPD's weekly CompStat spreadsheets into JSON, from March 2026. Josh gave BetaNYC permission to use his data with a link to his repo. `uv run nypd-archive import-greenman --clone <clone of that repo>` converts his weekly files into `data/compstat_greenman/`, in the same columns as `data/compstat/`, and then compares the weeks both have. For the week ending November 15, 2026, all 14,193 numbers that appear in both match. His files repeat the retired Bronx patrol borough with its last week (May 17, 2026) after NYPD split it; those repeats are dropped. `data/compstat_greenman/README.md` names the commit the data came from.
 
-The Internet Archive also holds NYPD's own CompStat files from May 2017 on, about 2,200 spreadsheets and 4,900 PDFs. `uv run nypd-archive backfill-wayback --series compstat` fetches them (issue #9).
+The Internet Archive also holds NYPD's own CompStat files from May 2017 on. `uv run nypd-archive backfill-wayback --series compstat` fetched them on November 22, 2026 (issue #9): 6,959 files, 2,166 spreadsheets and 4,793 PDFs, for weeks from May 2017 to November 2026. 890 spreadsheets were read. 1,276 are in an older NYPD layout the reader does not know yet, so they are saved but not read; their week is estimated from the date the Internet Archive saved them.
 
 ## Website
 
