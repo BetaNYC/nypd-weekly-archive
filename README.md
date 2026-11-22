@@ -4,7 +4,7 @@ NYPD posts four sets of weekly statistics on nyc.gov as Excel and PDF files. Eac
 
 This repository saves a copy every week and turns the spreadsheets into tidy CSV files.
 
-**Website: <https://betanyc.github.io/nypd-weekly-archive/>** explains the project, and has one page per series (TrafficStat, CompStat, traffic fatalities, quality of life) charting which weeks of each precinct's file survive. Link to one precinct with, for example, `compstat.html?precinct=034#coverage`. Older links (`?precinct=034#coverage` on the home page) forward to the TrafficStat page.
+**Website: <https://betanyc.github.io/nypd-weekly-archive/>** explains the project, and has one page per series (TrafficStat, CompStat, traffic fatalities, quality of life) charting what we saved for each precinct, week by week. Link to one precinct with, for example, `compstat.html?precinct=034#coverage`. Older links (`?precinct=034#coverage` on the home page) forward to the TrafficStat page.
 
 ## What it captures
 
