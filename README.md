@@ -4,6 +4,8 @@ NYPD posts four sets of weekly statistics on nyc.gov as Excel and PDF files. Eac
 
 This repository saves a copy every week and turns the spreadsheets into tidy CSV files.
 
+**Website: <https://betanyc.github.io/nypd-weekly-archive/>** explains the project and charts which weeks of each precinct's TrafficStat file survive. Link to one precinct with `?precinct=034#coverage`.
+
 ## What it captures
 
 | Series | NYPD page | Files | What is in it |
@@ -24,6 +26,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 - `backfills.csv` does the same for backfill files that are not weekly captures (dashboard responses, Internet Archive listings).
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
+- `docs/` is the GitHub Pages site (see "Website" below). `docs/data/trafficstat-coverage.json` is rebuilt from `captures.csv` and `data/` on every scheduled run.
 - `data/stale_files.csv` lists files whose newest week is at least 7 days behind the newest week in their series. nyc.gov can keep serving an old file with a normal response (the Bronx patrol borough file from before the 2026 north/south split is one), so the week printed inside the file is what counts, not the server's answer.
 
 ### Columns in `data/`
@@ -94,6 +97,7 @@ uv run nypd-archive run          # discover, capture, rebuild data/
 uv run nypd-archive discover     # only refresh manifest.csv
 uv run nypd-archive capture      # only download what changed
 uv run nypd-archive build        # only rebuild data/ from raw/
+uv run nypd-archive site         # only rebuild docs/data/ for the website
 uv run pytest
 ```
 
@@ -125,9 +129,17 @@ Things to know about that file:
 
 ### Internet Archive copies
 
-`uv run nypd-archive backfill-wayback --series trafficstat --limit 5` lists the Internet Archive's copies of a series through the [Wayback CDX server](https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md) and downloads each distinct version in its original form. Every download is checked against the archive's own checksum before it is kept. Spreadsheets are dated from their contents like any other capture. PDFs are filed under the date the archive captured them, marked `wayback_capture_date` in the ledger, because that is all that is known about them. Ledger rows from this command have `source` set to `wayback` and the archive's capture timestamp, and the files go to the release `backfill-wayback-<date>`. Requests go at least 3 seconds apart, with a pause of at least a minute after a 429 or 503. TrafficStat copies start in August 2024, and most precincts have fewer than a dozen.
+`uv run nypd-archive backfill-wayback --series trafficstat --limit 5` lists the Internet Archive's copies of a series through the [Wayback CDX server](https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md) and downloads each distinct version in its original form. Every download is checked against the archive's own checksum before it is kept. Spreadsheets are dated from their contents like any other capture. PDFs are filed under the date the archive captured them, marked `wayback_capture_date` in the ledger, because that is all that is known about them. Ledger rows from this command have `source` set to `wayback` and the archive's capture timestamp, and the files go to the release `backfill-wayback-<date>`. Requests go at least 3 seconds apart, with a pause of at least a minute after a 429 or 503. TrafficStat copies start in August 2024, which is when NYPD began posting the precinct files: the earliest saved file is from August 9, 2024, and the Wayback Machine's copies of the 34th Precinct page have no TrafficStat link through July 25, 2024 and one from September 17, 2024. Of the 120 report weeks from August 2024 to November 15, 2026, the typical precinct has some copy of 13 and a readable spreadsheet for 8.
 
 TrafficStat files from 2024 use an older layout (sheets named `Page1_1` and `Page2_2`, no geography in the title block, and an extra "RMP Collisions" section). The parser does not read it yet. Those files are kept, marked `fetch_date_layout_error`, and `redate` will file them by week once it does.
+
+## Website
+
+`docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css` and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites.
+
+The chart reads `docs/data/trafficstat-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: a spreadsheet read into `data/`, a spreadsheet in the 2024 layout the parser does not read yet, a PDF only, or nothing. A PDF from the Internet Archive has only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. The archive's spreadsheets, which carry both dates, were nearly all saved 2 to 8 days after their report week ended. Estimated weeks are flagged in the file and in the chart's tooltip.
+
+A chosen precinct is kept in the page address (`?precinct=034`), and the **Copy link** button copies it, so any view can be shared. Social sites show `docs/assets/og-image.png`, a 1200 x 630 screenshot of `docs/assets/social-card.html`; retake it when the chart changes a lot.
 
 ## Saving new captures to the Internet Archive
 

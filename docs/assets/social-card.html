@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Social card</title>
+<!-- The picture social sites show for this page. Open it at exactly 1200 x 630 (it reads
+     ../data/trafficstat-coverage.json, so serve the docs/ folder), take a screenshot, and
+     save it as og-image.png:
+       npx playwright screenshot --viewport-size=1200,630 http://localhost:8000/assets/social-card.html docs/assets/og-image.png -->
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #414141; background: #eef4ff; display: flex; flex-direction: column; }
+  .bar { background: #2359a8; height: 84px; flex: 0 0 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 56px; color: #fff; font-size: 24px; font-weight: 700; }
+  .bar img { height: 40px; }
+  .body { flex: 1; display: flex; gap: 40px; padding: 40px 56px 36px; }
+  .text { flex: 0 0 470px; display: flex; flex-direction: column; }
+  .tag { font-size: 18px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #2359a8; }
+  h1 { font-size: 46px; line-height: 1.1; color: #2359a8; margin: 12px 0 16px; }
+  p { font-size: 23px; line-height: 1.4; margin: 0; }
+  .url { margin-top: auto; font-size: 21px; font-weight: 700; color: #2359a8; }
+  .grid { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+  .grid svg { display: block; width: 100%; height: auto; }
+  .key { display: flex; gap: 18px; font-size: 16px; margin-top: 12px; }
+  .key span { display: inline-flex; align-items: center; gap: 6px; }
+  .key i { width: 14px; height: 14px; display: inline-block; border-radius: 2px; }
+</style>
+</head>
+<body>
+  <div class="bar"><img src="betanyc-wordmark-white.svg" alt="BetaNYC"><span>NYPD Weekly Archive</span></div>
+  <div class="body">
+    <div class="text">
+      <div class="tag">BetaNYC · open data</div>
+      <h1>NYPD replaces its weekly precinct numbers every week</h1>
+      <p>None of it is on NYC Open Data. We save a copy every week. Here is what survives from before we started.</p>
+      <div class="url">betanyc.github.io/nypd-weekly-archive</div>
+    </div>
+    <div class="grid">
+      <div id="g"></div>
+      <div class="key"><span><i style="background:#0d366b"></i>Readable</span><span><i style="background:#6da7ec"></i>PDF only</span><span><i style="background:#e1e0d9"></i>Nothing saved</span></div>
+    </div>
+  </div>
+<script>
+(async () => {
+  const D = await (await fetch("../data/trafficstat-coverage.json")).json();
+  const fill = { 3: "#0d366b", 2: "#256abf", 1: "#6da7ec", 0: "#e1e0d9" };
+  const W = D.weeks.length, H = D.precincts.length, cw = 5, ch = 5;
+  let s = `<svg viewBox="0 0 ${W * cw} ${H * ch}" xmlns="http://www.w3.org/2000/svg">`;
+  D.precincts.forEach((p, r) => [...p.states].forEach((c, i) => {
+    s += `<rect x="${i * cw}" y="${r * ch}" width="${cw - 1}" height="${ch - 1}" fill="${fill[c]}"/>`;
+  }));
+  document.getElementById("g").innerHTML = s + "</svg>";
+})();
+</script>
+</body>
+</html>
