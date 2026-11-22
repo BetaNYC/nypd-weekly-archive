@@ -18,31 +18,12 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A grid of NYC's 78 police precincts by week since August 2024. Most cells are empty: weeks of NYPD TrafficStat files that no one saved.">
 <meta name="twitter:card" content="summary_large_image">
-<script src="assets/share.js" defer></script>
 <script src="assets/nav.js" defer></script>
-<style>
-  /* Coverage chart */
-  .cov { display: block; max-width: none; font-family: var(--font-body); }
-  .scroll-hint { display: none; font-size: 13px; margin: 0 0 6px; }
-  @media (max-width: 900px) { .scroll-hint { display: block; } }
-  .cov text { fill: var(--ink); font-size: 11px; }
-  .cov .boro { font-family: var(--font-head); font-weight: 700; font-size: 12px; fill: var(--blue); }
-  .cov .axis { font-size: 10px; }
-  .cov .row-label { cursor: pointer; }
-  .cov .row-label:hover, .cov .row-label.on { font-weight: 700; fill: var(--blue); }
-  .cov rect.c { cursor: pointer; }
-  .cov .sel { fill: none; stroke: #f59e0b; stroke-width: 2; } /* orange stands out from the blue squares */
-  .s3 { background: #0d366b; fill: #0d366b; }
-  .s2 { background: #256abf; fill: #256abf; }
-  .s1 { background: #6da7ec; fill: #6da7ec; }
-  .s0 { background: #e1e0d9; fill: #e1e0d9; }
-  .detail { border-top: 1px solid var(--line-soft); padding: 14px 16px 4px; }
-  .detail h4 { font-family: var(--font-head); color: var(--blue); font-size: 19px; margin: 0 0 6px; }
-  .detail .strip { display: block; margin: 8px 0 12px; }
-  .detail ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; }
-  .weeks-read { font-size: 14px; }
-  details.table summary { cursor: pointer; color: var(--blue); font-weight: 600; margin: 8px 0; }
-</style>
+<link rel="stylesheet" href="assets/archive.css">
+<script>
+  // Links from before the series pages (?precinct=034#coverage) go to the TrafficStat page.
+  if (/[?&]precinct=/.test(location.search) || location.hash === "#coverage") location.replace("trafficstat.html" + location.search + location.hash);
+</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -53,8 +34,10 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
     <nav id="site-menu" aria-label="Site">
       <ul>
-        <li><a href="#coverage">Coverage</a></li>
-        <li><a href="#what-we-save">What we save</a></li>
+        <li><a href="trafficstat.html">TrafficStat</a></li>
+        <li><a href="compstat.html">CompStat</a></li>
+        <li><a href="fatalities.html">Traffic fatalities</a></li>
+        <li><a href="quality-of-life.html">Quality of life</a></li>
         <li><a href="#use-the-data">Use the data</a></li>
         <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a></li>
       </ul>
@@ -76,78 +59,68 @@
 
 <div class="wrap">
 
-<div class="stats" role="group" aria-label="Key numbers">
-  <div class="stat"><div class="n" id="t-weeks">–</div><div class="l">weeks since NYPD began posting precinct TrafficStat files, in August 2024</div></div>
-  <div class="stat"><div class="n" id="t-any">–</div><div class="l">precinct-weeks of TrafficStat we could recover, out of <span id="t-all">–</span></div></div>
-  <div class="stat"><div class="n" id="t-read">–</div><div class="l">precinct-weeks with a spreadsheet, read into CSV</div></div>
-  <div class="stat"><div class="n" id="t-ia">–</div><div class="l">old copies recovered from the Internet Archive</div></div>
-</div>
-
-<h2 id="coverage-h">What survives, precinct by precinct <a class="anchor" href="#coverage" aria-label="Link to this chart">#</a></h2>
-<p>TrafficStat is NYPD's weekly report on traffic safety in each precinct: crashes, injuries and deaths, plus summonses and arrests. Before this archive started, the only old copies were the ones the Internet Archive's Wayback Machine had saved. We downloaded all of them. Each square below is one precinct for one week. Dark squares are weeks we can read. Empty squares are weeks no one saved.</p>
-<p>Pick a precinct, or click its row, to see its weeks and get a link to share.</p>
-
-<figure class="figure" id="coverage">
-  <div class="figure-head">
-    <h3>TrafficStat files saved, by precinct and week</h3>
-    <div class="figure-controls">
-      <label for="pick">Precinct</label>
-      <select id="pick"><option value="">All precincts</option></select>
-      <button class="copy-link" type="button" data-anchor="coverage">Copy link</button>
-    </div>
-  </div>
-  <div class="figure-body" tabindex="0" role="group" aria-label="Chart of TrafficStat files saved, by precinct and week. Scrolls sideways.">
-    <ul class="legend" aria-label="Legend">
-      <li><span class="sw s3"></span>Spreadsheet, read into CSV</li>
-      <li><span class="sw s2"></span>Spreadsheet in NYPD's 2024 layout, saved, not read yet</li>
-      <li><span class="sw s1"></span>PDF only</li>
-      <li><span class="sw s0"></span>Nothing saved</li>
-    </ul>
-    <p class="scroll-hint">Scroll sideways to see every week.</p>
-    <div id="chart" role="img" aria-describedby="chart-summary"></div>
-  </div>
-  <div class="detail" id="detail" hidden aria-live="polite"></div>
-  <figcaption class="figure-caption" id="chart-summary">
-    Source: NYPD TrafficStat precinct files from nyc.gov, saved weekly by this archive since November 2026, and earlier copies from the <a href="https://web.archive.org/">Internet Archive's Wayback Machine</a>. A spreadsheet carries its own report week. A PDF from the Wayback Machine carries only the date it was saved, so its week is estimated as the last Sunday at least two days before that date; the spreadsheets, which carry both dates, were nearly all saved 2 to 8 days after their week ended.
-  </figcaption>
-</figure>
-
-<details class="table">
-  <summary>The same numbers as a table</summary>
-  <div class="table-scroll"><table id="table"><thead><tr><th>Precinct</th><th>Borough</th><th class="num">Read</th><th class="num">2024 layout</th><th class="num">PDF only</th><th class="num">Nothing saved</th></tr></thead><tbody></tbody></table></div>
-</details>
-
 <h2 id="what-we-save">What we save <a class="anchor" href="#what-we-save" aria-label="Link to this section">#</a></h2>
 <p>Four sets of NYPD files, each replaced every week. We read the list of files from NYPD's own pages on every run, so a new precinct or a renamed file is picked up without anyone editing a list.</p>
 <div class="table-scroll"><table>
-  <thead><tr><th>Series</th><th>Files</th><th>What is in it</th></tr></thead>
+  <thead><tr><th scope="col">Series</th><th scope="col">Files</th><th scope="col">What is in it</th></tr></thead>
   <tbody>
-    <tr><td><a href="https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page">TrafficStat</a></td><td>Citywide, 8 patrol boroughs, 78 precincts</td><td>Crashes, injuries and deaths by mode; DWI arrests; parking summonses for double parking, bus stops, bus lanes, crosswalks and bike lanes; moving summonses by vehicle type, including e-bikes, scooters and mopeds. Week to date, 28 days and year to date, each beside the same period a year earlier.</td></tr>
-    <tr><td><a href="https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-fatalities.page">Traffic fatalities</a></td><td>One per patrol borough, plus Port Authority Police</td><td>Traffic deaths by precinct for 7 days, 28 days and the year to date, against the year before.</td></tr>
-    <tr><td><a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page">CompStat</a></td><td>78 precincts, 8 patrol boroughs</td><td>Crime complaints, shootings and hate crimes, with NYPD's two-year and long-range changes.</td></tr>
-    <tr><td><a href="https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">Quality of life</a></td><td>Citywide and 78 precincts</td><td>911 and 311 calls about noise, vehicles, such as blocked driveways and double parking, and disorderly behavior.</td></tr>
+    <tr><td><a href="trafficstat.html">TrafficStat</a></td><td>Citywide, 8 patrol boroughs, 78 precincts</td><td>Crashes, injuries and deaths by mode; DWI arrests; parking summonses for double parking, bus stops, bus lanes, crosswalks and bike lanes; moving summonses by vehicle type, including e-bikes, scooters and mopeds. Week to date, 28 days and year to date, each beside the same period a year earlier. <a href="https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-data-trafficstat.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="compstat.html">CompStat</a></td><td>78 precincts, 8 patrol boroughs</td><td>Crime complaints, shootings and hate crimes, with NYPD's two-year and long-range changes. <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="fatalities.html">Traffic fatalities</a></td><td>One per patrol borough, plus Port Authority Police</td><td>Traffic deaths by precinct for 7 days, 28 days and the year to date, against the year before. <a href="https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-fatalities.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="quality-of-life.html">Quality of life</a></td><td>Citywide and 78 precincts</td><td>911 and 311 calls about noise, vehicles, such as blocked driveways and double parking, and disorderly behavior. <a href="https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">NYPD's page</a>.</td></tr>
   </tbody>
 </table></div>
+
+<h2 id="series">Which weeks survive <a class="anchor" href="#series" aria-label="Link to this section">#</a></h2>
+<p>Each report has its own page, with a chart of the weeks we hold for every precinct and the same facts as a table.</p>
+<ul class="cards">
+  <li class="card" data-series="trafficstat">
+    <h3><a href="trafficstat.html">TrafficStat</a></h3>
+    <p>Crashes, injuries and deaths, DWI arrests, and parking and moving summonses.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of precinct-weeks held</div>
+    <a class="more" href="trafficstat.html">See which weeks survive<span class="visually-hidden"> for TrafficStat</span></a>
+  </li>
+  <li class="card" data-series="compstat">
+    <h3><a href="compstat.html">CompStat</a></h3>
+    <p>Crime complaints, shootings and hate crimes.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of precinct-weeks held</div>
+    <a class="more" href="compstat.html">See which weeks survive<span class="visually-hidden"> for CompStat</span></a>
+  </li>
+  <li class="card" data-series="fatalities">
+    <h3><a href="fatalities.html">Traffic fatalities</a></h3>
+    <p>Traffic deaths for 7 days, 28 days and the year to date.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of precinct-weeks held</div>
+    <a class="more" href="fatalities.html">See which weeks survive<span class="visually-hidden"> for Traffic fatalities</span></a>
+  </li>
+  <li class="card" data-series="qteam">
+    <h3><a href="quality-of-life.html">Quality of life</a></h3>
+    <p>911 and 311 calls about noise, vehicles and disorderly behavior.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of precinct-weeks held</div>
+    <a class="more" href="quality-of-life.html">See which weeks survive<span class="visually-hidden"> for Quality of life</span></a>
+  </li>
+</ul>
 
 <h2 id="how-it-works">How it works <a class="anchor" href="#how-it-works" aria-label="Link to this section">#</a></h2>
 <p>A scheduled job runs every Thursday and Saturday. NYPD replaces its files on Mondays and Tuesdays, so both runs land after a week's files are posted and before they are replaced. The job asks nyc.gov only for files that changed, one request at a time.</p>
 <p>Each original file is kept exactly as NYPD published it, with its checksum, in the repository's <a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">GitHub Releases</a>. The spreadsheets are then reshaped into CSV files with one number per row. If NYPD changes a file's layout, the job stops and says so rather than guess.</p>
-<p>For the weeks before the archive started, we downloaded every copy of these files that the Wayback Machine holds and checked each against the Wayback Machine's own checksum.</p>
+<p>For the weeks before the archive started, we download the TrafficStat and CompStat files that the Wayback Machine holds and check each against the Wayback Machine's own checksum. For CompStat we also brought in the PDFs Aaron Schumacher saved and the numbers Tim McDermott and Josh Greenman pulled from NYPD's reports; the <a href="compstat.html">CompStat page</a> says which came from where.</p>
 
 <h2 id="use-the-data">Use the data <a class="anchor" href="#use-the-data" aria-label="Link to this section">#</a></h2>
 <ul class="tight">
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data">Tidy CSV files</a>, one file per series per week. The <a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/README.md">README</a> explains every column.</li>
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">NYPD's original files</a>, zipped by week.</li>
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/captures.csv"><code>captures.csv</code></a>, the ledger: every file saved, where it came from, and its checksum.</li>
-  <li><a href="data/trafficstat-coverage.json">The data behind the chart above</a>.</li>
+  <li>The data behind the charts: <a href="data/trafficstat-coverage.json">TrafficStat</a>, <a href="data/compstat-coverage.json">CompStat</a>, <a href="data/fatalities-coverage.json">traffic fatalities</a>, <a href="data/qteam-coverage.json">quality of life</a>.</li>
 </ul>
 
 <div class="note"><b>Not an official record.</b> NYPD calls these figures preliminary and subject to change. BetaNYC reshaped the spreadsheets into one number per row and left out NYPD's "change" columns, which can be worked out from the two years beside them. The original files in the releases are NYPD's, unchanged. For official figures, go to <a href="https://www.nyc.gov/site/nypd/stats/stats.page">NYPD's statistics pages</a>.</div>
 
 </div>
 </main>
-
-<div class="tooltip" id="tip" hidden></div>
 
 <footer>
   <div class="wrap">
@@ -158,130 +131,25 @@
 </footer>
 
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
-  const D = await (await fetch("data/trafficstat-coverage.json")).json();
-  const STATE = { 3: "Spreadsheet, read into CSV", 2: "Spreadsheet in NYPD's 2024 layout, not read yet", 1: "PDF only", 0: "Nothing saved" };
+document.addEventListener("DOMContentLoaded", () => {
   const fmt = n => n.toLocaleString("en-US");
-  const dateLong = s => new Date(s + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
-  const W = D.weeks.length;
-  const count = (p, s) => [...p.states].filter(c => c === String(s)).length;
-
-  // Number tiles
-  const t = D.totals;
-  document.getElementById("t-weeks").textContent = fmt(W);
-  document.getElementById("t-any").textContent = fmt(t.read + t.older_layout + t.pdf_only);
-  document.getElementById("t-all").textContent = fmt(t.precinct_weeks);
-  document.getElementById("t-read").textContent = fmt(t.read);
-  document.getElementById("t-ia").textContent = fmt(t.files_from_internet_archive);
-  const built = document.getElementById("built");
-  built.dateTime = D.last_file_saved; built.textContent = new Date(D.last_file_saved).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" });
-
-  // Precinct picker, grouped by borough
-  const pick = document.getElementById("pick");
-  const groups = {};
-  for (const p of D.precincts) (groups[p.borough] ||= []).push(p);
-  for (const [b, ps] of Object.entries(groups)) {
-    const og = document.createElement("optgroup"); og.label = b;
-    for (const p of ps) og.append(new Option(p.name, p.id));
-    pick.append(og);
-  }
-
-  // Table
-  const tb = document.querySelector("#table tbody");
-  for (const p of D.precincts) {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td><a href="?precinct=${p.id}#coverage">${p.name}</a></td><td>${p.borough}</td>` +
-      [3, 2, 1, 0].map(s => `<td class="num">${count(p, s)}</td>`).join("");
-    tb.append(tr);
-  }
-
-  // Grid
-  const NS = "http://www.w3.org/2000/svg";
-  const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); if (parent) parent.append(e); return e; };
-  const CW = 6, CH = 10, GAP = 1, LABEL = 150, TOP = 34, BGAP = 18;
-  let y = TOP; const rowY = {};
-  for (const [b, ps] of Object.entries(groups)) { y += BGAP; for (const p of ps) { rowY[p.id] = y; y += CH + GAP; } }
-  const width = LABEL + W * CW + 4, height = y + 6;
-  const svg = el("svg", { class: "cov", width, height, viewBox: `0 0 ${width} ${height}` });
-  // Axis: a year label at each January (and at the start), a month initial every month
-  let lastYear = "";
-  D.weeks.forEach((w, i) => {
-    const prev = i ? D.weeks[i - 1].slice(5, 7) : "";
-    if (w.slice(5, 7) !== prev) {
-      const x = LABEL + i * CW;
-      const yr = w.slice(0, 4);
-      if (yr !== lastYear) { el("text", { x, y: 11, class: "axis", "font-weight": 700 }, svg).textContent = yr; lastYear = yr; }
-      el("text", { x, y: 25, class: "axis" }, svg).textContent = new Date(w + "T12:00:00").toLocaleDateString("en-US", { month: "narrow" });
-      el("line", { x1: x - 0.5, x2: x - 0.5, y1: 28, y2: height - 4, stroke: "#ffffff", "stroke-width": 1 }, null);
-    }
+  const month = s => new Date(s + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" });
+  let newest = "";
+  const cards = [...document.querySelectorAll(".card[data-series]")];
+  Promise.all(cards.map(async card => {
+    try {
+      const D = await (await fetch(`data/${card.dataset.series}-coverage.json`)).json();
+      const t = D.totals, held = t.read + t.older_layout + t.pdf_only;
+      card.querySelector('[data-k="weeks"]').textContent = fmt(D.weeks.length);
+      card.querySelector('[data-k="unit"]').textContent = D.weeks.length === 1 ? "week" : "weeks";
+      card.querySelector('[data-k="range"]').textContent = D.first_week === D.last_week ? month(D.first_week) : `${month(D.first_week)} to ${month(D.last_week)}`;
+      card.querySelector('[data-k="share"]').textContent = Math.round(100 * held / t.precinct_weeks) + "%";
+      if (D.last_file_saved > newest) newest = D.last_file_saved;
+    } catch (e) { /* the card keeps its dashes and its link */ }
+  })).then(() => {
+    const built = document.getElementById("built");
+    if (newest) { built.dateTime = newest; built.textContent = new Date(newest).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "America/New_York" }); }
   });
-  for (const [b, ps] of Object.entries(groups)) {
-    el("text", { x: 0, y: rowY[ps[0].id] - 5, class: "boro" }, svg).textContent = b;
-    for (const p of ps) {
-      const yy = rowY[p.id];
-      const lab = el("text", { x: LABEL - 8, y: yy + CH - 1, "text-anchor": "end", class: "row-label", "data-id": p.id }, svg);
-      lab.textContent = p.name.replace(" Precinct", "");
-      [...p.states].forEach((s, i) => {
-        el("rect", { class: `c s${s}`, x: LABEL + i * CW, y: yy, width: CW - GAP, height: CH, "data-id": p.id, "data-i": i }, svg);
-      });
-    }
-  }
-  const selRect = el("rect", { class: "sel", x: LABEL - 2, width: W * CW + 2, height: CH + 3, visibility: "hidden" }, svg);
-  document.getElementById("chart").append(svg);
-  document.getElementById("chart").setAttribute("aria-label",
-    `Grid of ${D.precincts.length} precincts by ${W} weeks, ${dateLong(D.first_week)} to ${dateLong(D.last_week)}. ` +
-    `${fmt(t.read)} precinct-weeks have a readable spreadsheet, ${fmt(t.older_layout)} an older-layout spreadsheet, ${fmt(t.pdf_only)} a PDF only, and ${fmt(t.none)} nothing.`);
-
-  // Tooltip
-  const tip = document.getElementById("tip");
-  const byId = Object.fromEntries(D.precincts.map(p => [p.id, p]));
-  svg.addEventListener("mousemove", e => {
-    const r = e.target.closest("rect.c");
-    if (!r) { tip.hidden = true; return; }
-    const p = byId[r.dataset.id], i = +r.dataset.i, s = p.states[i];
-    tip.innerHTML = `<b>${p.name}</b><br>Week ending ${dateLong(D.weeks[i])}${p.estimated[i] === "1" ? " (estimated)" : ""}<br>${STATE[s]}`;
-    tip.hidden = false;
-    tip.style.left = Math.min(e.clientX + 14, innerWidth - 270) + "px";
-    tip.style.top = (e.clientY + 14) + "px";
-  });
-  svg.addEventListener("mouseleave", () => { tip.hidden = true; });
-  svg.addEventListener("click", e => {
-    const target = e.target.closest("[data-id]");
-    if (target) select(target.dataset.id);
-  });
-
-  // Detail for one precinct
-  const detail = document.getElementById("detail");
-  function render(view) {
-    const p = byId[view.precinct];
-    pick.value = p ? p.id : "";
-    svg.querySelectorAll(".row-label.on").forEach(n => n.classList.remove("on"));
-    if (!p) { detail.hidden = true; selRect.setAttribute("visibility", "hidden"); return; }
-    svg.querySelector(`.row-label[data-id="${p.id}"]`).classList.add("on");
-    selRect.setAttribute("y", rowY[p.id] - 1.5); selRect.setAttribute("visibility", "visible");
-    const n3 = count(p, 3), n2 = count(p, 2), n1 = count(p, 1), n0 = count(p, 0);
-    const read = D.weeks.filter((w, i) => p.states[i] === "3");
-    const sw = Math.max(3, Math.floor(Math.min(detail.parentElement.clientWidth - 40, 900) / W));
-    let strip = `<svg class="strip" width="${W * sw}" height="26" role="img" aria-label="${p.name}, one bar per week">`;
-    [...p.states].forEach((s, i) => { strip += `<rect class="s${s}" x="${i * sw}" y="0" width="${sw - 1}" height="26"><title>Week ending ${dateLong(D.weeks[i])}: ${STATE[s]}</title></rect>`; });
-    strip += "</svg>";
-    detail.innerHTML = `<h4>${p.name}, ${p.borough}</h4>
-      <p>Of ${W} weeks from ${dateLong(D.first_week)} to ${dateLong(D.last_week)}, we can read <b>${n3}</b>${n2 ? `, have ${n2} more in NYPD's 2024 layout` : ""}${n1 ? `, and have ${n1} only as PDFs` : ""}. <b>${n0}</b> weeks are gone.</p>
-      ${strip}
-      ${read.length ? `<p class="weeks-read">Weeks in CSV: ${read.map(w => `<a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/data/trafficstat/${w}.csv">${w}</a>`).join(", ")}</p>` : ""}
-      <ul>
-        ${p.nypd_page ? `<li><a href="${p.nypd_page}">The precinct's page on nyc.gov</a>, which links this week's file</li>` : ""}
-        ${p.nypd_file ? `<li><a href="${p.nypd_file}">This week's TrafficStat spreadsheet</a>, from NYPD</li>` : ""}
-      </ul>`;
-    detail.hidden = false;
-  }
-  function select(id) { Share.write({ precinct: id }); render(Share.read()); }
-  pick.addEventListener("change", () => select(pick.value));
-
-  render(Share.read({ precinct: "" }));
-  Share.onChange(render);
-  Share.copyButtons();
-  if (location.hash === "#coverage") document.getElementById("coverage").scrollIntoView();
 });
 </script>
 </body>

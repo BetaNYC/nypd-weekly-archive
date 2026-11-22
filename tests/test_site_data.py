@@ -4,10 +4,11 @@ from __future__ import annotations
 
 import csv
 import datetime as dt
+import gzip
 import json
 from pathlib import Path
 
-from nypd_weekly_archive.site_data import OUT, build_site_data, estimated_week, ordinal
+from nypd_weekly_archive.site_data import OUT, build_site_data, estimated_week, ordinal, out_path
 
 LEDGER = ["fetched_at", "series", "url", "path", "sha256", "bytes", "last_modified", "week_end", "date_source",
           "source", "wayback_timestamp", "release_tag", "release_asset"]
@@ -71,7 +72,7 @@ def test_best_copy_wins_and_weeks_fill_gaps(tmp_path: Path) -> None:
         row("raw/trafficstat/2025-09-14/ts-en-us-001.pdf", "2025-09-14", "sibling_xlsx", source="nyc.gov"),
     ], read={"2025-09-14": ["034"]})
 
-    out = build_site_data(tmp_path)
+    out = build_site_data(tmp_path)["trafficstat"]
 
     assert out["weeks"] == ["2025-08-31", "2025-09-07", "2025-09-14"]
     by = {p["id"]: p for p in out["precincts"]}
@@ -95,3 +96,54 @@ def test_output_is_stable(tmp_path: Path) -> None:
     first = (tmp_path / OUT).read_bytes()
     build_site_data(tmp_path)
     assert (tmp_path / OUT).read_bytes() == first
+
+
+def test_estimate_check_counts_files_with_both_dates(tmp_path: Path) -> None:
+    make_repo(tmp_path, [
+        row("raw/trafficstat/2025-09-14/ts-en-us-034.xlsx", "2025-09-14", "xlsx", ts="20250916100000"),  # right
+        row("raw/trafficstat/2025-09-07/ts-en-us-034.xlsx", "2025-09-07", "xlsx", ts="20250916100000"),  # wrong
+        row("raw/trafficstat/2025-09-16/ts-en-us-001.pdf", "2025-09-16", "wayback_capture_date", ts="20250916100000"),
+    ], read={})
+    out = build_site_data(tmp_path)["trafficstat"]
+    assert out["estimate_check"] == {"files_with_both_dates": 2, "estimate_right": 1}
+
+
+def test_compstat_counts_other_archives_and_cover_dated_pdfs(tmp_path: Path) -> None:
+    make_repo(tmp_path, [
+        row("raw/trafficstat/2025-09-14/ts-en-us-034.xlsx", "2025-09-14", "xlsx"),
+        {**row("raw/compstat/2016-01-10/cs001pct.pdf", "2016-01-10", "pdf", source="github:ajschumacher/nypd"),
+         "series": "compstat"},
+    ], read={"2025-09-14": ["034"]})
+    other = tmp_path / "data" / "compstat_mcdermott"
+    other.mkdir(parents=True)
+    with gzip.open(other / "2016.csv.gz", "wt", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["series", "precinct", "week_end", "value"])
+        w.writerow(["compstat", "1", "2016-01-03", "5"])
+        w.writerow(["compstat", "", "2016-01-03", "9"])  # citywide row: not a precinct
+    out = build_site_data(tmp_path)
+    cs = out["compstat"]
+    assert cs["weeks"] == ["2016-01-03", "2016-01-10"]
+    assert [p["id"] for p in cs["precincts"]] == ["001"]
+    assert cs["precincts"][0]["states"] == "31"
+    assert cs["states"]["3"] == "Numbers in CSV"
+    assert cs["totals"]["read_from_other_archives_only"] == 1
+    assert cs["totals"]["files_from_other_archives"] == {"github:ajschumacher/nypd": 1}
+    assert (tmp_path / out_path("compstat")).exists()
+    assert set(out) == {"trafficstat", "compstat"}  # no fatalities or qteam data: no file
+
+
+def test_fatalities_are_charted_from_precinct_rows(tmp_path: Path) -> None:
+    make_repo(tmp_path, [
+        {**row("raw/fatalities/2026-11-15/traffic-fatalities-pbmn.xlsx", "2026-11-15", "xlsx", source="nyc.gov"),
+         "series": "fatalities"},
+    ], read={})
+    d = tmp_path / "data" / "fatalities"
+    d.mkdir()
+    with (d / "2026-11-15.csv").open("w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["series", "precinct", "week_end", "value"])
+        w.writerows([["fatalities", "20", "2026-11-15", "0"], ["fatalities", "", "2026-11-15", "3"]])
+    fa = build_site_data(tmp_path)["fatalities"]
+    assert [(p["id"], p["states"]) for p in fa["precincts"]] == [("020", "3")]
+    assert fa["totals"]["files_from_nyc_gov"] == 1

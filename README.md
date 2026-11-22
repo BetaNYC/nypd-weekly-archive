@@ -4,7 +4,7 @@ NYPD posts four sets of weekly statistics on nyc.gov as Excel and PDF files. Eac
 
 This repository saves a copy every week and turns the spreadsheets into tidy CSV files.
 
-**Website: <https://betanyc.github.io/nypd-weekly-archive/>** explains the project and charts which weeks of each precinct's TrafficStat file survive. Link to one precinct with `?precinct=034#coverage`.
+**Website: <https://betanyc.github.io/nypd-weekly-archive/>** explains the project, and has one page per series (TrafficStat, CompStat, traffic fatalities, quality of life) charting which weeks of each precinct's file survive. Link to one precinct with, for example, `compstat.html?precinct=034#coverage`. Older links (`?precinct=034#coverage` on the home page) forward to the TrafficStat page.
 
 ## What it captures
 
@@ -27,7 +27,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
 - `data/compstat_mcdermott/<year>.csv.gz` holds CompStat numbers from January 2015 to February 2026, from weekly CSVs made by Tim McDermott, a BetaNYC volunteer. `data/compstat_greenman/<year>.csv.gz` holds CompStat numbers from March 2026 on, parsed by Josh Greenman's [nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper), used with his permission. Both are kept apart from `data/compstat/` because this repo did not read them from NYPD's files. Each is one gzip-compressed CSV per year, in the same columns as `data/`, so that millions of rows fit in a few megabytes; read one with `pandas.read_csv("2020.csv.gz")` or `gzip -dc 2020.csv.gz`. See "CompStat backfill" below.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
-- `docs/` is the GitHub Pages site (see "Website" below). `docs/data/trafficstat-coverage.json` is rebuilt from `captures.csv` and `data/` on every scheduled run.
+- `docs/` is the GitHub Pages site (see "Website" below). `docs/data/<series>-coverage.json` (one per series) is rebuilt from `captures.csv` and `data/` on every scheduled run.
 - `data/stale_files.csv` lists files whose newest week is at least 7 days behind the newest week in their series. nyc.gov can keep serving an old file with a normal response (the Bronx patrol borough file from before the 2026 north/south split is one), so the week printed inside the file is what counts, not the server's answer.
 
 ### Columns in `data/`
@@ -149,9 +149,11 @@ The Internet Archive also holds NYPD's own CompStat files from May 2017 on, abou
 
 ## Website
 
-`docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css`, `docs/assets/nav.js` (the phone menu) and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites.
+`docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css`, `docs/assets/nav.js` (the phone menu) and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites. This site's own files are `docs/assets/archive.css` and `docs/assets/coverage.js`, the chart used by the four series pages (`trafficstat.html`, `compstat.html`, `fatalities.html`, `quality-of-life.html`). Each page shows the same counts as a table under the chart.
 
-The chart reads `docs/data/trafficstat-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: a spreadsheet read into `data/`, a spreadsheet in the 2024 layout the parser does not read yet, a PDF only, or nothing. A PDF from the Internet Archive has only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. The archive's spreadsheets, which carry both dates, were nearly all saved 2 to 8 days after their report week ended. Estimated weeks are flagged in the file and in the chart's tooltip.
+Each chart reads `docs/data/<series>-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: numbers in CSV, a spreadsheet in an older layout the parser does not read yet, a PDF only, or nothing. For CompStat, "numbers in CSV" also counts `data/compstat_mcdermott/` and `data/compstat_greenman/`, and the file says how many precinct-weeks come only from those. Traffic fatality files cover a patrol borough each, so that chart is built from the precinct rows in `data/fatalities/`.
+
+A file from the Internet Archive that cannot be dated by its contents has only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. Each coverage file's `estimate_check` tests that rule on the files that carry both dates; the series page prints the result (for TrafficStat on 2026-11-22: right for 450 of 571 spreadsheets). Estimated weeks are flagged in the file and in the chart's tooltip.
 
 A chosen precinct is kept in the page address (`?precinct=034`), and the **Copy link** button copies it, so any view can be shared. Social sites show `docs/assets/og-image.png`, a 1200 x 630 screenshot of `docs/assets/social-card.html`; retake it when the chart changes a lot.
 
