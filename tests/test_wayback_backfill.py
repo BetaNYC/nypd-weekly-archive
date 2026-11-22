@@ -94,3 +94,27 @@ def test_ledger_gains_columns_without_losing_rows(tmp_path: Path) -> None:
     rows = read_ledger(path)
     assert path.read_text().splitlines()[0] == ",".join(LEDGER_FIELDS)
     assert [r["source"] for r in rows] == ["nyc.gov", "wayback"]
+
+
+def test_compstat_pdfs_are_dated_by_their_cover(tmp_path: Path) -> None:
+    from .test_github_backfill import cover
+
+    repo = make_repo(tmp_path)
+    orig = "https://www.nyc.gov/assets/nypd/downloads/pdf/crime_statistics/cs-en-us-001pct.pdf"
+    body = cover("11/9/2026", "11/15/2026")
+
+    def handler(req: httpx.Request) -> httpx.Response:
+        url = str(req.url)
+        if url.startswith("https://web.archive.org/cdx/"):
+            if "/excel/" in parse_qs(urlsplit(url).query)["url"][0]:
+                return httpx.Response(200, json=[])
+            return httpx.Response(200, json=[FIELDS, ["20261120000000", orig, "application/pdf", "200",
+                                                       wayback_digest(body), "1"]])
+        if "20261120000000id_/" in url:
+            return httpx.Response(200, content=body)
+        return httpx.Response(404)
+
+    assert backfill_wayback(make_fetcher(handler), repo, ["compstat"]) == 0
+    [row] = read_ledger(repo / "captures.csv")
+    assert (row["week_end"], row["date_source"]) == ("2026-11-15", "pdf")
+    assert (repo / "raw/compstat/2026-11-15/cs-en-us-001pct.pdf").exists()

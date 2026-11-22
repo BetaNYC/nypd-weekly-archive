@@ -34,6 +34,7 @@ from urllib.parse import urlencode
 
 from .capture import _stem, append_ledger, read_ledger, safe_name, sniff
 from .discover import SERIES
+from .github_backfill import cover_week
 from .log import log
 from .net import Fetcher, FetchError, utc_now_iso
 from .parse import LayoutError, week_end
@@ -146,9 +147,12 @@ def backfill_wayback(fetcher: Fetcher, repo: Path, series_names: list[str], limi
                 log("layout_error", url=row["original"], timestamp=row["timestamp"], error=str(exc))
                 wk, src = captured_day, "fetch_date_layout_error"
                 layout_errors += 1
+        elif s == "compstat" and (week := cover_week(body)):
+            # CompStat PDFs print their week on the cover.
+            wk, src = week[1].isoformat(), "pdf"
         else:
-            # A PDF is not read. Archived PDFs and spreadsheets were captured at
-            # different times, so the capture date is all we know; flagged.
+            # Other PDFs are not read. Archived PDFs and spreadsheets were captured
+            # at different times, so the capture date is all we know; flagged.
             wk, src = captured_day, "wayback_capture_date"
         dest = raw / s / wk / name
         if dest.exists():

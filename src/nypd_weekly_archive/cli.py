@@ -2,7 +2,9 @@
 
 Weekly: discover, capture, build, or run (all three); redate after a parser fix.
 package zips originals not yet released into dist/ for GitHub Releases.
-One-off backfills: backfill-dashboard, backfill-wayback.
+One-off backfills: backfill-dashboard, backfill-wayback, backfill-github.
+import-greenman converts Josh Greenman's parsed CompStat weeks into data/compstat_greenman/.
+import-mcdermott converts Tim McDermott's weekly CompStat CSVs into data/compstat_mcdermott/.
 site rewrites docs/data/ for the GitHub Pages site from captures.csv and data/.
 """
 
@@ -34,7 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "command",
         choices=["discover", "capture", "build", "run", "redate", "package", "site",
-                 "backfill-dashboard", "backfill-wayback"],
+                 "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
     ap.add_argument("--series", nargs="+", choices=sorted(SERIES), default=sorted(SERIES))
@@ -44,7 +46,10 @@ def main(argv: list[str] | None = None) -> int:
                     help="also submit each newly captured file URL to the Internet Archive (off by default)")
     ap.add_argument("--min-interval", type=float, default=1.0, help="seconds between requests (>= 1)")
     ap.add_argument("--geos", nargs="+", help="backfill-dashboard: only these geographies (e.g. 075 114)")
-    ap.add_argument("--limit", type=int, help="backfill-wayback: download at most this many captures")
+    ap.add_argument("--limit", type=int, help="backfill-wayback/-github: take at most this many files")
+    ap.add_argument("--source", action="append", default=[], metavar="LABEL=FOLDER",
+                    help="import-mcdermott: a folder of Tim's vol*.csv files; repeat, best first")
+    ap.add_argument("--clone", type=Path, help="backfill-github, import-greenman: local clone of the source repo")
     args = ap.parse_args(argv)
 
     root = args.root.resolve()
@@ -98,6 +103,51 @@ def main(argv: list[str] | None = None) -> int:
             status = 1
         log("finish", status=status)
         return status
+
+    if args.command == "backfill-github":
+        from .github_backfill import SourceError, backfill_github
+
+        if not args.clone:
+            print("error: backfill-github needs --clone <path>", file=sys.stderr)
+            return 2
+        try:
+            status = backfill_github(root, args.clone.resolve(), limit=args.limit)
+        except SourceError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 2
+        if build(root, p["ledger"], p["data"]):
+            status = 1
+        log("finish", status=status)
+        return status
+
+    if args.command == "import-mcdermott":
+        from .mcdermott import import_mcdermott
+
+        pairs = [x.split("=", 1) for x in args.source]
+        if not pairs or any(len(x) != 2 or not Path(x[1]).is_dir() for x in pairs):
+            print("error: import-mcdermott needs --source LABEL=FOLDER (an existing folder), best first",
+                  file=sys.stderr)
+            return 2
+        stats = import_mcdermott(root, [(label, Path(folder).resolve()) for label, folder in pairs])
+        log("finish", status=0, weeks=stats["weeks"])
+        return 0
+
+    if args.command == "import-greenman":
+        from .greenman import GreenmanError, compare, import_greenman
+
+        if not args.clone:
+            print("error: import-greenman needs --clone <path>", file=sys.stderr)
+            return 2
+        try:
+            import_greenman(root, args.clone.resolve())
+        except GreenmanError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        diffs = compare(root)
+        for d in diffs:
+            log("greenman_differs", **d)
+        log("finish", status=1 if diffs else 0, differences=len(diffs))
+        return 1 if diffs else 0
 
     fetcher = Fetcher(min_interval=args.min_interval) if args.command in ("discover", "capture", "run") else None
 
