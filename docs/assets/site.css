@@ -26,6 +26,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { margin: 0; font-family: var(--font-body); font-size: 17px; line-height: 1.65; color: var(--ink); background: var(--white); }
 a { color: var(--blue); }
 a:focus-visible, button:focus-visible, select:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
@@ -46,6 +47,20 @@ img, svg { max-width: 100%; }
 .site-bar nav { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-left: auto; font-size: .95rem; }
 .site-bar nav a { font-weight: 600; text-decoration: none; }
 .site-bar nav a:hover, .site-bar nav a[aria-current=page] { text-decoration: underline; }
+
+/* Menu button (burger) on the right, below 782px (the brand guide's tablet
+   breakpoint). nav.js shows it and adds .js to the bar; without the script the
+   button stays hidden and the links wrap under the name. */
+.menu-btn { display: none; margin-left: auto; align-items: center; gap: .5rem; min-height: 44px; padding: 0 .85rem; background: transparent; color: var(--white); border: 1px solid var(--white); border-radius: 0; font: 700 15px var(--font-head); cursor: pointer; }
+.menu-btn:hover { background: #1c4785; }
+.menu-btn svg { width: 20px; height: 20px; }
+@media (max-width: 781px) {
+  .site-bar.js .home { flex: 1 1 10rem; min-width: 0; }
+  .site-bar.js .menu-btn { display: inline-flex; }
+  .site-bar.js nav { display: none; }
+  .site-bar.js nav.open { display: flex; flex-direction: column; flex-basis: 100%; gap: 0; margin: .4rem 0 0; padding: .25rem 0 .5rem; border-top: 1px solid var(--blue-2); }
+  .site-bar.js nav a { display: flex; align-items: center; min-height: 44px; }
+}
 
 /* Opening section: what this is and why it exists, before anything else. */
 .hero { background: var(--bg-blue); border-bottom: 1px solid var(--line); padding: 48px 0 36px; }
@@ -120,6 +135,6 @@ footer p { margin: 0 0 10px; }
 }
 
 @media print {
-  .site-bar, .copy-link, .figure-controls select { display: none; }
+  .site-bar, .menu-btn, .copy-link, .figure-controls select { display: none; }
   .hero, footer { background: none; }
 }

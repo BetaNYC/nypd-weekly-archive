@@ -149,7 +149,7 @@ The Internet Archive also holds NYPD's own CompStat files from May 2017 on, abou
 
 ## Website
 
-`docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css` and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites.
+`docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css`, `docs/assets/nav.js` (the phone menu) and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites.
 
 The chart reads `docs/data/trafficstat-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: a spreadsheet read into `data/`, a spreadsheet in the 2024 layout the parser does not read yet, a PDF only, or nothing. A PDF from the Internet Archive has only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. The archive's spreadsheets, which carry both dates, were nearly all saved 2 to 8 days after their report week ended. Estimated weeks are flagged in the file and in the chart's tooltip.
 

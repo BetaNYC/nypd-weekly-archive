@@ -19,6 +19,7 @@
 <meta property="og:image:alt" content="A grid of NYC's 78 police precincts by week since August 2024. Most cells are empty: weeks of NYPD TrafficStat files that no one saved.">
 <meta name="twitter:card" content="summary_large_image">
 <script src="assets/share.js" defer></script>
+<script src="assets/nav.js" defer></script>
 <style>
   /* Coverage chart */
   .cov { display: block; max-width: none; font-family: var(--font-body); }
@@ -46,19 +47,22 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="site-bar">
+<header class="site-bar">
   <div class="wrap">
     <a class="home" href="./"><img src="assets/betanyc-wordmark-white.svg" alt="BetaNYC" width="78" height="26"><span>NYPD Weekly Archive</span></a>
-    <nav aria-label="Site">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
+    <nav id="site-menu" aria-label="Site">
       <a href="#coverage">Coverage</a>
       <a href="#what-we-save">What we save</a>
       <a href="#use-the-data">Use the data</a>
       <a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a>
     </nav>
   </div>
-</div>
+</header>
 
-<header class="hero">
+<main id="main">
+
+<div class="hero">
   <div class="wrap">
     <span class="tag">BetaNYC · open data</span>
     <h1>NYPD's weekly precinct numbers, saved before they are replaced</h1>
@@ -66,12 +70,11 @@
     <p class="lede">We save a copy of every file each week, turn the spreadsheets into tidy CSV files, and publish both here for anyone to use.</p>
     <p class="hero-meta">Data from the <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>. Last file saved <time id="built"></time>.</p>
   </div>
-</header>
+</div>
 
-<main id="main">
 <div class="wrap">
 
-<div class="stats" aria-label="Key numbers">
+<div class="stats" role="group" aria-label="Key numbers">
   <div class="stat"><div class="n" id="t-weeks">–</div><div class="l">weeks since NYPD began posting precinct TrafficStat files, in August 2024</div></div>
   <div class="stat"><div class="n" id="t-any">–</div><div class="l">precinct-weeks of TrafficStat we could recover, out of <span id="t-all">–</span></div></div>
   <div class="stat"><div class="n" id="t-read">–</div><div class="l">precinct-weeks with a spreadsheet, read into CSV</div></div>
@@ -91,7 +94,7 @@
       <button class="copy-link" type="button" data-anchor="coverage">Copy link</button>
     </div>
   </div>
-  <div class="figure-body">
+  <div class="figure-body" tabindex="0" role="group" aria-label="Chart of TrafficStat files saved, by precinct and week. Scrolls sideways.">
     <ul class="legend" aria-label="Legend">
       <li><span class="sw s3"></span>Spreadsheet, read into CSV</li>
       <li><span class="sw s2"></span>Spreadsheet in NYPD's 2024 layout, saved, not read yet</li>
