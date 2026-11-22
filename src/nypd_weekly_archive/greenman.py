@@ -5,8 +5,9 @@ numbers as data/archive/<week end>.json (from 2026-03-01), not the
 spreadsheets themselves. Josh Greenman gave BetaNYC permission to use this
 data with a link to his repo (relayed by Noel Hidalgo, 2026-11-22).
 
-His numbers are kept apart from ours: data/compstat_greenman/<week end>.csv,
-same columns as data/compstat/. source_file is the file's path in his repo
+His numbers are kept apart from ours: data/compstat_greenman/<year>.csv.gz,
+one gzip-compressed CSV per year (see yearfiles.py), same columns as
+data/compstat/. source_file is the file's path in his repo
 (greenman/data/archive/<week>.json); README.md in that folder names the
 commit, so every row traces to one file at one commit. Nothing here is read
 from NYPD's own files.
@@ -35,10 +36,12 @@ import csv
 import json
 import re
 import subprocess
+import tempfile
 from pathlib import Path
 
 from .log import log
 from .parse import FIELDS, _mdy
+from .yearfiles import read_year_files, write_year_files
 
 REPO = "joshgreenman1973/nypd-compstat-scraper"
 OUT = Path("data") / "compstat_greenman"
@@ -50,9 +53,12 @@ PCT = re.compile(r"(\d+)(?:st|nd|rd|th) Precinct")
 
 README = """# CompStat weeks from Josh Greenman's scraper
 
-These {weeks} weekly files ({first} to {last}) are Josh Greenman's parsed
+These {weeks} weeks ({first} to {last}) are Josh Greenman's parsed
 CompStat numbers, from [{repo}](https://github.com/{repo}),
 used with his permission. Thank you, Josh.
+
+- One gzip-compressed CSV per year, `<year>.csv.gz`, weeks in order. Read it
+  with `pandas.read_csv("2026.csv.gz")` or `gzip -dc 2026.csv.gz`.
 
 - Taken from commit [`{commit}`](https://github.com/{repo}/tree/{commit}).
 - `source_file` on each row is the file's path in that repo, under `greenman/`:
@@ -136,48 +142,47 @@ def import_greenman(repo: Path, clone: Path) -> int:
         raise GreenmanError(f"{clone}: origin {origin!r} is not {REPO}")
     out_dir = repo / OUT
     out_dir.mkdir(parents=True, exist_ok=True)
-    weeks = 0
     files = sorted((clone / "data" / "archive").glob("*.json"))
-    for f in files:
-        rows, stale = rows_for_week(json.loads(f.read_text()), f"greenman/data/archive/{f.name}")
-        if stale:
-            log("greenman_stale_dropped", file=f.name, geographies=stale)
-        wk = rows[0]["week_end"]
-        if wk != f.stem:
-            raise GreenmanError(f"{f.name}: citywide week ends {wk}, not {f.stem}")
-        tmp = out_dir / f"{wk}.csv.tmp"
-        with tmp.open("w", newline="") as fh:
-            w = csv.DictWriter(fh, fieldnames=FIELDS, lineterminator="\n")
-            w.writeheader()
-            w.writerows(rows)
-        tmp.replace(out_dir / f"{wk}.csv")
-        weeks += 1
-    (out_dir / "README.md").write_text(README.format(repo=REPO, commit=commit, weeks=weeks,
+    with tempfile.TemporaryDirectory(dir=out_dir) as tmp_dir:
+        weeks: dict[str, Path] = {}
+        for f in files:
+            rows, stale = rows_for_week(json.loads(f.read_text()), f"greenman/data/archive/{f.name}")
+            if stale:
+                log("greenman_stale_dropped", file=f.name, geographies=stale)
+            wk = str(rows[0]["week_end"])
+            if wk != f.stem:
+                raise GreenmanError(f"{f.name}: citywide week ends {wk}, not {f.stem}")
+            weeks[wk] = Path(tmp_dir) / f"{wk}.csv"
+            with weeks[wk].open("w", newline="") as fh:
+                w = csv.DictWriter(fh, fieldnames=FIELDS, lineterminator="\n")
+                w.writeheader()
+                w.writerows(rows)
+        years = write_year_files(out_dir, weeks)
+    (out_dir / "README.md").write_text(README.format(repo=REPO, commit=commit, weeks=len(weeks),
                                                      first=files[0].stem, last=files[-1].stem))
-    log("greenman_done", commit=commit, weeks=weeks, folder=str(OUT))
+    log("greenman_done", commit=commit, weeks=len(weeks), years=years, folder=str(OUT))
     return 0
 
 
 def compare(repo: Path) -> list[dict[str, str]]:
     """Rows where Josh's numbers and ours differ, for weeks both have."""
     diffs: list[dict[str, str]] = []
-    for g in sorted((repo / OUT).glob("*.csv")):
-        ours = repo / "data" / "compstat" / g.name
+
+    def key(r: dict[str, str]) -> tuple[str, ...]:
+        return (r["geography"], r["section"], r["measure"], r["period"], r["year"])
+
+    for wk, rows in sorted(read_year_files(repo / OUT).items()):
+        ours = repo / "data" / "compstat" / f"{wk}.csv"
         if not ours.exists():
             continue
-
-        def key(r: dict[str, str]) -> tuple[str, ...]:
-            return (r["geography"], r["section"], r["measure"], r["period"], r["year"])
-
         with ours.open(newline="") as fh:
             a = {key(r): r["value"] for r in csv.DictReader(fh)}
-        with g.open(newline="") as fh:
-            b = {key(r): r["value"] for r in csv.DictReader(fh)}
+        b = {key(r): r["value"] for r in rows}
         for k in sorted(a.keys() & b.keys()):
             x, y = a[k], b[k]
             same = x == y or (x and y and abs(float(x) - float(y)) < 1e-6)
             if not same:
-                diffs.append({"week": g.stem, "key": "|".join(k), "ours": x, "greenman": y})
-        log("greenman_compared", week=g.stem, both=len(a.keys() & b.keys()), only_ours=len(a.keys() - b.keys()),
-            only_greenman=len(b.keys() - a.keys()), differ=sum(d["week"] == g.stem for d in diffs))
+                diffs.append({"week": wk, "key": "|".join(k), "ours": x, "greenman": y})
+        log("greenman_compared", week=wk, both=len(a.keys() & b.keys()), only_ours=len(a.keys() - b.keys()),
+            only_greenman=len(b.keys() - a.keys()), differ=sum(d["week"] == wk for d in diffs))
     return diffs

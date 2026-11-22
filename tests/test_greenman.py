@@ -65,7 +65,10 @@ def test_import_writes_weeks_readme_and_compares(tmp_path: Path) -> None:
 
     assert import_greenman(repo, clone) == 0
 
-    assert (repo / OUT / "2026-11-15.csv").exists()
+    assert sorted(p.name for p in (repo / OUT).iterdir()) == ["2026.csv.gz", "README.md"]
+    first = (repo / OUT / "2026.csv.gz").read_bytes()
+    assert import_greenman(repo, clone) == 0
+    assert (repo / OUT / "2026.csv.gz").read_bytes() == first  # same rows, same bytes
     readme = (repo / OUT / "README.md").read_text()
     assert "https://github.com/joshgreenman1973/nypd-compstat-scraper" in readme and "permission" in readme
     assert compare(repo) == [{"week": "2026-11-15", "key": "1st Precinct|Crime Complaints|Robbery|ytd|2025",
