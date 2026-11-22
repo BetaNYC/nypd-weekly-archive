@@ -30,6 +30,15 @@
         btn.focus();
       }
     });
+    // Close when focus moves out of the bar (Tab past the last link, or a
+    // click elsewhere), and when the window widens past the phone layout.
+    bar.addEventListener("focusout", function (e) {
+      if (e.relatedTarget && !bar.contains(e.relatedTarget)) set(false);
+    });
+    var wide = window.matchMedia && window.matchMedia("(min-width: 782px)");
+    if (wide && wide.addEventListener) {
+      wide.addEventListener("change", function (e) { if (e.matches) set(false); });
+    }
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

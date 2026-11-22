@@ -31,7 +31,7 @@
   .cov .row-label { cursor: pointer; }
   .cov .row-label:hover, .cov .row-label.on { font-weight: 700; fill: var(--blue); }
   .cov rect.c { cursor: pointer; }
-  .cov .sel { fill: none; stroke: var(--focus); stroke-width: 2; }
+  .cov .sel { fill: none; stroke: #f59e0b; stroke-width: 2; } /* orange stands out from the blue squares */
   .s3 { background: #0d366b; fill: #0d366b; }
   .s2 { background: #256abf; fill: #256abf; }
   .s1 { background: #6da7ec; fill: #6da7ec; }
@@ -52,10 +52,12 @@
     <a class="home" href="./"><img src="assets/betanyc-wordmark-white.svg" alt="BetaNYC" width="78" height="26"><span>NYPD Weekly Archive</span></a>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
     <nav id="site-menu" aria-label="Site">
-      <a href="#coverage">Coverage</a>
-      <a href="#what-we-save">What we save</a>
-      <a href="#use-the-data">Use the data</a>
-      <a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a>
+      <ul>
+        <li><a href="#coverage">Coverage</a></li>
+        <li><a href="#what-we-save">What we save</a></li>
+        <li><a href="#use-the-data">Use the data</a></li>
+        <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a></li>
+      </ul>
     </nav>
   </div>
 </header>
