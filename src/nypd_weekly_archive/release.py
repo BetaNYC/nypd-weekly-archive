@@ -9,6 +9,8 @@ Which release (tag):
   week-2026-11-15. A run that catches two weeks (Q-Team lags) fills two.
 - nyc.gov captures that could not be dated: fetched-<download date>.
 - Internet Archive copies: backfill-wayback-<download date>.
+- Copies from another GitHub archive (github_backfill.py):
+  backfill-github-<import date>, one zip per source and year.
 - Dashboard responses (raw/trafficstat_dashboard/<date>/):
   backfill-dashboard-<date>. CDX listings (raw/wayback_cdx/<date>/):
   backfill-wayback-<date>.
@@ -56,6 +58,10 @@ def tag_for(row: dict[str, str]) -> tuple[str, str]:
     day = row["fetched_at"][:10]
     if row.get("source") == "wayback":
         return f"backfill-wayback-{day}", "wayback"
+    if (src := row.get("source", "")).startswith("github:"):
+        # One zip per year, so no asset nears GitHub's 2 GiB limit.
+        owner = src.removeprefix("github:").split("/")[0]
+        return f"backfill-github-{day}", f"{owner}-{row['week_end'][:4]}"
     if row["date_source"] in ("xlsx", "sibling_xlsx"):
         return f"week-{row['week_end']}", row["week_end"]
     return f"fetched-{day}", f"fetched-{day}"

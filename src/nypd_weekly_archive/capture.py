@@ -42,6 +42,9 @@ LEDGER_FIELDS = [
     # each file goes into a zip attached to a GitHub Release (see release.py).
     "release_tag",
     "release_asset",
+    # Added with the GitHub backfill: where a copy from someone else's archive
+    # came from (repo, commit and path), so it can be checked against theirs.
+    "source_ref",
 ]
 
 
@@ -73,11 +76,13 @@ def read_ledger(path: Path) -> list[dict[str, str]]:
         r["wayback_timestamp"] = r.get("wayback_timestamp") or ""
         r["release_tag"] = r.get("release_tag") or ""
         r["release_asset"] = r.get("release_asset") or ""
+        r["source_ref"] = r.get("source_ref") or ""
     return rows
 
 
 def append_ledger(path: Path, row: dict[str, str]) -> None:
-    row = {"source": "nyc.gov", "wayback_timestamp": "", "release_tag": "", "release_asset": "", **row}
+    row = {"source": "nyc.gov", "wayback_timestamp": "", "release_tag": "", "release_asset": "", "source_ref": "",
+           **row}
     new = not path.exists()
     if not new:
         with path.open(newline="") as f:
