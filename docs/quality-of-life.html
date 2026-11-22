@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality of life: what we saved, precinct by precinct | NYPD Weekly Archive</title>
+<meta name="description" content="NYPD's weekly quality-of-life report for each precinct, saved before it is replaced. See what we saved for your precinct.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/archive.css">
+<link rel="canonical" href="https://betanyc.github.io/nypd-weekly-archive/quality-of-life.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BetaNYC">
+<meta property="og:title" content="Quality of life: what we saved, precinct by precinct">
+<meta property="og:description" content="NYPD's weekly quality-of-life report for each precinct, saved before it is replaced. See what we saved for your precinct.">
+<meta property="og:url" content="https://betanyc.github.io/nypd-weekly-archive/quality-of-life.html">
+<meta name="twitter:card" content="summary">
+<script>window.SERIES = {"key": "qteam", "name": "Quality of life", "folders": [{"text": "data/qteam/", "href": "https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data/qteam"}], "nypdFile": "This week's quality-of-life spreadsheet"};</script>
+<script src="assets/share.js" defer></script>
+<script src="assets/nav.js" defer></script>
+<script src="assets/coverage.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-bar">
+  <div class="wrap">
+    <a class="home" href="./"><img src="assets/betanyc-wordmark-white.svg" alt="BetaNYC" width="78" height="26"><span>NYPD Weekly Archive</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
+    <nav id="site-menu" aria-label="Site">
+      <ul>
+        <li><a href="trafficstat.html">TrafficStat</a></li>
+        <li><a href="compstat.html">CompStat</a></li>
+        <li><a href="fatalities.html">Traffic fatalities</a></li>
+        <li><a href="quality-of-life.html" aria-current="page">Quality of life</a></li>
+        <li><a href="./#use-the-data">Use the data</a></li>
+        <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Quality of life: what we saved, precinct by precinct</h1>
+    <p class="lede">NYPD's quality-of-life report (its Q-Team files) counts 911 and 311 calls for service in each precinct: noise, vehicle-related calls such as illegal parking, blocked driveways and double parking, and disorderly behavior. It runs a few weeks behind NYPD's other weekly files, and each week's file replaces the last.</p>
+    <p class="lede">This archive began saving it in November 2026.</p>
+    <p class="hero-meta">Data from the <a href="https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">New York City Police Department</a>. Last file saved <time id="built"></time>.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="stats" role="group" aria-label="Key numbers">
+  <div class="stat"><div class="n"><span data-calc="weeks">–</span></div><div class="l"><span data-calc="span">weeks</span></div></div>
+  <div class="stat"><div class="n"><span data-total="read">–</span></div><div class="l">precinct-weeks with a spreadsheet, read into CSV</div></div>
+  <div class="stat"><div class="n"><span data-total="files_from_nyc_gov">–</span></div><div class="l">files saved from nyc.gov</div></div>
+</div>
+
+<h2 id="coverage-h">What we saved <a class="anchor" href="#coverage" aria-label="Link to this chart">#</a></h2>
+<p>Each square is one precinct for one week. Dark squares are weeks with numbers we can use. Gray squares are weeks no one saved. Pick a precinct, or click its row, to see its weeks and get a link to share. The table below the chart has the same counts as text.</p>
+
+<figure class="figure" id="coverage">
+  <div class="figure-head">
+    <h3>Quality of life files saved, by precinct and week</h3>
+    <div class="figure-controls">
+      <label for="pick">Precinct</label>
+      <select id="pick"><option value="">All precincts</option></select>
+      <button class="copy-link" type="button" data-anchor="coverage">Copy link</button>
+    </div>
+  </div>
+  <div class="figure-body" tabindex="0" role="group" aria-label="Chart of Quality of life files saved, by precinct and week. Scrolls sideways.">
+    <ul class="legend" aria-label="Legend">
+      <li><span class="sw s3"></span>Spreadsheet, read into CSV</li>
+      <li><span class="sw s2"></span>Spreadsheet in an older NYPD layout, saved, not read yet</li>
+      <li><span class="sw s1"></span>PDF only</li>
+      <li><span class="sw s0"></span>Nothing saved</li>
+    </ul>
+    <p class="scroll-hint">Scroll sideways to see every week.</p>
+    <div id="chart" role="img" aria-describedby="chart-summary"></div>
+  </div>
+  <div class="detail" id="detail" hidden aria-live="polite"></div>
+  <figcaption class="figure-caption" id="chart-summary">
+    Source: NYPD quality-of-life precinct files from nyc.gov, saved weekly by this archive since November 2026.<span data-if-estimate hidden> A file from the Wayback Machine that cannot be dated by its contents carries only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. For the files that carry both dates, that rule gives the right week for <span data-calc="estimate">–</span>.</span>
+  </figcaption>
+</figure>
+
+<h2 id="by-precinct">Weeks held, by precinct <a class="anchor" href="#by-precinct" aria-label="Link to this table">#</a></h2>
+<div class="table-scroll"><table id="table">
+  <caption class="small">Number of weeks in each state, for each precinct. The same facts as the chart above.</caption>
+  <thead><tr><th scope="col">Precinct</th><th scope="col">Borough</th><th scope="col" class="num">In CSV</th><th scope="col" class="num">Older layout</th><th scope="col" class="num">PDF only</th><th scope="col" class="num">Nothing saved</th></tr></thead>
+  <tbody></tbody>
+</table></div>
+
+<h2 id="get-the-data">Get the data <a class="anchor" href="#get-the-data" aria-label="Link to this section">#</a></h2>
+<ul>
+  <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data/qteam">data/qteam/</a></li>
+  <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">NYPD's original files</a>, zipped by week.</li>
+  <li><a href="data/qteam-coverage.json">The data behind the chart above</a>.</li>
+  <li><a href="https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">NYPD's own page</a> for this week's files.</li>
+</ul>
+
+<div class="note"><b>Not an official record.</b> NYPD calls these figures preliminary and subject to change. BetaNYC reshaped the spreadsheets into one number per row and left out NYPD's "change" columns, which can be worked out from the two years beside them. The original files in the releases are NYPD's, unchanged. For official figures, go to <a href="https://www.nyc.gov/site/nypd/stats/stats.page">NYPD's statistics pages</a>.</div>
+
+</div>
+</main>
+
+<div class="tooltip" id="tip" hidden></div>
+
+<footer>
+  <div class="wrap">
+    <img class="wordmark" src="assets/betanyc-wordmark-blue.svg" alt="BetaNYC" width="90" height="30">
+    <p><strong>NYPD Weekly Archive</strong> is built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York. <a href="https://github.com/BetaNYC/nypd-weekly-archive">Source code on GitHub</a>. Found a mistake? <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Tell us</a>.</p>
+    <p class="small">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
+  </div>
+</footer>
+</body>
+</html>

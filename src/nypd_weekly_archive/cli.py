@@ -72,11 +72,12 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "site":
-        from .site_data import OUT, build_site_data
+        from .site_data import build_site_data, out_path
 
-        out = build_site_data(root)
-        log("finish", status=0, file=str(OUT), precincts=len(out["precincts"]), weeks=len(out["weeks"]),
-            **out["totals"])
+        for key, out in build_site_data(root).items():
+            log("site_data", series=key, file=str(out_path(key)), precincts=len(out["precincts"]),
+                weeks=len(out["weeks"]), **out["totals"])
+        log("finish", status=0)
         return 0
 
     if args.command == "backfill-dashboard":

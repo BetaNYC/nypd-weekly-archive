@@ -1,0 +1,32 @@
+/* Styles for this site only. site.css is the shared BetaNYC template and stays unchanged. */
+
+/* Series cards on the home page */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 20px 0 8px; padding: 0; list-style: none; }
+.card { border: 1px solid var(--line-soft); border-top: 4px solid var(--blue); border-radius: 4px; padding: 14px 16px; background: var(--white); display: flex; flex-direction: column; }
+.card h3 { margin: 0 0 6px; }
+.card p { font-size: 15px; margin: 0 0 10px; }
+.card .n { font-family: var(--font-head); font-weight: 700; font-size: 26px; color: var(--blue); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.card .l { font-size: 14px; margin-bottom: 8px; }
+.card .more { margin-top: auto; font-weight: 600; }
+
+/* Coverage chart */
+.cov { display: block; max-width: none; font-family: var(--font-body); }
+.scroll-hint { display: none; font-size: 13px; margin: 0 0 6px; }
+@media (max-width: 900px) { .scroll-hint { display: block; } }
+.cov text { fill: var(--ink); font-size: 11px; }
+.cov .boro { font-family: var(--font-head); font-weight: 700; font-size: 12px; fill: var(--blue); }
+.cov .axis { font-size: 10px; }
+.cov .row-label { cursor: pointer; }
+.cov .row-label:hover, .cov .row-label.on { font-weight: 700; fill: var(--blue); }
+.cov rect.c { cursor: pointer; }
+.cov .sel { fill: none; stroke: #f59e0b; stroke-width: 2; } /* orange stands out from the blue squares */
+.s3 { background: #0d366b; fill: #0d366b; }
+.s2 { background: #256abf; fill: #256abf; }
+.s1 { background: #6da7ec; fill: #6da7ec; }
+.s0 { background: #e1e0d9; fill: #e1e0d9; }
+.detail { border-top: 1px solid var(--line-soft); padding: 14px 16px 4px; }
+.detail h4 { font-family: var(--font-head); color: var(--blue); font-size: 19px; margin: 0 0 6px; }
+.detail .strip { display: block; max-width: 100%; margin: 8px 0 12px; }
+.detail ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; }
+#table tbody th { background: none; color: inherit; font-weight: 400; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
