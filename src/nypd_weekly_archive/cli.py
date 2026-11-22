@@ -3,6 +3,7 @@
 Weekly: discover, capture, build, or run (all three); redate after a parser fix.
 package zips originals not yet released into dist/ for GitHub Releases.
 One-off backfills: backfill-dashboard, backfill-wayback.
+site rewrites docs/data/ for the GitHub Pages site from captures.csv and data/.
 """
 
 from __future__ import annotations
@@ -32,7 +33,8 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="nypd-archive", description=__doc__)
     ap.add_argument(
         "command",
-        choices=["discover", "capture", "build", "run", "redate", "package", "backfill-dashboard", "backfill-wayback"],
+        choices=["discover", "capture", "build", "run", "redate", "package", "site",
+                 "backfill-dashboard", "backfill-wayback"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
     ap.add_argument("--series", nargs="+", choices=sorted(SERIES), default=sorted(SERIES))
@@ -62,6 +64,14 @@ def main(argv: list[str] | None = None) -> int:
             print(f"error: {exc}", file=sys.stderr)
             return 1
         log("finish", status=0, assets=len(plan))
+        return 0
+
+    if args.command == "site":
+        from .site_data import OUT, build_site_data
+
+        out = build_site_data(root)
+        log("finish", status=0, file=str(OUT), precincts=len(out["precincts"]), weeks=len(out["weeks"]),
+            **out["totals"])
         return 0
 
     if args.command == "backfill-dashboard":
