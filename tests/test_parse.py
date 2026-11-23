@@ -237,6 +237,73 @@ def test_compstat_1_unknown_sheet_name_fails(fixtures: Path, tmp_path: Path) -> 
         parse_compstat(dst)
 
 
+# ---------------------------------------------- TrafficStat, 2024 layouts
+# tests/fixtures/trafficstat_2024/ holds two Internet Archive copies from 2024.
+# ts-en-us-013.xlsx (week ending 2024-08-04) names its sheets "Page1_1" and
+# "Page2_2" and adds an "RMP Collisions" section to both. ts-en-us-121.xlsx
+# (week ending 2024-11-03) uses today's sheet names. Both print the run date,
+# the page number and the run time in the last row. Every count in both files
+# matches NYPD's PDF of the same week (text layer, checked 2026-11-23).
+
+
+def test_trafficstat_2024_numbered_sheets(fixtures: Path) -> None:
+    path = fixtures / "trafficstat_2024" / "ts-en-us-013.xlsx"
+    rows = parse_trafficstat(path)
+    assert len(rows) == 426  # 414 plus RMP Collisions: 1 measure x 3 periods x 2 years x 2 sheets
+    assert {r.sheet for r in rows} == {"Page1_1", "Page2_2"}
+    assert {(r.geography, r.precinct, r.week_start, r.week_end) for r in rows} == {
+        ("013", 13, date(2024, 7, 29), date(2024, 8, 4))
+    }
+    assert week_end("trafficstat", path) == date(2024, 8, 4)
+    assert pick(rows, sheet="Page1_1", section="Collisions", measure="Collisions", period="ytd", year=2024) == 455
+    assert pick(rows, sheet="Page1_1", section="Hazardous Summonses", measure="Total Hazardous*",
+                period="ytd", year=2023) == 3787
+    assert pick(rows, sheet="Page2_2", section="Collisions", measure="SUV", period="ytd", year=2024) == 30
+    rmp = {"section": "RMP Collisions", "measure": "RMP Collisions"}
+    assert pick(rows, sheet="Page1_1", period="ytd", year=2024, **rmp) == 14
+    assert pick(rows, sheet="Page2_2", period="28d", year=2023, **rmp) == 2
+
+
+def test_trafficstat_2024_run_line(fixtures: Path) -> None:
+    path = fixtures / "trafficstat_2024" / "ts-en-us-121.xlsx"
+    rows = parse_trafficstat(path)
+    assert len(rows) == 414
+    assert {r.sheet for r in rows} == {"Page1", "Page2"}
+    assert week_end("trafficstat", path) == date(2024, 11, 3)
+    assert pick(rows, sheet="Page1", section="Moving Summonses", measure="Livery/Taxi", period="ytd", year=2024) == 71
+    assert pick(rows, sheet="Page2", section="Collisions", measure="SUV", period="ytd", year=2023) == 248
+
+
+@pytest.mark.parametrize(
+    ("fixture", "sheet", "coord", "value", "message"),
+    [
+        # Page number in the run line that does not match the sheet.
+        ("ts-en-us-121.xlsx", "Page1", "F50", 2, "unrecognized row"),
+        # Anything but a time where the run time goes.
+        ("ts-en-us-121.xlsx", "Page2", "J48", "noon", "unrecognized row"),
+        # A measure NYPD might add to the RMP section.
+        ("ts-en-us-013.xlsx", "Page1_1", "A50", "RMP Injuries", "unknown measure"),
+    ],
+)
+def test_trafficstat_2024_layout_change_fails_loud(fixtures, tmp_path, fixture, sheet, coord, value, message) -> None:
+    broken = _edit(fixtures / "trafficstat_2024" / fixture, tmp_path, sheet, coord, value)
+    with pytest.raises(LayoutError, match=message):
+        parse_trafficstat(broken)
+
+
+@pytest.mark.parametrize("names", [("Page1_1", "Page2"), ("Page1_2", "Page2_2"), ("Page2_2", "Page1_1")])
+def test_trafficstat_2024_unknown_sheet_names_fail(fixtures: Path, tmp_path: Path, names) -> None:
+    dst = tmp_path / "ts-en-us-013.xlsx"
+    shutil.copy(fixtures / "trafficstat_2024" / "ts-en-us-013.xlsx", dst)
+    wb = openpyxl.load_workbook(dst)
+    first, second = wb.worksheets
+    first.title, second.title = "tmp1", "tmp2"
+    first.title, second.title = names
+    wb.save(dst)
+    with pytest.raises(LayoutError, match="sheets"):
+        parse_trafficstat(dst)
+
+
 # ----------------------------------------------------------------- housing
 # hb_eagle_report.xlsx is the week ending 2026-11-15 (sheets WTD, 28 Days, ...).
 # hb_eagle_report-2015-08-30.xlsx is the earliest spreadsheet on disk: numbered

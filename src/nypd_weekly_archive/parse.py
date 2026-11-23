@@ -28,7 +28,7 @@ import re
 from collections import Counter
 from collections.abc import Iterator
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, time
 from pathlib import Path
 
 import openpyxl
@@ -273,6 +273,20 @@ TS_LABELS: dict[str, dict[str, set[str]]] = {
         "Moving Summonses": {"Total Movers*", "Livery/Taxi", *TS_MODES_2},
     },
 }
+# Collisions involving police vehicles ("RMP", radio motor patrol). Seen once,
+# at the foot of both sheets in ts-en-us-013.xlsx for the week ending
+# 2024-08-04 (an Internet Archive copy); accepted on either sheet.
+TS_RMP = "RMP Collisions"
+for _labels in TS_LABELS.values():
+    _labels[TS_RMP] = {TS_RMP}
+# Sheet names as NYPD wrote them. The Internet Archive copies for the weeks
+# ending 2024-08-04 to 2024-09-29 number the sheets; copies from the week
+# ending 2024-11-03 on do not. The sheets hold the same tables, and the name
+# is kept as written in `sheet`.
+TS_SHEET_NAMES = {
+    ("Page1", "Page2"): ("Page1", "Page2"),
+    ("Page1_1", "Page2_2"): ("Page1", "Page2"),
+}
 TS_COVER = re.compile(r"Report Covering:\s+([A-Z][a-z]{2} \d{1,2}, \d{4})\s+-\s+([A-Z][a-z]{2} \d{1,2}, \d{4})")
 TS_FOOTNOTE = "*Total Parkers, Total Hazardous and Total Movers include other violations"
 # Printed under the table in precincts whose boundaries changed (105, 113,
@@ -288,9 +302,11 @@ def _ts_date(s: str) -> date:
 
 def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
     wb = _load(path)
-    _expect(wb.sheetnames == list(TS_LABELS), f"{path.name}: sheets {wb.sheetnames}")
+    kinds = TS_SHEET_NAMES.get(tuple(wb.sheetnames))
+    _expect(kinds is not None, f"{path.name}: sheets {wb.sheetnames}")
+    assert kinds is not None
     out: list[Row] = []
-    for name in wb.sheetnames:
+    for page, (name, kind) in enumerate(zip(wb.sheetnames, kinds, strict=True), 1):
         rows = _grid(wb[name])
         where = f"{path.name}[{name}]"
         head = [c for _, c, _ in rows[:4]]
@@ -303,7 +319,7 @@ def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
         m = TS_COVER.fullmatch(str(head[3][0])) if len(head[3]) == 1 else None
         _expect(m is not None, f"{where}: date line {head[3]}")
         week_start, week_end = _ts_date(m.group(1)), _ts_date(m.group(2))
-        labels = TS_LABELS[name]
+        labels = TS_LABELS[kind]
         section: str | None = None
         cur_year: int | None = None
         cols: list[int] = []
@@ -333,6 +349,9 @@ def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
                 pass
             elif len(cells) == 1 and isinstance(cells[0], datetime) and seen_footnote:
                 pass  # report run date printed at the foot of the page
+            elif (seen_footnote and len(cells) == 3 and isinstance(cells[0], datetime)
+                  and cells[1] == page and isinstance(cells[2], time)):
+                pass  # 2024 files: run date, page number and run time at the foot
             else:
                 raise LayoutError(f"{w}: unrecognized row {cells}")
         _expect(seen_footnote, f"{where}: footnote row missing")
