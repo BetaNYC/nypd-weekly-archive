@@ -21,12 +21,24 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "deptry>=0.20,<1",
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.9,<5",
+    "pdfplumber>=0.11,<0.12",
+    "pypdfium2>=5,<6",
     "pytest>=8,<10",
     "ruff>=0.6,<1",
 ]
 
 [project.scripts]
 nypd-archive = "nypd_weekly_archive.cli:main"
+
+[project.optional-dependencies]
+pdf = [
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.9,<5",
+    "pdfplumber>=0.11,<0.12",
+    "pypdfium2>=5,<6",
+]
 
 [tool.ruff]
 line-length = 120
@@ -38,3 +50,6 @@ ignore = ["PLR0912", "PLR0913", "PLR0911", "PLR0915", "PLR0917", "PLR2004", "PLC
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.deptry.package_module_name_map]
+opencv-python-headless = "cv2"

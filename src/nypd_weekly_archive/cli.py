@@ -7,6 +7,9 @@ dashboard-map saves this week's points from the map of NYPD's TrafficStat or Com
 import-greenman converts Josh Greenman's parsed CompStat weeks into data/compstat_greenman/.
 import-mcdermott converts Tim McDermott's weekly CompStat CSVs into data/compstat_mcdermott/.
 site rewrites docs/data/ for the GitHub Pages site from captures.csv and data/.
+read-pdfs --dry-run reads the CompStat and NYCHA PDFs of weeks whose spreadsheet is lost, with
+the checked PDF reader (PDF-READER.md), and writes review files outside data/; --validate
+compares it with the weeks where both survive. Phase 1 never writes data/.
 """
 
 from __future__ import annotations
@@ -37,7 +40,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "command",
         choices=["discover", "capture", "build", "run", "redate", "package", "site", "dashboard-map",
-                 "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott"],
+                 "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott",
+                 "read-pdfs"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
     ap.add_argument("--series", nargs="+", choices=sorted(SERIES), default=sorted(SERIES))
@@ -54,14 +58,25 @@ def main(argv: list[str] | None = None) -> int:
                     default=["WTD"], help="dashboard-map: which windows (default WTD, the weekly save)")
     ap.add_argument("--out", type=Path,
                     help="dashboard-map: write raw/ and data/ under this folder instead of the repo "
-                         "(required for compstat, and it must be outside the repo)")
-    ap.add_argument("--limit", type=int, help="backfill-wayback/-github: take at most this many files")
+                         "(required for compstat, and it must be outside the repo); "
+                         "read-pdfs --dry-run: where the review files go (default pdf-dry-run/)")
+    ap.add_argument("--limit", type=int,
+                    help="backfill-wayback/-github, read-pdfs: take at most this many files (per kind)")
     ap.add_argument("--names", nargs="+", metavar="NAME",
                     help="backfill-wayback: only files with these names, no extension, any case "
                          "(e.g. cs-en-us-city cscity hb_eagle_report)")
     ap.add_argument("--source", action="append", default=[], metavar="LABEL=FOLDER",
                     help="import-mcdermott: a folder of Tim's vol*.csv files; repeat, best first")
     ap.add_argument("--clone", type=Path, help="backfill-github, import-greenman: local clone of the source repo")
+    ap.add_argument("--kinds", nargs="+", choices=["precinct", "citywide", "correction", "housing"],
+                    help="read-pdfs: which reports (default: every kind of the --series given)")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="read-pdfs: read and write review files to --out (default pdf-dry-run/); never data/")
+    ap.add_argument("--all-weeks", action="store_true",
+                    help="read-pdfs: also read weeks whose spreadsheet survives (default: PDF-only weeks)")
+    ap.add_argument("--validate", action="store_true",
+                    help="read-pdfs: compare the reader with the weeks where both PDF and spreadsheet survive")
+    ap.add_argument("--workers", type=int, help="read-pdfs: parallel processes (default: up to 8)")
     args = ap.parse_args(argv)
 
     root = args.root.resolve()
@@ -82,6 +97,9 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         log("finish", status=0, assets=len(plan))
         return 0
+
+    if args.command == "read-pdfs":
+        return _read_pdfs(args, root, p)
 
     if args.command == "site":
         from .site_data import build_site_data, out_path
@@ -232,6 +250,53 @@ def main(argv: list[str] | None = None) -> int:
 
     log("finish", status=status)
     return status
+
+
+def _read_pdfs(args, root: Path, p: dict[str, Path]) -> int:
+    """read-pdfs: phase 1 only (dry run or validation). Writing data/ waits for phase 2."""
+    import csv
+    import json
+
+    try:
+        from .pdfread.run import KINDS, dry_run
+        from .pdfread.validate import mcdermott_table, table, validate_compstat, validate_housing, validate_mcdermott
+    except ImportError as exc:
+        print(f"error: read-pdfs needs the pdf extra (uv sync --extra pdf): {exc}", file=sys.stderr)
+        return 2
+    by_series = {"compstat": ["precinct", "citywide", "correction"], "housing": ["housing"]}
+    kinds = args.kinds or [k for s in args.series for k in by_series.get(s, [])]
+    kinds = [k for k in KINDS if k in kinds]
+    if not kinds:
+        print("error: read-pdfs reads --series compstat and housing only", file=sys.stderr)
+        return 2
+    with p["ledger"].open(newline="") as f:
+        ledger = list(csv.DictReader(f))
+    if args.validate:
+        cs = [k for k in kinds if k != "housing"]
+        res = validate_compstat(root, ledger, cs, workers=args.workers) if cs else {}
+        if "housing" in kinds:
+            res["housing"] = validate_housing(root, ledger, workers=args.workers)
+        print(table(res, kinds))
+        if "precinct" in kinds:
+            print()
+            print(mcdermott_table(validate_mcdermott(root, ledger, workers=args.workers, limit=args.limit)))
+        bad = sum(st.get("mismatch_ok_row", 0) for k in res.values() for st in k.values())
+        log("finish", status=1 if bad else 0, mismatches_on_unflagged_rows=bad)
+        return 1 if bad else 0
+    if not args.dry_run:
+        print("error: read-pdfs writes nothing to data/ yet (phase 2 waits for the spreadsheet re-filing, "
+              "issue #9); pass --dry-run", file=sys.stderr)
+        return 2
+    out = (args.out or root / "pdf-dry-run").resolve()
+    try:
+        summary = dry_run(root, ledger, kinds, out, pdf_only=not args.all_weeks, limit=args.limit,
+                          workers=args.workers)
+    except ValueError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    print(json.dumps(summary, indent=2))
+    log("finish", status=0, out=str(out))
+    return 0
 
 
 if __name__ == "__main__":

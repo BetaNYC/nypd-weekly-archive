@@ -7,3 +7,6 @@ data/**/*.tmp
 # Original files live in GitHub Releases, not git (see README, "Where the originals are").
 raw/
 dist/
+
+# read-pdfs --dry-run output (review files, rows to check); never committed
+pdf-dry-run/
