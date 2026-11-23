@@ -14,7 +14,7 @@ This repository saves a copy every week and turns the spreadsheets into tidy CSV
 | `fatalities` | [Traffic Fatalities](https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-fatalities.page) | One per patrol borough, plus Port Authority Police | Traffic deaths by precinct: 7 days, 28 days and year to date, against the prior year. Each file also repeats the citywide total. |
 | `compstat` | [Borough and precinct crime statistics](https://www.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page), and [Citywide crime statistics](https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page) for the citywide and Department of Correction sheets | 78 precincts, 8 patrol boroughs, citywide, Department of Correction | Crime complaints, shootings, hate crimes and traffic fatalities, with NYPD's 2-year and long-range percent changes and a calendar-year history (1990, 1993, 1998, 2001, last year). |
 | `qteam` | [Quality of Life statistics](https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page) | Citywide and 78 precincts | 911 and 311 calls for service: noise, vehicle-related calls (illegal parking, blocked driveway, double parking, abandoned vehicles, dangerous driving) and disorderly behavior. This series runs a few weeks behind the others. |
-| `housing` | [Citywide crime statistics](https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page) | One file (`hb_eagle_report`), 35 sheets | NYPD Housing Bureau weekly report: the seven major felonies for each NYCHA development, by Police Service Area and precinct, week to date, 28 days and year to date against the prior year. The originals are saved and dated every week; the numbers are not read into `data/` yet. |
+| `housing` | [Citywide crime statistics](https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page) | One file (`hb_eagle_report`), 35 sheets | NYPD Housing Bureau weekly report: the seven major felonies for each NYCHA development, by Police Service Area and precinct, week to date, 28 days and year to date against the prior year. Read into `data/housing/` since November 23, 2026; see "NYCHA Housing Bureau report" below. |
 
 The list of files is read from NYPD's own pages on every run, never built from a pattern: the four pages above, the [precinct directory](https://www.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page), and each precinct page it links. TrafficStat and Q-Team precinct files are linked only from the precinct pages. `manifest.csv` holds the list from the latest run. If a page cannot be fetched, or a series loses more than 10 percent of its files from one run to the next, the run stops and says so.
 
@@ -28,6 +28,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 - `captures.csv` is the ledger, with one row per file saved. Each row has its address, SHA-256, size, the `Last-Modified` time nyc.gov reported, the week-ending date and where that date came from: `xlsx` (read from the spreadsheet), `sibling_xlsx` (a PDF dated by its spreadsheet), `fetch_date` or `fetch_date_layout_error` (the download date, because the file could not be read), `wayback_capture_date`, `pdf` (a PDF dated by its own cover line) or `github_folder_date`. The `source` column says whether the copy came from nyc.gov, the Internet Archive (`wayback`) or another GitHub archive (`github:<owner>/<repo>`, with `source_ref` linking the exact file and commit there), and `release_tag` and `release_asset` say which release and zip hold the original.
 - `backfills.csv` does the same for backfill files that are not weekly captures (dashboard responses, Internet Archive listings).
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
+- `data/housing/<week ending>.csv` holds the NYCHA Housing Bureau report, about 21,500 numbers a week: every development, precinct, Police Service Area and citywide total NYPD prints. See "NYCHA Housing Bureau report" below.
 - `data/compstat_mcdermott/<year>.csv.gz` holds CompStat numbers from January 2015 to February 2026, from weekly CSVs made by Tim McDermott, a BetaNYC volunteer. `data/compstat_greenman/<year>.csv.gz` holds CompStat numbers from March 2026 on, parsed by Josh Greenman's [nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper), used with his permission. Both are kept apart from `data/compstat/` because this repo did not read them from NYPD's files. Each is one gzip-compressed CSV per year, in the same columns as `data/`, so that millions of rows fit in a few megabytes; read one with `pandas.read_csv("2020.csv.gz")` or `gzip -dc 2020.csv.gz`. See "CompStat backfill" below.
 - `data/trafficstat_dashboard_map/<week ending>.csv` holds the TrafficStat dashboard's map points for that week, one row per crash. See "Dashboard maps" below.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
@@ -38,9 +39,9 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 
 | Column | Meaning |
 |---|---|
-| `series` | `trafficstat`, `fatalities`, `compstat` or `qteam` |
+| `series` | `trafficstat`, `fatalities`, `compstat`, `qteam` or `housing` |
 | `source_file` | The file in `raw/` this row came from |
-| `geography` | NYPD's label, such as `Citywide`, a patrol borough, `034` or `34th Precinct` |
+| `geography` | NYPD's label, such as `Citywide`, a patrol borough, `034`, `34th Precinct`, or a public-housing development |
 | `precinct` | Precinct number, when the row is for one precinct |
 | `week_start`, `week_end` | The report week. The fatalities files give only the end date. |
 | `sheet`, `section`, `measure` | NYPD's labels, unchanged, footnote marks included (`Total Parkers*`, `Motor Vehicle+`) |
@@ -54,6 +55,40 @@ NYPD's own "Change" and "% +/-" columns are not carried over, because they can b
 What the parser accepts, besides the plain layout, all seen in this week's files: tables that start in column B instead of A; a fatalities workbook (Port Authority Police) that carries eight undated tabs of 2025 figures next to its current tab, where only the tab with a "through" date line is read; a sheet named `Table 1` instead of `Sheet1`; blank cells in CompStat's history for precincts that did not exist in 1990; `/0` where a percent cannot be computed; and the note in the 105th, 113th and 116th Precinct TrafficStat files that their figures were adjusted for the 116th Precinct, created in December 2024.
 
 TrafficStat has two sheets that overlap. `Page1` groups e-bikes, scooters, mopeds and motorcycles as "Motorized Two-Wheeler+"; `Page2` breaks them out. Use one sheet at a time when adding things up.
+
+### NYCHA Housing Bureau report
+
+As of November 23, 2026, `parse_housing` reads every Housing Bureau spreadsheet on disk: 44 report weeks, from the week ending August 30, 2015 to the week ending November 15, 2026. All 44 have the same 35 sheets in the same order, with the same headers. Only the sheet names changed: files up to May 2025 number every sheet (`WTD_1`, `28 Days_2`, ... `HA YTD_35`), later ones do not (`WTD`, `28 Days`, ... `HA YTD`). Both name lists are accepted exactly; anything else stops the parse.
+
+Eighteen of the older files declare each sheet's size as "A1" while holding a full table. The spreadsheet library trusts that in read-only mode and sees one row, which is why these files looked empty before. The parser resets the size before reading.
+
+The 35 sheets, each with the seven major felonies, "Shooting Inc." and "Total Index" (the seven felonies added up; shootings are not in it), for the report year and the year before:
+
+- **Nine PSA sheets per period** (`WTD`, `28 Days`, `YTD`, `WTD_2` ... `YTD_9`), one per Police Service Area, and **`SI` and `RK`** (Staten Island and Rockaway), which stack all three periods in one sheet. Columns C to E are PSA, PCT and Development. NYPD merges each PSA and precinct cell down over the rows it covers; the parser carries the label down the same way.
+- **`Viper WTD`, `Viper 28 Days`, `Viper YTD`**: developments covered by VIPER cameras, with NYPD's Viper number, and a totals row.
+- **`HA WTD`, `HA 28 Days`, `HA YTD`**: one row per PSA and per Patrol Services Bureau (PSB) housing unit, then "HB Covered", "PSB Covered" and "HA City Wide".
+
+How the rows are filled:
+
+| Column | Housing Bureau rows |
+|---|---|
+| `sheet` | NYPD's sheet name |
+| `geography` | The row's own label, as printed: a development (`CAREY`), or a totals label (`HBB 060 PCT Totals`, `PSA 1 Totals`, `HA City Wide`) |
+| `precinct` | The precinct, for a development or a precinct-totals row |
+| `section` | The PSA group in column C (`PSA 1`, `PSA 1 Satellite`, `PSA 1 PSB`, `STATEN ISLAND`) for rows inside it; `Viper <n>` on the Viper sheets; on the HA sheets, the `PSA n` row that opens a block, for the rows down to its `Total`; empty for totals that span groups |
+| `measure` | `Murder`, `Rape`, `Robbery`, `Fel. Assault`, `Burglary`, `Gr. Larceny`, `GLA`, `Shooting Inc.`, `Total Index` |
+| `period` | `wtd`, `28d` or `ytd`, from the sheet's title, checked against its date line |
+
+`section` is what tells apart a label NYPD uses twice on one sheet. On `WTD`, "PSA 1 Totals" with section `PSA 1` is the PSA 1 group alone, and "PSA 1 Totals" with an empty section is PSA 1 with its Satellite.
+
+The sheets total each other several ways, and the PSA, Viper and HA sheets repeat the same developments. Pick one level and one sheet type before adding anything up. The parser checks every total NYPD prints against the rows it totals (developments to precinct, precinct to group, groups to PSA, Viper rows to their total, HA blocks and citywide rows), every "Total Index" against its seven felonies, and every "CH %" against its two counts. All of them held in all 44 files.
+
+Reshaped: one number per row; the "CH %" columns are checked, then dropped; the PSA column of the Viper sheets (`6`, `SI`) is checked, then dropped, since the precinct is kept and the PSA sheets give each precinct's PSA.
+
+What is not read yet:
+
+- **25 spreadsheets are read by the parser but not yet in `data/housing/`.** They were saved before the parser existed, so `captures.csv` files them under the date the Internet Archive saved them (`fetch_date_layout_error`), and `build` reads only spreadsheets dated from their contents. `uv run nypd-archive redate` would move them to their report weeks, but it also changes their paths in `captures.csv`, while the release zips keep the old paths. It has not been run. One of them, saved by the archive in May 2025 under the old address, is the report for the week ending May 7, 2017.
+- **PDF-only weeks.** By the cover line each PDF prints ("Compstat Period Ending Aug 30, 2015"), 83 of the 86 PDFs on disk are datable, and 53 of those weeks have no spreadsheet. Three PDFs (saved 2021-01-19, 2024-03-05 and 2024-09-08) are cut off at exactly 1 MiB and do not open. The PDFs are not read; see "Spreadsheets, not PDFs" below.
 
 ## Where the originals are
 
@@ -187,13 +222,13 @@ Three other people already kept CompStat history, and this archive builds on the
 
 The Internet Archive also holds NYPD's own CompStat files from May 2017 on. `uv run nypd-archive backfill-wayback --series compstat` fetched them on November 22, 2026 (issue #9): 6,959 files, 2,166 spreadsheets and 4,793 PDFs, for weeks from May 2017 to November 2026. 890 spreadsheets were read. 1,276 are in an older NYPD layout the reader does not know yet, so they are saved but not read; their week is estimated from the date the Internet Archive saved them.
 
-On November 23, 2026 the same command, with the old folder and old names, added 197 more files for the citywide and Department of Correction CompStat reports and the NYCHA Housing Bureau report (`hb_eagle_report`, series `housing`). The archive now holds 567 weeks of the citywide report (May 2008 to November 2026), 175 of the Correction report (July 2014 on) and 100 of the Housing Bureau report (September 2014 on). Housing PDFs carry no week we can read, so their weeks are estimated from the capture date. 25 older Housing Bureau spreadsheets name their sheet `WTD_1` rather than `WTD`, and 18 citywide and Correction spreadsheets from 2015 to 2017 use an older layout; these are saved but not read.
+On November 23, 2026 the same command, with the old folder and old names, added 197 more files for the citywide and Department of Correction CompStat reports and the NYCHA Housing Bureau report (`hb_eagle_report`, series `housing`). The archive now holds 567 weeks of the citywide report (May 2008 to November 2026), 175 of the Correction report (July 2014 on) and 100 of the Housing Bureau report (September 2014 on). Housing PDFs are filed under estimated weeks from the capture date, although each prints its week on its cover (see "NYCHA Housing Bureau report" above). 25 older Housing Bureau spreadsheets name their sheet `WTD_1` rather than `WTD`; the parser reads them since November 23, 2026, but they stay filed under their estimated weeks until `redate` is run. 18 citywide and Correction spreadsheets from 2015 to 2017 use an older layout; these are saved but not read.
 
 ## Website
 
 `docs/` is a static site served by GitHub Pages from the `main` branch's `/docs` folder, with no build step. It uses BetaNYC's Pages template: `docs/assets/site.css`, `docs/assets/nav.js` (the phone menu) and `docs/assets/share.js` are copied from it unchanged, so they can be updated together across BetaNYC sites. This site's own files are `docs/assets/archive.css` and `docs/assets/coverage.js`, the chart used by the seven series pages (`trafficstat.html`, `compstat.html`, `fatalities.html`, `quality-of-life.html`, `citywide-compstat.html`, `correction-compstat.html`, `nycha-housing.html`). Each page shows the same counts as a table under the chart. `about.html` says who built the site, how we use AI, licensing, contributing and how to support the work; every page's footer links it and carries a short note on AI use.
 
-Each chart reads `docs/data/<series>-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: numbers in CSV, a spreadsheet in an older layout the parser does not read yet, a PDF only, or nothing. For CompStat, "numbers in CSV" also counts `data/compstat_mcdermott/` and `data/compstat_greenman/`, and the file says how many precinct-weeks come only from those. Traffic fatality files cover a patrol borough each, so that chart is built from the precinct rows in `data/fatalities/`. Citywide CompStat, the Department of Correction's CompStat and the NYCHA Housing Bureau report are one file a week for the whole city, so each of their charts has a single row (`SINGLES` in `site_data.py`); citywide and Correction weeks count as "numbers in CSV" when their rows are in `data/compstat/`.
+Each chart reads `docs/data/<series>-coverage.json`, written by `uv run nypd-archive site`. Each precinct-week gets the best copy the archive holds: numbers in CSV, a spreadsheet in an older layout the parser does not read yet, a PDF only, or nothing. For CompStat, "numbers in CSV" also counts `data/compstat_mcdermott/` and `data/compstat_greenman/`, and the file says how many precinct-weeks come only from those. Traffic fatality files cover a patrol borough each, so that chart is built from the precinct rows in `data/fatalities/`. Citywide CompStat, the Department of Correction's CompStat and the NYCHA Housing Bureau report are one file a week for the whole city, so each of their charts has a single row (`SINGLES` in `site_data.py`); citywide and Correction weeks count as "numbers in CSV" when their rows are in `data/compstat/`, and Housing Bureau weeks when their rows are in `data/housing/`.
 
 A file from the Internet Archive that cannot be dated by its contents has only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. Each coverage file's `estimate_check` tests that rule on the files that carry both dates; the series page prints the result (for TrafficStat on 2026-11-22: right for 450 of 571 spreadsheets). Estimated weeks are flagged in the file and in the chart's tooltip.
 
@@ -207,12 +242,14 @@ Picking a precinct, from the list, the chart or the table, opens its weeks in th
 
 The data comes from the Excel files. The PDFs are kept as published but not read: they print the same tables, and the spreadsheets hold the numbers as cells, so there is no table to recover from a page image.
 
+The exception is the Housing Bureau report, where 53 weeks survive only as a PDF. Plan (not started, November 23, 2026), following the New-York-City-Budget repo's `PDF-RECIPE.md`: the PDFs have a text layer (about 1,100 to 1,250 words a page), so the text layer with its word positions is the main reading, checked cell by cell against a second reading from the page image by computer vision, not by an OCR engine. Every row keeps its page and bounding box. The checks are the ones the spreadsheet parser already runs: every printed total against its rows, "Total Index" against the seven felonies, and "CH %" against the two counts. The 30 weeks that have both a PDF and a spreadsheet test the reader before it is trusted on the rest. Anything that does not check out goes to a person to review; nothing is corrected. From March 2015 on, the PDFs print the same table as the spreadsheets. The three from August 2014 to January 2015 use older layouts (no PCT column, "% CH", and "BOROUGH:" headings), and one from June 2023 is a 34-page report with an arrests page, so those need their own handling.
+
 ## Caveats
 
 - NYPD calls these figures preliminary and subject to change. A later report can revise a number this archive already holds, and the archive keeps both.
 - Collision counts from the dashboard backfill and from the weekly files are both NYPD's, but they come from different products. Check that they agree for the weeks they share before joining them.
 - These are counts NYPD chose to publish, aggregated by precinct and borough. There are no incident records here.
-- BetaNYC modified this data, so it is not an official record. The spreadsheets are reshaped from NYPD's report layout into one number per row; NYPD's "Change" and short-range "% +/-" columns are dropped; the Port Authority Police row that the PAPD file prints twice is kept once; and in the dashboard backfill, weeks NYPD left out are filled in as zero. The original files in the releases are NYPD's, unmodified. For the official figures, go to the NYPD pages linked above.
+- BetaNYC modified this data, so it is not an official record. The spreadsheets are reshaped from NYPD's report layout into one number per row; NYPD's "Change" and short-range "% +/-" columns, and the Housing Bureau's "CH %", are dropped; the Port Authority Police row that the PAPD file prints twice is kept once; and in the dashboard backfill, weeks NYPD left out are filled in as zero. The original files in the releases are NYPD's, unmodified. For the official figures, go to the NYPD pages linked above.
 - Week-ending dates come from the files. If NYPD posts a file with the wrong dates in it, so does this archive.
 
 ## Source

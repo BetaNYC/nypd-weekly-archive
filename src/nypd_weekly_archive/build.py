@@ -48,7 +48,7 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
     rebuilt_sources: set[str] = set()
     groups = latest_xlsx(read_ledger(ledger_path))
     for (series, wk), entries in sorted(groups.items()):
-        if series not in PARSERS:  # kept and dated, not read yet (parse.DATE_ONLY)
+        if series not in PARSERS:
             continue
         present = [e for e in entries if (repo / e["path"]).exists()]
         absent = [e["path"] for e in entries if not (repo / e["path"]).exists()]
