@@ -372,10 +372,10 @@ CS_LONG = re.compile(r"(\d+) Year \((\d{4})\)")
 CS_TERMINAL = "Figures are preliminary and subject to further analysis and revision."
 CS_TERMINALS = {
     CS_TERMINAL,
-    # Files up to 2017 (sheet "CompStat_1") end their tables with this line instead.
+    # Older files (sheet "CompStat_1", weeks up to August 2019) end their tables with this line.
     "All figures are subject to further analysis and revision. All degrees of rape are included in the rape category.",
 }
-# Up to 2017 the one sheet is named "CompStat_1"; after, "CompStat".
+# Older files (Internet Archive copies, weeks up to 2024) name the one sheet "CompStat_1".
 CS_SHEET_NAMES = (["CompStat"], ["CompStat_1"])
 
 
@@ -384,7 +384,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
     _expect(wb.sheetnames in CS_SHEET_NAMES, f"{path.name}: sheets {wb.sheetnames}")
     sheet = wb.sheetnames[0]
     ws = wb[sheet]
-    # Files up to 2017 declare the sheet's size as "A1" while holding a full
+    # Most older files declare the sheet's size as "A1" while holding a full
     # table; in read-only mode openpyxl trusts that and sees nothing.
     ws.reset_dimensions()
     rows = _grid(ws)
