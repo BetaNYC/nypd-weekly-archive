@@ -1,0 +1,176 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,28d,2017,942,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,28d,2016,1049,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,wtd,2017,245,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,wtd,2016,259,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,ytd,2017,11356,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,ytd,2016,12260,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2017,-88.090693625857,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2017,-35.921453560546,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2015,2017,-20.47062119196,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,28d,2017,1287,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,28d,2016,1479,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,wtd,2017,310,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,wtd,2016,383,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,ytd,2017,18967,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,ytd,2016,19829,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2017,-51.694893671208,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2017,16.892641439664,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2015,2017,-1.182661248306,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,28d,2017,429,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,28d,2016,480,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,wtd,2017,112,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,wtd,2016,110,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,ytd,2017,5387,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,ytd,2016,6058,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2017,-94.914182134023,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2017,-44.906933933319,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2015,2017,-22.422235023041,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,28d,2017,3411,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,28d,2016,3610,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2017,885,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2016,937,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2017,40537,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2016,41822,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2017,-50.011098505401,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2017,12.881846787892,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2015,2017,-2.256890024835,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,28d,2017,355,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,28d,2016,408,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,wtd,2017,91,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,wtd,2016,103,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,ytd,2017,4584,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,ytd,2016,4920,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2017,14.743429286608,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2015,2017,-4.718353772604,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,28d,2017,3063,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,28d,2016,3012,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,wtd,2017,758,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,wtd,2016,754,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,ytd,2017,39449,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,ytd,2016,40108,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2017,-9.273015800004,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2015,2017,-1.662678233123,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2017,354,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2016,251,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2017,91,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2016,54,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2017,3492,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2016,3162,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2010,2017,21.503131524008,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2015,2017,15.247524752475,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,28d,2017,14,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,28d,2016,22,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,wtd,2017,2,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,wtd,2016,4,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,ytd,2017,267,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,ytd,2016,318,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2017,-85.281146637265,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2017,-47.749510763209,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2015,2017,-20.059880239521,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,28d,2017,6675,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,28d,2016,6092,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,wtd,2017,1778,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,wtd,2016,1665,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,ytd,2017,78956,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,ytd,2016,76552,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2017,2.038020651597,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2015,2017,2.884991269448,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,28d,2017,112,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,28d,2016,89,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,wtd,2017,32,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,wtd,2016,18,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,ytd,2017,1355,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,ytd,2016,1367,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2017,-56.106252024619,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2017,3.356216628527,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2015,2017,-0.586940572267,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,28d,2017,1121,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,28d,2016,1233,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,wtd,2017,277,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,wtd,2016,334,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,ytd,2017,13101,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,ytd,2016,14605,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2017,-83.837897853441,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2017,-28.837588267246,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2015,2017,-17.562295494588,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,28d,2017,45,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,28d,2016,68,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2017,13,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2016,18,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2017,742,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2016,954,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2017,-85.225009956192,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2017,-46.7718794835,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2015,2017,-30.848089468779,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,28d,2017,49,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,28d,2016,74,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2017,13,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2016,19,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2017,883,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2016,1130,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2017,-84.206760865677,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2017,-47.627520759193,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2015,2017,-30.362776025236,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,28d,2017,7316,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,28d,2016,7962,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,wtd,2017,1863,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,wtd,2016,2045,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,ytd,2017,90970,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,ytd,2016,96259,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2017,-77.681222000323,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2017,-8.910672981605,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2015,2017,-8.553564068798,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,28d,2017,201,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,28d,2016,187,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,wtd,2017,41,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,wtd,2016,48,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,ytd,2017,2291,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,ytd,2016,2284,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2017,12.414131501472,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2015,2017,-2.177625960717,percent
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Burglary,calendar_year,2016,12990,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,32694,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,47181,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,100936,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,122055,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2016,20847,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,23020,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,28848,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,41121,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,44122,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2016,6327,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,29607,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,43315,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,111622,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,146925,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2016,44279,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,46291,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,51461,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,85737,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,108487,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Murder,calendar_year,2016,335,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Murder,calendar_year,2001,649,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Murder,calendar_year,1998,629,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Murder,calendar_year,1993,1927,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Murder,calendar_year,1990,2262,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Rape,calendar_year,2016,1438,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Rape,calendar_year,2001,1930,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Rape,calendar_year,1998,2476,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Rape,calendar_year,1993,3225,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Rape,calendar_year,1990,3126,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Robbery,calendar_year,2016,15500,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,27873,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,39003,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,85892,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,100280,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,TOTAL,calendar_year,2016,101716,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,162064,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,212913,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,430460,count
+compstat,raw/compstat/2017-12-10/cs-en-us-city.xlsx,Citywide,,2017-12-04,2017-12-10,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,527257,count

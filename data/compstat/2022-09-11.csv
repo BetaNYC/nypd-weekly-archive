@@ -1,0 +1,194 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,28d,2022,24,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,28d,2021,16,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,wtd,2022,8,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,wtd,2021,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,ytd,2022,178,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,ytd,2021,106,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2022,-76.883116883116,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2022,-2.197802197802,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2020,2022,31.851851851851,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,28d,2022,24,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,28d,2021,26,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,wtd,2022,8,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,wtd,2021,7,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,ytd,2022,218,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,ytd,2021,149,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2022,-43.08093994778,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2022,61.481481481481,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2020,2022,47.297297297297,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,28d,2022,12,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,28d,2021,6,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,wtd,2022,4,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,wtd,2021,2,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,ytd,2022,111,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,ytd,2021,51,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2022,-83.982683982684,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2022,38.75,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2020,2022,79.032258064516,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,28d,2022,50,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,28d,2021,33,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2022,8,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2021,11,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2022,578,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2021,319,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2022,84.664536741214,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2022,118.11320754717,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2020,2022,104.240282685512,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,28d,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,28d,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,ytd,2022,8,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,ytd,2021,3,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2020,2022,100.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,28d,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,28d,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,ytd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,ytd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2020,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,28d,2022,56,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,28d,2021,36,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,wtd,2022,16,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,wtd,2021,7,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,ytd,2022,319,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,ytd,2021,328,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2022,-30.952380952381,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2020,2022,9.621993127147,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,28d,2022,2,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,28d,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,ytd,2022,2,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,ytd,2021,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2022,-84.615384615384,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2022,-66.666666666666,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2020,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2022,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2021,3,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2022,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2022,50,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2021,41,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2020,2022,21.951219512195,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,28d,2022,93,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,28d,2021,81,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,wtd,2022,18,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,wtd,2021,18,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,ytd,2022,958,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,ytd,2021,636,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2022,79.065420560747,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2020,2022,39.446870451237,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,28d,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,28d,2021,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,ytd,2022,14,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,ytd,2021,21,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2022,-39.130434782608,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2022,0.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2020,2022,0.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,28d,2022,19,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,28d,2021,11,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,wtd,2022,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,wtd,2021,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,ytd,2022,126,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,ytd,2021,116,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2022,-82.548476454293,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2022,-14.864864864864,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2020,2022,7.692307692307,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,28d,2022,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,28d,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2022,3,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2021,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2022,-83.333333333333,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2022,-50.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2020,2022,-62.5,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,28d,2022,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,28d,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2022,12,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2021,5,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2022,-36.842105263157,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2022,71.428571428571,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2020,2022,9.090909090909,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,28d,2022,131,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,28d,2021,93,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,wtd,2022,33,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,wtd,2021,30,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,ytd,2022,1227,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,ytd,2021,763,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2022,-57.936235858759,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2022,47.831325301204,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2020,2022,61.660079051383,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,28d,2022,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,28d,2021,4,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,ytd,2022,24,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,ytd,2021,17,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2022,20.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2020,2022,60.0,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,28d,2022,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,28d,2021,1,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,wtd,2022,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,wtd,2021,0,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,ytd,2022,21,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,ytd,2021,30,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2022,,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2020,2022,-12.5,percent
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Burglary,calendar_year,2021,168,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,545,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,804,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,1163,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,1645,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2021,217,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,259,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,397,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,516,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,481,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2021,90,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,403,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,484,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,975,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,1602,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2021,569,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,285,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,344,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,469,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,577,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Murder,calendar_year,2021,2,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Murder,calendar_year,2001,6,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Murder,calendar_year,1998,7,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Murder,calendar_year,1993,18,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Murder,calendar_year,1990,24,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Rape,calendar_year,2021,28,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Rape,calendar_year,2001,32,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Rape,calendar_year,1998,30,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Rape,calendar_year,1993,38,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Rape,calendar_year,1990,22,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Robbery,calendar_year,2021,173,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,410,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,511,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,1045,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,1035,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,TOTAL,calendar_year,2021,1247,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,1940,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,2577,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,4224,count
+compstat,raw/compstat/2022-09-11/cs-en-us-072pct.xlsx,72nd Precinct,72,2022-09-05,2022-09-11,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,5386,count

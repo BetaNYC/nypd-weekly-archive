@@ -1,0 +1,351 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,28d,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,28d,2017,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd,2018,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd,2017,16,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2018,-94.957983193277,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2018,-87.234042553191,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2016,2018,-78.571428571428,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,28d,2018,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,28d,2017,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,wtd,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,wtd,2017,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd,2018,15,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd,2017,18,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2018,-62.5,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2018,-21.052631578947,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2016,2018,-25.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,28d,2017,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,wtd,2017,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd,2018,11,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd,2017,10,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2018,-96.085409252669,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2018,-26.666666666666,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2016,2018,175.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,28d,2018,11,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,28d,2017,8,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2018,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2017,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2018,68,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2017,55,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2018,-1.449275362318,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2018,19.298245614035,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2016,2018,9.677419354838,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2016,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,28d,2018,13,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,28d,2017,14,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,wtd,2018,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,wtd,2017,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd,2018,68,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd,2017,51,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2018,-16.049382716049,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2016,2018,-9.333333333333,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2018,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2017,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2018,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2017,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2010,2018,500.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2016,2018,50.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2018,-100.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2016,2018,-100.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,28d,2018,33,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,28d,2017,29,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,wtd,2018,9,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,wtd,2017,7,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd,2018,153,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd,2017,136,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2018,-22.727272727272,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2016,2018,4.794520547945,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd,2017,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2018,-50.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2018,-50.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2016,2018,-66.666666666666,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,28d,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd,2018,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd,2017,4,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2018,-86.363636363636,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2018,-70.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2016,2018,-50.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2018,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2018,0.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2016,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2018,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2018,0.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2016,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,28d,2018,15,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,28d,2017,15,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,wtd,2018,4,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,wtd,2017,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd,2018,104,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd,2017,105,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2018,-80.524344569288,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2018,-30.666666666666,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2016,2018,-16.8,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,28d,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2016,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,2017,46,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,149,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,186,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,341,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,362,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2017,45,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,54,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,62,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,114,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,76,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2017,22,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,179,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,315,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,720,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,1005,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2017,143,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,96,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,154,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,243,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,264,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,2017,,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,2001,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1998,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1993,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1990,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,2017,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,2001,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1998,4,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1993,4,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1990,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,2017,13,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,32,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,25,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,64,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,43,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,2017,272,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,514,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,747,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,1487,count
+compstat,raw/compstat/2018-05-27/cs-en-us-123pct.xlsx,123rd Precinct,123,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,1760,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,28d,2018,109,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,28d,2017,71,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,wtd,2018,30,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,wtd,2017,21,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd,2018,500,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd,2017,474,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2018,-89.300235394821,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2018,-34.725848563968,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2016,2018,-8.088235294117,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,28d,2018,97,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,28d,2017,169,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,wtd,2018,18,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,wtd,2017,47,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd,2018,528,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd,2017,601,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2018,-59.164733178654,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2018,4.761904761904,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2016,2018,-4.693140794223,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,28d,2018,31,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,28d,2017,26,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,wtd,2018,13,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,wtd,2017,7,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd,2018,82,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd,2017,87,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2018,-96.753760886777,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2018,-42.25352112676,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2016,2018,-17.171717171717,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,28d,2018,810,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,28d,2017,754,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2018,219,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2017,186,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2018,4023,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2017,3853,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2018,-67.893056664006,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2018,-0.593031875463,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2016,2018,-4.893617021276,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,28d,2018,27,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,28d,2017,25,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,wtd,2018,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,wtd,2017,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd,2018,134,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd,2017,144,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2018,-6.293706293706,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2016,2018,-10.666666666666,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,28d,2018,355,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,28d,2017,397,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,wtd,2018,95,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,wtd,2017,101,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd,2018,1838,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd,2017,1688,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2018,26.671261199173,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2016,2018,9.209744503862,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2018,59,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2017,69,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2018,15,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2017,12,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2018,288,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2017,293,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2010,2018,37.799043062201,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2016,2018,7.865168539325,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,28d,2018,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,28d,2017,1,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,wtd,2017,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd,2018,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd,2017,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2018,-95.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2018,-71.428571428571,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2016,2018,-60.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,28d,2018,1257,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,28d,2017,1184,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,wtd,2018,312,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,wtd,2017,301,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd,2018,6115,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd,2017,5429,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2018,-5.384496363917,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2016,2018,6.255430060816,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,28d,2018,18,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,28d,2017,15,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,wtd,2018,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,wtd,2017,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd,2018,75,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd,2017,59,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2018,-12.790697674418,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2018,114.285714285714,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2016,2018,59.574468085106,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,28d,2018,79,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,28d,2017,78,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,wtd,2018,21,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,wtd,2017,23,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd,2018,403,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd,2017,391,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2018,-90.00496031746,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2018,-12.200435729847,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2016,2018,-10.444444444444,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,28d,2017,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2017,2,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2018,3,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2017,6,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2018,-94.545454545454,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2018,-62.5,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2016,2018,-50.0,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,28d,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,28d,2017,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2018,0,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2017,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2018,5,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2017,10,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2018,-91.935483870967,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2018,-58.333333333333,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2016,2018,-44.444444444444,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,28d,2018,1145,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,28d,2017,1114,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,wtd,2018,306,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,wtd,2017,290,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd,2018,5613,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd,2017,5471,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2018,-77.708498808578,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2018,-5.822147651006,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2016,2018,-5.329735199865,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,28d,2018,57,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,28d,2017,47,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,wtd,2018,12,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,wtd,2017,17,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd,2018,267,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd,2017,226,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2018,,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2018,28.985507246376,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2016,2018,-3.260869565217,percent
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,2017,1214,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,3720,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,5326,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,12208,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,16090,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2017,1492,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,1714,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,2281,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,3477,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,3997,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2017,263,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,1457,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,2526,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,6254,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,9446,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2017,10374,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,16673,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,20131,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,33123,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,44811,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,2017,21,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,2001,24,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1998,26,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1993,86,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Murder,calendar_year,1990,124,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,2017,148,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,2001,93,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1998,114,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1993,222,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Rape,calendar_year,1990,207,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,2017,1121,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,2701,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,4193,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,10574,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,14866,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,2017,14633,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,26382,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,34597,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,65944,count
+compstat,raw/compstat/2018-05-27/cs-en-us-pbms.xlsx,Manhattan South,,2018-05-21,2018-05-27,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,89541,count
