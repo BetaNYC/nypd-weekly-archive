@@ -137,6 +137,63 @@ def test_redate_after_parser_fix(tmp_path, fixtures) -> None:
     assert not (raw / "trafficstat/2026-11-21").exists()
 
 
+def _layout_error_capture(tmp_path, fixtures):
+    """One xlsx and its PDF captured while the parser rejected the xlsx."""
+    raw, ledger, site = setup(tmp_path, fixtures)
+    good = site.files[XLSX]
+    site.files[XLSX] = b"PK\x03\x04 not yet parseable"
+    capture(make_fetcher(site), MANIFEST, raw, ledger, today=datetime(2026, 11, 21, tzinfo=UTC))
+    (raw / "trafficstat/2026-11-21/ts-en-us-034.xlsx").write_bytes(good)
+    return raw, ledger
+
+
+def test_redate_records_every_move(tmp_path, fixtures) -> None:
+    from nypd_weekly_archive.capture import MOVES_FIELDS, redate, write_ledger
+
+    raw, ledger = _layout_error_capture(tmp_path, fixtures)
+    rows = read_ledger(ledger)
+    for r in rows:
+        r["release_tag"], r["release_asset"] = "weekly-2026-11-21", "trafficstat-2026-11-21.zip"
+    write_ledger(ledger, rows)
+    moves = raw.parent / "moves.csv"
+    assert redate(raw.parent, ledger, today=datetime(2026, 11, 23, tzinfo=UTC)) == []
+    with moves.open(newline="") as f:
+        assert next(csv.reader(f)) == MOVES_FIELDS
+    with moves.open(newline="") as f:
+        got = list(csv.DictReader(f))
+    after = {r["path"]: r for r in read_ledger(ledger)}
+    assert [(m["old_path"], m["new_path"]) for m in got] == [
+        ("raw/trafficstat/2026-11-21/ts-en-us-034.xlsx", "raw/trafficstat/2026-11-15/ts-en-us-034.xlsx"),
+        ("raw/trafficstat/2026-11-21/ts-en-us-034.pdf", "raw/trafficstat/2026-11-15/ts-en-us-034.pdf"),
+    ]
+    for m in got:
+        assert m["moved_on"] == "2026-11-23" and m["series"] == "trafficstat"
+        assert m["sha256"] == after[m["new_path"]]["sha256"]
+        assert (m["release_tag"], m["release_asset"]) == ("weekly-2026-11-21", "trafficstat-2026-11-21.zip")
+    assert "parser fix" in got[0]["reason"] and "PDF" in got[1]["reason"]
+    # A second run has nothing to move and appends nothing.
+    assert redate(raw.parent, ledger) == []
+    with moves.open(newline="") as f:
+        assert len(list(csv.DictReader(f))) == 2
+
+
+def test_redate_never_overwrites_a_name_the_ledger_holds(tmp_path, fixtures) -> None:
+    """In CI or a partial copy of raw/, the file already at the destination may
+    not be on disk; the ledger still owns the name."""
+    from nypd_weekly_archive.capture import redate, write_ledger
+
+    raw, ledger = _layout_error_capture(tmp_path, fixtures)
+    rows = read_ledger(ledger)
+    other = {**rows[0], "path": "raw/trafficstat/2026-11-15/ts-en-us-034.xlsx", "sha256": "f" * 64,
+             "week_end": "2026-11-15", "date_source": "xlsx"}
+    write_ledger(ledger, [other, *rows])
+    assert redate(raw.parent, ledger) == []
+    sha = rows[0]["sha256"]
+    assert f"trafficstat/2026-11-15/ts-en-us-034.{sha[:8]}.xlsx" in files_under(raw)
+    with (raw.parent / "moves.csv").open(newline="") as f:
+        assert next(csv.DictReader(f))["new_path"] == f"raw/trafficstat/2026-11-15/ts-en-us-034.{sha[:8]}.xlsx"
+
+
 def test_html_error_page_served_as_200_is_not_stored(tmp_path, fixtures) -> None:
     raw, ledger, site = setup(tmp_path, fixtures)
     site.files[PDF] = b"<html><body>Access Denied</body></html>"

@@ -216,49 +216,121 @@ def write_ledger(path: Path, rows: list[dict[str, str]]) -> None:
     tmp.replace(path)
 
 
-def _move(repo: Path, row: dict[str, str], wk: str) -> None:
+MOVES_FIELDS = ["moved_on", "series", "sha256", "old_path", "new_path", "release_tag", "release_asset", "reason"]
+
+# Why a file moved, as written to moves.csv.
+REASON_XLSX = "spreadsheet read after a parser fix; filed under its report week"
+REASON_SIBLING = "PDF filed under the week of its spreadsheet"
+
+
+def append_moves(path: Path, rows: list[dict[str, str]]) -> None:
+    """Append to moves.csv, the public record of every file redate moved.
+
+    The release zips on GitHub keep each file under the path it had when it
+    was packaged, so a moved file's zip still holds its OLD path. This file is
+    how anyone holding a copy of raw/ (or a zip) finds the new one:
+    scripts/apply_moves.py replays it.
+    """
+    if not rows:
+        return
+    new = not path.exists()
+    with path.open("a", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=MOVES_FIELDS, lineterminator="\n")
+        if new:
+            w.writeheader()
+        w.writerows(rows)
+
+
+def _move(repo: Path, row: dict[str, str], wk: str, taken: set[str]) -> str | None:
+    """Move one file to raw/<series>/<wk>/ and update its ledger row.
+
+    A name already used by another ledger row or file is never overwritten:
+    the file gets part of its checksum in its name, as capture does. Returns
+    the old path, or None if the move could not be made safely.
+    """
     src = repo / row["path"]
     dest = src.parent.parent / wk / src.name
-    if dest.exists() and dest != src:
+    if dest == src:
+        return None
+    if not src.exists():
+        log("redate_skipped", path=row["path"], reason="file not on disk")
+        return None
+
+    def used(p: Path) -> bool:
+        return p.relative_to(repo).as_posix() in taken or p.exists()
+
+    if used(dest):
         dest = dest.with_name(f"{dest.stem}.{row['sha256'][:8]}{dest.suffix}")
+        if used(dest):
+            log("redate_skipped", path=row["path"], reason=f"{dest.relative_to(repo).as_posix()} already taken")
+            return None
     dest.parent.mkdir(parents=True, exist_ok=True)
-    src.replace(dest)
+    src.rename(dest)
     if not any(src.parent.iterdir()):
         src.parent.rmdir()
+    old = row["path"]
     row["path"] = dest.relative_to(repo).as_posix()
     row["week_end"] = wk
+    taken.discard(old)
+    taken.add(row["path"])
+    return old
 
 
-def redate(repo: Path, ledger_path: Path) -> list[str]:
+def redate(repo: Path, ledger_path: Path, moves_path: Path | None = None,
+           today: datetime | None = None) -> list[str]:
     """Re-read files that were filed under their fetch date and move them to
     their report week. Use after fixing a parser for a layout it rejected.
+
+    Every move is appended to moves.csv (repo root by default) as it happens,
+    so the record survives even if the run stops part way.
     Returns the files that still do not parse."""
+    moves_path = moves_path or repo / "moves.csv"
+    moved_on = (today or datetime.now(UTC)).date().isoformat()
     rows = read_ledger(ledger_path)
+    taken = {r["path"] for r in rows}
     still: list[str] = []
-    for r in rows:
-        if r["date_source"] != "fetch_date_layout_error":
-            continue
-        try:
-            wk = week_end(r["series"], repo / r["path"]).isoformat()
-        except LayoutError as exc:
-            still.append(f"{r['path']}: {exc}")
-            continue
-        old = r["path"]
-        _move(repo, r, wk)
-        r["date_source"] = "xlsx"
+
+    def record(r: dict[str, str], old: str, reason: str) -> None:
+        append_moves(moves_path, [{
+            "moved_on": moved_on, "series": r["series"], "sha256": r["sha256"], "old_path": old,
+            "new_path": r["path"], "release_tag": r["release_tag"], "release_asset": r["release_asset"],
+            "reason": reason,
+        }])
         log("redated", old=old, new=r["path"])
-    # A PDF is re-dated only from a sibling xlsx fetched the same day.
-    xlsx_week = {
-        (r["series"], _stem(r["url"]), r["fetched_at"][:10]): r["week_end"]
-        for r in rows
-        if r["url"].lower().endswith(".xlsx") and r["date_source"] == "xlsx"
-    }
-    for r in rows:
-        key = (r["series"], _stem(r["url"]), r["fetched_at"][:10])
-        if r["date_source"] == "fetch_date" and (wk := xlsx_week.get(key)):
-            old = r["path"]
-            _move(repo, r, wk)
-            r["date_source"] = "sibling_xlsx"
-            log("redated", old=old, new=r["path"])
-    write_ledger(ledger_path, rows)
+
+    try:
+        for r in rows:
+            if r["date_source"] != "fetch_date_layout_error":
+                continue
+            try:
+                wk = week_end(r["series"], repo / r["path"]).isoformat()
+            except LayoutError as exc:
+                still.append(f"{r['path']}: {exc}")
+                continue
+            if wk == r["week_end"]:
+                r["date_source"] = "xlsx"
+                continue
+            old = _move(repo, r, wk, taken)
+            if old is None:
+                still.append(f"{r['path']}: read as week {wk} but not moved (see log)")
+                continue
+            r["date_source"] = "xlsx"
+            record(r, old, REASON_XLSX)
+        # A PDF is re-dated only from a sibling xlsx fetched the same day.
+        xlsx_week = {
+            (r["series"], _stem(r["url"]), r["fetched_at"][:10]): r["week_end"]
+            for r in rows
+            if r["url"].lower().endswith(".xlsx") and r["date_source"] == "xlsx"
+        }
+        for r in rows:
+            key = (r["series"], _stem(r["url"]), r["fetched_at"][:10])
+            if r["date_source"] == "fetch_date" and (wk := xlsx_week.get(key)):
+                old = _move(repo, r, wk, taken)
+                if old is None:
+                    continue
+                r["date_source"] = "sibling_xlsx"
+                record(r, old, REASON_SIBLING)
+    finally:
+        # The ledger always matches the files on disk, even after an error.
+        write_ledger(ledger_path, rows)
     return still
