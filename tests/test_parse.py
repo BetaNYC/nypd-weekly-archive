@@ -186,6 +186,57 @@ def test_citywide_and_correction_sheets_read_as_compstat(fixtures: Path) -> None
     assert {r.week_end for r in city + correction} == {date(2026, 11, 15)}
 
 
+# ------------------------------------------------- CompStat, older layout
+# tests/fixtures/compstat_1/ holds two older files, from the Internet Archive:
+# citywide for the week ending 2015-08-30 and the 23rd Precinct for the week
+# ending 2017-07-30. Both name their one sheet "CompStat_1", declare its size
+# as "A1", list "Misd. Sex Crimes", and end with a different closing note.
+# Every value checked below matches NYPD's PDF for the same week.
+
+
+def test_compstat_1_sheet_declares_a1(fixtures: Path) -> None:
+    """Why these files looked empty: read-only openpyxl trusts the "A1" size."""
+    ws = openpyxl.load_workbook(fixtures / "compstat_1" / "cs-en-us-city.xlsx", read_only=True)["CompStat_1"]
+    assert ws.calculate_dimension() == "A1:A1"
+    assert [r for r in ws.iter_rows(values_only=True) if any(v is not None for v in r)] == []
+
+
+def test_compstat_1_citywide(fixtures: Path) -> None:
+    rows = parse_compstat(fixtures / "compstat_1" / "cs-en-us-city.xlsx")
+    assert len(rows) == 175
+    assert {r.sheet for r in rows} == {"CompStat_1"}
+    assert {r.geography for r in rows} == {"Citywide"}
+    assert {(r.week_start, r.week_end) for r in rows} == {(date(2015, 8, 24), date(2015, 8, 30))}
+    assert pick(rows, measure="Murder", period="ytd", year=2015) == 222
+    assert pick(rows, measure="Murder", period="ytd", year=2014) == 205
+    assert pick(rows, measure="Misd. Sex Crimes", period="wtd", year=2015) == 76
+    assert pick(rows, measure="TOTAL", period="calendar_year", year=1990) == 527257
+    assert pick(rows, measure="Misd. Sex Crimes", period="ytd_pct_change_vs_1993", year=2015) is None
+    # No "Traffic Statistics" section yet in this layout.
+    assert {r.section for r in rows} == {"Crime Complaints", "Historical Perspective"}
+
+
+def test_compstat_1_precinct(fixtures: Path) -> None:
+    path = fixtures / "compstat_1" / "cs-en-us-023pct.xlsx"
+    rows = parse_compstat(path)
+    assert len(rows) == 175
+    assert {(r.geography, r.precinct) for r in rows} == {("23rd Precinct", 23)}
+    assert pick(rows, measure="Murder", period="ytd", year=2017) == 2
+    assert pick(rows, measure="Misd. Sex Crimes", period="28d", year=2017) == 7
+    assert pick(rows, measure="Murder", period="ytd_pct_change_vs_2010", year=2017) == 100.0
+    assert week_end("compstat", path) == date(2017, 7, 30)
+
+
+def test_compstat_1_unknown_sheet_name_fails(fixtures: Path, tmp_path: Path) -> None:
+    dst = tmp_path / "cs-en-us-023pct.xlsx"
+    shutil.copy(fixtures / "compstat_1" / "cs-en-us-023pct.xlsx", dst)
+    wb = openpyxl.load_workbook(dst)
+    wb["CompStat_1"].title = "CompStat_2"
+    wb.save(dst)
+    with pytest.raises(LayoutError, match="sheets"):
+        parse_compstat(dst)
+
+
 # ----------------------------------------------------------------- housing
 # hb_eagle_report.xlsx is the week ending 2026-11-15 (sheets WTD, 28 Days, ...).
 # hb_eagle_report-2015-08-30.xlsx is the earliest spreadsheet on disk: numbered
