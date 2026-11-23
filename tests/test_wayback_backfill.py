@@ -1,13 +1,15 @@
 from __future__ import annotations
 
 import csv
+import gzip
+import zlib
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
 
 import httpx
 
 from nypd_weekly_archive.capture import LEDGER_FIELDS, append_ledger, read_ledger
-from nypd_weekly_archive.wayback_backfill import FIELDS, backfill_wayback, parse_cdx, wayback_digest
+from nypd_weekly_archive.wayback_backfill import FIELDS, backfill_wayback, decode_body, parse_cdx, wayback_digest
 
 from .conftest import make_fetcher
 
@@ -295,3 +297,47 @@ def test_stops_after_five_failures_in_a_row(tmp_path: Path) -> None:
 
     assert backfill_wayback(make_fetcher(handler), repo, ["compstat"], names=["cscity"]) == 1
     assert len(downloads) == 5
+
+
+class WireBytes(httpx.SyncByteStream):
+    def __init__(self, data: bytes) -> None:
+        self.data = data
+
+    def __iter__(self):  # noqa: ANN204
+        yield self.data
+
+
+def test_gzip_encoded_capture_is_checked_as_sent_and_stored_decoded(tmp_path: Path) -> None:
+    # cscity.pdf, capture 20140720002526: served with Content-Encoding: gzip, and the CDX
+    # digest is the SHA-1 of the gzip bytes, not of the PDF (2026-11-23).
+    repo = make_repo(tmp_path)
+    pdf = b"%PDF-1.6 archived with gzip"
+    sent = gzip.compress(pdf)
+
+    def handler(req: httpx.Request) -> httpx.Response:
+        url = str(req.url)
+        if url.startswith("https://web.archive.org/cdx/"):
+            if "/pdf/" in parse_qs(urlsplit(url).query)["url"][0]:
+                return httpx.Response(200, json=[FIELDS, ["20251117000000", ORIG_PDF, "application/pdf", "200",
+                                                           wayback_digest(sent), "1"]])
+            return httpx.Response(200, json=[])
+        # A stream, not content=, so httpx does not read and decode it before the Fetcher sees it.
+        return httpx.Response(200, stream=WireBytes(sent), headers={"Content-Encoding": "gzip"})
+
+    assert backfill_wayback(make_fetcher(handler), repo, ["trafficstat"]) == 0
+    rows = read_ledger(repo / "captures.csv")
+    assert len(rows) == 1 and rows[0]["bytes"] == str(len(pdf))
+    assert (repo / rows[0]["path"]).read_bytes() == pdf
+
+
+def test_decode_body() -> None:
+    body = b"some bytes"
+    assert decode_body(body, None) == body
+    assert decode_body(gzip.compress(body), "gzip") == body
+    assert decode_body(zlib.compress(body), "deflate") == body
+    try:
+        decode_body(body, "br")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("br accepted")
