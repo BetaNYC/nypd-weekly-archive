@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
+import csv
 from datetime import UTC, datetime
 from pathlib import Path
 
 import httpx
 
 from nypd_weekly_archive.build import build
-from nypd_weekly_archive.capture import capture, read_ledger
+from nypd_weekly_archive.capture import append_ledger, capture, read_ledger
 from nypd_weekly_archive.discover import ManifestRow
 
 from .conftest import make_fetcher
@@ -200,3 +201,32 @@ def test_ci_revision_gets_its_own_name_when_earlier_file_is_absent(tmp_path, fix
     paths = [r["path"] for r in read_ledger(ledger)]
     assert len(paths) == len(set(paths)) == 3
     assert res.new[0]["path"] != "raw/trafficstat/2026-11-15/ts-en-us-034.pdf"
+
+
+def test_ci_augments_week_when_a_file_is_added_later(tmp_path, fixtures) -> None:
+    """A file newly captured into an already-built week is merged in, keeping the rest (issue #25)."""
+    raw, ledger, site = setup(tmp_path, fixtures)
+    capture(make_fetcher(site), MANIFEST, raw, ledger)
+    build(raw.parent, ledger, raw.parent / "data")
+    out = raw.parent / "data" / "trafficstat" / "2026-11-15.csv"
+    rows_034 = [r for r in csv.DictReader(out.open()) if "034" in r["source_file"]]
+    assert rows_034 and all("ts-en-us-034" in r["source_file"] for r in rows_034)
+
+    # Simulate the next CI run: raw/ holds only a newly captured Citywide file for the
+    # same week; the 034 originals are in a release, not on disk.
+    _empty_raw(raw)
+    cw_path = raw / "trafficstat" / "2026-11-15" / "ts-en-us-Citywide.xlsx"
+    cw_path.parent.mkdir(parents=True)
+    cw_path.write_bytes((fixtures / "ts-en-us-Citywide.xlsx").read_bytes())
+    cw_url = "https://www.nyc.gov/assets/nypd/downloads/excel/traffic_data/traffic-statistics/ts-en-us-Citywide.xlsx"
+    append_ledger(ledger, {
+        "fetched_at": "2026-11-23T00:00:00+00:00", "series": "trafficstat", "url": cw_url,
+        "path": "raw/trafficstat/2026-11-15/ts-en-us-Citywide.xlsx", "sha256": "x", "bytes": "1",
+        "last_modified": LM, "week_end": "2026-11-15", "date_source": "xlsx"})
+
+    assert build(raw.parent, ledger, raw.parent / "data") == []
+    after = list(csv.DictReader(out.open()))
+    # The 034 rows survived (their file was absent) and the Citywide rows were added.
+    assert [r for r in after if "034" in r["source_file"]] == rows_034
+    assert any(r["geography"] == "Citywide" for r in after)
+    assert len(after) == len(rows_034) + 414
