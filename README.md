@@ -105,6 +105,7 @@ uv run nypd-archive capture      # only download what changed
 uv run nypd-archive build        # only rebuild data/ from raw/
 uv run nypd-archive site         # only rebuild docs/data/ for the website
 uv run nypd-archive dashboard-map  # save this week's TrafficStat dashboard map points
+uv run --extra pdf nypd-archive read-pdfs --series compstat housing --dry-run  # check PDF-only weeks (PDF-READER.md)
 uv run pytest
 ```
 
@@ -205,7 +206,7 @@ Picking a precinct, from the list, the chart or the table, opens its weeks in th
 
 ## Spreadsheets, not PDFs
 
-The data comes from the Excel files. The PDFs are kept as published but not read: they print the same tables, and the spreadsheets hold the numbers as cells, so there is no table to recover from a page image.
+The data comes from the Excel files. Where a week's spreadsheet is lost and only NYPD's PDF survives, a checked PDF reader can read precinct, citywide and Department of Correction CompStat and the NYCHA Housing Bureau report: the PDF's own text layer read through the rules it draws, checked against the rendered page image, NYPD's printed totals and percents, and an ink check, with no OCR. Each number keeps its PDF, page and box on the page, and anything that disagrees goes to a person instead of being corrected. On the weeks where both survive it matches the spreadsheet on every number. `uv run --extra pdf nypd-archive read-pdfs --dry-run` writes review files outside `data/`; it does not write `data/` yet (phase 2, after issue #9). How it works, its layouts and its validation: [PDF-READER.md](PDF-READER.md).
 
 ## Caveats
 
