@@ -8,6 +8,7 @@ import httpx
 import pytest
 
 from nypd_weekly_archive.discover import (
+    CITYWIDE_CRIME,
     PRECINCT_DIRECTORY,
     SERIES,
     DiscoveryError,
@@ -30,6 +31,7 @@ PAGES = {
     SERIES["compstat"].page: "borough-and-precinct-crime-stats.html",
     SERIES["qteam"].page: "quality-of-life-stats.html",
     PRECINCT_DIRECTORY: "precincts.html",
+    CITYWIDE_CRIME: "citywide-crime-stats.html",
 }
 
 
@@ -43,7 +45,15 @@ def test_series_pages(fixtures: Path) -> None:
         links = extract_links(html(fixtures, PAGES[s.page]), s.page)
         counts[name] = len(set(file_links(links, s)))
     # Counted by hand from the saved pages.
-    assert counts == {"trafficstat": 20, "fatalities": 20, "compstat": 174, "qteam": 2}
+    assert counts == {"trafficstat": 20, "fatalities": 20, "compstat": 174, "qteam": 2, "housing": 2}
+
+
+def test_citywide_page_adds_city_and_correction_to_compstat(fixtures: Path) -> None:
+    s = SERIES["compstat"]
+    urls = file_links(extract_links(html(fixtures, "citywide-crime-stats.html"), CITYWIDE_CRIME), s)
+    # The page links the Correction PDF twice; discover() keeps one row per address.
+    assert sorted({u.rsplit("/", 1)[1] for u in urls}) == [
+        "cs-en-us-Correction.pdf", "cs-en-us-Correction.xlsx", "cs-en-us-city.pdf", "cs-en-us-city.xlsx"]
 
 
 def test_fatalities_excludes_monthly_cityacc(fixtures: Path) -> None:
@@ -85,7 +95,8 @@ def test_discover_end_to_end(fixtures: Path) -> None:
     # Series pages, plus the 034 precinct files found only on the 34th precinct page.
     assert len(by["trafficstat"]) == 22
     assert len(by["qteam"]) == 4
-    assert len(by["compstat"]) == 174
+    assert len(by["compstat"]) == 178  # 174 + citywide and Correction, xlsx and pdf
+    assert len(by["housing"]) == 2
     assert len(by["fatalities"]) == 20
     assert any(r.url.endswith("ts-en-us-034.xlsx") and r.found_on.endswith("34th-precinct.page") for r in rows)
 

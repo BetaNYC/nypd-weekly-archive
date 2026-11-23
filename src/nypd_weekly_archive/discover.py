@@ -10,6 +10,11 @@ was an <a href> on one of these pages (all fetched and read 2026-11-21):
   links one file per patrol borough plus Port Authority PD.
 - CompStat: https://www.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page
   links 78 precinct and the patrol-borough files.
+- Citywide crime statistics (read 2026-11-22):
+  https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page
+  links the citywide and Department of Correction CompStat sheets
+  (cs-en-us-city, cs-en-us-Correction; filed under compstat) and the NYCHA
+  Housing Bureau weekly report (hb_eagle_report; series housing).
 - Q-Team: https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page
   links the CITYWIDE file only; precinct files are on each precinct page.
 - Precinct directory: https://www.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page
@@ -30,6 +35,7 @@ from .net import Fetcher
 BASE = "https://www.nyc.gov"
 PRECINCT_DIRECTORY = f"{BASE}/site/nypd/bureaus/patrol/precincts-landing.page"
 PRECINCT_PAGE_PREFIX = "/site/nypd/bureaus/patrol/precincts/"
+CITYWIDE_CRIME = f"{BASE}/site/nypd/stats/crime-statistics/citywide-crime-stats.page"
 
 
 @dataclass(frozen=True)
@@ -39,6 +45,8 @@ class Series:
     # Path fragment that a linked file must contain to belong to this series.
     path_marker: str
     on_precinct_pages: bool
+    # More listing pages for the same series; each must link at least one file.
+    extra_pages: tuple[str, ...] = ()
 
 
 SERIES: dict[str, Series] = {
@@ -64,6 +72,14 @@ SERIES: dict[str, Series] = {
             f"{BASE}/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page",
             "/crime_statistics/cs-en-us-",
             True,
+            (CITYWIDE_CRIME,),
+        ),
+        Series(
+            "housing",
+            CITYWIDE_CRIME,
+            # NYCHA Housing Bureau weekly report, crime by public-housing development.
+            "/crime_statistics/hb_",
+            False,
         ),
         Series(
             "qteam",
@@ -148,14 +164,17 @@ def discover(fetcher: Fetcher, series_names: list[str]) -> list[ManifestRow]:
         if key not in found:
             found[key] = ManifestRow(series.name, _kind(url), url, page)
 
+    html: dict[str, str] = {}  # one fetch per page, though two series share one
     for s in wanted:
-        links = extract_links(_get_html(fetcher, s.page), s.page)
-        files = file_links(links, s)
-        if not files:
-            raise DiscoveryError(f"{s.page}: no {s.name} files linked; page layout changed?")
-        for u in files:
-            add(s, u, s.page)
-        log("discover_page", series=s.name, page=s.page, files=len(files))
+        for page in (s.page, *s.extra_pages):
+            if page not in html:
+                html[page] = _get_html(fetcher, page)
+            files = file_links(extract_links(html[page], page), s)
+            if not files:
+                raise DiscoveryError(f"{page}: no {s.name} files linked; page layout changed?")
+            for u in files:
+                add(s, u, page)
+            log("discover_page", series=s.name, page=page, files=len(files))
 
     if any(s.on_precinct_pages for s in wanted):
         pages = precinct_pages(extract_links(_get_html(fetcher, PRECINCT_DIRECTORY), PRECINCT_DIRECTORY))

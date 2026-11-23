@@ -26,7 +26,7 @@ from pathlib import Path
 
 from .capture import _stem, read_ledger
 from .log import log
-from .parse import FIELDS, LayoutError, Row, parse_file
+from .parse import FIELDS, PARSERS, LayoutError, Row, parse_file
 
 
 def latest_xlsx(ledger: list[dict[str, str]]) -> dict[tuple[str, str], list[dict[str, str]]]:
@@ -48,6 +48,8 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
     rebuilt: set[tuple[str, str]] = set()
     groups = latest_xlsx(read_ledger(ledger_path))
     for (series, wk), entries in sorted(groups.items()):
+        if series not in PARSERS:  # kept and dated, not read yet (parse.DATE_ONLY)
+            continue
         missing = [e["path"] for e in entries if not (repo / e["path"]).exists()]
         if missing:
             log("build_skipped_week", series=series, week_end=wk, missing=len(missing),

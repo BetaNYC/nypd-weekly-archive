@@ -173,3 +173,20 @@ def test_fatalities_variants(fixtures: Path, tmp_path: Path) -> None:
     rows = parse_fatalities(src)
     assert pick(rows, geography="73", period="ytd", year=2026) == 2
     assert {r.sheet for r in rows} == {"Table 1"}
+
+
+def test_citywide_and_correction_sheets_read_as_compstat(fixtures: Path) -> None:
+    """Saved 2026-11-22 from citywide-crime-stats.page."""
+    city = parse_compstat(fixtures / "cs-en-us-city.xlsx")
+    correction = parse_compstat(fixtures / "cs-en-us-Correction.xlsx")
+    assert len(city) == len(correction) == 211
+    assert {r.geography for r in city} == {"Citywide"}
+    assert {r.geography for r in correction} == {"Department of Correction Citywide"}
+    assert {r.week_end for r in city + correction} == {date(2026, 11, 15)}
+
+
+def test_housing_report_is_dated_not_read(fixtures: Path) -> None:
+    from nypd_weekly_archive.parse import PARSERS, week_end
+
+    assert week_end("housing", fixtures / "hb_eagle_report.xlsx") == date(2026, 11, 15)
+    assert "housing" not in PARSERS
