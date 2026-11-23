@@ -4,7 +4,7 @@ on:
   pull_request:
   push:
     branches: [main]
-    paths: ["**/*.py", "pyproject.toml", "uv.lock", "tests/fixtures/**", ".github/workflows/ci.yml"]
+    paths: ["**/*.py", "pyproject.toml", "uv.lock", "tests/fixtures/**", ".github/workflows/ci.yml", "WHATS-CHANGED.md", "docs/**/*.html"]
 
 permissions:
   contents: read
@@ -31,3 +31,21 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - run: uv run --python ${{ matrix.python }} pytest -q
+
+  # WHATS-CHANGED.md parses, dates and tags hold, corrections say what to re-check, and old
+  # entries are never edited (only "Update" lines may be added). Then the What's changed page
+  # must match the file. scripts/whats_changed.py is copied unchanged from betanyc-ai-workspace.
+  whats-changed:
+    name: What's changed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check WHATS-CHANGED.md
+        run: python3 scripts/whats_changed.py check WHATS-CHANGED.md --base-ref "origin/${{ github.base_ref || 'main' }}"
+      - name: Check the What's changed page is current
+        run: >-
+          python3 scripts/whats_changed.py render WHATS-CHANGED.md --format fragment --no-h1
+          --site-prefix docs/ --repo-url https://github.com/BetaNYC/nypd-weekly-archive
+          --into docs/whats-changed.html --check
