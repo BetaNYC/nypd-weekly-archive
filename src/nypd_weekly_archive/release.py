@@ -124,7 +124,7 @@ def package(repo: Path, dist: Path, now: datetime | None = None) -> list[tuple[s
     raw = repo / "raw"
     for f in sorted(raw.glob("trafficstat_dashboard/*/responses.jsonl.gz")):
         found[(f"backfill-dashboard-{f.parent.name}", f"trafficstat-dashboard_{f.parent.name}")].append(f)
-    for f in sorted(raw.glob("trafficstat_dashboard_map/*/responses.jsonl.gz")):
+    for f in sorted(raw.glob("trafficstat_dashboard_map/????-??-??/responses.jsonl.gz")):
         found[(f"week-{f.parent.name}", f"trafficstat-dashboard-map_{f.parent.name}")].append(f)
     for f in sorted(raw.glob("wayback_cdx/*/*.json")):
         found[(f"backfill-wayback-{f.parent.name}", f"wayback-cdx_{f.parent.name}")].append(f)
