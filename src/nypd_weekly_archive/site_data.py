@@ -20,6 +20,10 @@ that carry both dates.
 
 Traffic fatality files cover a patrol borough each, not a precinct, but list each precinct's
 deaths inside; that series is charted from the precinct rows in data/fatalities/ only.
+
+Three reports are one file a week for the whole city (SINGLES): citywide CompStat, the
+Department of Correction's CompStat, and the NYCHA Housing Bureau report. Each gets a file in
+the same shape, with a single row.
 """
 from __future__ import annotations
 
@@ -123,6 +127,21 @@ def read_weeks(root: Path, s: Series) -> tuple[dict[str, set[str]], dict[str, se
     return ours, others
 
 
+def _mark_capture(r: dict, kind: str, mark) -> None:
+    """Give one saved file its week and state: 2 for a spreadsheet (3 once its rows are in
+    data/, marked separately), 1 for a PDF. A file dated only by when it was saved gets an
+    estimated week."""
+    ds, ts = r["date_source"], r["wayback_timestamp"]
+    if kind == "xlsx" and ds == "xlsx":
+        mark(r["week_end"], 2)
+    elif kind == "xlsx" and ds == "fetch_date_layout_error" and ts:
+        mark(estimated_week(ts).isoformat(), 2, True)
+    elif kind == "pdf" and ds in ("sibling_xlsx", "pdf"):
+        mark(r["week_end"], 1)
+    elif kind == "pdf" and ds == "wayback_capture_date" and ts:
+        mark(estimated_week(ts).isoformat(), 1, True)
+
+
 def build_series(root: Path, s: Series, captures: list[dict], manifest: list[dict]) -> dict | None:
     ours, others = read_weeks(root, s)
     best: dict[tuple[str, str], int] = {}
@@ -159,14 +178,7 @@ def build_series(root: Path, s: Series, captures: list[dict], manifest: list[dic
         pct, kind = m[1], m[2]
         if _precinct(pct) is None:
             continue
-        if kind == "xlsx" and ds == "xlsx":
-            mark(pct, r["week_end"], 2)  # 3 when its rows are in data/, marked above
-        elif kind == "xlsx" and ds == "fetch_date_layout_error" and ts:
-            mark(pct, estimated_week(ts).isoformat(), 2, est=True)
-        elif kind == "pdf" and ds in ("sibling_xlsx", "pdf"):
-            mark(pct, r["week_end"], 1)
-        elif kind == "pdf" and ds == "wayback_capture_date" and ts:
-            mark(pct, estimated_week(ts).isoformat(), 1, est=True)
+        _mark_capture(r, kind, lambda week, state, est=False, pct=pct: mark(pct, week, state, est))
 
     if not best:
         return None
@@ -234,6 +246,114 @@ def build_series(root: Path, s: Series, captures: list[dict], manifest: list[dic
     }
 
 
+@dataclass(frozen=True)
+class Single:
+    """A report that is one file a week for the whole city, charted as a single row."""
+    key: str
+    series: str  # the series name in captures.csv and data/
+    file: re.Pattern[str]  # file name -> kind
+    name: str  # the row's label, short enough for the chart's label column
+    covers: str  # shown in the table's second column
+    read_label: str
+    older_label: str = "Spreadsheet in an older NYPD layout (saved, not read yet)"
+
+
+SINGLES = {
+    "citywide": Single("citywide", "compstat", re.compile(r"cs(?:-en-us-)?city(?:\.[0-9a-f]{8})?\.(xlsx|pdf)$", re.I),
+                       "Citywide", "Whole city", "Numbers in CSV"),
+    "correction": Single("correction", "compstat",
+                         re.compile(r"cs(?:-en-us-)?correction(?:\.[0-9a-f]{8})?\.(xlsx|pdf)$", re.I),
+                         "Correction", "Department of Correction", "Numbers in CSV"),
+    "housing": Single("housing", "housing", re.compile(r"hb_eagle_report(?:\.[0-9a-f]{8})?\.(xlsx|pdf)$", re.I),
+                      "NYCHA", "Public-housing developments", "Numbers in CSV",
+                      "Spreadsheet saved, not read into CSV yet"),
+}
+
+
+def build_single(root: Path, s: Single, captures: list[dict], manifest: list[dict]) -> dict | None:
+    """The same shape as build_series, with one row for the report's file."""
+    best: dict[str, int] = {}
+    estimated: set[str] = set()
+    sources: Counter = Counter()
+    last_saved = ""
+    checked = right = 0
+
+    def mark(week: str, state: int, est: bool = False) -> None:
+        if state > best.get(week, 0):
+            best[week] = state
+            if est:
+                estimated.add(week)
+            else:
+                estimated.discard(week)
+
+    read: set[str] = set()
+    for f in sorted((root / "data" / s.series).glob("*.csv")):
+        with f.open(newline="") as fh:
+            for r in csv.DictReader(fh):
+                if s.file.search(r["source_file"].rsplit("/", 1)[-1]):
+                    read.add(r["week_end"])
+    for week in read:
+        mark(week, 3)
+
+    for r in captures:
+        m = s.file.search(r["path"].rsplit("/", 1)[-1]) if r["series"] == s.series else None
+        if not m:
+            continue
+        sources[r["source"]] += 1
+        last_saved = max(last_saved, r["fetched_at"])
+        ts = r["wayback_timestamp"]
+        if ts and r["date_source"] in ("xlsx", "pdf"):
+            checked += 1
+            right += estimated_week(ts).isoformat() == r["week_end"]
+        _mark_capture(r, m[1].lower(), mark)
+
+    if not best:
+        return None
+    first = min(dt.date.fromisoformat(w) for w in best)
+    last = max(dt.date.fromisoformat(w) for w in best)
+    weeks = []
+    d = sunday_on_or_before(first)
+    while d <= last:
+        weeks.append(d.isoformat())
+        d += dt.timedelta(days=7)
+
+    page = next(({"page": r["found_on"], "xlsx": r["url"]} for r in manifest
+                 if r["series"] == s.series and r["kind"] == "xlsx" and s.file.search(r["url"])), {})
+    row = {
+        "id": s.key,
+        "name": s.name,
+        "borough": s.covers,
+        "states": "".join(str(best.get(w, 0)) for w in weeks),
+        "estimated": "".join("1" if w in estimated else "0" for w in weeks),
+        "nypd_page": page.get("page", ""),
+        "nypd_file": page.get("xlsx", ""),
+    }
+    cells = Counter(row["states"])
+    totals = {
+        "precinct_weeks": len(weeks),
+        "read": cells["3"],
+        "older_layout": cells["2"],
+        "pdf_only": cells["1"],
+        "none": cells["0"],
+        "files_from_internet_archive": sources["wayback"],
+        "files_from_nyc_gov": sources["nyc.gov"],
+    }
+    other_files = {k: v for k, v in sorted(sources.items()) if k not in ("wayback", "nyc.gov")}
+    if other_files:
+        totals["files_from_other_archives"] = other_files
+    return {
+        "series": s.key,
+        "last_file_saved": last_saved,
+        "first_week": weeks[0],
+        "last_week": weeks[-1],
+        "weeks": weeks,
+        "precincts": [row],
+        "totals": totals,
+        "estimate_check": {"files_with_both_dates": checked, "estimate_right": right},
+        "states": {"3": s.read_label, "2": s.older_label, "1": "PDF only", "0": "Nothing saved"},
+    }
+
+
 def build_site_data(root: Path) -> dict[str, dict]:
     """Write one coverage file per series that has anything to chart. Returns them by series."""
     with (root / "captures.csv").open(newline="") as fh:
@@ -247,6 +367,13 @@ def build_site_data(root: Path) -> dict[str, dict]:
             continue
         path = root / out_path(key)
         path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(out, separators=(",", ":")) + "\n")
+        built[key] = out
+    for key, single in SINGLES.items():
+        out = build_single(root, single, captures, manifest)
+        if out is None:
+            continue
+        path = root / out_path(key)
         path.write_text(json.dumps(out, separators=(",", ":")) + "\n")
         built[key] = out
     return built
