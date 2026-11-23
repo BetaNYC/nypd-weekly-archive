@@ -1,0 +1,845 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2025,13,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2024,15,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2025,182,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2024,155,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2025,-89.670828603859,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2025,15.92356687898,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2023,2025,8.982035928143,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2025,15,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2024,15,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2025,128,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2024,118,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2025,-31.550802139037,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2025,109.83606557377,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2023,2025,1.587301587301,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2024,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2025,34,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2024,59,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2025,-98.433179723502,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2025,-37.037037037037,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2023,2025,-69.642857142857,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2025,123,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2024,121,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2025,45,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2024,31,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2025,1072,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2024,1016,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2025,-54.806070826306,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2025,33.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2023,2025,-3.249097472924,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2025,13,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2024,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2023,2025,8.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2025,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2024,17,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2010,2025,5.882352941176,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2023,2025,12.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2025,33,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2024,21,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2025,241,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2024,235,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2025,2.991452991452,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2023,2025,14.761904761904,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_1993,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2010,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2023,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2024,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2025,58,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2024,77,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2023,2025,-6.451612903225,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2025,202,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2024,374,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2025,62,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2024,67,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2025,1891,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2024,2047,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2025,76.399253731343,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2023,2025,-10.464015151515,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2025,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2024,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_1993,2025,-65.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2010,2025,-12.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2023,2025,-12.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2025,167,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2024,326,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2025,49,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2024,56,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2025,1587,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2024,1791,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2023,2025,-15.540180947312,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2025,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2024,26,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2024,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2025,111,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2024,138,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2025,-87.152777777777,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2025,29.06976744186,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2023,2025,-15.90909090909,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2023,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2023,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2025,167,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2024,190,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2025,51,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2024,49,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2025,1534,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2024,1497,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2025,-79.208457576579,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2025,30.999146029035,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2023,2025,-7.367149758454,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2025,20,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2024,29,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2010,2025,17.647058823529,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2023,2025,-37.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2025,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2024,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2023,2025,-47.368421052631,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2024,255,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2001,701,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1998,1028,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1993,3019,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1990,3695,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2024,204,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2001,127,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1998,185,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1993,295,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1990,312,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2024,89,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2001,320,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1998,997,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1993,3457,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1990,3338,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2024,1677,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2001,2208,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1998,2167,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1993,3792,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1990,5406,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2001,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1998,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1993,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1990,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2024,17,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2001,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1998,17,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1993,30,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1990,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2024,205,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2001,359,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1998,459,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1993,1378,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1990,1904,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2024,2449,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2001,3725,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1998,4859,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1993,11976,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1990,14691,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-019pct.xlsx,19th Precinct,19,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2025,19,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2024,23,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2025,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2025,161,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2024,185,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2025,-88.475304223335,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2025,-1.829268292682,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2023,2025,-51.212121212121,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2025,78,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2024,68,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2025,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2024,16,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2025,683,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2024,698,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2025,-24.279379157427,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2025,90.782122905027,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2023,2025,-7.702702702702,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2025,19,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2024,26,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2024,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2025,226,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2024,243,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2025,-74.171428571428,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2025,75.193798449612,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2023,2025,-30.246913580246,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2025,52,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2024,54,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2025,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2024,20,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2025,486,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2024,556,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2025,-9.665427509293,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2025,100.826446280992,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2023,2025,-5.263157894736,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2023,2025,-100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2025,28,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2024,53,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2010,2025,-17.647058823529,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2023,2025,-47.169811320754,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2025,110,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2024,122,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2025,28,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2024,39,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2025,852,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2024,920,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2025,5.576208178438,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2023,2025,5.576208178438,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2025,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2024,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_1993,2025,-86.95652173913,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2010,2025,-50.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2023,2025,-50.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2025,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2024,8,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2025,91,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2024,85,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2023,2025,1.111111111111,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2025,116,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2024,143,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2025,30,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2024,66,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2025,1219,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2024,1251,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2025,34.251101321585,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2023,2025,-10.564930300807,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2025,23,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2024,30,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_1993,2025,-62.903225806451,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2010,2025,9.523809523809,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2023,2025,-20.689655172413,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2025,43,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2024,56,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2025,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2024,29,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2025,458,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2024,594,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2023,2025,-34.664764621968,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2025,37,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2024,43,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2025,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2024,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2025,316,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2024,360,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2025,-75.331772053083,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2025,6.397306397306,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2023,2025,-15.281501340482,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2025,17,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2024,33,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2025,-85.470085470085,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2025,-32.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2023,2025,-50.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2025,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2024,46,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2025,-83.206106870229,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2025,-31.25,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2023,2025,-47.619047619047,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2025,207,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2024,221,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2025,54,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2024,59,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2025,1901,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2024,2084,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2025,-62.732797490688,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2025,55.437448896157,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2023,2025,-18.095648427402,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2025,29,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2024,38,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2010,2025,-3.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2023,2025,3.571428571428,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2024,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2025,33,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2024,49,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2023,2025,-35.294117647058,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2024,306,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2001,515,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1998,844,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1993,2137,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1990,2299,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2024,1067,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2001,677,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1998,780,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1993,1361,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1990,1640,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2024,345,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2001,472,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1998,519,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1993,1279,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1990,1744,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2024,885,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2001,431,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1998,447,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1993,802,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1990,766,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2024,16,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2001,31,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1998,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1993,69,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1990,89,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2024,44,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2001,63,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1998,82,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1993,99,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1990,90,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2024,560,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2001,702,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1998,970,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1993,2044,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1990,2187,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2024,3223,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2001,2891,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1998,3660,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1993,7791,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1990,8815,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-044pct.xlsx,44th Precinct,44,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,-33.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2025,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2025,54,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2024,55,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2025,-89.370078740157,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2025,-60.294117647058,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2023,2025,-47.57281553398,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2025,15,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2024,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2025,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2024,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2025,151,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2024,209,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2025,-73.965517241379,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2025,-27.403846153846,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2023,2025,-29.107981220657,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2025,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2024,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2025,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2025,58,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2024,63,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2025,-85.536159600997,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2025,1.754385964912,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2023,2025,-13.432835820895,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2025,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2024,26,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2025,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2024,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2025,168,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2024,187,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2025,-28.510638297872,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2025,-11.111111111111,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2023,2025,-25.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2023,2025,100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2025,8,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2024,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2025,67,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2024,66,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2010,2025,24.074074074074,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2023,2025,13.559322033898,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2025,30,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2024,34,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2025,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2024,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2025,273,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2024,271,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2025,-47.701149425287,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2023,2025,-18.263473053892,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_1993,2025,-87.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2010,2025,-83.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2023,2025,-33.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2025,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2024,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2023,2025,50.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2025,75,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2024,65,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2025,21,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2024,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2025,453,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2024,446,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2025,-9.580838323353,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2023,2025,-19.395017793594,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2025,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2024,8,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_1993,2025,-80.76923076923,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2010,2025,-37.5,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2023,2025,-41.176470588235,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2025,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2024,13,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2025,43,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2024,75,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2023,2025,-71.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2025,8,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2024,13,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2025,82,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2024,83,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2025,-89.364461738002,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2025,-59.803921568627,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2023,2025,-28.695652173913,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2025,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2024,14,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2025,-90.825688073394,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2025,-68.75,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2023,2025,11.111111111111,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2025,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2024,16,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2025,-90.243902439024,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2025,-67.567567567567,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2023,2025,9.090909090909,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2025,60,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2024,77,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2025,21,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2024,25,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2025,525,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2024,609,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2025,-79.516191962543,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2025,-36.131386861313,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2023,2025,-29.340511440107,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2025,13,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2024,15,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2010,2025,-23.529411764705,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2023,2025,30.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2025,14,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2024,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2023,2025,-41.666666666666,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2024,82,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2001,377,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1998,448,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1993,863,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1990,981,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2024,285,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2001,421,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1998,547,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1993,850,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1990,902,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2024,92,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2001,197,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1998,154,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1993,588,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1990,691,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2024,274,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2001,226,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1998,219,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1993,386,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1990,472,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2001,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1998,10,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1993,26,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1990,49,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2024,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2001,31,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1998,29,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1993,79,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1990,51,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2024,131,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2001,410,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1998,584,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1993,1229,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1990,1444,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2024,880,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2001,1680,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1998,1991,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1993,4021,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1990,4590,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-081pct.xlsx,81st Precinct,81,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2025,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,28d,2024,18,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,wtd,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2025,90,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd,2024,150,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2025,-89.234449760765,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2025,-63.562753036437,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2023,2025,-39.189189189189,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2025,37,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,28d,2024,35,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2025,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,wtd,2024,9,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2025,243,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd,2024,292,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2025,-56.137184115523,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2025,2.53164556962,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2023,2025,-17.064846416382,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2025,23,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,28d,2024,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,wtd,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2025,124,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd,2024,121,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2025,-80.31746031746,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2025,19.230769230769,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2023,2025,-5.343511450381,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2025,48,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,28d,2024,38,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2025,14,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,wtd,2024,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2025,383,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd,2024,398,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2025,7.887323943661,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2025,101.578947368421,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2023,2025,-18.336886993603,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2023,2025,-40.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2025,5,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,28d,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2025,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd,2024,20,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2010,2025,144.444444444444,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2023,2025,-8.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2025,82,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,28d,2024,49,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2025,19,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,wtd,2024,14,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2025,523,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd,2024,439,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2025,-0.380952380952,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2023,2025,20.229885057471,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,28d,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2025,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_1993,2025,-76.923076923076,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2010,2025,-33.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2023,2025,200.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2025,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,28d,2024,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2025,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,wtd,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2025,41,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd,2024,50,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2023,2025,7.894736842105,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2025,95,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,28d,2024,92,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2025,24,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,wtd,2024,24,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2025,660,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd,2024,637,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2025,41.935483870967,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2023,2025,0.151745068285,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2025,20,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd,2024,21,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_1993,2025,-55.555555555555,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2010,2025,-4.761904761904,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2023,2025,25.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2025,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,28d,2024,30,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,wtd,2024,8,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2025,178,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd,2024,173,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2023,2025,71.153846153846,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2025,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,28d,2024,35,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2025,7,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,wtd,2024,6,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2025,146,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd,2024,244,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2025,-84.284176533907,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2025,-45.318352059925,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2023,2025,-33.027522935779,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2025,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2025,11,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2025,-92.142857142857,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2025,-54.166666666666,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2023,2025,83.333333333333,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,wtd,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2025,14,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2025,-90.54054054054,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2025,-54.838709677419,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2023,2025,100.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2025,143,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,28d,2024,138,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2025,37,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,wtd,2024,27,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2025,1012,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd,2024,1227,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2025,-70.014814814814,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2025,-5.860465116279,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2023,2025,-20.751761942051,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,28d,2024,3,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2025,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd,2024,25,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2010,2025,-14.285714285714,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2023,2025,-40.0,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2025,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,28d,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2025,22,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd,2024,31,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2023,2025,-24.137931034482,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2024,207,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,2001,522,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1998,677,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1993,1386,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Burglary,calendar_year,1990,1670,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2024,417,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,2001,537,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1998,498,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1993,845,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Fel. Assault,calendar_year,1990,1173,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2024,207,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,2001,334,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1998,334,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1993,942,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,G.L.A.,calendar_year,1990,1352,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2024,599,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2001,280,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1998,284,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1993,566,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1990,822,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2024,2,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,2001,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1998,12,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1993,44,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Murder,calendar_year,1990,77,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2024,32,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,2001,57,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1998,46,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1993,62,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Rape,calendar_year,1990,80,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2024,342,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,2001,551,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1998,700,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1993,1528,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,Robbery,calendar_year,1990,2242,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2024,1806,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,2001,2293,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1998,2551,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1993,5373,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Historical Perspective,TOTAL,calendar_year,1990,7416,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,28d,2024,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2025,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2024,0,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2025,1,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2024,4,count
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-08-24/cs-en-us-083pct.xlsx,83rd Precinct,83,2025-08-18,2025-08-24,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,,percent

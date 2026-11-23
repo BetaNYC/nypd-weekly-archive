@@ -134,7 +134,7 @@
 <h2 id="how-it-works">How it works <a class="anchor" href="#how-it-works" aria-label="Link to this section">#</a></h2>
 <p>A scheduled job runs every Thursday and Saturday. NYPD replaces its files on Mondays and Tuesdays, so both runs land after a week's files are posted and before they are replaced. The job asks nyc.gov only for files that changed, one request at a time.</p>
 <p>Each original file is kept exactly as NYPD published it, with its checksum, in the repository's <a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">GitHub Releases</a>. The spreadsheets are then reshaped into CSV files with one number per row. If NYPD changes a file's layout, the job stops and says so rather than guess.</p>
-<p>For the weeks before the archive started, we download the TrafficStat and CompStat files that the Wayback Machine holds and check each against the Wayback Machine's own checksum. For CompStat we also brought in the PDFs Aaron Schumacher saved and the numbers Tim McDermott and Josh Greenman pulled from NYPD's reports; the <a href="compstat.html">CompStat page</a> says which came from where.</p>
+<p>For the weeks before the archive started, we download the TrafficStat, CompStat, citywide and Department of Correction CompStat, and NYCHA Housing Bureau files that the Wayback Machine holds and check each against the Wayback Machine's own checksum. For CompStat we also brought in the PDFs Aaron Schumacher saved and the numbers Tim McDermott and Josh Greenman pulled from NYPD's reports; the <a href="compstat.html">CompStat page</a> says which came from where.</p>
 
 <h2 id="use-the-data">Use the data <a class="anchor" href="#use-the-data" aria-label="Link to this section">#</a></h2>
 <ul class="tight">

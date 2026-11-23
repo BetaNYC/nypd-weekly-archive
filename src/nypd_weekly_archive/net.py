@@ -62,7 +62,7 @@ class Fetcher:
         self.min_interval = min_interval
         self.max_retries = max_retries
         self.max_backoff = max_backoff
-        # Minimum wait after a 429 or 503 (the Wayback backfill uses 60 s).
+        # Minimum wait after a 429 or a 5xx (the Wayback backfill uses 60 s).
         self.retry_floor = retry_floor
         self._sleep = sleep
         self._clock = clock
@@ -106,7 +106,7 @@ class Fetcher:
             if attempt > self.max_retries:
                 raise FetchError(f"{url}: {err} after {self.max_retries} retries")
             delay = min(self.max_backoff, 2.0**attempt)
-            if resp is not None and resp.status_code in (429, 503):
+            if resp is not None and resp.status_code in RETRY_STATUS:
                 delay = max(delay, self.retry_floor)
             if resp is not None:
                 ra = parse_retry_after(resp.headers.get("Retry-After"))

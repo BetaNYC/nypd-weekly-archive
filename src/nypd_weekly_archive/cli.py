@@ -56,6 +56,9 @@ def main(argv: list[str] | None = None) -> int:
                     help="dashboard-map: write raw/ and data/ under this folder instead of the repo "
                          "(required for compstat, and it must be outside the repo)")
     ap.add_argument("--limit", type=int, help="backfill-wayback/-github: take at most this many files")
+    ap.add_argument("--names", nargs="+", metavar="NAME",
+                    help="backfill-wayback: only files with these names, no extension, any case "
+                         "(e.g. cs-en-us-city cscity hb_eagle_report)")
     ap.add_argument("--source", action="append", default=[], metavar="LABEL=FOLDER",
                     help="import-mcdermott: a folder of Tim's vol*.csv files; repeat, best first")
     ap.add_argument("--clone", type=Path, help="backfill-github, import-greenman: local clone of the source repo")
@@ -130,7 +133,7 @@ def main(argv: list[str] | None = None) -> int:
 
         status = backfill_wayback(
             Fetcher(min_interval=max(3.0, args.min_interval), retry_floor=60.0),
-            root, args.series, limit=args.limit,
+            root, args.series, limit=args.limit, names=args.names,
         )
         if build(root, p["ledger"], p["data"]):
             status = 1
