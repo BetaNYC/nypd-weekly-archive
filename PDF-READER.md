@@ -171,6 +171,22 @@ like a different edition of NYPD's file; the other 3 are single cells, such as P
 printed 1,881 where his file has 1181. On every one of these rows the PDF's own percent and total
 checks pass.
 
+## What phase 2 would read
+
+A dry run over every PDF on disk whose (file, week) has no spreadsheet, 2026-11-23. These counts
+change when issue #9's re-filing lands, which is why phase 2 waits.
+
+| Report | PDF-only files | Read | Refused | Files with a review item | Review items |
+|---|---:|---:|---:|---:|---:|
+| Precinct CompStat | 14,672 | 14,671 (502 weeks) | 1 (week ending 2021-08-15, no drawn columns) | 16 | 240 |
+| Citywide CompStat | 537 | 532 | 5 (2008-2009 layout) | 11 | 58 |
+| Correction CompStat | 146 | 146 | 0 | 47 | 47 (all `not_read`: the one-year Historical block) |
+| NYCHA Housing Bureau | 85 | 78 | 7 (3 cut off at 1 MiB, 4 other layouts) | 2 | 70 |
+
+Of the 14,671 precinct-weeks, 4,827 are in neither a spreadsheet nor Tim McDermott's files. Of
+the 78 NYCHA weeks read, 63 have no spreadsheet; the other 15 were filed under a Wayback capture
+date, so the PDF-only filter could not see that their spreadsheet survives.
+
 ## Running it
 
 ```sh
