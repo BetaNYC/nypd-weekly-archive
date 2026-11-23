@@ -40,7 +40,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import zipfile
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import UTC, datetime
 from pathlib import Path
 
@@ -58,7 +58,8 @@ def tag_for(row: dict[str, str]) -> tuple[str, str]:
     """(release tag, label used in the asset name) for a ledger row."""
     day = row["fetched_at"][:10]
     if row.get("source") == "wayback":
-        return f"backfill-wayback-{day}", "wayback"
+        # The day is in the label too: two download days must not share a zip name.
+        return f"backfill-wayback-{day}", f"wayback-{day}"
     if (src := row.get("source", "")).startswith("github:"):
         # One zip per year, so no asset nears GitHub's 2 GiB limit.
         owner = src.removeprefix("github:").split("/")[0]
@@ -106,6 +107,10 @@ def package(repo: Path, dist: Path, now: datetime | None = None) -> list[tuple[s
     missing = [r["path"] for rows in groups.values() for r in rows if not (repo / r["path"]).exists()]
     if missing:
         raise PackageError(f"{len(missing)} unreleased captures are not on disk, e.g. {missing[:3]}")
+    names = Counter(f"{series}_{label}" for _, series, label in groups)
+    if clash := [n for n, c in names.items() if c > 1]:
+        # Two groups would write the same zip, and the second would overwrite the first.
+        raise PackageError(f"two release groups share an asset name: {clash}")
     for (tag, series, label), rows in sorted(groups.items()):
         asset = f"{series}_{label}_{stamp}.zip"
         _zip(dist / asset, repo, [r["path"] for r in rows])
