@@ -1,0 +1,67 @@
+name: Weekly dashboard map
+
+# Save the crash points on NYPD's TrafficStat dashboard map for the current
+# report week (`nypd-archive dashboard-map`). The dashboard shows points only
+# for this week, the last 28 days and the year to date, so a week not saved is
+# gone. Runs after the weekly capture (14:23 UTC, up to 90 minutes) and shares
+# its concurrency group, so the two never push at the same time. Saturday's
+# run stops after one request if Thursday already saved the week.
+on:
+  schedule:
+    - cron: "23 16 * * 4"
+    - cron: "23 16 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: capture
+  cancel-in-progress: false
+
+jobs:
+  dashboard-map:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Save this week's map points
+        id: run
+        run: |
+          set +e
+          uv run --python 3.14 nypd-archive dashboard-map
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+      # Commit the CSV first, so a packaging or upload problem cannot lose the week.
+      - name: Commit the week's points
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trafficstat_dashboard_map
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "dashboard map: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+      # Then the raw answers go into the week's release, like the weekly files.
+      - name: Package raw answers
+        run: uv run --python 3.14 nypd-archive package
+      - name: Upload raw answers to GitHub Releases
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/upload-release-assets.sh
+      - name: Commit the release record
+        run: |
+          git add backfills.csv
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "dashboard map release: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
+      - name: Fail if the run reported problems
+        if: steps.run.outputs.status != '0'
+        run: |
+          echo "nypd-archive dashboard-map exited ${{ steps.run.outputs.status }}; see the log above (shape change or a count that did not match the table)."
+          exit 1

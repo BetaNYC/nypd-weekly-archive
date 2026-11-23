@@ -3,6 +3,7 @@
 Weekly: discover, capture, build, or run (all three); redate after a parser fix.
 package zips originals not yet released into dist/ for GitHub Releases.
 One-off backfills: backfill-dashboard, backfill-wayback, backfill-github.
+dashboard-map saves this week's points from the map of NYPD's TrafficStat or CompStat 2.0 dashboard.
 import-greenman converts Josh Greenman's parsed CompStat weeks into data/compstat_greenman/.
 import-mcdermott converts Tim McDermott's weekly CompStat CSVs into data/compstat_mcdermott/.
 site rewrites docs/data/ for the GitHub Pages site from captures.csv and data/.
@@ -35,7 +36,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="nypd-archive", description=__doc__)
     ap.add_argument(
         "command",
-        choices=["discover", "capture", "build", "run", "redate", "package", "site",
+        choices=["discover", "capture", "build", "run", "redate", "package", "site", "dashboard-map",
                  "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
@@ -45,7 +46,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--save-to-wayback", action="store_true",
                     help="also submit each newly captured file URL to the Internet Archive (off by default)")
     ap.add_argument("--min-interval", type=float, default=1.0, help="seconds between requests (>= 1)")
-    ap.add_argument("--geos", nargs="+", help="backfill-dashboard: only these geographies (e.g. 075 114)")
+    ap.add_argument("--geos", nargs="+",
+                    help="backfill-dashboard, dashboard-map: only these geographies (e.g. 075 114)")
+    ap.add_argument("--site", choices=["trafficstat", "compstat"], default="trafficstat",
+                    help="dashboard-map: which dashboard (default trafficstat)")
+    ap.add_argument("--windows", nargs="+", choices=["WTD", "SPLYWTD", "28D", "SPLY28D", "YTD", "SPLYYTD"],
+                    default=["WTD"], help="dashboard-map: which windows (default WTD, the weekly save)")
+    ap.add_argument("--out", type=Path,
+                    help="dashboard-map: write raw/ and data/ under this folder instead of the repo "
+                         "(required for compstat, and it must be outside the repo)")
     ap.add_argument("--limit", type=int, help="backfill-wayback/-github: take at most this many files")
     ap.add_argument("--source", action="append", default=[], metavar="LABEL=FOLDER",
                     help="import-mcdermott: a folder of Tim's vol*.csv files; repeat, best first")
@@ -92,6 +101,29 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         log("finish", status=0)
         return 0
+
+    if args.command == "dashboard-map":
+        from .dashboard import ShapeError
+        from .dashboard_map import SITES, save_week
+
+        site = SITES[args.site]
+        out = args.out.resolve() if args.out else None
+        if not site.public and (out is None or out == root or root in out.parents):
+            print(f"error: {site.key} points are kept outside this public repository; "
+                  "pass --out <folder outside the repo>", file=sys.stderr)
+            return 2
+        base = {"raw": out / "raw", "data": out / "data"} if out else p
+        try:
+            csv_path, mismatches = save_week(Fetcher(min_interval=max(2.0, args.min_interval)), base["raw"],
+                                             base["data"], geos=args.geos, site=site,
+                                             windows=tuple(args.windows))
+        except ShapeError as exc:
+            log("dashboard_shape_changed", error=str(exc))
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        status = 1 if mismatches else 0
+        log("finish", status=status, csv=str(csv_path) if csv_path else "", mismatches=mismatches)
+        return status
 
     if args.command == "backfill-wayback":
         from .wayback_backfill import backfill_wayback

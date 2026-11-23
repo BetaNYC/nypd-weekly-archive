@@ -92,12 +92,12 @@ def _mdy2(s: str) -> date:
     return datetime.strptime(s, "%m/%d/%y").date()
 
 
-def geos_from_filter(resp: object) -> list[str]:
+def geos_from_filter(resp: object, keys: set[str] = GEO_KEYS) -> list[str]:
     if not isinstance(resp, list) or not resp:
         raise ShapeError(f"precinct filter: expected a non-empty list, got {type(resp).__name__}")
     precincts = set()
     for item in resp:
-        if not isinstance(item, dict) or set(item) != GEO_KEYS:
+        if not isinstance(item, dict) or set(item) != keys:
             raise ShapeError(f"precinct filter: unexpected item {item!r}")
         if re.fullmatch(r"\d{3}", str(item["key"])):
             precincts.add(item["key"])

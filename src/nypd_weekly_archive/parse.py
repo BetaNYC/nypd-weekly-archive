@@ -632,6 +632,32 @@ PARSERS = {
 
 MAX_CHANGE_MISMATCHES = 1
 
+HOUSING_WEEK = re.compile(r"([A-Z][a-z]+ \d{1,2}, \d{4}) through ([A-Z][a-z]+ \d{1,2}, \d{4})")
+
+
+def housing_week(path: Path) -> date:
+    """Week end of the NYCHA Housing Bureau report (hb_eagle_report.xlsx), from its WTD sheet.
+
+    Seen 2026-11-22: 35 sheets (WTD, 28 Days, YTD, WTD_2, ...); WTD's first rows read
+    "WEEK TO DATE COMPARISON" and "November 9, 2026 through November 15, 2026". Its numbers
+    are not read into data/ yet; the original is kept every week.
+    """
+    wb = _load(path)
+    if "WTD" not in wb.sheetnames:
+        raise LayoutError(f"{path.name}: no WTD sheet in {wb.sheetnames[:5]}")
+    for _, cells in _rows(wb["WTD"])[:6]:
+        for c in cells:
+            m = HOUSING_WEEK.fullmatch(str(c).replace("\xa0", " ").strip())
+            if m:
+                start, end = (datetime.strptime(x, "%B %d, %Y").date() for x in m.groups())
+                _expect((end - start).days == 6, f"{path.name}: week {start} to {end} is not 7 days")
+                return end
+    raise LayoutError(f"{path.name}: no 'through' date line on the WTD sheet")
+
+
+# Series whose files are kept and dated, but not yet read into data/.
+DATE_ONLY = {"housing": housing_week}
+
 
 def parse_file(series: str, path: Path) -> tuple[list[Row], list[str]]:
     """Parse for the pipeline: returns (rows, anomalies).
@@ -651,6 +677,8 @@ def parse_file(series: str, path: Path) -> tuple[list[Row], list[str]]:
 
 def week_end(series: str, path: Path) -> date:
     """The report's week-ending date, read from the file itself."""
+    if series in DATE_ONLY:
+        return DATE_ONLY[series](path)
     rows, _ = parse_file(series, path)
     if not rows:
         raise LayoutError(f"{path.name}: parsed no rows")

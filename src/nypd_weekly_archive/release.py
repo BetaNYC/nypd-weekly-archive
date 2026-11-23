@@ -12,7 +12,8 @@ Which release (tag):
 - Copies from another GitHub archive (github_backfill.py):
   backfill-github-<import date>, one zip per source and year.
 - Dashboard responses (raw/trafficstat_dashboard/<date>/):
-  backfill-dashboard-<date>. CDX listings (raw/wayback_cdx/<date>/):
+  backfill-dashboard-<date>. Weekly dashboard map answers
+  (raw/trafficstat_dashboard_map/<week end>/): week-<week end>. CDX listings (raw/wayback_cdx/<date>/):
   backfill-wayback-<date>.
 
 Which asset: one zip per series per release per packaging run, named
@@ -115,7 +116,7 @@ def package(repo: Path, dist: Path, now: datetime | None = None) -> list[tuple[s
     if groups:
         write_ledger(ledger_path, ledger)
 
-    # 2. Backfill files that are not captures: dashboard responses, CDX listings.
+    # 2. Files that are not captures: dashboard responses and map answers, CDX listings.
     bf_path = repo / "backfills.csv"
     backfills = read_backfills(bf_path)
     known = {b["path"] for b in backfills}
@@ -123,6 +124,8 @@ def package(repo: Path, dist: Path, now: datetime | None = None) -> list[tuple[s
     raw = repo / "raw"
     for f in sorted(raw.glob("trafficstat_dashboard/*/responses.jsonl.gz")):
         found[(f"backfill-dashboard-{f.parent.name}", f"trafficstat-dashboard_{f.parent.name}")].append(f)
+    for f in sorted(raw.glob("trafficstat_dashboard_map/????-??-??/responses.jsonl.gz")):
+        found[(f"week-{f.parent.name}", f"trafficstat-dashboard-map_{f.parent.name}")].append(f)
     for f in sorted(raw.glob("wayback_cdx/*/*.json")):
         found[(f"backfill-wayback-{f.parent.name}", f"wayback-cdx_{f.parent.name}")].append(f)
     for (tag, name), files in sorted(found.items()):
