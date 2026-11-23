@@ -118,11 +118,23 @@ def test_save_week_end_to_end(fixtures: Path, tmp_path: Path) -> None:
     assert len(calls) == 1
 
 
-def test_count_mismatch_is_reported(fixtures: Path, tmp_path: Path) -> None:
+@pytest.mark.parametrize(("table", "problems"), [(44, 0), (42, 1)])
+def test_count_check(fixtures: Path, tmp_path: Path, table: int, problems: int) -> None:
+    """43 points: a table of 44 is only logged, a table of 42 is a problem."""
     calls: list = []
-    _, mismatches = save_week(make_fetcher(_site(fixtures, calls, precinct_collisions=44)), tmp_path / "raw",
+    _, mismatches = save_week(make_fetcher(_site(fixtures, calls, precinct_collisions=table)), tmp_path / "raw",
                               tmp_path / "data", geos=["075"])
-    assert mismatches == 1
+    assert mismatches == problems
+
+
+def test_empty_map_answer_is_zero_points(fixtures: Path) -> None:
+    """Seen 2026-11-22 for 044 WTD_COLLISIONS_Col Pedestrian: the table counts it, the map has no location."""
+    point = load(fixtures, "dashboard_map", "map_075_WTD_collisions.json")[0]
+    empty = {**{k: None for k in point}, "metric": 0, "value": " 40.7304,-73.9811",
+             "tooltipHtml": "Incident Map \\r\\nWeek to Date - Pedestrian - 044 CMD - 11/09/26 - 11/15/26"}
+    assert parse_points([empty], "044") == []
+    with pytest.raises(ShapeError, match="not the empty map"):
+        parse_points([{**empty, "tooltipHtml": "<h5>Total Collisions</h5>"}], "044")
 
 
 def test_week_change_during_run_writes_nothing(fixtures: Path, tmp_path: Path) -> None:

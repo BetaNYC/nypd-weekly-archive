@@ -130,6 +130,14 @@ def parse_points(resp: object, where: str) -> list[dict[str, object]]:
         raise ShapeError(f"map {where}: expected a list, got {type(resp).__name__}")
     if len(resp) >= MAP_CAP:
         raise ShapeError(f"map {where}: {len(resp)} points, at the {MAP_CAP} cap")
+    if len(resp) == 1 and isinstance(resp[0], dict) and set(resp[0]) == POINT_KEYS and resp[0]["metric"] == 0:
+        # "Nothing to map": one point with count 0 at the map's default center and a caption
+        # such as "Incident Map \r\nWeek to Date - Pedestrian - 044 CMD - 11/09/26 - 11/15/26"
+        # (seen 2026-11-22 for cells the table counts but whose incidents have no location).
+        if not str(resp[0]["tooltipHtml"] or "").startswith("Incident Map") or not LATLNG.fullmatch(
+                str(resp[0]["value"])):
+            raise ShapeError(f"map {where}: a count-0 point that is not the empty map: {resp[0]!r}")
+        return []
     rows: list[dict[str, object]] = []
     for i, item in enumerate(resp, 1):
         if not isinstance(item, dict) or set(item) != POINT_KEYS:
@@ -259,9 +267,13 @@ def build_week(gz: Path, out_csv: Path) -> tuple[Path, int]:
         if r["crash"] == 1:
             k = (str(r["precinct"]), str(r["record_id"]))
             got[k] = got.get(k, 0) + int(r["point_count"])  # type: ignore[call-overload]
+    # Fewer points than the table is expected now and then (incidents with no location) and is
+    # only logged. More points than the table, or points for a cell the table lacks, exits 1.
     for (geo, rid), total in sorted(got.items()):
         want = counts.get(geo, {}).get(rid)
-        if want != total:
+        if want is not None and total < want:
+            log("dashboard_map_short", precinct=geo, record_id=rid, points=total, table=want)
+        elif want != total:
             mismatches += 1
             log("dashboard_map_mismatch", precinct=geo, record_id=rid, points=total, table=want)
     for r in rows:
