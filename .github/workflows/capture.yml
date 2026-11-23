@@ -71,7 +71,14 @@ jobs:
             echo "No changes."
           else
             git commit -m "capture: $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            pushed=
+            for attempt in 1 2 3 4 5; do
+              git fetch -q origin main
+              git rebase -q origin/main || { echo "rebase failed"; exit 1; }
+              if git push; then pushed=1; break; fi
+              echo "push rejected; rebasing and retrying ($attempt)"; sleep $((attempt * 5))
+            done
+            [ -n "$pushed" ] || { echo "push failed after 5 tries"; exit 1; }
           fi
       - name: Fail if the run reported problems
         if: steps.run.outputs.status != '0'

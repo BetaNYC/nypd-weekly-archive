@@ -26,7 +26,7 @@ from pathlib import Path
 
 from .capture import _stem, read_ledger
 from .log import log
-from .parse import FIELDS, PARSERS, LayoutError, Row, parse_file
+from .parse import FIELDS, PARSERS, LayoutError, parse_file
 
 
 def latest_xlsx(ledger: list[dict[str, str]]) -> dict[tuple[str, str], list[dict[str, str]]]:
@@ -45,19 +45,36 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
     """Write one CSV per (series, week). Returns layout errors (empty if none)."""
     errors: list[str] = []
     anomalies: list[dict[str, str]] = []
-    rebuilt: set[tuple[str, str]] = set()
+    rebuilt_sources: set[str] = set()
     groups = latest_xlsx(read_ledger(ledger_path))
     for (series, wk), entries in sorted(groups.items()):
         if series not in PARSERS:  # kept and dated, not read yet (parse.DATE_ONLY)
             continue
-        missing = [e["path"] for e in entries if not (repo / e["path"]).exists()]
-        if missing:
-            log("build_skipped_week", series=series, week_end=wk, missing=len(missing),
-                reason="originals not on disk; existing CSV kept")
+        present = [e for e in entries if (repo / e["path"]).exists()]
+        absent = [e["path"] for e in entries if not (repo / e["path"]).exists()]
+        out = data_dir / series / f"{wk}.csv"
+        # In CI only this run's files are on disk; the rest live in GitHub Releases.
+        # With nothing on disk, keep the existing CSV untouched. With some files on
+        # disk and some not, rebuild the rows for the files present and keep the
+        # existing rows for the rest -- so a file newly added to an already-built
+        # week is merged in, not dropped -- but only when there is an existing CSV
+        # to augment; a partial week is never written from scratch.
+        if not present:
+            if absent:
+                log("build_skipped_week", series=series, week_end=wk, missing=len(absent),
+                    reason="no originals on disk; existing CSV kept")
             continue
-        rebuilt.add((series, wk))
-        rows: list[Row] = []
-        for e in entries:
+        if absent and not out.exists():
+            log("build_skipped_week", series=series, week_end=wk, missing=len(absent),
+                reason="some originals on disk but no existing CSV to augment; nothing written")
+            continue
+        present_paths = {e["path"] for e in present}
+        rebuilt_sources |= present_paths
+        out_rows: list[dict[str, object]] = []
+        if absent:
+            with out.open(newline="") as f:
+                out_rows = [r for r in csv.DictReader(f) if r["source_file"] not in present_paths]
+        for e in present:
             try:
                 parsed, notes = parse_file(series, repo / e["path"])
             except LayoutError as exc:
@@ -69,22 +86,21 @@ def build(repo: Path, ledger_path: Path, data_dir: Path) -> list[str]:
                 log("anomaly", path=e["path"], note=n)
             for r in parsed:
                 r.source_file = e["path"]
-            rows.extend(parsed)
-        out = data_dir / series / f"{wk}.csv"
+                out_rows.append({k: str(v) for k, v in r.as_dict().items()})
         out.parent.mkdir(parents=True, exist_ok=True)
-        rows.sort(key=lambda r: (r.source_file, r.sheet, r.section, r.measure, r.geography, r.period, -(r.year or 0)))
+        out_rows.sort(key=lambda r: (r["source_file"], r["sheet"], r["section"], r["measure"],
+                                     r["geography"], r["period"], -int(r["year"] or 0)))
         tmp = out.with_suffix(".csv.tmp")
         with tmp.open("w", newline="") as f:
             w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n")
             w.writeheader()
-            for r in rows:
-                w.writerow(r.as_dict())
+            w.writerows(out_rows)
         tmp.replace(out)
-        log("built", series=series, week_end=wk, files=len(entries), rows=len(rows))
+        log("built", series=series, week_end=wk, files=len(present), augmented=bool(absent), rows=len(out_rows))
     path = data_dir / "anomalies.csv"
     if path.exists():
         with path.open(newline="") as f:
-            kept = [a for a in csv.DictReader(f) if (a["series"], a["week_end"]) not in rebuilt]
+            kept = [a for a in csv.DictReader(f) if a["source_file"] not in rebuilt_sources]
         anomalies = sorted(kept + anomalies, key=lambda a: (a["series"], a["week_end"], a["source_file"], a["note"]))
     _write_anomalies(path, anomalies)
     _write_stale(data_dir / "stale_files.csv", read_ledger(ledger_path))

@@ -38,8 +38,10 @@
         <li><a href="compstat.html">CompStat</a></li>
         <li><a href="fatalities.html">Traffic fatalities</a></li>
         <li><a href="quality-of-life.html">Quality of life</a></li>
-        <li><a href="#use-the-data">Use the data</a></li>
-        <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a></li>
+        <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+        <li><a href="correction-compstat.html">DOC CompStat</a></li>
+        <li><a href="nycha-housing.html">NYCHA housing</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </div>
@@ -59,7 +61,7 @@
 <div class="wrap">
 
 <h2 id="what-we-save">What we save <a class="anchor" href="#what-we-save" aria-label="Link to this section">#</a></h2>
-<p>Four sets of NYPD files, each replaced every week. We read the list of files from NYPD's own pages on every run, so a new precinct or a renamed file is picked up without anyone editing a list.</p>
+<p>Seven NYPD reports have their own pages below, each replaced every week. We read the list of files from NYPD's own pages on every run, so a new precinct or a renamed file is picked up without anyone editing a list.</p>
 <div class="table-scroll"><table>
   <thead><tr><th scope="col">Series</th><th scope="col">Files</th><th scope="col">What is in it</th></tr></thead>
   <tbody>
@@ -67,11 +69,16 @@
     <tr><td><a href="compstat.html">CompStat</a></td><td>78 precincts, 8 patrol boroughs</td><td>Crime complaints, shootings and hate crimes, with NYPD's two-year and long-range changes. <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/borough-and-precinct-crime-stats.page">NYPD's page</a>.</td></tr>
     <tr><td><a href="fatalities.html">Traffic fatalities</a></td><td>One per patrol borough, plus Port Authority Police</td><td>Traffic deaths by precinct for 7 days, 28 days and the year to date, against the year before. <a href="https://www.nyc.gov/site/nypd/stats/traffic-data/traffic-fatalities.page">NYPD's page</a>.</td></tr>
     <tr><td><a href="quality-of-life.html">Quality of life</a></td><td>Citywide and 78 precincts</td><td>911 and 311 calls about noise, vehicles, such as blocked driveways and double parking, and disorderly behavior. <a href="https://www.nyc.gov/site/nypd/stats/quality-of-life-stats/quality-of-life-stats.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="citywide-compstat.html">Citywide CompStat</a></td><td>One for the whole city</td><td>The CompStat crime report for the whole city: crime complaints, shootings and hate crimes, with NYPD's two-year and long-range changes. <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="correction-compstat.html">Department of Correction CompStat</a></td><td>One for the Department of Correction</td><td>The same weekly crime report, for the Department of Correction. <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page">NYPD's page</a>.</td></tr>
+    <tr><td><a href="nycha-housing.html">NYCHA Housing Bureau report</a></td><td>One for all public-housing developments</td><td>The seven major crimes for each public-housing development, by Police Service Area and precinct. We save the files every week; their numbers are not read into CSV yet. <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page">NYPD's page</a>.</td></tr>
   </tbody>
 </table></div>
 
+<p>We also save the crash points behind NYPD's <a href="https://trafficsafetyforum.nypdonline.org/">TrafficStat dashboard</a> map, one row per crash with its location, which the dashboard shows only for the current week. <a href="https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data/trafficstat_dashboard_map">The data is here</a>.</p>
+
 <h2 id="series">What we saved, week by week <a class="anchor" href="#series" aria-label="Link to this section">#</a></h2>
-<p>Each report has its own page, with a chart of the weeks we hold for every precinct and the same facts as a table.</p>
+<p>Each report has its own page, with a chart of the weeks we hold, for every precinct or for the one citywide file, and the same facts as a table.</p>
 <ul class="cards">
   <li class="card" data-series="trafficstat">
     <h3><a href="trafficstat.html">TrafficStat</a></h3>
@@ -101,6 +108,27 @@
     <div class="n" data-k="share">–</div><div class="l">of precinct-weeks held</div>
     <a class="more" href="quality-of-life.html">See what we saved<span class="visually-hidden"> for Quality of life</span></a>
   </li>
+  <li class="card" data-series="citywide">
+    <h3><a href="citywide-compstat.html">Citywide CompStat</a></h3>
+    <p>Crime complaints, shootings and hate crimes for the whole city.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of weeks held</div>
+    <a class="more" href="citywide-compstat.html">See what we saved<span class="visually-hidden"> for Citywide CompStat</span></a>
+  </li>
+  <li class="card" data-series="correction">
+    <h3><a href="correction-compstat.html">Department of Correction CompStat</a></h3>
+    <p>The same crime report, for the Department of Correction.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of weeks held</div>
+    <a class="more" href="correction-compstat.html">See what we saved<span class="visually-hidden"> for Department of Correction CompStat</span></a>
+  </li>
+  <li class="card" data-series="housing">
+    <h3><a href="nycha-housing.html">NYCHA Housing Bureau report</a></h3>
+    <p>The seven major crimes in each public-housing development.</p>
+    <div class="n" data-k="weeks">–</div><div class="l"><span data-k="unit">weeks</span>, <span data-k="range">–</span></div>
+    <div class="n" data-k="share">–</div><div class="l">of weeks held</div>
+    <a class="more" href="nycha-housing.html">See what we saved<span class="visually-hidden"> for NYCHA Housing Bureau report</span></a>
+  </li>
 </ul>
 
 <h2 id="how-it-works">How it works <a class="anchor" href="#how-it-works" aria-label="Link to this section">#</a></h2>
@@ -113,7 +141,7 @@
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data">Tidy CSV files</a>, one file per series per week. The <a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/README.md">README</a> explains every column.</li>
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">NYPD's original files</a>, zipped by week.</li>
   <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/captures.csv"><code>captures.csv</code></a>, the ledger: every file saved, where it came from, and its checksum.</li>
-  <li>The data behind the charts: <a href="data/trafficstat-coverage.json">TrafficStat</a>, <a href="data/compstat-coverage.json">CompStat</a>, <a href="data/fatalities-coverage.json">traffic fatalities</a>, <a href="data/qteam-coverage.json">quality of life</a>.</li>
+  <li>The data behind the charts: <a href="data/trafficstat-coverage.json">TrafficStat</a>, <a href="data/compstat-coverage.json">CompStat</a>, <a href="data/fatalities-coverage.json">traffic fatalities</a>, <a href="data/qteam-coverage.json">quality of life</a>, <a href="data/citywide-coverage.json">citywide CompStat</a>, <a href="data/correction-coverage.json">Department of Correction CompStat</a>, <a href="data/housing-coverage.json">NYCHA Housing Bureau report</a>.</li>
 </ul>
 
 <div class="note"><b>Not an official record.</b> NYPD calls these figures preliminary and subject to change. BetaNYC reshaped the spreadsheets into one number per row and left out NYPD's "change" columns, which can be worked out from the two years beside them. The original files in the releases are NYPD's, unchanged. For official figures, go to <a href="https://www.nyc.gov/site/nypd/stats/stats.page">NYPD's statistics pages</a>.</div>
@@ -121,11 +149,40 @@
 </div>
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
-    <img class="wordmark" src="assets/betanyc-wordmark-blue.svg" alt="BetaNYC" width="90" height="30">
-    <p><strong>NYPD Weekly Archive</strong> is built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York. <a href="https://github.com/BetaNYC/nypd-weekly-archive">Source code on GitHub</a>. Found a mistake? <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Tell us</a>.</p>
-    <p class="small">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
+    <div class="foot-cols">
+      <section aria-labelledby="foot-h-site">
+        <h2 id="foot-h-site">This site</h2>
+        <ul>
+          <li><a href="./" aria-current="page">Home</a></li>
+          <li><a href="trafficstat.html">TrafficStat</a></li>
+          <li><a href="compstat.html">CompStat</a></li>
+          <li><a href="fatalities.html">Traffic fatalities</a></li>
+          <li><a href="quality-of-life.html">Quality of life</a></li>
+          <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+          <li><a href="correction-compstat.html">Department of Correction CompStat</a></li>
+          <li><a href="nycha-housing.html">NYCHA Housing Bureau report</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="./#use-the-data">Use the data</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="foot-h-beta">
+        <h2 id="foot-h-beta">About BetaNYC</h2>
+        <p>New York's civic organization for public interest technology, open data, and civic design. We built and maintain this site.</p>
+        <ul>
+          <li><a href="https://www.beta.nyc/featured-tools/ai-tools-for-nyc-democracy/">All our AI tools for NYC's democracy</a></li>
+          <li><a href="https://www.beta.nyc/about/ai-policy/">Our AI policy</a></li>
+          <li><a href="https://www.beta.nyc/betabuilders/">Join BetaBuilders</a></li>
+          <li><a href="https://beta.nyc/donate">Support open civic data</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="foot-line">Built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York · <a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a> · <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a> · <a href="about.html">About</a>.</p>
+    <p class="lic"><b>How we use AI:</b> this site and its code were written with help from AI coding assistants and reviewed by BetaNYC staff. The numbers are copied by a program from NYPD's own files, not written by AI. <a href="about.html#ai">More about how we use AI</a>.</p>
+    <p class="lic">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
   </div>
 </footer>
 

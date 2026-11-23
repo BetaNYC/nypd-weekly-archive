@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Department of Correction CompStat: what we saved, week by week | NYPD Weekly Archive</title>
+<meta name="description" content="NYPD's weekly CompStat crime report for the Department of Correction, from 2014 on. See which weeks we saved.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/archive.css">
+<link rel="canonical" href="https://betanyc.github.io/nypd-weekly-archive/correction-compstat.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BetaNYC">
+<meta property="og:title" content="Department of Correction CompStat: what we saved, week by week">
+<meta property="og:description" content="NYPD's weekly CompStat crime report for the Department of Correction, from 2014 on. See which weeks we saved.">
+<meta property="og:url" content="https://betanyc.github.io/nypd-weekly-archive/correction-compstat.html">
+<meta name="twitter:card" content="summary">
+<script>window.SERIES = {"key": "correction", "name": "Department of Correction CompStat", "folders": [{"text": "data/compstat/", "href": "https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data/compstat"}], "nypdFile": "This week's Department of Correction CompStat spreadsheet", "unit": {"one": "report", "many": "reports", "page": "NYPD's citywide crime statistics page"}};</script>
+<script src="assets/share.js" defer></script>
+<script src="assets/nav.js" defer></script>
+<script src="assets/coverage.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-bar">
+  <div class="wrap">
+    <a class="home" href="./"><img src="assets/betanyc-wordmark-white.svg" alt="BetaNYC" width="78" height="26"><span>NYPD Weekly Archive</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
+    <nav id="site-menu" aria-label="Site">
+      <ul>
+        <li><a href="trafficstat.html">TrafficStat</a></li>
+        <li><a href="compstat.html">CompStat</a></li>
+        <li><a href="fatalities.html">Traffic fatalities</a></li>
+        <li><a href="quality-of-life.html">Quality of life</a></li>
+        <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+        <li><a href="correction-compstat.html" aria-current="page">DOC CompStat</a></li>
+        <li><a href="nycha-housing.html">NYCHA housing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>Department of Correction CompStat: what we saved, week by week</h1>
+    <p class="lede">Every week NYPD posts a CompStat crime report for the Department of Correction, in the same layout as the citywide report: crime complaints, shootings and hate crimes, against the same periods a year earlier. The next week's file replaces it.</p>
+    <p class="lede">Aaron Schumacher saved the PDFs from 2014 to 2016 (<a href="https://github.com/ajschumacher/nypd">ajschumacher/nypd</a>). This archive has saved the spreadsheet and the PDF every week since November 2026. Each square below is one week.</p>
+    <p class="hero-meta">Data from the <a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page">New York City Police Department</a>. Last file saved <time id="built"></time>.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<div class="stats" role="group" aria-label="Key numbers">
+  <div class="stat"><div class="n"><span data-calc="weeks">–</span></div><div class="l"><span data-calc="span">weeks</span></div></div>
+  <div class="stat"><div class="n"><span data-calc="held">–</span></div><div class="l">weeks we hold in some form, out of <span data-total="precinct_weeks">–</span></div></div>
+  <div class="stat"><div class="n"><span data-total="read">–</span></div><div class="l">of them with numbers in CSV</div></div>
+  <div class="stat"><div class="n"><span data-total="pdf_only">–</span></div><div class="l">of them as a PDF only</div></div>
+</div>
+
+<h2 id="coverage-h">What we saved <a class="anchor" href="#coverage" aria-label="Link to this chart">#</a></h2>
+<p>Each square is one week. Dark squares are weeks with numbers we can use. Gray squares are weeks no one saved. Its weeks are also listed in the section under the chart, with a link to share. The table below the chart has the same counts as text.</p>
+
+<figure class="figure" id="coverage">
+  <div class="figure-head">
+    <h3>Department of Correction CompStat files saved, by week</h3>
+    <div class="figure-controls">
+      <label for="pick">Report</label>
+      <select id="pick"><option value="">Pick the report</option></select>
+      <button class="copy-link" type="button" data-anchor="coverage">Copy link</button>
+    </div>
+  </div>
+  <div class="figure-body" tabindex="0" role="group" aria-label="Chart of Department of Correction CompStat files saved, by week. Scrolls sideways.">
+    <ul class="legend" aria-label="Legend">
+      <li><span class="sw s3"></span>Numbers in CSV</li>
+      <li><span class="sw s2"></span>Spreadsheet in an older NYPD layout, saved, not read yet</li>
+      <li><span class="sw s1"></span>PDF only</li>
+      <li><span class="sw s0"></span>Nothing saved</li>
+    </ul>
+    <p class="scroll-hint">Scroll sideways to see every week.</p>
+    <div id="chart" role="img" aria-describedby="chart-summary"></div>
+  </div>
+  <figcaption class="figure-caption" id="chart-summary">
+    Source: NYPD Department of Correction CompStat reports, from <a href="https://github.com/ajschumacher/nypd">ajschumacher/nypd</a> (PDFs, 2014 to 2016) and this archive's weekly saves from nyc.gov since November 2026. CompStat PDFs are dated by their own cover.<span data-if-estimate hidden> A file from the Wayback Machine that cannot be dated by its contents carries only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. For the files that carry both dates, that rule gives the right week for <span data-calc="estimate">–</span>.</span>
+  </figcaption>
+</figure>
+
+
+<h2 id="detail-h" tabindex="-1">The report, week by week <a class="anchor" href="#detail-h" aria-label="Link to this section">#</a></h2>
+<div class="detail" id="detail" aria-live="polite"><p class="detail-empty">Every week we hold for this report, with links to its files.</p></div>
+
+<h2 id="by-week">Weeks held <a class="anchor" href="#by-week" aria-label="Link to this table">#</a></h2>
+<div class="table-scroll"><table id="table">
+  <caption class="small">Number of weeks in each state. The same facts as the chart above.</caption>
+  <thead><tr><th scope="col">Report</th><th scope="col">Covers</th><th scope="col" class="num">In CSV</th><th scope="col" class="num">Older layout</th><th scope="col" class="num">PDF only</th><th scope="col" class="num">Nothing saved</th></tr></thead>
+  <tbody></tbody>
+</table></div>
+
+<h2 id="get-the-data">Get the data <a class="anchor" href="#get-the-data" aria-label="Link to this section">#</a></h2>
+<ul>
+  <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/tree/main/data/compstat">data/compstat/</a>, in the rows whose <code>geography</code> is <code>Department of Correction Citywide</code>.</li>
+  <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">NYPD's original files</a>, zipped by week.</li>
+  <li><a href="data/correction-coverage.json">The data behind the chart above</a>.</li>
+  <li><a href="https://www.nyc.gov/site/nypd/stats/crime-statistics/citywide-crime-stats.page">NYPD's own page</a> for this week's files.</li>
+</ul>
+
+<div class="note"><b>Not an official record.</b> NYPD calls these figures preliminary and subject to change. BetaNYC reshaped the spreadsheets into one number per row and left out NYPD's "change" columns, which can be worked out from the two years beside them. The original files in the releases are NYPD's, unchanged. For official figures, go to <a href="https://www.nyc.gov/site/nypd/stats/stats.page">NYPD's statistics pages</a>.</div>
+
+</div>
+</main>
+<div class="tooltip" id="tip" hidden></div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-cols">
+      <section aria-labelledby="foot-h-site">
+        <h2 id="foot-h-site">This site</h2>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="trafficstat.html">TrafficStat</a></li>
+          <li><a href="compstat.html">CompStat</a></li>
+          <li><a href="fatalities.html">Traffic fatalities</a></li>
+          <li><a href="quality-of-life.html">Quality of life</a></li>
+          <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+          <li><a href="correction-compstat.html" aria-current="page">Department of Correction CompStat</a></li>
+          <li><a href="nycha-housing.html">NYCHA Housing Bureau report</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="./#use-the-data">Use the data</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="foot-h-beta">
+        <h2 id="foot-h-beta">About BetaNYC</h2>
+        <p>New York's civic organization for public interest technology, open data, and civic design. We built and maintain this site.</p>
+        <ul>
+          <li><a href="https://www.beta.nyc/featured-tools/ai-tools-for-nyc-democracy/">All our AI tools for NYC's democracy</a></li>
+          <li><a href="https://www.beta.nyc/about/ai-policy/">Our AI policy</a></li>
+          <li><a href="https://www.beta.nyc/betabuilders/">Join BetaBuilders</a></li>
+          <li><a href="https://beta.nyc/donate">Support open civic data</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="foot-line">Built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York · <a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a> · <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a> · <a href="about.html">About</a>.</p>
+    <p class="lic"><b>How we use AI:</b> this site and its code were written with help from AI coding assistants and reviewed by BetaNYC staff. The numbers are copied by a program from NYPD's own files, not written by AI. <a href="about.html#ai">More about how we use AI</a>.</p>
+    <p class="lic">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -24,9 +24,37 @@
 .s2 { background: #256abf; fill: #256abf; }
 .s1 { background: #6da7ec; fill: #6da7ec; }
 .s0 { background: #e1e0d9; fill: #e1e0d9; }
-.detail { border-top: 1px solid var(--line-soft); padding: 14px 16px 4px; }
-.detail h4 { font-family: var(--font-head); color: var(--blue); font-size: 19px; margin: 0 0 6px; }
-.detail .strip { display: block; max-width: 100%; margin: 8px 0 12px; }
+/* The chosen precinct (or a report's one row): its own section under the chart. */
+.detail { border: 1px solid var(--line-soft); border-left: 4px solid var(--blue); border-radius: 4px; background: var(--white); padding: 16px 18px 6px; margin: 16px 0 8px; }
+.detail h3 { margin: 0 0 6px; }
+.detail-empty { margin: 0 0 10px; }
+.detail .strip-wrap { overflow-x: auto; }
+.detail .strip { display: block; max-width: none; margin: 8px 0 6px; }
+.detail .strip .axis { font-size: 10px; fill: var(--ink); }
+.detail .legend { margin: 4px 0 12px; padding: 0; }
+#detail-h { scroll-margin-top: 16px; }
+#detail-h:focus { outline: none; }
 .detail ul { margin: 0 0 12px; padding-left: 20px; font-size: 15px; }
 #table tbody th { background: none; color: inherit; font-weight: 400; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+
+/* Footer: two columns of links, then the credit, AI and license lines. The same shape as
+   BetaNYC's other sites (grounding-ai-with-ny-open-data). */
+.site-footer h2 { font-size: 20px; margin: 0 0 8px; color: var(--blue); }
+.foot-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 8px 40px; margin-bottom: 18px; }
+.foot-cols ul { list-style: none; padding: 0; margin: 0 0 12px; }
+.foot-cols li { margin: 0 0 8px; }
+.foot-line { border-top: 1px solid var(--line); padding-top: 14px; }
+.lic { font-size: 14px; }
+
+/* This site's menu has eight links, more than fit beside the name, so the Menu button
+   takes over below 1100px instead of the template's 782px. The same rules as site.css's
+   phone layout. */
+@media (max-width: 1099px) {
+  .site-bar.js .home { flex: 1 1 10rem; min-width: 0; }
+  .site-bar.js .menu-btn { display: inline-flex; }
+  .site-bar.js nav { display: none; }
+  .site-bar.js nav.open { display: block; flex-basis: 100%; margin: .4rem 0 0; padding: .25rem 0 .5rem; border-top: 1px solid var(--blue-2); }
+  .site-bar.js nav ul { flex-direction: column; gap: 0; }
+  .site-bar.js nav a { display: flex; align-items: center; min-height: 44px; }
+}
