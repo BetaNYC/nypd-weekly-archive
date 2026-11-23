@@ -147,3 +147,36 @@ def test_fatalities_are_charted_from_precinct_rows(tmp_path: Path) -> None:
     fa = build_site_data(tmp_path)["fatalities"]
     assert [(p["id"], p["states"]) for p in fa["precincts"]] == [("020", "3")]
     assert fa["totals"]["files_from_nyc_gov"] == 1
+
+
+def test_citywide_correction_and_housing_get_one_row_each(tmp_path: Path) -> None:
+    city = "raw/compstat/2026-11-15/cs-en-us-city.xlsx"
+    make_repo(tmp_path, [
+        {**row("raw/compstat/2026-11-01/cscity.pdf", "2026-11-01", "pdf", source="github:ajschumacher/nypd"),
+         "series": "compstat"},
+        {**row(city, "2026-11-15", "xlsx", source="nyc.gov"), "series": "compstat"},
+        {**row("raw/compstat/2026-11-15/cs-en-us-Correction.pdf", "2026-11-15", "sibling_xlsx", source="nyc.gov"),
+         "series": "compstat"},
+        {**row("raw/compstat/2026-11-15/cs-en-us-034pct.xlsx", "2026-11-15", "xlsx", source="nyc.gov"),
+         "series": "compstat"},  # a precinct file: not in these rows
+        {**row("raw/housing/2026-11-15/hb_eagle_report.xlsx", "2026-11-15", "xlsx", source="nyc.gov"),
+         "series": "housing"},
+    ], read={})
+    d = tmp_path / "data" / "compstat"
+    d.mkdir()
+    with (d / "2026-11-15.csv").open("w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["series", "source_file", "precinct", "week_end", "value"])
+        w.writerow(["compstat", city, "", "2026-11-15", "4"])
+    out = build_site_data(tmp_path)
+
+    c = out["citywide"]
+    assert c["weeks"] == ["2026-11-01", "2026-11-08", "2026-11-15"]
+    assert [(p["id"], p["name"], p["states"]) for p in c["precincts"]] == [("citywide", "Citywide", "103")]
+    assert c["totals"]["precinct_weeks"] == 3 and c["totals"]["read"] == 1 and c["totals"]["none"] == 1
+    assert c["totals"]["files_from_other_archives"] == {"github:ajschumacher/nypd": 1}
+    assert out["correction"]["precincts"][0]["states"] == "1"
+    h = out["housing"]
+    assert h["precincts"][0]["states"] == "2"
+    assert h["states"]["2"] == "Spreadsheet saved, not read into CSV yet"
+    assert json.loads((tmp_path / out_path("housing")).read_text()) == h

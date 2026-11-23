@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About the NYPD Weekly Archive | NYPD Weekly Archive</title>
+<meta name="description" content="Who built the NYPD Weekly Archive, how we use AI, how the code and data are licensed, how to contribute, and how to support the work.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/archive.css">
+<link rel="canonical" href="https://betanyc.github.io/nypd-weekly-archive/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BetaNYC">
+<meta property="og:title" content="About the NYPD Weekly Archive">
+<meta property="og:description" content="Who built the NYPD Weekly Archive, how we use AI, how the code and data are licensed, how to contribute, and how to support the work.">
+<meta property="og:url" content="https://betanyc.github.io/nypd-weekly-archive/about.html">
+<meta name="twitter:card" content="summary">
+<script src="assets/nav.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-bar">
+  <div class="wrap">
+    <a class="home" href="./"><img src="assets/betanyc-wordmark-white.svg" alt="BetaNYC" width="78" height="26"><span>NYPD Weekly Archive</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu" hidden><svg aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M2 4h16M2 10h16M2 16h16" stroke="currentColor" stroke-width="2" fill="none"/></svg>Menu</button>
+    <nav id="site-menu" aria-label="Site">
+      <ul>
+        <li><a href="trafficstat.html">TrafficStat</a></li>
+        <li><a href="compstat.html">CompStat</a></li>
+        <li><a href="fatalities.html">Traffic fatalities</a></li>
+        <li><a href="quality-of-life.html">Quality of life</a></li>
+        <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+        <li><a href="correction-compstat.html">DOC CompStat</a></li>
+        <li><a href="nycha-housing.html">NYCHA housing</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>About the NYPD Weekly Archive</h1>
+    <p class="lede">NYPD posts its weekly precinct statistics on nyc.gov and replaces them the next week. We save a copy of every file, every week, and publish them here so the numbers stay public.</p>
+  </div>
+</div>
+
+<div class="wrap">
+<nav aria-labelledby="toc-h">
+<h2 id="toc-h" class="visually-hidden">On this page</h2>
+<ul class="tight">
+  <li><a href="#built-by-betanyc">Built by BetaNYC</a></li>
+  <li><a href="#ai">How we use AI</a></li>
+  <li><a href="#licensing">Licensing</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#support-our-work">Support our work</a></li>
+</ul>
+</nav>
+
+<h2 id="built-by-betanyc">Built by BetaNYC <a class="anchor" href="#built-by-betanyc" aria-label="Link to this section">#</a></h2>
+<p><a href="https://beta.nyc">BetaNYC</a> is New York's civic organization dedicated to improving lives through public interest technology, open data, and civic design. We build tools, train the public, and advocate for a more transparent, accountable, and participatory city government. BetaNYC is a project of the Fund for the City of New York.</p>
+<p>Others saved these files long before we did, and this archive builds on their work:</p>
+<ul>
+  <li>Aaron Schumacher saved NYPD's CompStat PDFs from 2014 to 2016 (<a href="https://github.com/ajschumacher/nypd">ajschumacher/nypd</a>).</li>
+  <li>Tim McDermott, a BetaNYC volunteer, turned the weekly CompStat reports into CSV files from 2015 to February 2026.</li>
+  <li>Josh Greenman's <a href="https://github.com/joshgreenman1973/nypd-compstat-scraper">nypd-compstat-scraper</a> has read NYPD's CompStat spreadsheets since March 2026. We use his numbers with his permission.</li>
+  <li>The <a href="https://web.archive.org/">Internet Archive's Wayback Machine</a> holds copies of many of NYPD's files from earlier years.</li>
+</ul>
+
+<h2 id="ai">How we use AI <a class="anchor" href="#ai" aria-label="Link to this section">#</a></h2>
+<p>BetaNYC uses AI tools openly and with human accountability. The code that saves and reads NYPD's files, and the pages of this site, were written with help from AI coding assistants, under the direction and review of BetaNYC staff. Automated tests check the code on every change.</p>
+<p>The numbers are not written by AI. A program copies them from NYPD's own spreadsheets, cell by cell, and stops if a file's layout changes rather than guess. NYPD's original files are kept unchanged in the <a href="https://github.com/BetaNYC/nypd-weekly-archive/releases">releases</a>, so you can check any number against the file it came from.</p>
+<p>Read <a href="https://www.beta.nyc/about/ai-policy/">BetaNYC's AI policy</a>. Questions about our approach: <a href="mailto:hello@beta.nyc">hello@beta.nyc</a>.</p>
+
+<h2 id="licensing">Licensing <a class="anchor" href="#licensing" aria-label="Link to this section">#</a></h2>
+<p>The code is released under the <a href="https://github.com/BetaNYC/nypd-weekly-archive/blob/main/LICENSE">MIT License</a>. You may use, copy, and change it for any purpose, as long as the license notice stays with it.</p>
+<p>The figures are NYPD's. They are public records from the <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, and the license covers our code, not NYPD's data. The CompStat numbers from Tim McDermott's files and from Josh Greenman's scraper are credited to them on the <a href="compstat.html">CompStat page</a>; please keep that credit, and the link to Josh's repository, if you reuse them.</p>
+<p>If you use this archive, please credit <strong>BetaNYC</strong> and link to <a href="https://github.com/BetaNYC/nypd-weekly-archive">the repository</a>.</p>
+
+<h2 id="contributing">Contributing <a class="anchor" href="#contributing" aria-label="Link to this section">#</a></h2>
+<p>Found a wrong number, a missing week, or an NYPD file we don't save? <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Open an issue on GitHub</a>. Pull requests are welcome.</p>
+<p>If you saved any of NYPD's weekly files yourself, from any week before November 2026, we would like to hear from you. Each one can fill a gap in the charts.</p>
+
+<h2 id="support-our-work">Support our work <a class="anchor" href="#support-our-work" aria-label="Link to this section">#</a></h2>
+<p>Freedom isn't free. <a href="https://beta.nyc/donate/">Support BetaNYC</a>.</p>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-cols">
+      <section aria-labelledby="foot-h-site">
+        <h2 id="foot-h-site">This site</h2>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="trafficstat.html">TrafficStat</a></li>
+          <li><a href="compstat.html">CompStat</a></li>
+          <li><a href="fatalities.html">Traffic fatalities</a></li>
+          <li><a href="quality-of-life.html">Quality of life</a></li>
+          <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+          <li><a href="correction-compstat.html">Department of Correction CompStat</a></li>
+          <li><a href="nycha-housing.html">NYCHA Housing Bureau report</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="./#use-the-data">Use the data</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="foot-h-beta">
+        <h2 id="foot-h-beta">About BetaNYC</h2>
+        <p>New York's civic organization for public interest technology, open data, and civic design. We built and maintain this site.</p>
+        <ul>
+          <li><a href="https://www.beta.nyc/featured-tools/ai-tools-for-nyc-democracy/">All our AI tools for NYC's democracy</a></li>
+          <li><a href="https://www.beta.nyc/about/ai-policy/">Our AI policy</a></li>
+          <li><a href="https://www.beta.nyc/betabuilders/">Join BetaBuilders</a></li>
+          <li><a href="https://beta.nyc/donate">Support open civic data</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="foot-line">Built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York · <a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a> · <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a> · <a href="about.html">About</a>.</p>
+    <p class="lic"><b>How we use AI:</b> this site and its code were written with help from AI coding assistants and reviewed by BetaNYC staff. The numbers are copied by a program from NYPD's own files, not written by AI. <a href="about.html#ai">More about how we use AI</a>.</p>
+    <p class="lic">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
+  </div>
+</footer>
+</body>
+</html>

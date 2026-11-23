@@ -33,8 +33,10 @@
         <li><a href="compstat.html">CompStat</a></li>
         <li><a href="fatalities.html">Traffic fatalities</a></li>
         <li><a href="quality-of-life.html" aria-current="page">Quality of life</a></li>
-        <li><a href="./#use-the-data">Use the data</a></li>
-        <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">GitHub</a></li>
+        <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+        <li><a href="correction-compstat.html">DOC CompStat</a></li>
+        <li><a href="nycha-housing.html">NYCHA housing</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </div>
@@ -60,7 +62,7 @@
 </div>
 
 <h2 id="coverage-h">What we saved <a class="anchor" href="#coverage" aria-label="Link to this chart">#</a></h2>
-<p>Each square is one precinct for one week. Dark squares are weeks with numbers we can use. Gray squares are weeks no one saved. Pick a precinct, or click its row, to see its weeks and get a link to share. The table below the chart has the same counts as text.</p>
+<p>Each square is one precinct for one week. Dark squares are weeks with numbers we can use. Gray squares are weeks no one saved. Pick a precinct, or click its row, and its weeks open in the section under the chart, with a link to share. The table below the chart has the same counts as text.</p>
 
 <figure class="figure" id="coverage">
   <div class="figure-head">
@@ -81,11 +83,14 @@
     <p class="scroll-hint">Scroll sideways to see every week.</p>
     <div id="chart" role="img" aria-describedby="chart-summary"></div>
   </div>
-  <div class="detail" id="detail" hidden aria-live="polite"></div>
   <figcaption class="figure-caption" id="chart-summary">
     Source: NYPD quality-of-life precinct files from nyc.gov, saved weekly by this archive since November 2026.<span data-if-estimate hidden> A file from the Wayback Machine that cannot be dated by its contents carries only the date it was saved, so its week is estimated as the last Sunday at least two days before that date. For the files that carry both dates, that rule gives the right week for <span data-calc="estimate">–</span>.</span>
   </figcaption>
 </figure>
+
+
+<h2 id="detail-h" tabindex="-1">One precinct, week by week <a class="anchor" href="#detail-h" aria-label="Link to this section">#</a></h2>
+<div class="detail" id="detail" aria-live="polite"><p class="detail-empty">Pick a precinct in the chart above, or in the table below, to see every week we hold for it, with links to its files.</p></div>
 
 <h2 id="by-precinct">Weeks held, by precinct <a class="anchor" href="#by-precinct" aria-label="Link to this table">#</a></h2>
 <div class="table-scroll"><table id="table">
@@ -109,11 +114,40 @@
 
 <div class="tooltip" id="tip" hidden></div>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
-    <img class="wordmark" src="assets/betanyc-wordmark-blue.svg" alt="BetaNYC" width="90" height="30">
-    <p><strong>NYPD Weekly Archive</strong> is built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York. <a href="https://github.com/BetaNYC/nypd-weekly-archive">Source code on GitHub</a>. Found a mistake? <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Tell us</a>.</p>
-    <p class="small">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
+    <div class="foot-cols">
+      <section aria-labelledby="foot-h-site">
+        <h2 id="foot-h-site">This site</h2>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="trafficstat.html">TrafficStat</a></li>
+          <li><a href="compstat.html">CompStat</a></li>
+          <li><a href="fatalities.html">Traffic fatalities</a></li>
+          <li><a href="quality-of-life.html" aria-current="page">Quality of life</a></li>
+          <li><a href="citywide-compstat.html">Citywide CompStat</a></li>
+          <li><a href="correction-compstat.html">Department of Correction CompStat</a></li>
+          <li><a href="nycha-housing.html">NYCHA Housing Bureau report</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="./#use-the-data">Use the data</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a></li>
+          <li><a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="foot-h-beta">
+        <h2 id="foot-h-beta">About BetaNYC</h2>
+        <p>New York's civic organization for public interest technology, open data, and civic design. We built and maintain this site.</p>
+        <ul>
+          <li><a href="https://www.beta.nyc/featured-tools/ai-tools-for-nyc-democracy/">All our AI tools for NYC's democracy</a></li>
+          <li><a href="https://www.beta.nyc/about/ai-policy/">Our AI policy</a></li>
+          <li><a href="https://www.beta.nyc/betabuilders/">Join BetaBuilders</a></li>
+          <li><a href="https://beta.nyc/donate">Support open civic data</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="foot-line">Built by <a href="https://beta.nyc">BetaNYC</a>, a project of the Fund for the City of New York · <a href="https://github.com/BetaNYC/nypd-weekly-archive">Code on GitHub</a> · <a href="https://github.com/BetaNYC/nypd-weekly-archive/issues">Report a problem</a> · <a href="about.html">About</a>.</p>
+    <p class="lic"><b>How we use AI:</b> this site and its code were written with help from AI coding assistants and reviewed by BetaNYC staff. The numbers are copied by a program from NYPD's own files, not written by AI. <a href="about.html#ai">More about how we use AI</a>.</p>
+    <p class="lic">Data: <a href="https://www.nyc.gov/site/nypd/stats/stats.page">New York City Police Department</a>, from nyc.gov and the <a href="https://web.archive.org/">Internet Archive</a>. The code is MIT licensed; the license covers the code, not NYPD's data.</p>
   </div>
 </footer>
 </body>
