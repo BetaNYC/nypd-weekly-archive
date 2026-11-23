@@ -30,11 +30,15 @@ def test_package_zips_records_and_is_idempotent(tmp_path: Path, fixtures: Path) 
     dash = raw / "trafficstat_dashboard" / "2026-11-21"
     dash.mkdir(parents=True)
     (dash / "responses.jsonl.gz").write_bytes(b"gz")
+    pts = raw / "trafficstat_dashboard_map" / "2026-11-15"
+    pts.mkdir(parents=True)
+    (pts / "responses.jsonl.gz").write_bytes(b"gz")
 
     plan = package(repo, repo / "dist", now=NOW)
     assert [(t, p.name) for t, p in plan] == [
         ("week-2026-11-15", "trafficstat_2026-11-15_20261121T1423Z.zip"),
         ("backfill-dashboard-2026-11-21", "trafficstat-dashboard_2026-11-21_20261121T1423Z.zip"),
+        ("week-2026-11-15", "trafficstat-dashboard-map_2026-11-15_20261121T1423Z.zip"),
     ]
     with zipfile.ZipFile(plan[0][1]) as z:
         assert sorted(z.namelist()) == [
@@ -50,12 +54,13 @@ def test_package_zips_records_and_is_idempotent(tmp_path: Path, fixtures: Path) 
     assert (repo / "dist" / "upload-plan.tsv").read_text().splitlines() == [
         "week-2026-11-15\tdist/trafficstat_2026-11-15_20261121T1423Z.zip",
         "backfill-dashboard-2026-11-21\tdist/trafficstat-dashboard_2026-11-21_20261121T1423Z.zip",
+        "week-2026-11-15\tdist/trafficstat-dashboard-map_2026-11-15_20261121T1423Z.zip",
     ]
     # Nothing new: no zips, ledger unchanged, plan kept for the pending upload.
     before = ledger.read_text()
     assert package(repo, repo / "dist", now=datetime(2026, 11, 22, tzinfo=UTC)) == []
     assert ledger.read_text() == before
-    assert len((repo / "dist" / "upload-plan.tsv").read_text().splitlines()) == 2
+    assert len((repo / "dist" / "upload-plan.tsv").read_text().splitlines()) == 3
 
 
 def test_package_refuses_when_originals_missing(tmp_path: Path, fixtures: Path) -> None:

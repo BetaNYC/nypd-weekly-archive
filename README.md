@@ -17,6 +17,8 @@ This repository saves a copy every week and turns the spreadsheets into tidy CSV
 
 The list of files is read from NYPD's own pages on every run, never built from a pattern: the four pages above, the [precinct directory](https://www.nyc.gov/site/nypd/bureaus/patrol/precincts-landing.page), and each precinct page it links. TrafficStat and Q-Team precinct files are linked only from the precinct pages. `manifest.csv` holds the list from the latest run. If a page cannot be fetched, or a series loses more than 10 percent of its files from one run to the next, the run stops and says so.
 
+Every week the archive also saves the crash points on the map of NYPD's [TrafficStat dashboard](https://trafficsafetyforum.nypdonline.org/), which the dashboard shows only for the current week. See "TrafficStat dashboard map" below.
+
 The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision report last updated in January 2024. It is not weekly and is not captured.
 
 ## Where things are
@@ -26,6 +28,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 - `backfills.csv` does the same for backfill files that are not weekly captures (dashboard responses, Internet Archive listings).
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
 - `data/compstat_mcdermott/<year>.csv.gz` holds CompStat numbers from January 2015 to February 2026, from weekly CSVs made by Tim McDermott, a BetaNYC volunteer. `data/compstat_greenman/<year>.csv.gz` holds CompStat numbers from March 2026 on, parsed by Josh Greenman's [nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper), used with his permission. Both are kept apart from `data/compstat/` because this repo did not read them from NYPD's files. Each is one gzip-compressed CSV per year, in the same columns as `data/`, so that millions of rows fit in a few megabytes; read one with `pandas.read_csv("2020.csv.gz")` or `gzip -dc 2020.csv.gz`. See "CompStat backfill" below.
+- `data/trafficstat_dashboard_map/<week ending>.csv` holds the TrafficStat dashboard's map points for that week, one row per crash. See "TrafficStat dashboard map" below.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
 - `docs/` is the GitHub Pages site (see "Website" below). `docs/data/<series>-coverage.json` (one per series) is rebuilt from `captures.csv` and `data/` on every scheduled run.
 - `data/stale_files.csv` lists files whose newest week is at least 7 days behind the newest week in their series. nyc.gov can keep serving an old file with a normal response (the Bronx patrol borough file from before the 2026 north/south split is one), so the week printed inside the file is what counts, not the server's answer.
@@ -57,7 +60,7 @@ Each GitHub Release holds zip files of originals:
 
 | Release | What it holds |
 |---|---|
-| `week-<week ending>`, e.g. `week-2026-11-15` | Files captured from nyc.gov for that report week. One zip per series per run, named `<series>_<week ending>_<run time>.zip`. A run that catches two weeks (Q-Team runs behind) adds to two releases. |
+| `week-<week ending>`, e.g. `week-2026-11-15` | Files captured from nyc.gov for that report week. One zip per series per run, named `<series>_<week ending>_<run time>.zip`. A run that catches two weeks (Q-Team runs behind) adds to two releases. The same release holds `trafficstat-dashboard-map_<week ending>_<run time>.zip`, the dashboard map answers behind `data/trafficstat_dashboard_map/`. |
 | `fetched-<date>` | Files from nyc.gov whose week could not be read, filed by download date |
 | `backfill-dashboard-2026-11-21` | The TrafficStat dashboard responses behind `data/trafficstat_dashboard_weekly.csv` |
 | `backfill-wayback-2026-11-21` | Copies downloaded from the Internet Archive, and the archive's listings |
@@ -100,6 +103,7 @@ uv run nypd-archive discover     # only refresh manifest.csv
 uv run nypd-archive capture      # only download what changed
 uv run nypd-archive build        # only rebuild data/ from raw/
 uv run nypd-archive site         # only rebuild docs/data/ for the website
+uv run nypd-archive dashboard-map  # save this week's TrafficStat dashboard map points
 uv run pytest
 ```
 
@@ -112,6 +116,32 @@ Files are identified by their first bytes, never by the `Content-Type` header: a
 The exit code is 1 if any file failed to download or did not match the layout the parser knows. Files that do not parse are still saved; only `data/` is held back. An unfamiliar row label, section, sheet or header stops the parser, so a change at NYPD shows up as a red run instead of numbers quietly going missing.
 
 After fixing the parser for a file it rejected, `uv run nypd-archive redate` re-reads the files that were filed under their download date, moves them to their report week, and rebuilds `data/`.
+
+## TrafficStat dashboard map
+
+The map on NYPD's [TrafficStat dashboard](https://trafficsafetyforum.nypdonline.org/) shows the crashes behind each number in its table as points. It shows them only for this week, the last 28 days and the year to date, plus the same stretch a year earlier, so a week that is not saved is gone. `uv run nypd-archive dashboard-map` saves the current week, and a scheduled job (`.github/workflows/dashboard-map.yml`) runs it Thursday and Saturday at 16:23 UTC, after the weekly capture. If that week is already saved, it stops after one request.
+
+For each precinct it asks for the precinct's table, then for the points of each of the 30 week-to-date measures whose count is not zero. For one precinct (075, week ending November 15, 2026) that was 15 requests; a full run is about a thousand, at least 2 seconds apart. As with the dashboard backfill, the requests are the ones the dashboard sends from a browser, observed on 2026-11-22 and listed in `src/nypd_weekly_archive/dashboard_map.py`, and the run stops at the first answer that does not match. It also stops if a precinct has 5,000 points or more (the dashboard maps no more than that), and if the dashboard moves to a new week during the run. The points' counts are checked against the table. Fewer points than the table is logged (the table counts incidents that have no location; for such a cell the map answers with one empty point, which is read as no points). More points than the table is logged and makes the run exit 1. Either way the week is saved.
+
+Raw answers go to `raw/trafficstat_dashboard_map/<week ending>/responses.jsonl.gz` and into that week's release. `data/trafficstat_dashboard_map/<week ending>.csv` has one row per crash:
+
+| Column | Meaning |
+|---|---|
+| `week_start`, `week_end` | The dashboard's report week |
+| `precinct` | The precinct NYPD counts the crash in |
+| `record_id`, `metric` | The dashboard measure, such as `WTD_COLLISIONS_Col E-bike` and `COLLISIONS_Col E-bike` |
+| `point` | Which point in the answer. Crashes at the same spot are merged into one point. |
+| `latitude`, `longitude` | As NYPD gives them, 7 decimals |
+| `point_count` | The count at that point. For fatality measures it counts deaths, so one crash can have a count of 2. |
+| `crash` | Which crash at that point |
+| `crash_type` | NYPD's label, such as `RIGHT ANGLE`, `LEFT TURN (OPP DIR)`, `OTHER`, `UNKNOWN`. NYPD does not say what field this is. |
+| `date`, `hour` | As NYPD shows them. `hour` is 0 to 23. Most crashes show 12AM (hour 0), which most likely means no hour was given, not midnight. |
+| `fetched_on` | The day the answer was saved |
+
+Things to know:
+
+- These are the same crashes as NYC Open Data's [Motor Vehicle Collisions - Crashes](https://data.cityofnewyork.us/d/h9gi-nx95), at the same coordinates: in a test of one precinct and one week, 36 of 43 matched within 2 meters on the same day. The map adds NYPD's precinct, its mode groups, the crash-type label and its own death count. It has no collision id, no street names and no injury counts by role. Some dates are a day or two later than Open Data's.
+- A crash appears once for each measure it counts in: under `Collisions`, again under `Injury Collisions`, again under each mode. "Motor Vehicle+" and "Motorized Two-Wheeler+" are groups of the other modes. Pick one measure, or the modes without the groups, before counting.
 
 ## Backfills
 
