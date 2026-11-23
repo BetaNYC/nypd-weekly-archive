@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: The About page compares our weekly copies with NYC Open Data
+
+- **Tags:** Site
+- **What changed:** A new section on the About page lists, for each of the seven weekly reports, what NYPD's 2026 list of data on NYC Open Data says about it, what we found there, and how far back our copies go. It also shows how to recount a week of CompStat or TrafficStat from NYC Open Data yourself, and what we got when we tried.
+- **More detail:** [Our weekly copies and NYC Open Data](docs/about.html#open-data) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/33)
+
 ## 2026-11-23: The original files from the Internet Archive are now in the releases
 
 - **Tags:** Data
