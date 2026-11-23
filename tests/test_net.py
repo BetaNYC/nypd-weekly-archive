@@ -80,3 +80,19 @@ def test_wayback_daily_cap() -> None:
     client = httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(200)))
     stats = save_to_wayback([f"u{i}" for i in range(5)], client=client, sleep=lambda s: None, max_per_run=2)
     assert stats == {"submitted": 2, "errors": 0, "skipped": 3}
+
+
+def test_retry_floor_applies_to_every_5xx_and_429() -> None:
+    for code in (429, 500, 502, 503, 504):
+        calls: list[int] = []
+
+        def handler(req: httpx.Request, calls: list[int] = calls, code: int = code) -> httpx.Response:
+            calls.append(1)
+            return httpx.Response(code if len(calls) == 1 else 200)
+
+        sleeps: list[float] = []
+        client = httpx.Client(transport=httpx.MockTransport(handler))
+        ticks = iter(range(0, 10**6, 10))
+        f = Fetcher(client=client, sleep=sleeps.append, clock=lambda t=ticks: float(next(t)), retry_floor=60.0)
+        assert f.get("https://web.archive.org/x").status_code == 200
+        assert sleeps == [60.0], code
