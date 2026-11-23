@@ -190,3 +190,14 @@ def test_housing_report_is_dated_not_read(fixtures: Path) -> None:
 
     assert week_end("housing", fixtures / "hb_eagle_report.xlsx") == date(2026, 11, 15)
     assert "housing" not in PARSERS
+
+
+def test_precinct_from_filename_with_checksum_suffix() -> None:
+    # Week ending 2026-11-15: a second copy saved the same day got a checksum suffix,
+    # and its precinct came out blank (78 precinct files).
+    from nypd_weekly_archive.parse import precinct_from_filename
+
+    assert precinct_from_filename("ts-en-us-001.5f88d86e.xlsx") == 1
+    assert precinct_from_filename("ts-en-us-001.xlsx") == 1
+    assert precinct_from_filename("cs-en-us-120pct.0a1b2c3d.xlsx") == 120
+    assert precinct_from_filename("ts-en-us-city.5f88d86e.xlsx") is None

@@ -170,7 +170,9 @@ def _expect(cond: bool, msg: str) -> None:
 
 
 def precinct_from_filename(name: str) -> int | None:
-    m = re.search(r"-(\d{3})(?:pct)?\.xlsx$", name)
+    # A second file saved under the same name on the same day carries an 8-character
+    # checksum suffix (ts-en-us-001.5f88d86e.xlsx); site_data.SERIES allows the same.
+    m = re.search(r"-(\d{3})(?:pct)?(?:\.[0-9a-f]{8})?\.xlsx$", name)
     return int(m.group(1)) if m else None
 
 
