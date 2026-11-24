@@ -1,0 +1,194 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,28d,2021,11,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,28d,2020,6,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,wtd,2021,5,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,wtd,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,ytd,2021,105,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,ytd,2020,91,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2021,-85.981308411215,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2021,-62.5,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2019,2021,16.666666666666,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,28d,2021,17,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,28d,2020,21,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,wtd,2021,5,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,wtd,2020,4,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,ytd,2021,210,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,ytd,2020,218,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2021,-3.225806451612,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2021,24.260355029585,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2019,2021,-4.97737556561,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,28d,2021,34,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,28d,2020,11,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,wtd,2021,11,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,wtd,2020,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,ytd,2021,288,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,ytd,2020,141,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2021,-85.343511450381,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2021,48.453608247422,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2019,2021,179.611650485437,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,28d,2021,58,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,28d,2020,27,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2021,10,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2020,3,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2021,441,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2020,390,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2021,11.928934010152,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2021,-0.451467268623,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2019,2021,-10.365853658536,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,28d,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,28d,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,ytd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,ytd,2020,3,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2019,2021,-100.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,28d,2021,3,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,28d,2020,8,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,wtd,2020,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,ytd,2021,43,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,ytd,2020,42,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2021,-12.244897959183,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2019,2021,-15.686274509803,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,28d,2021,28,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,28d,2020,33,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,wtd,2021,10,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,wtd,2020,10,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,ytd,2021,399,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,ytd,2020,357,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2021,-0.746268656716,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2019,2021,-26.247689463955,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,28d,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,28d,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,ytd,2021,5,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,ytd,2020,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2021,-64.285714285714,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2019,2021,66.666666666666,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2021,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2020,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2021,38,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2020,20,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2019,2021,8.571428571428,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,28d,2021,119,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,28d,2020,63,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,wtd,2021,27,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,wtd,2020,14,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,ytd,2021,912,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,ytd,2020,831,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2021,-31.736526946107,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2019,2021,-11.456310679611,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,28d,2021,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,28d,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,ytd,2021,13,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,ytd,2020,15,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2021,-35.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2021,-27.777777777777,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2019,2021,-31.578947368421,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,28d,2021,11,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,28d,2020,15,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,wtd,2021,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,wtd,2020,8,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,ytd,2021,158,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,ytd,2020,113,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2021,-62.647754137115,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2021,-27.853881278538,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2019,2021,21.538461538461,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,28d,2021,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,28d,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2021,11,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2020,8,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2021,-45.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2021,57.142857142857,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2019,2021,37.5,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,28d,2021,4,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,28d,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2021,15,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2020,8,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2021,-25.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2021,114.285714285714,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2019,2021,25.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,28d,2021,132,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,28d,2020,81,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,wtd,2021,33,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,wtd,2020,18,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,ytd,2021,1220,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,ytd,2020,970,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2021,-67.741935483871,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2021,-7.785336356764,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2019,2021,15.311909262759,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,28d,2021,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,28d,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,ytd,2021,13,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,ytd,2020,15,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2021,0.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2019,2021,-18.75,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,28d,2021,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,28d,2020,1,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,wtd,2021,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,wtd,2020,0,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,ytd,2021,17,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,ytd,2020,20,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2021,,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2019,2021,-32.0,percent
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Burglary,calendar_year,2020,101,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,370,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,387,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,803,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,824,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2020,231,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,183,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,238,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,231,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,197,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2020,150,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,629,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,1089,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,2185,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,2690,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2020,427,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,472,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,412,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,415,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,473,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Murder,calendar_year,2020,2,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Murder,calendar_year,2001,5,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Murder,calendar_year,1998,4,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Murder,calendar_year,1993,17,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Murder,calendar_year,1990,17,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Rape,calendar_year,2020,16,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Rape,calendar_year,2001,22,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Rape,calendar_year,1998,29,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Rape,calendar_year,1993,22,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Rape,calendar_year,1990,21,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Robbery,calendar_year,2020,125,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,212,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,318,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,457,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,505,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,TOTAL,calendar_year,2020,1052,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,1893,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,2477,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,4130,count
+compstat,raw/compstat/2021-11-28/cs-en-us-045pct.xlsx,45th Precinct,45,2021-11-22,2021-11-28,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,4727,count

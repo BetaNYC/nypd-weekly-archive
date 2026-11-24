@@ -1,0 +1,185 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,28d,2020,936,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,28d,2019,749,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,wtd,2020,259,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,wtd,2019,190,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,ytd,2020,3746,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,ytd,2019,2948,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2020,-87.180452414359,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2020,-27.753134040501,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2018,2020,12.492492492492,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,28d,2020,1034,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,28d,2019,1594,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,wtd,2020,228,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,wtd,2019,391,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,ytd,2020,5342,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,ytd,2019,5479,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2020,-50.851044254301,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2020,14.316285041729,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2018,2020,-3.066594084558,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,28d,2020,500,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,28d,2019,326,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,wtd,2020,137,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,wtd,2019,91,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,ytd,2020,1913,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,ytd,2019,1176,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2020,-94.335711959257,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2020,-32.569615791328,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2018,2020,41.494082840236,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,28d,2020,1310,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,28d,2019,2982,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2020,352,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2019,725,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2020,10816,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2019,11456,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2020,-53.531534627942,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2020,5.57345046364,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2018,2020,-9.101605176905,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,28d,2020,269,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,28d,2019,397,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,wtd,2020,75,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,wtd,2019,115,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,ytd,2020,1340,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,ytd,2019,1379,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2020,26.295947219604,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2018,2020,-1.10701107011,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,28d,2020,1765,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,28d,2019,3252,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,wtd,2020,427,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,wtd,2019,826,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,ytd,2020,10522,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,ytd,2019,11734,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2020,-16.60458112071,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2018,2020,-13.377788754425,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,28d,2020,28,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,28d,2019,18,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,wtd,2020,10,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,wtd,2019,5,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,ytd,2020,92,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,ytd,2019,87,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2020,-83.859649122807,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2020,-35.664335664335,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2018,2020,24.324324324324,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2020,141,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,28d,2019,437,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2020,33,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,wtd,2019,106,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2020,1174,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,ytd,2019,1517,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2018,2020,-8.638132295719,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,28d,2020,4062,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,28d,2019,6254,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,wtd,2020,1079,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,wtd,2019,1657,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,ytd,2020,24141,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,ytd,2019,23532,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2020,10.561025875887,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2018,2020,2.688332128121,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,28d,2020,62,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,28d,2019,141,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,wtd,2020,19,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,wtd,2019,35,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,ytd,2020,401,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,ytd,2019,544,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2020,-55.394883203559,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2020,11.388888888888,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2018,2020,-20.27833001988,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,28d,2020,638,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,28d,2019,881,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,wtd,2020,165,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,wtd,2019,223,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,ytd,2020,3855,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,ytd,2019,3316,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2020,-84.52677209601,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2020,-25.722543352601,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2018,2020,7.561383928571,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,28d,2020,45,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,28d,2019,60,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2020,11,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2019,23,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2020,203,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2019,195,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2020,-86.265223274695,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2020,-43.296089385474,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2018,2020,18.713450292397,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,28d,2020,52,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,28d,2019,68,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2020,11,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2019,25,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2020,231,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2019,219,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2020,-85.74953732264,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2020,-47.380410022779,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2018,2020,13.793103448275,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,28d,2020,4508,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,28d,2019,6691,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,wtd,2020,1170,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,wtd,2019,1660,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,ytd,2020,26165,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,ytd,2019,25006,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2020,-78.817538576124,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2020,-8.619425138825,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2018,2020,-0.335199786691,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,28d,2020,108,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,28d,2019,186,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,wtd,2020,26,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,wtd,2019,50,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,ytd,2020,764,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,ytd,2019,698,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2020,22.632423756019,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2018,2020,14.887218045112,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,28d,2020,93,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,28d,2019,228,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,wtd,2020,29,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,wtd,2019,55,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,ytd,2020,680,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,ytd,2019,879,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2020,,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2018,2020,-17.575757575757,percent
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Burglary,calendar_year,2019,10778,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,32694,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,47181,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,100936,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,122055,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2019,20695,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,23020,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,28848,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,41121,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,44122,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2019,5430,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,29607,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,43315,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,111622,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,146925,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2019,43247,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,46291,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,51461,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,85737,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,108487,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Murder,calendar_year,2019,319,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Murder,calendar_year,2001,649,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Murder,calendar_year,1998,629,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Murder,calendar_year,1993,1927,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Murder,calendar_year,1990,2262,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Rape,calendar_year,2019,1755,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Rape,calendar_year,2001,1930,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Rape,calendar_year,1998,2476,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Rape,calendar_year,1993,3225,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Rape,calendar_year,1990,3126,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Robbery,calendar_year,2019,13369,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,27873,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,39003,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,85892,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,100280,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,TOTAL,calendar_year,2019,95593,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,162064,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,212913,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,430460,count
+compstat,raw/compstat/2020-04-19/cs-en-us-city.xlsx,Citywide,,2020-04-13,2020-04-19,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,527257,count

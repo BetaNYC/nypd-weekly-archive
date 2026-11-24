@@ -14,6 +14,7 @@ from nypd_weekly_archive.parse import (
     LayoutError,
     parse_compstat,
     parse_fatalities,
+    parse_housing,
     parse_qteam,
     parse_trafficstat,
     week_end,
@@ -185,11 +186,242 @@ def test_citywide_and_correction_sheets_read_as_compstat(fixtures: Path) -> None
     assert {r.week_end for r in city + correction} == {date(2026, 11, 15)}
 
 
-def test_housing_report_is_dated_not_read(fixtures: Path) -> None:
-    from nypd_weekly_archive.parse import PARSERS, week_end
+# ------------------------------------------------- CompStat, older layout
+# tests/fixtures/compstat_1/ holds two older files, from the Internet Archive:
+# citywide for the week ending 2015-08-30 and the 23rd Precinct for the week
+# ending 2017-07-30. Both name their one sheet "CompStat_1", declare its size
+# as "A1", list "Misd. Sex Crimes", and end with a different closing note.
+# Every value checked below matches NYPD's PDF for the same week.
 
+
+def test_compstat_1_sheet_declares_a1(fixtures: Path) -> None:
+    """Why these files looked empty: read-only openpyxl trusts the "A1" size."""
+    ws = openpyxl.load_workbook(fixtures / "compstat_1" / "cs-en-us-city.xlsx", read_only=True)["CompStat_1"]
+    assert ws.calculate_dimension() == "A1:A1"
+    assert [r for r in ws.iter_rows(values_only=True) if any(v is not None for v in r)] == []
+
+
+def test_compstat_1_citywide(fixtures: Path) -> None:
+    rows = parse_compstat(fixtures / "compstat_1" / "cs-en-us-city.xlsx")
+    assert len(rows) == 175
+    assert {r.sheet for r in rows} == {"CompStat_1"}
+    assert {r.geography for r in rows} == {"Citywide"}
+    assert {(r.week_start, r.week_end) for r in rows} == {(date(2015, 8, 24), date(2015, 8, 30))}
+    assert pick(rows, measure="Murder", period="ytd", year=2015) == 222
+    assert pick(rows, measure="Murder", period="ytd", year=2014) == 205
+    assert pick(rows, measure="Misd. Sex Crimes", period="wtd", year=2015) == 76
+    assert pick(rows, measure="TOTAL", period="calendar_year", year=1990) == 527257
+    assert pick(rows, measure="Misd. Sex Crimes", period="ytd_pct_change_vs_1993", year=2015) is None
+    # No "Traffic Statistics" section yet in this layout.
+    assert {r.section for r in rows} == {"Crime Complaints", "Historical Perspective"}
+
+
+def test_compstat_1_precinct(fixtures: Path) -> None:
+    path = fixtures / "compstat_1" / "cs-en-us-023pct.xlsx"
+    rows = parse_compstat(path)
+    assert len(rows) == 175
+    assert {(r.geography, r.precinct) for r in rows} == {("23rd Precinct", 23)}
+    assert pick(rows, measure="Murder", period="ytd", year=2017) == 2
+    assert pick(rows, measure="Misd. Sex Crimes", period="28d", year=2017) == 7
+    assert pick(rows, measure="Murder", period="ytd_pct_change_vs_2010", year=2017) == 100.0
+    assert week_end("compstat", path) == date(2017, 7, 30)
+
+
+def test_compstat_1_unknown_sheet_name_fails(fixtures: Path, tmp_path: Path) -> None:
+    dst = tmp_path / "cs-en-us-023pct.xlsx"
+    shutil.copy(fixtures / "compstat_1" / "cs-en-us-023pct.xlsx", dst)
+    wb = openpyxl.load_workbook(dst)
+    wb["CompStat_1"].title = "CompStat_2"
+    wb.save(dst)
+    with pytest.raises(LayoutError, match="sheets"):
+        parse_compstat(dst)
+
+
+# ---------------------------------------------- TrafficStat, 2024 layouts
+# tests/fixtures/trafficstat_2024/ holds two Internet Archive copies from 2024.
+# ts-en-us-013.xlsx (week ending 2024-08-04) names its sheets "Page1_1" and
+# "Page2_2" and adds an "RMP Collisions" section to both. ts-en-us-121.xlsx
+# (week ending 2024-11-03) uses today's sheet names. Both print the run date,
+# the page number and the run time in the last row. Every count in both files
+# matches NYPD's PDF of the same week (text layer, checked 2026-11-23).
+
+
+def test_trafficstat_2024_numbered_sheets(fixtures: Path) -> None:
+    path = fixtures / "trafficstat_2024" / "ts-en-us-013.xlsx"
+    rows = parse_trafficstat(path)
+    assert len(rows) == 426  # 414 plus RMP Collisions: 1 measure x 3 periods x 2 years x 2 sheets
+    assert {r.sheet for r in rows} == {"Page1_1", "Page2_2"}
+    assert {(r.geography, r.precinct, r.week_start, r.week_end) for r in rows} == {
+        ("013", 13, date(2024, 7, 29), date(2024, 8, 4))
+    }
+    assert week_end("trafficstat", path) == date(2024, 8, 4)
+    assert pick(rows, sheet="Page1_1", section="Collisions", measure="Collisions", period="ytd", year=2024) == 455
+    assert pick(rows, sheet="Page1_1", section="Hazardous Summonses", measure="Total Hazardous*",
+                period="ytd", year=2023) == 3787
+    assert pick(rows, sheet="Page2_2", section="Collisions", measure="SUV", period="ytd", year=2024) == 30
+    rmp = {"section": "RMP Collisions", "measure": "RMP Collisions"}
+    assert pick(rows, sheet="Page1_1", period="ytd", year=2024, **rmp) == 14
+    assert pick(rows, sheet="Page2_2", period="28d", year=2023, **rmp) == 2
+
+
+def test_trafficstat_2024_run_line(fixtures: Path) -> None:
+    path = fixtures / "trafficstat_2024" / "ts-en-us-121.xlsx"
+    rows = parse_trafficstat(path)
+    assert len(rows) == 414
+    assert {r.sheet for r in rows} == {"Page1", "Page2"}
+    assert week_end("trafficstat", path) == date(2024, 11, 3)
+    assert pick(rows, sheet="Page1", section="Moving Summonses", measure="Livery/Taxi", period="ytd", year=2024) == 71
+    assert pick(rows, sheet="Page2", section="Collisions", measure="SUV", period="ytd", year=2023) == 248
+
+
+@pytest.mark.parametrize(
+    ("fixture", "sheet", "coord", "value", "message"),
+    [
+        # Page number in the run line that does not match the sheet.
+        ("ts-en-us-121.xlsx", "Page1", "F50", 2, "unrecognized row"),
+        # Anything but a time where the run time goes.
+        ("ts-en-us-121.xlsx", "Page2", "J48", "noon", "unrecognized row"),
+        # A measure NYPD might add to the RMP section.
+        ("ts-en-us-013.xlsx", "Page1_1", "A50", "RMP Injuries", "unknown measure"),
+    ],
+)
+def test_trafficstat_2024_layout_change_fails_loud(fixtures, tmp_path, fixture, sheet, coord, value, message) -> None:
+    broken = _edit(fixtures / "trafficstat_2024" / fixture, tmp_path, sheet, coord, value)
+    with pytest.raises(LayoutError, match=message):
+        parse_trafficstat(broken)
+
+
+@pytest.mark.parametrize("names", [("Page1_1", "Page2"), ("Page1_2", "Page2_2"), ("Page2_2", "Page1_1")])
+def test_trafficstat_2024_unknown_sheet_names_fail(fixtures: Path, tmp_path: Path, names) -> None:
+    dst = tmp_path / "ts-en-us-013.xlsx"
+    shutil.copy(fixtures / "trafficstat_2024" / "ts-en-us-013.xlsx", dst)
+    wb = openpyxl.load_workbook(dst)
+    first, second = wb.worksheets
+    first.title, second.title = "tmp1", "tmp2"
+    first.title, second.title = names
+    wb.save(dst)
+    with pytest.raises(LayoutError, match="sheets"):
+        parse_trafficstat(dst)
+
+
+# ----------------------------------------------------------------- housing
+# hb_eagle_report.xlsx is the week ending 2026-11-15 (sheets WTD, 28 Days, ...).
+# hb_eagle_report-2015-08-30.xlsx is the earliest spreadsheet on disk: numbered
+# sheet names (WTD_1 ... HA YTD_35) and a sheet size declared as "A1".
+# Values below were read off the cells named in each comment.
+
+
+def test_housing_current_layout(fixtures: Path) -> None:
+    rows = parse_housing(fixtures / "hb_eagle_report.xlsx")
+    assert len(rows) == 21546
+    assert {(r.week_start, r.week_end) for r in rows} == {(date(2026, 11, 9), date(2026, 11, 15))}
+    assert {r.series for r in rows} == {"housing"} and {r.unit for r in rows} == {"count"}
+    assert {r.period for r in rows} == {"wtd", "28d", "ytd"} and {r.year for r in rows} == {2025, 2026}
+    assert len({r.sheet for r in rows}) == 35
+    # WTD!E5:P5, CAREY in PSA 1, precinct 060
+    assert pick(rows, sheet="WTD", section="PSA 1", geography="CAREY", precinct=60, measure="Fel. Assault",
+                period="wtd", year=2026) == 0
+    assert pick(rows, sheet="WTD", section="PSA 1", geography="CAREY", precinct=60, measure="Fel. Assault",
+                period="wtd", year=2025) == 1
+    # WTD!AD15:AE15, the precinct total
+    assert pick(rows, sheet="WTD", geography="HBB 060 PCT Totals", measure="Total Index", year=2026) == 5
+    assert pick(rows, sheet="WTD", geography="HBB 060 PCT Totals", measure="Total Index", year=2025) == 2
+    # The same label at two levels: D24 (the PSA 1 group) and C32 (PSA 1 with its Satellite)
+    assert pick(rows, sheet="WTD", section="PSA 1", geography="PSA 1 Totals", measure="Total Index", year=2026) == 10
+    assert pick(rows, sheet="WTD", section="", geography="PSA 1 Totals", measure="Total Index", year=2026) == 12
+    assert pick(rows, sheet="WTD", geography="PSA 1 and PSB Totals", measure="Total Index", year=2026) == 13  # B40
+    # YTD_5!E6:P6
+    assert pick(rows, sheet="YTD_5", geography="CARVER", precinct=23, measure="Robbery", year=2026) == 3
+    assert pick(rows, sheet="YTD_5", geography="CARVER", precinct=23, measure="Fel. Assault", year=2025) == 15
+    # SI holds three periods: row 31 (28 days) and row 48 (year to date)
+    assert pick(rows, sheet="SI", geography="PBSI 122 PCT Totals", measure="Total Index", period="28d",
+                year=2025) == 4
+    assert pick(rows, sheet="SI", geography="STATEN ISLAND", section="", measure="Fel. Assault", period="ytd",
+                year=2025) == 84
+    # Viper WTD!C12:N12, Viper 13 covers CAREY and SITE 1B
+    assert pick(rows, sheet="Viper WTD", section="Viper 13", geography="SITE 1B", precinct=60,
+                measure="Fel. Assault", year=2026) == 1
+    # HA WTD rows 11 and 35
+    assert pick(rows, sheet="HA WTD", section="PSA 3", geography="Total", measure="Robbery", year=2025) == 3
+    assert pick(rows, sheet="HA WTD", geography="HA City Wide", measure="Total Index", year=2026) == 103
+    assert pick(rows, sheet="HA WTD", geography="HA City Wide", measure="Total Index", year=2025) == 95
+
+
+def test_housing_numbered_sheets_and_a1_size(fixtures: Path) -> None:
+    path = fixtures / "hb_eagle_report-2015-08-30.xlsx"
+    # The file declares each sheet's size as "A1": a plain read-only open sees one row.
+    assert openpyxl.load_workbook(path, read_only=True)["WTD_1"].max_row == 1
+    rows = parse_housing(path)
+    assert len(rows) == 21600
+    assert {(r.week_start, r.week_end) for r in rows} == {(date(2015, 8, 24), date(2015, 8, 30))}
+    assert {r.year for r in rows} == {2014, 2015}
+    # WTD_1!E6:M6 and row 15
+    assert pick(rows, sheet="WTD_1", geography="CONEY ISLAND", precinct=60, measure="Robbery", year=2015) == 1
+    assert pick(rows, sheet="WTD_1", geography="HBB 060 PCT Totals", measure="Fel. Assault", year=2014) == 1
+    # RK_29!B12 (Rockaway, week to date) and HA YTD_35!A35
+    assert pick(rows, sheet="RK_29", geography="ROCKAWAY", section="", measure="Fel. Assault", period="wtd",
+                year=2015) == 2
+    assert pick(rows, sheet="HA YTD_35", geography="HA City Wide", measure="Murder", year=2015) == 33
+    assert pick(rows, sheet="HA YTD_35", geography="HA City Wide", measure="Robbery", year=2014) == 732
+    assert week_end("housing", path) == date(2015, 8, 30)
+
+
+def test_housing_week_end(fixtures: Path) -> None:
+    from nypd_weekly_archive.parse import PARSERS
+
+    assert PARSERS["housing"] is parse_housing
     assert week_end("housing", fixtures / "hb_eagle_report.xlsx") == date(2026, 11, 15)
-    assert "housing" not in PARSERS
+
+
+@pytest.mark.parametrize(
+    ("sheet", "coord", "value", "message"),
+    [
+        # A development's count changed: NYPD's precinct total no longer adds up.
+        ("WTD", "AA6", 1, "its rows add to"),
+        # ... and when the count is one of the seven, the row's own Total Index stops adding up first.
+        ("WTD", "O6", 1, "Total Index"),
+        # A CH % that does not match its counts (a shifted column).
+        ("WTD", "Q9", 0.5, "CH %"),
+        # A development row that lost its name.
+        ("WTD", "E33", None, "unrecognized row"),
+        # A number beyond the last column.
+        ("WTD", "AG7", 3, "beyond the table"),
+        # A precinct total under the wrong precinct.
+        ("WTD", "E15", "HBB 061 PCT Totals", "closes precinct"),
+        # A new crime column.
+        ("WTD", "AA3", "Shooting Vic.", "header"),
+        # A 28-day sheet whose dates span a week.
+        ("28 Days", "A2", "November 9, 2026 through November 15, 2026", "do not fit the period"),
+        # A changed HA row label.
+        ("HA WTD", "A33", "HB Total", "row labels"),
+        # A Viper row with no Viper number.
+        ("Viper WTD", "D12", None, "unrecognized row"),
+    ],
+)
+def test_housing_layout_change_fails_loud(fixtures, tmp_path, sheet, coord, value, message) -> None:
+    broken = _edit(fixtures / "hb_eagle_report.xlsx", tmp_path, sheet, coord, value)
+    with pytest.raises(LayoutError, match=message):
+        parse_housing(broken)
+
+
+def test_housing_renamed_sheet_fails_loud(fixtures: Path, tmp_path: Path) -> None:
+    dst = tmp_path / "hb.xlsx"
+    shutil.copy(fixtures / "hb_eagle_report.xlsx", dst)
+    wb = openpyxl.load_workbook(dst)
+    wb["WTD"].title = "WTD_1"
+    wb.save(dst)
+    with pytest.raises(LayoutError, match="sheets"):
+        parse_housing(dst)
+
+
+def test_housing_one_bad_count_fails_in_the_pipeline(fixtures: Path, tmp_path: Path) -> None:
+    # One wrong development count breaks its CH %, its Total Index and every
+    # total above it, so the pipeline treats it as a misread, not an anomaly.
+    from nypd_weekly_archive.parse import parse_file
+
+    broken = _edit(fixtures / "hb_eagle_report.xlsx", tmp_path, "WTD", "O6", 1)
+    with pytest.raises(LayoutError, match="Change mismatches"):
+        parse_file("housing", broken)
 
 
 def test_precinct_from_filename_with_checksum_suffix() -> None:

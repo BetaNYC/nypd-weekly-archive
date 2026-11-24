@@ -25,9 +25,10 @@ Output columns (one row per number):
 from __future__ import annotations
 
 import re
+from collections import Counter
 from collections.abc import Iterator
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, time
 from pathlib import Path
 
 import openpyxl
@@ -274,6 +275,20 @@ TS_LABELS: dict[str, dict[str, set[str]]] = {
         "Moving Summonses": {"Total Movers*", "Livery/Taxi", *TS_MODES_2},
     },
 }
+# Collisions involving police vehicles ("RMP", radio motor patrol). Seen once,
+# at the foot of both sheets in ts-en-us-013.xlsx for the week ending
+# 2024-08-04 (an Internet Archive copy); accepted on either sheet.
+TS_RMP = "RMP Collisions"
+for _labels in TS_LABELS.values():
+    _labels[TS_RMP] = {TS_RMP}
+# Sheet names as NYPD wrote them. The Internet Archive copies for the weeks
+# ending 2024-08-04 to 2024-09-29 number the sheets; copies from the week
+# ending 2024-11-03 on do not. The sheets hold the same tables, and the name
+# is kept as written in `sheet`.
+TS_SHEET_NAMES = {
+    ("Page1", "Page2"): ("Page1", "Page2"),
+    ("Page1_1", "Page2_2"): ("Page1", "Page2"),
+}
 TS_COVER = re.compile(r"Report Covering:\s+([A-Z][a-z]{2} \d{1,2}, \d{4})\s+-\s+([A-Z][a-z]{2} \d{1,2}, \d{4})")
 TS_FOOTNOTE = "*Total Parkers, Total Hazardous and Total Movers include other violations"
 # Printed under the table in precincts whose boundaries changed (105, 113,
@@ -289,9 +304,11 @@ def _ts_date(s: str) -> date:
 
 def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
     wb = _load(path)
-    _expect(wb.sheetnames == list(TS_LABELS), f"{path.name}: sheets {wb.sheetnames}")
+    kinds = TS_SHEET_NAMES.get(tuple(wb.sheetnames))
+    _expect(kinds is not None, f"{path.name}: sheets {wb.sheetnames}")
+    assert kinds is not None
     out: list[Row] = []
-    for name in wb.sheetnames:
+    for page, (name, kind) in enumerate(zip(wb.sheetnames, kinds, strict=True), 1):
         rows = _grid(wb[name])
         where = f"{path.name}[{name}]"
         head = [c for _, c, _ in rows[:4]]
@@ -304,7 +321,7 @@ def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
         m = TS_COVER.fullmatch(str(head[3][0])) if len(head[3]) == 1 else None
         _expect(m is not None, f"{where}: date line {head[3]}")
         week_start, week_end = _ts_date(m.group(1)), _ts_date(m.group(2))
-        labels = TS_LABELS[name]
+        labels = TS_LABELS[kind]
         section: str | None = None
         cur_year: int | None = None
         cols: list[int] = []
@@ -334,6 +351,9 @@ def parse_trafficstat(path: Path, notes: list[str] | None = None) -> list[Row]:
                 pass
             elif len(cells) == 1 and isinstance(cells[0], datetime) and seen_footnote:
                 pass  # report run date printed at the foot of the page
+            elif (seen_footnote and len(cells) == 3 and isinstance(cells[0], datetime)
+                  and cells[1] == page and isinstance(cells[2], time)):
+                pass  # 2024 files: run date, page number and run time at the foot
             else:
                 raise LayoutError(f"{w}: unrecognized row {cells}")
         _expect(seen_footnote, f"{where}: footnote row missing")
@@ -356,6 +376,7 @@ CS_CRIME = {
     "Petit Larceny",
     "Retail Theft",
     "Misd. Assault",
+    "Misd. Sex Crimes",
     "UCR Rape*",
     "Other Sex Crimes",
     "Shooting Vic.",
@@ -370,13 +391,25 @@ CS_HIST = {"Murder", "Rape", "Robbery", "Fel. Assault", "Burglary", "Gr. Larceny
 CS_COVER = re.compile(r"Report Covering the Week\s+(\d{1,2}/\d{1,2}/\d{4})\s+Through\s+(\d{1,2}/\d{1,2}/\d{4})")
 CS_LONG = re.compile(r"(\d+) Year \((\d{4})\)")
 CS_TERMINAL = "Figures are preliminary and subject to further analysis and revision."
+CS_TERMINALS = {
+    CS_TERMINAL,
+    # Older files (sheet "CompStat_1", weeks up to August 2019) end their tables with this line.
+    "All figures are subject to further analysis and revision. All degrees of rape are included in the rape category.",
+}
+# Older files (Internet Archive copies, weeks up to 2024) name the one sheet "CompStat_1".
+CS_SHEET_NAMES = (["CompStat"], ["CompStat_1"])
 
 
 def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # noqa: ARG001
     wb = _load(path)
-    _expect(wb.sheetnames == ["CompStat"], f"{path.name}: sheets {wb.sheetnames}")
-    rows = _grid(wb["CompStat"])
-    where = f"{path.name}[CompStat]"
+    _expect(wb.sheetnames in CS_SHEET_NAMES, f"{path.name}: sheets {wb.sheetnames}")
+    sheet = wb.sheetnames[0]
+    ws = wb[sheet]
+    # Most older files declare the sheet's size as "A1" while holding a full
+    # table; in read-only mode openpyxl trusts that and sees nothing.
+    ws.reset_dimensions()
+    rows = _grid(ws)
+    where = f"{path.name}[{sheet}]"
     geography: str | None = None
     week_start = week_end = None
     i = 0
@@ -398,7 +431,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
 
     def emit(section: str, measure: str, period: str, year: int | None, value, unit: str) -> None:
         out.append(Row("compstat", path.name, geography, precinct, week_start, week_end,
-                       "CompStat", section, measure, period, year, value, unit))
+                       sheet, section, measure, period, year, value, unit))
 
     section: str | None = None
     cur_year: int | None = None
@@ -449,7 +482,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
                 _expect(all(re.fullmatch(r"'\d\d vs '\d\d", t) for t in texts[5:]), f"{w}: {texts}")
                 hist_cols = _cols(full, skip=1)
                 continue
-            if texts[0] == CS_TERMINAL:
+            if texts[0] in CS_TERMINALS:
                 terminal = True
                 break
             _expect(hist_years is not None and isinstance(full[0], str), f"{w}: unrecognized row {cells}")
@@ -462,7 +495,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
                 to_pct(v, w)
         else:
             raise LayoutError(f"{w}: unrecognized row {cells}")
-    _expect(terminal, f"{where}: terminal note {CS_TERMINAL!r} not found")
+    _expect(terminal, f"{where}: terminal note not found")
     _expect(hist_years is not None, f"{where}: historical perspective block missing")
     return out
 
@@ -624,41 +657,429 @@ def parse_fatalities(path: Path, notes: list[str] | None = None) -> list[Row]:
     return out
 
 
+# ----------------------------------------------------------------- Housing
+#
+# NYPD Housing Bureau weekly report (hb_eagle_report.xlsx): the seven major
+# felonies, shooting incidents and the "Total Index" for each NYCHA
+# development, by Police Service Area (PSA) and precinct. Read off all 44
+# spreadsheets on disk on 2026-11-23 (weeks from August 2015 to November 2026):
+# every one has the same 35 sheets in the same order and the same headers.
+# Only the sheet names differ. Files up to May 2025 number every sheet
+# (WTD_1, 28 Days_2, ... HA YTD_35); later ones drop most numbers (WTD,
+# 28 Days, YTD, WTD_2, ... HA YTD). Both name lists are accepted exactly.
+#
+# Eighteen of the older files declare a sheet size of "A1" while holding a
+# full table; openpyxl's read-only mode trusts that and sees one row, so the
+# size is reset before reading (ws.reset_dimensions()).
+#
+# Three kinds of sheet:
+# - Area sheets (PSA 1-9: one sheet per period; Staten Island and Rockaway,
+#   "SI" and "RK": three periods stacked in one sheet). Columns C-E hold
+#   PSA, PCT and Development; NYPD merges each PSA and PCT cell down over the
+#   rows it covers, so only the first row holds the label and it is carried down.
+#   Totals rows are labeled in the column of the level they total: a precinct
+#   ("HBB 060 PCT Totals") in E, a PSA group ("PSA 1 Satellite Totals") in D,
+#   several groups ("PSA 1 Totals") in C, the whole sheet ("PSA 1 and PSB
+#   Totals", "STATEN ISLAND") in B.
+# - Viper sheets: developments with VIPER camera coverage, with NYPD's Viper
+#   number per development, and a "Week/Period/Year Totals" row.
+# - HA sheets: one row per PSA and per Patrol Services Bureau housing unit,
+#   then "HB Covered", "PSB Covered" and "HA City Wide".
+#
+# Reshaped: one number per row. sheet = NYPD's sheet name; geography = the
+# row's own label (a development, or a totals label); precinct = the precinct
+# in force for a development or precinct-totals row; section = the PSA group
+# (column C, carried down) for rows inside a group, "Viper <n>" on Viper
+# sheets (NYPD's "Viper" column), the opening "PSA n" row's label for the
+# rows of that block on HA sheets, and empty for totals that span groups.
+# The "CH %" columns are checked against the two counts, then dropped. The
+# PSA column of the Viper sheets ("6", "SI") is checked and dropped: the
+# precinct is kept, and the area sheets give each precinct's PSA.
+
+HB_CRIMES = ["Murder", "Rape", "Robbery", "Fel. Assault", "Burglary", "Gr. Larceny", "GLA", "Shooting Inc.",
+             "Total Index"]
+_HB_P3 = ("WTD", "28 Days", "YTD")
+HB_SHEETS_NUMBERED = [
+    *[f"{k}_{3 * i + j + 1}" for i in range(9) for j, k in enumerate(_HB_P3)],
+    "SI_28", "RK_29", "Viper WTD_30", "Viper 28 Days_31", "Viper YTD_32", "HA WTD_33", "HA 28 Days_34", "HA YTD_35",
+]
+HB_SHEETS = [
+    *_HB_P3, *[f"{k}_{i}" for i in range(2, 10) for k in _HB_P3],
+    "SI", "RK", "Viper WTD", "Viper 28 Days", "Viper YTD", "HA WTD", "HA 28 Days", "HA YTD",
+]
+HB_PERIODS = ["wtd", "28d", "ytd"]
+HB_AREA_TITLES = {"WEEK TO DATE COMPARISON": "wtd", "28 DAY COMPSTAT PERIOD COMPARISON": "28d",
+                  "YEAR TO DATE COMPARISON": "ytd"}
+HB_VIPER_TITLES = {"WEEK TO DATE COMPSTAT PERIOD COMPARISON": "wtd", "28 DAY COMPSTAT PERIOD COMPARISON": "28d",
+                   "YEAR TO DATE COMPSTAT PERIOD COMPARISON": "ytd"}
+HB_VIPER_TOTALS = {"wtd": "Week Totals", "28d": "Period Totals", "ytd": "Year Totals"}
+HB_HA_TITLES = {"Week to Date HB and PSB Breakdown": "wtd", "28 Day HB and PSB Breakdown": "28d",
+                "Year to Date HB and PSB Breakdown": "ytd"}
+# The HA sheets' rows, identical in all 44 files on 2026-11-23.
+HB_HA_LABELS = [
+    "PSA 1", "PBBS Housing (PSB)", "Total", "PSA 2 Total*",
+    "PSA 3", "PBBN Housing (PSB)", "Total", "PSA 4", "PBMS Housing (PSB)", "Total",
+    "PSA 5", "PBMN Housing (PSB)", "Total", "PSA 6", "PBMN Housing (PSB)", "PBMS Housing (PSB)**", "Total",
+    "PSA 7", "PBBX Housing (PSB)", "Total", "PSA 8", "PBBX Housing (PSB)", "Total",
+    "PSA 9", "PBQN Housing (PSB)", "Total",
+    "Staten Island (PSB)", "Rockaway (PSB)", "HB Covered", "PSB Covered", "HA City Wide",
+]
+HB_TERMINAL = "INFORMATION IS PRELIMINARY AND SUBJECT TO FURTHER ANALYSIS AND CHANGE"
+HB_DATES = re.compile(r"([A-Z][a-z]+ \d{1,2}, \d{4}) through ([A-Z][a-z]+ \d{1,2}, \d{4})")
+HB_PCT_TOTAL = re.compile(r"[A-Z]{3,4} (\d{3}) PCT Totals")
+HB_PCT = re.compile(r"\d{3}")
+HB_PCT_TOLERANCE = 1e-6
+
+
+def _hb_grid(ws) -> list[tuple[int, list[object], list[object]]]:
+    """Non-empty rows as (row number, non-blank cells, full row padded to 40 columns)."""
+    ws.reset_dimensions()  # some files declare a size of "A1"; see above
+    out = []
+    for i, r in enumerate(ws.iter_rows(values_only=True), 1):
+        full = list(_norm(r))
+        cells = [v for v in full if v is not None]
+        if cells:
+            _expect(len(full) <= 40, f"row {i} is {len(full)} columns wide")
+            out.append((i, cells, full + [None] * (40 - len(full))))
+    return out
+
+
+def _hb_dates(text: object, period: str, where: str) -> tuple[date, date]:
+    m = HB_DATES.fullmatch(str(text))
+    _expect(m is not None, f"{where}: date line {text!r}")
+    assert m is not None
+    start, end = (datetime.strptime(x, "%B %d, %Y").date() for x in m.groups())
+    ok = {
+        "wtd": (end - start).days == 6,
+        "28d": (end - start).days == 27,
+        "ytd": start == date(end.year, 1, 1),
+    }[period]
+    _expect(ok, f"{where}: {period} dates {start} to {end} do not fit the period")
+    return start, end
+
+
+def _hb_headers(full: list[object], first: int, label_cols: dict[int, str], where: str) -> None:
+    """The crime-name row: labels at label_cols, crimes every third column from `first`."""
+    want = {**label_cols, **{first + 3 * i: c for i, c in enumerate(HB_CRIMES)}}
+    got = {i: v for i, v in enumerate(full) if v is not None}
+    _expect(got == want, f"{where}: header {got}")
+
+
+def _hb_years(full: list[object], first: int, where: str) -> int:
+    """The year row: [cur, prior, 'CH %'] for each crime from column `first`; returns cur."""
+    got = {i: v for i, v in enumerate(full) if v is not None}
+    _expect(set(got) == set(range(first, first + 27)), f"{where}: year header columns {sorted(got)}")
+    cur = to_int(got[first], where)
+    for i in range(9):
+        c = first + 3 * i
+        _expect(
+            to_int(got[c], where) == cur and to_int(got[c + 1], where) == cur - 1 and got[c + 2] == "CH %",
+            f"{where}: year header {[got[c], got[c + 1], got[c + 2]]}",
+        )
+    return cur
+
+
+def _hb_note(notes: list[str] | None, msg: str) -> None:
+    """A number NYPD's file contradicts itself on: fatal in tests, counted by parse_file in the pipeline."""
+    if notes is None:
+        raise LayoutError(msg)
+    notes.append(msg)
+
+
+Sums = Counter[tuple[str, int]]
+
+
+def _hb_sum_check(notes: list[str] | None, parts: Sums, total: Sums, where: str, what: str) -> None:
+    """A totals row must equal the sum of the rows it totals, for every crime and year."""
+    off = [k for k in total if parts.get(k, 0) != total[k]]
+    if off:
+        k = off[0]
+        _hb_note(notes, f"{where}: {what} {k[0]} {k[1]} is {total[k]}, its rows add to {parts.get(k, 0)}")
+
+
+def _hb_values(full: list[object], first: int, cur_year: int, where: str,
+               notes: list[str] | None) -> Iterator[tuple[str, int, int]]:
+    """(crime, year, count) for one data row; checks every "CH %" against its two counts."""
+    stray = [i for i, v in enumerate(full) if v is not None and i >= first + 27]
+    _expect(not stray, f"{where}: values beyond the table at columns {stray}")
+    for k in (0, 1):  # "Total Index" is the seven major felonies, not shootings
+        majors = sum(to_int(full[first + 3 * i + k], where) for i in range(7))
+        if majors != to_int(full[first + 24 + k], where):
+            _hb_note(notes, f"{where}: Total Index {full[first + 24 + k]!r} is not the sum of the seven, {majors}")
+    for i, crime in enumerate(HB_CRIMES):
+        c = first + 3 * i
+        cur, prior = to_int(full[c], where), to_int(full[c + 1], where)
+        _expect(cur >= 0 and prior >= 0, f"{where} {crime}: negative count")
+        pct = to_pct(full[c + 2], where)
+        if prior == 0:
+            ok = pct is None
+        else:
+            ok = pct is not None and abs(pct - (cur - prior) / prior) < HB_PCT_TOLERANCE
+        if not ok:
+            _hb_note(notes, f"{where} {crime}: CH % {full[c + 2]!r} does not match {cur} vs {prior}")
+        yield crime, cur_year, cur
+        yield crime, cur_year - 1, prior
+
+
+class _HbOut:
+    """Collects rows for one file and refuses a (sheet, section, geography, precinct, period) seen twice."""
+
+    def __init__(self, path: Path, week_end_: date, week_start: date, notes: list[str] | None) -> None:
+        self.path, self.week_end, self.week_start, self.notes = path, week_end_, week_start, notes
+        self.rows: list[Row] = []
+        self.seen: set[tuple[object, ...]] = set()
+
+    def emit(self, sheet: str, section: str, geography: object, precinct: int | None, period: str,
+             full: list[object], first: int, cur_year: int, where: str) -> Sums:
+        _expect(isinstance(geography, str), f"{where}: label {geography!r} is not text")
+        key = (sheet, section, geography, precinct, period)
+        _expect(key not in self.seen, f"{where}: {key} appears twice")
+        self.seen.add(key)
+        sums: Sums = Counter()
+        for crime, year, value in _hb_values(full, first, cur_year, where, self.notes):
+            self.rows.append(Row("housing", self.path.name, str(geography), precinct, self.week_start,
+                                 self.week_end, sheet, section, crime, period, year, value,
+                                 "count"))
+            sums[(crime, year)] = value
+        return sums
+
+
+def _hb_week(ws, where: str) -> tuple[date, date]:
+    rows = _hb_grid(ws)
+    _expect(len(rows) >= 2 and rows[0][1] == ["WEEK TO DATE COMPARISON"] and len(rows[1][1]) == 1,
+            f"{where}: title block {[c for _, c, _ in rows[:2]]}")
+    return _hb_dates(rows[1][1][0], "wtd", where)
+
+
+def _hb_area(ws, sheet: str, periods: list[str], out: _HbOut, cur_check: int) -> None:
+    """An area sheet: one block per period in `periods`, in that order."""
+    where0 = f"{out.path.name}[{sheet}]"
+    single = len(periods) == 1
+    block = -1
+    period: str | None = None
+    stage = "title"  # title -> dates -> header -> years -> body
+    cur_year = 0
+    group: str | None = None
+    pct: int | None = None
+    closed = terminal = False
+    # Running sums, checked at each totals row: developments in the precinct,
+    # precincts in the group, groups since the last column-C total, groups in the sheet.
+    in_pct: Sums = Counter()
+    in_grp: Sums = Counter()
+    in_span: Sums = Counter()
+    in_sheet: Sums = Counter()
+    notes = out.notes
+    for rn, cells, full in _hb_grid(ws):
+        w = f"{where0} row {rn}"
+        _expect(not terminal, f"{w}: row after the closing note")
+        texts = [str(c) for c in cells]
+        if texts == [HB_TERMINAL] and full[0] is not None:
+            _expect(closed and block == len(periods) - 1, f"{w}: closing note before the table ends")
+            terminal = True
+            continue
+        if stage == "title":
+            block += 1
+            closed = False
+            _expect(block < len(periods), f"{w}: more blocks than the {len(periods)} expected")
+            if single:  # title alone in A, date line alone in A on the next row
+                _expect(len(cells) == 1 and full[0] is not None and texts[0] in HB_AREA_TITLES,
+                        f"{w}: title {texts}")
+                period = HB_AREA_TITLES[texts[0]]
+                stage = "dates"
+            else:  # title in L and date line in W, one row
+                _expect(len(cells) == 2 and full[11] is not None and full[22] is not None
+                        and texts[0] in HB_AREA_TITLES, f"{w}: title {texts}")
+                period = HB_AREA_TITLES[texts[0]]
+                _, end = _hb_dates(full[22], period, w)
+                _expect(end == out.week_end, f"{w}: ends {end}, the report week ends {out.week_end}")
+                stage = "header"
+            _expect(period == periods[block], f"{w}: period {period}, expected {periods[block]}")
+            continue
+        assert period is not None
+        if stage == "dates":
+            _expect(len(cells) == 1 and full[0] is not None, f"{w}: date line {texts}")
+            start, end = _hb_dates(full[0], period, w)
+            _expect(end == out.week_end, f"{w}: ends {end}, the report week ends {out.week_end}")
+            stage = "header"
+        elif stage == "header":
+            _hb_headers(full, 5, {2: "PSA", 3: "PCT", 4: "Development"}, w)
+            stage = "years"
+        elif stage == "years":
+            _expect(all(v is None for v in full[:5]), f"{w}: year header {texts}")
+            cur_year = _hb_years(full, 5, w)
+            _expect(cur_year == cur_check, f"{w}: year {cur_year}, expected {cur_check}")
+            stage = "body"
+        else:
+            labels = {j: full[j] for j in range(5) if full[j] is not None}
+            cols = set(labels)
+            lab = {j: str(v) for j, v in labels.items()}
+            if cols == {2, 3, 4} and not lab[2].endswith(" Totals") and HB_PCT.fullmatch(lab[3]):
+                _expect(group is None and pct is None, f"{w}: new PSA group before the last one closed")
+                group, pct = lab[2], int(lab[3])
+                in_pct.update(out.emit(sheet, group, labels[4], pct, period, full, 5, cur_year, w))
+            elif cols == {3, 4} and HB_PCT.fullmatch(lab[3]):
+                _expect(group is not None and pct is None, f"{w}: precinct outside a PSA group")
+                assert group is not None
+                pct = int(lab[3])
+                in_pct.update(out.emit(sheet, group, labels[4], pct, period, full, 5, cur_year, w))
+            elif cols == {4} and (m := HB_PCT_TOTAL.fullmatch(lab[4])):
+                _expect(group is not None and pct == int(m.group(1)), f"{w}: {lab[4]!r} closes precinct {pct}")
+                assert group is not None
+                t = out.emit(sheet, group, labels[4], pct, period, full, 5, cur_year, w)
+                _hb_sum_check(notes, in_pct, t, w, lab[4])
+                in_grp.update(t)
+                in_pct = Counter()
+                pct = None
+            elif cols == {4}:
+                _expect(group is not None and pct is not None, f"{w}: development outside a precinct")
+                assert group is not None
+                in_pct.update(out.emit(sheet, group, labels[4], pct, period, full, 5, cur_year, w))
+            elif cols == {3} and group is not None and lab[3] == f"{group} Totals":
+                _expect(pct is None, f"{w}: {lab[3]!r} before precinct {pct} closed")
+                t = out.emit(sheet, group, labels[3], None, period, full, 5, cur_year, w)
+                _hb_sum_check(notes, in_grp, t, w, lab[3])
+                in_span.update(t)
+                in_sheet.update(t)
+                in_grp = Counter()
+                group = None
+            elif cols == {2} and lab[2].endswith(" Totals") and group is None and pct is None:
+                _hb_sum_check(notes, in_span, out.emit(sheet, "", labels[2], None, period, full, 5, cur_year, w),
+                              w, lab[2])
+                in_span = Counter()
+            elif cols == {1} and pct is None and (
+                (single and group is None and lab[1].endswith(" Totals"))
+                or (not single and group is not None and lab[1] == group)
+            ):
+                _expect(not closed, f"{w}: a second sheet total")
+                t = out.emit(sheet, "", labels[1], None, period, full, 5, cur_year, w)
+                # Staten Island and Rockaway have one group and no column-D total.
+                _hb_sum_check(notes, in_sheet if single else in_grp, t, w, lab[1])
+                in_grp, in_span, in_sheet = Counter(), Counter(), Counter()
+                group, closed = None, True
+                if not single:
+                    stage = "title"
+            else:
+                raise LayoutError(f"{w}: unrecognized row {cells}")
+    _expect(terminal, f"{where0}: closing note not found")
+
+
+def _hb_viper(ws, sheet: str, period: str, out: _HbOut, cur_check: int) -> None:
+    where0 = f"{out.path.name}[{sheet}]"
+    rows = _hb_grid(ws)
+    _expect(len(rows) >= 5, f"{where0}: too few rows")
+    (r1, c1, f1), (r2, c2, f2), (r3, _, f3), (r4, _, f4) = rows[:4]
+    _expect(len(c1) == 2 and f1[11] == "VIPER INDEX CRIME STATISTICS" and f1[21] is not None,
+            f"{where0} row {r1}: title {c1}")
+    _expect(len(c2) == 1 and HB_VIPER_TITLES.get(str(f2[11])) == period, f"{where0} row {r2}: title {c2}")
+    _, end = _hb_dates(f1[21], period, f"{where0} row {r1}")
+    _expect(end == out.week_end, f"{where0}: ends {end}, the report week ends {out.week_end}")
+    _hb_headers(f3, 4, {0: "PSA", 1: "PCT", 2: "Development", 3: "Viper"}, f"{where0} row {r3}")
+    _expect(all(v is None for v in f4[:4]), f"{where0} row {r4}: year header")
+    cur_year = _hb_years(f4, 4, f"{where0} row {r4}")
+    _expect(cur_year == cur_check, f"{where0}: year {cur_year}, expected {cur_check}")
+    psa: str | None = None
+    pct: int | None = None
+    total = terminal = False
+    devs: Sums = Counter()
+    for rn, cells, full in rows[4:]:
+        w = f"{where0} row {rn}"
+        _expect(not terminal, f"{w}: row after the closing note")
+        labels = {j: str(full[j]) for j in range(4) if full[j] is not None}
+        if [str(c) for c in cells] == [HB_TERMINAL] and full[0] is not None:
+            _expect(total, f"{w}: closing note before the totals row")
+            terminal = True
+        elif set(labels) == {0} and labels[0] == HB_VIPER_TOTALS[period] and not total:
+            _hb_sum_check(out.notes, devs, out.emit(sheet, "", labels[0], None, period, full, 4, cur_year, w),
+                          w, labels[0])
+            total = True
+        elif not total and {2, 3} <= set(labels) <= {0, 1, 2, 3} and re.fullmatch(r"\d+", labels[3]):
+            if 0 in labels:
+                _expect(1 in labels and re.fullmatch(r"\d|SI", labels[0]) is not None, f"{w}: PSA {labels[0]!r}")
+                psa = labels[0]
+            if 1 in labels:
+                _expect(HB_PCT.fullmatch(labels[1]) is not None, f"{w}: precinct {labels[1]!r}")
+                pct = int(labels[1])
+            _expect(psa is not None and pct is not None, f"{w}: development before its PSA and precinct")
+            devs.update(out.emit(sheet, f"Viper {labels[3]}", full[2], pct, period, full, 4, cur_year, w))
+        else:
+            raise LayoutError(f"{w}: unrecognized row {cells}")
+    _expect(terminal, f"{where0}: closing note not found")
+
+
+def _hb_ha(ws, sheet: str, period: str, out: _HbOut, cur_check: int) -> None:
+    where0 = f"{out.path.name}[{sheet}]"
+    rows = _hb_grid(ws)
+    _expect(len(rows) == 4 + len(HB_HA_LABELS) + 1, f"{where0}: {len(rows)} rows")
+    (r1, c1, f1), (r2, c2, f2), (r3, _, f3), (r4, _, f4) = rows[:4]
+    _expect(len(c1) == 2 and f1[10] == "Housing Authority" and f1[19] is not None, f"{where0} row {r1}: {c1}")
+    _expect(len(c2) == 1 and HB_HA_TITLES.get(str(f2[10])) == period, f"{where0} row {r2}: title {c2}")
+    _, end = _hb_dates(f1[19], period, f"{where0} row {r1}")
+    _expect(end == out.week_end, f"{where0}: ends {end}, the report week ends {out.week_end}")
+    _hb_headers(f3, 1, {0: "PSA"}, f"{where0} row {r3}")
+    _expect(f4[0] is None, f"{where0} row {r4}: year header")
+    cur_year = _hb_years(f4, 1, f"{where0} row {r4}")
+    _expect(cur_year == cur_check, f"{where0}: year {cur_year}, expected {cur_check}")
+    labels = [str(full[0]) for _, _, full in rows[4:-1]]
+    _expect(labels == HB_HA_LABELS, f"{where0}: row labels {labels}")
+    _expect(rows[-1][1] == [HB_TERMINAL], f"{where0}: closing note {rows[-1][1]}")
+    # Section: the "PSA n" row that opens a block, for that block's rows through its
+    # "Total"; empty for rows outside a block. Sums checked, as NYPD's own totals:
+    # "Total" = its block; "HB Covered" = the PSA rows; "PSB Covered" = the (PSB)
+    # rows; "HA City Wide" = both.
+    section = ""
+    block: Sums = Counter()
+    hb: Sums = Counter()
+    psb: Sums = Counter()
+    for rn, _, full in rows[4:-1]:
+        w = f"{where0} row {rn}"
+        label = str(full[0])
+        if re.fullmatch(r"PSA \d", label):
+            section = label
+        t = out.emit(sheet, section, label, None, period, full, 1, cur_year, w)
+        if label == "Total":
+            _hb_sum_check(out.notes, block, t, w, f"{section} {label}")
+            block, section = Counter(), ""
+        elif label in ("HB Covered", "PSB Covered"):
+            _hb_sum_check(out.notes, hb if label == "HB Covered" else psb, t, w, label)
+        elif label == "HA City Wide":
+            _hb_sum_check(out.notes, hb + psb, t, w, label)
+        else:
+            if section:
+                block.update(t)
+            (hb if label.startswith("PSA") else psb).update(t)
+
+
+def parse_housing(path: Path, notes: list[str] | None = None) -> list[Row]:
+    """NYPD Housing Bureau weekly report; see the notes above HB_CRIMES."""
+    wb = _load(path)
+    names = list(wb.sheetnames)
+    _expect(names in (HB_SHEETS, HB_SHEETS_NUMBERED), f"{path.name}: sheets {names}")
+    week_start, week_end_ = _hb_week(wb[names[0]], f"{path.name}[{names[0]}]")
+    out = _HbOut(path, week_end_, week_start, notes)
+    cur = week_end_.year
+    for i, sheet in enumerate(names):
+        ws = wb[sheet]
+        if i < 27:
+            _hb_area(ws, sheet, [HB_PERIODS[i % 3]], out, cur)
+        elif i < 29:
+            _hb_area(ws, sheet, HB_PERIODS, out, cur)
+        elif i < 32:
+            _hb_viper(ws, sheet, HB_PERIODS[i - 29], out, cur)
+        else:
+            _hb_ha(ws, sheet, HB_PERIODS[i - 32], out, cur)
+    return out.rows
+
+
 PARSERS = {
     "trafficstat": parse_trafficstat,
     "compstat": parse_compstat,
     "qteam": parse_qteam,
     "fatalities": parse_fatalities,
+    "housing": parse_housing,
 }
 
 
 MAX_CHANGE_MISMATCHES = 1
-
-HOUSING_WEEK = re.compile(r"([A-Z][a-z]+ \d{1,2}, \d{4}) through ([A-Z][a-z]+ \d{1,2}, \d{4})")
-
-
-def housing_week(path: Path) -> date:
-    """Week end of the NYCHA Housing Bureau report (hb_eagle_report.xlsx), from its WTD sheet.
-
-    Seen 2026-11-22: 35 sheets (WTD, 28 Days, YTD, WTD_2, ...); WTD's first rows read
-    "WEEK TO DATE COMPARISON" and "November 9, 2026 through November 15, 2026". Its numbers
-    are not read into data/ yet; the original is kept every week.
-    """
-    wb = _load(path)
-    if "WTD" not in wb.sheetnames:
-        raise LayoutError(f"{path.name}: no WTD sheet in {wb.sheetnames[:5]}")
-    for _, cells in _rows(wb["WTD"])[:6]:
-        for c in cells:
-            m = HOUSING_WEEK.fullmatch(str(c).replace("\xa0", " ").strip())
-            if m:
-                start, end = (datetime.strptime(x, "%B %d, %Y").date() for x in m.groups())
-                _expect((end - start).days == 6, f"{path.name}: week {start} to {end} is not 7 days")
-                return end
-    raise LayoutError(f"{path.name}: no 'through' date line on the WTD sheet")
-
-
-# Series whose files are kept and dated, but not yet read into data/.
-DATE_ONLY = {"housing": housing_week}
 
 
 def parse_file(series: str, path: Path) -> tuple[list[Row], list[str]]:
@@ -679,8 +1100,6 @@ def parse_file(series: str, path: Path) -> tuple[list[Row], list[str]]:
 
 def week_end(series: str, path: Path) -> date:
     """The report's week-ending date, read from the file itself."""
-    if series in DATE_ONLY:
-        return DATE_ONLY[series](path)
     rows, _ = parse_file(series, path)
     if not rows:
         raise LayoutError(f"{path.name}: parsed no rows")
