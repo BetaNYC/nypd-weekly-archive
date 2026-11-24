@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-24: Our numbers recounted from NYC Open Data
+
+- **Tags:** Data, Site
+- **What changed:** The About page now says, report by report, how closely NYC Open Data's records rebuild NYPD's weekly numbers, with the weeks we checked, the match rates and a link to each query. CompStat precinct counts matched exactly about 7 times in 10 across 572 weeks. The Department of Correction's matched 277 of 287 times. Quality of life matched 910 of 936 times for the lines that count only 311 requests. TrafficStat's weekly crash counts run 15% to 32% below Open Data's, and the NYCHA report cannot be rebuilt by development. Every comparison is in `data/recount/`. The home page now says NYPD does not archive these weekly figures on NYC Open Data, where it said NYPD does not publish them.
+- **More detail:** [How to check a week yourself](docs/about.html#recount) · [Our weekly copies and NYC Open Data](docs/about.html#open-data) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/40)
+
 ## 2026-11-23: TrafficStat for precinct 78, week ending August 30, 2026
 
 - **Tags:** Data

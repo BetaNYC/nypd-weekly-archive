@@ -7,6 +7,7 @@ dashboard-map saves this week's points from the map of NYPD's TrafficStat or Com
 import-greenman converts Josh Greenman's parsed CompStat weeks into data/compstat_greenman/.
 import-mcdermott converts Tim McDermott's weekly CompStat CSVs into data/compstat_mcdermott/.
 site rewrites docs/data/ for the GitHub Pages site from captures.csv and data/.
+recount counts the same numbers again from NYC Open Data and writes data/recount/.
 """
 
 from __future__ import annotations
@@ -37,7 +38,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "command",
         choices=["discover", "capture", "build", "run", "redate", "package", "site", "dashboard-map",
-                 "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott"],
+                 "backfill-dashboard", "backfill-wayback", "backfill-github", "import-greenman", "import-mcdermott",
+                 "recount"],
     )
     ap.add_argument("--root", type=Path, default=Path.cwd(), help="repository root (default: cwd)")
     ap.add_argument("--series", nargs="+", choices=sorted(SERIES), default=sorted(SERIES))
@@ -62,6 +64,10 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--source", action="append", default=[], metavar="LABEL=FOLDER",
                     help="import-mcdermott: a folder of Tim's vol*.csv files; repeat, best first")
     ap.add_argument("--clone", type=Path, help="backfill-github, import-greenman: local clone of the source repo")
+    ap.add_argument("--checks", nargs="+", choices=["compstat", "housing", "trafficstat", "fatalities", "qteam"],
+                    help="recount: which checks (default all)")
+    ap.add_argument("--per-precinct-year", type=int,
+                    help="recount: also place that year's crashes in precincts (downloads their coordinates)")
     args = ap.parse_args(argv)
 
     root = args.root.resolve()
@@ -90,6 +96,20 @@ def main(argv: list[str] | None = None) -> int:
             log("site_data", series=key, file=str(out_path(key)), precincts=len(out["precincts"]),
                 weeks=len(out["weeks"]), **out["totals"])
         log("finish", status=0)
+        return 0
+
+    if args.command == "recount":
+        from .net import FetchError
+        from .recount import CHECKS, RecountError, recount
+
+        try:
+            fetcher = Fetcher(min_interval=max(2.0, args.min_interval), timeout=180.0)
+            info = recount(root, fetcher, checks=args.checks or CHECKS, per_precinct_year=args.per_precinct_year)
+        except (RecountError, FetchError) as exc:
+            log("recount_failed", error=str(exc))
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        log("finish", status=0, **{k: v for k, v in info.items() if not isinstance(v, dict)})
         return 0
 
     if args.command == "backfill-dashboard":
