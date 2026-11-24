@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: Older CompStat spreadsheets read, and files refiled by week
+
+- **Tags:** Data
+- **What changed:** 1,294 CompStat spreadsheets from the Internet Archive, for precincts, patrol boroughs, citywide and the Department of Correction, used an older layout we could not read. Now we can. This adds 133 weeks to the CompStat data and 25 weeks to the NYCHA data. We also moved 1,319 original files from folders named for the day we downloaded them to folders named for the week they report. The releases keep the old paths, so `moves.csv` lists every move, old path and new path, to help you find a file. We checked 3,988 numbers against NYPD's PDFs for the same weeks, and all of them matched.
+- **More detail:** [moves.csv](moves.csv) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/34)
+
 ## 2026-11-23: Numbers from the NYCHA Housing Bureau report
 
 - **Tags:** Data

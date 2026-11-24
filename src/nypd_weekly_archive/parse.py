@@ -355,6 +355,7 @@ CS_CRIME = {
     "Petit Larceny",
     "Retail Theft",
     "Misd. Assault",
+    "Misd. Sex Crimes",
     "UCR Rape*",
     "Other Sex Crimes",
     "Shooting Vic.",
@@ -369,13 +370,25 @@ CS_HIST = {"Murder", "Rape", "Robbery", "Fel. Assault", "Burglary", "Gr. Larceny
 CS_COVER = re.compile(r"Report Covering the Week\s+(\d{1,2}/\d{1,2}/\d{4})\s+Through\s+(\d{1,2}/\d{1,2}/\d{4})")
 CS_LONG = re.compile(r"(\d+) Year \((\d{4})\)")
 CS_TERMINAL = "Figures are preliminary and subject to further analysis and revision."
+CS_TERMINALS = {
+    CS_TERMINAL,
+    # Older files (sheet "CompStat_1", weeks up to August 2019) end their tables with this line.
+    "All figures are subject to further analysis and revision. All degrees of rape are included in the rape category.",
+}
+# Older files (Internet Archive copies, weeks up to 2024) name the one sheet "CompStat_1".
+CS_SHEET_NAMES = (["CompStat"], ["CompStat_1"])
 
 
 def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # noqa: ARG001
     wb = _load(path)
-    _expect(wb.sheetnames == ["CompStat"], f"{path.name}: sheets {wb.sheetnames}")
-    rows = _grid(wb["CompStat"])
-    where = f"{path.name}[CompStat]"
+    _expect(wb.sheetnames in CS_SHEET_NAMES, f"{path.name}: sheets {wb.sheetnames}")
+    sheet = wb.sheetnames[0]
+    ws = wb[sheet]
+    # Most older files declare the sheet's size as "A1" while holding a full
+    # table; in read-only mode openpyxl trusts that and sees nothing.
+    ws.reset_dimensions()
+    rows = _grid(ws)
+    where = f"{path.name}[{sheet}]"
     geography: str | None = None
     week_start = week_end = None
     i = 0
@@ -397,7 +410,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
 
     def emit(section: str, measure: str, period: str, year: int | None, value, unit: str) -> None:
         out.append(Row("compstat", path.name, geography, precinct, week_start, week_end,
-                       "CompStat", section, measure, period, year, value, unit))
+                       sheet, section, measure, period, year, value, unit))
 
     section: str | None = None
     cur_year: int | None = None
@@ -448,7 +461,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
                 _expect(all(re.fullmatch(r"'\d\d vs '\d\d", t) for t in texts[5:]), f"{w}: {texts}")
                 hist_cols = _cols(full, skip=1)
                 continue
-            if texts[0] == CS_TERMINAL:
+            if texts[0] in CS_TERMINALS:
                 terminal = True
                 break
             _expect(hist_years is not None and isinstance(full[0], str), f"{w}: unrecognized row {cells}")
@@ -461,7 +474,7 @@ def parse_compstat(path: Path, notes: list[str] | None = None) -> list[Row]:  # 
                 to_pct(v, w)
         else:
             raise LayoutError(f"{w}: unrecognized row {cells}")
-    _expect(terminal, f"{where}: terminal note {CS_TERMINAL!r} not found")
+    _expect(terminal, f"{where}: terminal note not found")
     _expect(hist_years is not None, f"{where}: historical perspective block missing")
     return out
 

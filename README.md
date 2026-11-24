@@ -30,6 +30,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 
 - The original Excel and PDF files, exactly as NYPD published them, are not in git. They are attached to this repository's GitHub Releases as zip files (see "Where the originals are" below). While a run is working, they sit in `raw/<series>/<week ending>/`; the date is the last day of the report week, read from the spreadsheet, and a PDF takes the date of the spreadsheet with the same name. If NYPD changes a file again within the same week, both versions are kept; the later one gets part of its checksum in its name.
 - `captures.csv` is the ledger, with one row per file saved. Each row has its address, SHA-256, size, the `Last-Modified` time nyc.gov reported, the week-ending date and where that date came from: `xlsx` (read from the spreadsheet), `sibling_xlsx` (a PDF dated by its spreadsheet), `fetch_date` or `fetch_date_layout_error` (the download date, because the file could not be read), `wayback_capture_date`, `pdf` (a PDF dated by its own cover line) or `github_folder_date`. The `source` column says whether the copy came from nyc.gov, the Internet Archive (`wayback`) or another GitHub archive (`github:<owner>/<repo>`, with `source_ref` linking the exact file and commit there), and `release_tag` and `release_asset` say which release and zip hold the original.
+- `moves.csv` lists every file that `redate` moved from one folder in `raw/` to another, one row per file: `moved_on`, `series`, `sha256`, `old_path`, `new_path`, `release_tag`, `release_asset` and `reason`. The zips on GitHub Releases keep the old path, so this is how to find a moved file in them. See "Files that moved" below.
 - `backfills.csv` does the same for backfill files that are not weekly captures (dashboard responses, Internet Archive listings).
 - `data/<series>/<week ending>.csv` is the tidy version, one row per number. Each week is its own file so that no single file grows past what GitHub accepts. Join the files for a series to get its history.
 - `data/housing/<week ending>.csv` holds the NYCHA Housing Bureau report, about 21,500 numbers a week: every development, precinct, Police Service Area and citywide total NYPD prints. See "NYCHA Housing Bureau report" below.
@@ -91,7 +92,7 @@ Reshaped: one number per row; the "CH %" columns are checked, then dropped; the 
 
 What is not read yet:
 
-- **25 spreadsheets are read by the parser but not yet in `data/housing/`.** They were saved before the parser existed, so `captures.csv` files them under the date the Internet Archive saved them (`fetch_date_layout_error`), and `build` reads only spreadsheets dated from their contents. `uv run nypd-archive redate` would move them to their report weeks, but it also changes their paths in `captures.csv`, while the release zips keep the old paths. It has not been run. One of them, saved by the archive in May 2025 under the old address, is the report for the week ending May 7, 2017.
+- **25 spreadsheets were filed under the wrong week until November 23, 2026.** They were saved before the parser existed, so `captures.csv` filed them under the date the Internet Archive saved them (`fetch_date_layout_error`). `redate` moved them to their report weeks on November 23, 2026, and they are now in `data/housing/`; each move is a row in `moves.csv`. One of them, saved by the archive in May 2025 under the old address, is the report for the week ending May 7, 2017.
 - **PDF-only weeks.** By the cover line each PDF prints ("Compstat Period Ending Aug 30, 2015"), 83 of the 86 PDFs on disk are datable, and 53 of those weeks have no spreadsheet. Three PDFs (saved 2021-01-19, 2024-03-05 and 2024-09-08) are cut off at exactly 1 MiB and do not open. The PDFs are not read; see "Spreadsheets, not PDFs" below.
 
 ## Where the originals are
@@ -106,7 +107,7 @@ Each GitHub Release holds zip files of originals:
 | `backfill-wayback-2026-11-21` | Copies downloaded from the Internet Archive, and the archive's listings |
 | `backfill-github-<date>` | CompStat PDFs from 2014 to 2016, copied from [ajschumacher/nypd](https://github.com/ajschumacher/nypd). One zip per year. |
 
-Inside a zip, each file sits at the path shown in `captures.csv` (for example `raw/trafficstat/2026-11-15/ts-en-us-034.xlsx`). GitHub accepts release files up to 2 GiB each; a week of the largest series is about 50 MB.
+Inside a zip, each file sits at the path it had when the zip was made, which is the path in `captures.csv` unless the file has moved since (for example `raw/trafficstat/2026-11-15/ts-en-us-034.xlsx`). GitHub accepts release files up to 2 GiB each; a week of the largest series is about 50 MB.
 
 To get the original behind any row of `data/`, take its `source_file`, find that path in `captures.csv`, and download the zip named in `release_asset` from the release in `release_tag`:
 
@@ -116,6 +117,19 @@ gh release download week-2026-11-15 --pattern 'trafficstat_2026-11-15_*.zip' --d
 unzip originals/trafficstat_2026-11-15_*.zip raw/trafficstat/2026-11-15/ts-en-us-034.xlsx
 shasum -a 256 raw/trafficstat/2026-11-15/ts-en-us-034.xlsx           # matches the sha256 column
 ```
+
+### Files that moved
+
+A file saved before the parser could read it is filed under the date it was downloaded (`fetch_date_layout_error`). Once the parser learns its layout, `redate` moves it to its report week and changes its path in `captures.csv`. The zip on Releases is not rewritten, so it still holds the file under its old path. `moves.csv` records each move: the old path, the new path, the checksum, and the release and zip that hold the file. A file that moved twice has two rows, in order.
+
+To bring a copy of `raw/` (or files unpacked from a release zip) up to date, run:
+
+```sh
+python scripts/apply_moves.py --root <folder that holds raw/>           # shows what it would do
+python scripts/apply_moves.py --root <folder that holds raw/> --apply   # moves the files
+```
+
+It moves a file only when its checksum matches the row, skips rows already done, and reports files it cannot find. It never deletes or overwrites a file: if the new path already holds a different file, or a file's checksum does not match, it leaves both alone, says so, and exits with status 1.
 
 Each run uploads its zips before it commits `captures.csv`. If the upload fails, nothing is committed and the next run captures the same files again. `uv run nypd-archive package` writes the zips to `dist/` and lists them in `dist/upload-plan.tsv`; `scripts/upload-release-assets.sh` creates any missing release and uploads them. Rebuilding `data/` needs the originals on disk, so `build` leaves alone any week whose files are not there.
 
@@ -155,7 +169,7 @@ Files are identified by their first bytes, never by the `Content-Type` header: a
 
 The exit code is 1 if any file failed to download or did not match the layout the parser knows. Files that do not parse are still saved; only `data/` is held back. An unfamiliar row label, section, sheet or header stops the parser, so a change at NYPD shows up as a red run instead of numbers quietly going missing.
 
-After fixing the parser for a file it rejected, `uv run nypd-archive redate` re-reads the files that were filed under their download date, moves them to their report week, and rebuilds `data/`.
+After fixing the parser for a file it rejected, `uv run nypd-archive redate` re-reads the files that were filed under their download date, moves them to their report week, and rebuilds `data/`. Each move (a PDF that follows its spreadsheet included) is appended to `moves.csv` as it happens. A new path is never one another row of `captures.csv` already uses, even when that file is not on disk; the file gets part of its checksum in its name instead. Commit `moves.csv` with `captures.csv`, then run `scripts/apply_moves.py` on any other copy of `raw/` (see "Files that moved").
 
 ## Dashboard maps
 
@@ -224,9 +238,18 @@ Three other people already kept CompStat history, and this archive builds on the
 
 **2026: [joshgreenman1973/nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper).** Josh Greenman's scraper reads NYPD's weekly CompStat spreadsheets into JSON, from March 2026. Josh gave BetaNYC permission to use his data with a link to his repo. `uv run nypd-archive import-greenman --clone <clone of that repo>` converts his weekly files into `data/compstat_greenman/`, in the same columns as `data/compstat/`, and then compares the weeks both have. For the week ending November 15, 2026, all 14,193 numbers that appear in both match. His files repeat the retired Bronx patrol borough with its last week (May 17, 2026) after NYPD split it; those repeats are dropped. `data/compstat_greenman/README.md` names the commit the data came from.
 
-The Internet Archive also holds NYPD's own CompStat files from May 2017 on. `uv run nypd-archive backfill-wayback --series compstat` fetched them on November 22, 2026 (issue #9): 6,959 files, 2,166 spreadsheets and 4,793 PDFs, for weeks from May 2017 to November 2026. 890 spreadsheets were read. 1,276 are in an older NYPD layout the reader does not know yet, so they are saved but not read; their week is estimated from the date the Internet Archive saved them.
+The Internet Archive also holds NYPD's own CompStat files from May 2017 on. `uv run nypd-archive backfill-wayback --series compstat` fetched them on November 22, 2026 (issue #9): 6,959 files, 2,166 spreadsheets and 4,793 PDFs, for weeks from May 2017 to November 2026. 890 spreadsheets were read then. 1,276 were in an older NYPD layout (see "Older CompStat layout" below); they are read since November 23, 2026.
 
-On November 23, 2026 the same command, with the old folder and old names, added 197 more files for the citywide and Department of Correction CompStat reports and the NYCHA Housing Bureau report (`hb_eagle_report`, series `housing`). The archive now holds 567 weeks of the citywide report (May 2008 to November 2026), 175 of the Correction report (July 2014 on) and 100 of the Housing Bureau report (September 2014 on). Housing PDFs are filed under estimated weeks from the capture date, although each prints its week on its cover (see "NYCHA Housing Bureau report" above). 25 older Housing Bureau spreadsheets name their sheet `WTD_1` rather than `WTD`; the parser reads them since November 23, 2026, but they stay filed under their estimated weeks until `redate` is run. 18 citywide and Correction spreadsheets from 2015 to 2017 use an older layout; these are saved but not read.
+On November 23, 2026 the same command, with the old folder and old names, added 197 more files for the citywide and Department of Correction CompStat reports and the NYCHA Housing Bureau report (`hb_eagle_report`, series `housing`). The archive now holds 567 weeks of the citywide report (May 2008 to November 2026), 175 of the Correction report (July 2014 on) and 100 of the Housing Bureau report (September 2014 on). Housing PDFs are filed under estimated weeks from the capture date, although each prints its week on its cover (see "NYCHA Housing Bureau report" above). 25 older Housing Bureau spreadsheets name their sheet `WTD_1` rather than `WTD`, and 18 citywide and Correction spreadsheets use the older CompStat layout below. All are read since November 23, 2026.
+
+#### Older CompStat layout
+
+1,294 CompStat spreadsheets from the Internet Archive use an older layout: 1,237 precinct and patrol borough files for weeks from May 21, 2017 to September 29, 2024, and 34 citywide and 23 Department of Correction files for weeks from August 30, 2015 to December 31, 2023. All 1,294 name their one sheet `CompStat_1`, not `CompStat` (kept in the `sheet` column), and 998 of them declare the sheet's size as "A1" while holding a full table, the same quirk as the older Housing Bureau files; the reader ignores the declared size. The rows changed over those years:
+
+- up to the week ending August 18, 2019 (503 files), "Misd. Sex Crimes" where later files have "UCR Rape*" and "Other Sex Crimes", and the table ends with "All figures are subject to further analysis and revision. All degrees of rape are included in the rape category." instead of "Figures are preliminary and subject to further analysis and revision.";
+- "Hate Crimes" from the week ending October 11, 2020, and "Retail Theft" and the "Traffic Statistics" section from the week ending September 15, 2024.
+
+On November 23, 2026 `redate` filed all 1,294 under their report weeks, which added 133 weeks to `data/compstat/`; `moves.csv` lists each move. As a check, 25 of them (22 weeks, from 2015 to 2024: precincts, citywide and Correction) were compared with NYPD's PDF for the same week, using the PDF's own text: all 3,988 numbers compared match.
 
 ## Website
 

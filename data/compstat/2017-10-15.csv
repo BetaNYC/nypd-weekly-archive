@@ -1,0 +1,351 @@
+series,source_file,geography,precinct,week_start,week_end,sheet,section,measure,period,year,value,unit
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,28d,2017,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,28d,2016,19,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,wtd,2017,4,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,wtd,2016,4,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd,2017,144,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd,2016,192,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2017,-92.070484581497,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2017,-16.279069767441,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2015,2017,-30.434782608695,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,28d,2017,45,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,28d,2016,55,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,wtd,2017,14,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,wtd,2016,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd,2017,461,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd,2016,468,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2017,-46.76674364896,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2017,35.190615835777,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2015,2017,2.672605790645,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,28d,2017,5,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,28d,2016,7,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,wtd,2017,3,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,wtd,2016,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd,2017,61,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd,2016,73,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2017,-91.492329149232,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2017,-37.755102040816,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2015,2017,-18.666666666666,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,28d,2017,31,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,28d,2016,51,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2017,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2016,17,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2017,413,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2016,412,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2017,-47.919293820933,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2017,70.661157024793,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2015,2017,16.666666666666,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,28d,2017,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,28d,2016,5,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,wtd,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,wtd,2016,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd,2017,31,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd,2016,33,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2017,63.157894736842,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2015,2017,82.35294117647,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,28d,2017,100,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,28d,2016,66,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,wtd,2017,22,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,wtd,2016,11,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd,2017,842,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd,2016,802,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2017,-18.804243008678,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2015,2017,-8.874458874458,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2017,9,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2016,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2016,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2017,39,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2016,33,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2010,2017,-4.878048780487,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2015,2017,18.181818181818,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,28d,2017,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,28d,2016,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,wtd,2017,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,wtd,2016,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd,2017,6,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd,2016,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2017,-88.461538461538,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2017,-40.0,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2015,2017,-45.454545454545,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,28d,2017,70,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,28d,2016,98,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,wtd,2017,19,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,wtd,2016,16,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd,2017,772,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd,2016,899,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2017,4.46549391069,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2015,2017,1.179554390563,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,28d,2017,3,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,28d,2016,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,wtd,2017,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,wtd,2016,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd,2017,25,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd,2016,27,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2017,-62.686567164179,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2017,19.047619047619,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2015,2017,13.636363636363,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,28d,2017,41,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,28d,2016,37,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,wtd,2017,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,wtd,2016,9,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd,2017,313,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd,2016,350,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2017,-81.631455399061,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2017,-10.315186246418,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2015,2017,-2.492211838006,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,28d,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,28d,2016,3,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2016,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2017,22,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2016,30,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2017,-83.458646616541,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2017,-47.619047619047,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2015,2017,-38.888888888888,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,28d,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,28d,2016,3,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2017,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2016,1,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2017,28,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2016,35,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2017,-80.689655172413,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2017,-42.857142857142,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2015,2017,-41.666666666666,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,28d,2017,139,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,28d,2016,173,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,wtd,2017,49,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,wtd,2016,47,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd,2017,1423,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd,2016,1535,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2017,-76.342477140482,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2017,15.409570154095,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2015,2017,-1.111883252258,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,28d,2017,6,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,28d,2016,5,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,wtd,2017,4,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,wtd,2016,0,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd,2017,29,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd,2016,39,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2017,11.538461538461,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2015,2017,-14.705882352941,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,2016,243,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,619,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,1022,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,2365,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,2089,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2016,578,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,654,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,681,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,1036,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,1241,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2016,93,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,427,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,412,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,875,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,1239,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2016,525,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,422,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,451,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,961,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,1149,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,2016,14,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,2001,17,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1998,21,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1993,64,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1990,82,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,2016,31,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,2001,63,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1998,87,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1993,82,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1990,75,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,2016,442,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,548,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,870,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,2132,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,2835,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,2016,1926,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,2750,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,3544,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,7515,count
+compstat,raw/compstat/2017-10-15/cs-en-us-046pct.xlsx,46th Precinct,46,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,8710,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,28d,2017,192,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,28d,2016,198,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,wtd,2017,38,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,wtd,2016,38,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd,2017,1779,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd,2016,2057,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2017,-88.004854696244,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2017,-31.943381790359,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Burglary,ytd_pct_change_vs_2015,2017,-14.717162032598,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,28d,2017,408,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,28d,2016,409,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,wtd,2017,91,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,wtd,2016,96,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd,2017,4428,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd,2016,4537,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2017,-39.400574791296,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2017,23.7908862175,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2015,2017,3.14465408805,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,28d,2017,89,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,28d,2016,127,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,wtd,2017,28,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,wtd,2016,27,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd,2017,1053,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd,2016,1075,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2017,-91.324050424322,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2017,-36.794717887154,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,G.L.A.,ytd_pct_change_vs_2015,2017,-17.734375,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,28d,2017,515,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,28d,2016,506,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2017,133,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,wtd,2016,131,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2017,5337,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd,2016,5069,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2017,-12.075782537067,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2017,44.751830756712,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2015,2017,8.167815160113,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,28d,2017,92,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,28d,2016,90,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,wtd,2017,17,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,wtd,2016,18,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd,2017,1007,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd,2016,1052,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2010,2017,18.470588235294,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Housing,ytd_pct_change_vs_2015,2017,4.895833333333,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,28d,2017,905,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,28d,2016,807,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,wtd,2017,222,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,wtd,2016,196,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd,2017,8388,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd,2016,8414,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2017,-5.773983374522,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2015,2017,-1.375661375661,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2017,53,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,28d,2016,44,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2017,9,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,wtd,2016,11,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2017,432,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd,2016,466,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2010,2017,6.666666666666,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Misd. Sex Crimes,ytd_pct_change_vs_2015,2017,6.930693069306,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,28d,2017,8,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,28d,2016,11,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,wtd,2017,2,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,wtd,2016,4,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd,2017,58,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd,2016,81,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_1993,2017,-85.643564356435,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2010,2017,-42.574257425742,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Murder,ytd_pct_change_vs_2015,2017,-21.621621621621,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,28d,2017,1263,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,28d,2016,1209,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,wtd,2017,316,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,wtd,2016,270,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd,2017,12223,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd,2016,11933,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2017,20.447378793851,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2015,2017,5.053717232488,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,28d,2017,27,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,28d,2016,27,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,wtd,2017,4,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,wtd,2016,5,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd,2017,249,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd,2016,273,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_1993,2017,-56.920415224913,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2010,2017,5.06329113924,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Rape,ytd_pct_change_vs_2015,2017,-10.108303249097,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,28d,2017,296,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,28d,2016,348,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,wtd,2017,83,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,wtd,2016,86,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd,2017,2747,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd,2016,3340,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2017,-78.492013780144,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2017,-22.22536806342,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Robbery,ytd_pct_change_vs_2015,2017,-17.581758175817,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,28d,2017,19,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,28d,2016,20,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2017,7,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,wtd,2016,8,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2017,202,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd,2016,209,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2017,-80.196078431372,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2017,-38.03680981595,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2015,2017,-21.400778210116,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,28d,2017,20,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,28d,2016,25,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2017,7,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,wtd,2016,10,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2017,246,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd,2016,244,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2017,-78.402107111501,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2017,-36.760925449871,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2015,2017,-18.543046357615,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,28d,2017,1535,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,28d,2016,1626,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,wtd,2017,379,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,wtd,2016,387,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd,2017,15651,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd,2016,16432,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2017,-71.069705539843,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2017,1.537563254184,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,TOTAL,ytd_pct_change_vs_2015,2017,-3.845917552374,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,28d,2017,47,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,28d,2016,45,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,wtd,2017,17,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,wtd,2016,13,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd,2017,370,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd,2016,353,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_1993,2017,,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2010,2017,49.193548387096,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Crime Complaints,Transit,ytd_pct_change_vs_2015,2017,12.80487804878,percent
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,2016,2598,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,2001,5813,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1998,8247,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1993,18938,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Burglary,calendar_year,1990,19326,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2016,5596,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,2001,5335,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1998,6474,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1993,8925,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Fel. Assault,calendar_year,1990,9538,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2016,1372,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,2001,5522,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1998,7169,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1993,15345,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,G.L.A.,calendar_year,1990,22946,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2016,6541,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,2001,4373,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1998,4661,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1993,7511,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Gr. Larceny,calendar_year,1990,8856,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,2016,98,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,2001,190,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1998,166,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1993,512,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Murder,calendar_year,1990,653,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,2016,339,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,2001,502,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1998,633,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1993,718,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Rape,calendar_year,1990,644,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,2016,4292,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,2001,5178,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1998,7571,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1993,16378,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,Robbery,calendar_year,1990,17862,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,2016,20836,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,2001,26913,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1998,34921,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1993,68327,count
+compstat,raw/compstat/2017-10-15/cs-en-us-pbbx.xlsx,Bronx,,2017-10-09,2017-10-15,CompStat_1,Historical Perspective,TOTAL,calendar_year,1990,79825,count
