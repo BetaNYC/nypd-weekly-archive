@@ -7,6 +7,14 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: TrafficStat for the week ending November 15, 2026 had a blank precinct column
+
+- **Tags:** Data, Correction
+- **What changed:** In the TrafficStat data for the week ending November 15, 2026, the `precinct` column was blank on all 32,292 precinct rows. NYPD posted its files twice that day, and our reader did not expect the file names of the second copy. The site showed those precinct-weeks as not read yet. The column is now filled in. No other number changed.
+- **If you used the old numbers:** The counts were right; only the `precinct` column was blank. If you downloaded `data/trafficstat/2026-11-15.csv` before this fix, download it again, or use its `geography` column, which names the precinct.
+- **Who it affects:** Anyone who used the precinct column in that week's TrafficStat data.
+- **More detail:** [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/36)
+
 ## 2026-11-23: TrafficStat from August to December 2024
 
 - **Tags:** Data
