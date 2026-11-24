@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: TrafficStat for precinct 78, week ending August 30, 2026
+
+- **Tags:** Data
+- **What changed:** We checked the Internet Archive again for every TrafficStat file it holds. We already had all but 5. One fills a gap: precinct 78's spreadsheet for the week ending August 30, 2026, which adds 414 numbers. A second is a PDF, which we do not read yet. The other 3 did not match the Internet Archive's own checksum, so we left them out. The originals are in the releases.
+- **More detail:** [TrafficStat](docs/trafficstat.html) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/39)
+
 ## 2026-11-23: TrafficStat for the week ending November 15, 2026 had a blank precinct column
 
 - **Tags:** Data, Correction
