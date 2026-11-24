@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: Citywide CompStat for the week ending November 9, 2025
+
+- **Tags:** Data
+- **What changed:** Two files we downloaded from the Internet Archive had been turned away because they seemed to fail our checksum check. The Internet Archive sends some files still compressed, and its checksum is for the compressed bytes, so good copies looked damaged. We now check the bytes as they arrive. One of the two was new to us: citywide CompStat for the week ending November 9, 2025, which adds 211 numbers. Its original file is in the releases.
+- **More detail:** [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/31) · [Citywide CompStat](docs/citywide-compstat.html)
+
 ## 2026-11-23: The About page compares our weekly copies with NYC Open Data
 
 - **Tags:** Site
