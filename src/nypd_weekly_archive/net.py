@@ -88,11 +88,39 @@ class Fetcher:
         return self.request("POST", url, json=body)
 
     def request(self, method: str, url: str, **kwargs: object) -> httpx.Response:
+        return self._retry(url, lambda: self.client.request(method, url, **kwargs))  # type: ignore[arg-type]
+
+    def get_encoded(self, url: str) -> tuple[httpx.Response, bytes]:
+        """GET with retries, returning the body exactly as sent, before any Content-Encoding is undone.
+
+        The response itself is closed and its .content cannot be read; decode the bytes yourself.
+        The Wayback Machine serves a capture with the Content-Encoding it was archived with,
+        and its CDX digest covers those bytes (gzip-encoded cscity.pdf, 2026-11-23).
+        """
+        sent = b""
+
+        def send() -> httpx.Response:
+            nonlocal sent
+            resp = self.client.send(self.client.build_request("GET", url), stream=True)
+            try:
+                if resp.status_code != 200:
+                    sent = b""
+                elif resp.is_stream_consumed:  # already read in memory (httpx.MockTransport): no wire bytes
+                    sent = resp.content
+                else:
+                    sent = b"".join(resp.iter_raw())
+            finally:
+                resp.close()
+            return resp
+
+        return self._retry(url, send), sent
+
+    def _retry(self, url: str, send: Callable[[], httpx.Response]) -> httpx.Response:
         attempt = 0
         while True:
             self._pace()
             try:
-                resp = self.client.request(method, url, **kwargs)  # type: ignore[arg-type]
+                resp = send()
             except httpx.TransportError as exc:
                 resp = None
                 err: str = f"{type(exc).__name__}: {exc}"

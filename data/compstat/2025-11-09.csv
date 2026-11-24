@@ -2320,3 +2320,214 @@ compstat,raw/compstat/2025-11-09/cs-en-us-115pct.xlsx,115th Precinct,115,2025-11
 compstat,raw/compstat/2025-11-09/cs-en-us-115pct.xlsx,115th Precinct,115,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
 compstat,raw/compstat/2025-11-09/cs-en-us-115pct.xlsx,115th Precinct,115,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
 compstat,raw/compstat/2025-11-09/cs-en-us-115pct.xlsx,115th Precinct,115,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,-57.142857142857,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,28d,2025,1000,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,28d,2024,1032,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,wtd,2025,244,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,wtd,2024,262,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,ytd,2025,10959,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,ytd,2024,11280,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_1993,2025,-87.305834520624,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2010,2025,-31.617371770872,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Burglary,ytd_pct_change_vs_2023,2025,-8.02349979018,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,28d,2025,2184,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,28d,2024,2265,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,wtd,2025,558,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,wtd,2024,544,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,ytd,2025,25724,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,ytd,2024,25787,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_1993,2025,-28.732511428175,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2010,2025,73.775586029858,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Fel. Assault,ytd_pct_change_vs_2023,2025,5.868795785661,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,28d,2025,960,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,28d,2024,1100,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,wtd,2025,252,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,wtd,2024,271,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,ytd,2025,11822,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,ytd,2024,12483,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_1993,2025,-87.716764507247,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2010,2025,32.429707628542,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,G.L.A.,ytd_pct_change_vs_2023,2025,-13.821256742965,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,28d,2025,3756,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,28d,2024,3903,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,wtd,2025,928,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,wtd,2024,999,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,ytd,2025,41191,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,ytd,2024,42594,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_1993,2025,-44.056770338177,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2010,2025,27.329211746522,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Gr. Larceny,ytd_pct_change_vs_2023,2025,-5.836228968544,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,28d,2025,26,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,28d,2024,53,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,wtd,2025,6,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,wtd,2024,12,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,ytd,2025,469,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,ytd,2024,611,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Hate Crimes,ytd_pct_change_vs_2023,2025,-14.727272727272,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,28d,2025,447,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,28d,2024,452,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,wtd,2025,116,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,wtd,2024,109,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,ytd,2025,5020,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,ytd,2024,5195,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2010,2025,38.674033149171,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Housing,ytd_pct_change_vs_2023,2025,-6.933629959213,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,28d,2025,3585,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,28d,2024,3919,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,wtd,2025,855,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,wtd,2024,924,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,ytd,2025,39899,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,ytd,2024,41413,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2010,2025,-0.192615569341,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Misd. Assault,ytd_pct_change_vs_2023,2025,5.55291005291,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,28d,2025,14,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,28d,2024,36,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,wtd,2025,6,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,wtd,2024,5,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,ytd,2025,274,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,ytd,2024,339,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_1993,2025,-83.758150563129,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2010,2025,-41.702127659574,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Murder,ytd_pct_change_vs_2023,2025,-19.883040935672,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,28d,2025,447,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,28d,2024,407,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,wtd,2025,123,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,wtd,2024,87,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,ytd,2025,4767,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,ytd,2024,4692,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Other Sex Crimes,ytd_pct_change_vs_2023,2025,6.40625,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,28d,2025,8284,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,28d,2024,8720,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,wtd,2025,2115,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,wtd,2024,2236,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,ytd,2025,90811,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,ytd,2024,93806,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2010,2025,29.066230812961,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Petit Larceny,ytd_pct_change_vs_2023,2025,-4.157255936675,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,28d,2025,167,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,28d,2024,168,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,wtd,2025,45,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,wtd,2024,45,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,ytd,2025,1767,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,ytd,2024,1505,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_1993,2025,-37.517680339462,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2010,2025,51.413881748072,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Rape,ytd_pct_change_vs_2023,2025,40.349483717235,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,28d,2025,4112,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,28d,2024,4851,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,wtd,2025,1003,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,wtd,2024,1267,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,ytd,2025,45716,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,ytd,2024,52795,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Retail Theft,ytd_pct_change_vs_2023,2025,-10.179381888912,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,28d,2025,1225,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,28d,2024,1381,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,wtd,2025,282,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,wtd,2024,342,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,ytd,2025,13178,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,ytd,2024,14584,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_1993,2025,-82.050723255877,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2010,2025,-20.604892155681,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Robbery,ytd_pct_change_vs_2023,2025,-8.441603557284,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,28d,2025,45,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,28d,2024,79,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,wtd,2025,18,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,wtd,2024,19,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,ytd,2025,618,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,ytd,2024,801,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_1993,2025,-86.772260273972,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2010,2025,-51.906614785992,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Inc.,ytd_pct_change_vs_2023,2025,-27.549824150058,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,28d,2025,57,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,28d,2024,86,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,wtd,2025,25,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,wtd,2024,20,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,ytd,2025,774,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,ytd,2024,975,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_1993,2025,-85.135394661033,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2010,2025,-50.35279025016,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Shooting Vic.,ytd_pct_change_vs_2023,2025,-22.831505483549,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,28d,2025,9306,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,28d,2024,9885,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,wtd,2025,2315,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,wtd,2024,2468,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,ytd,2025,104915,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,ytd,2024,108572,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_1993,2025,-71.662516138442,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2010,2025,16.132210181423,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,TOTAL,ytd_pct_change_vs_2023,2025,-4.334862176184,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,28d,2025,156,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,28d,2024,193,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,wtd,2025,42,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,wtd,2024,56,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,ytd,2025,1812,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,ytd,2024,1899,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2010,2025,-0.929469655549,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,Transit,ytd_pct_change_vs_2023,2025,-8.853118712273,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,28d,2025,198,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,28d,2024,205,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,wtd,2025,52,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,wtd,2024,52,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,ytd,2025,2181,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,ytd,2024,2220,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Crime Complaints,UCR Rape*,ytd_pct_change_vs_2023,2025,4.154727793696,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Burglary,calendar_year,2024,13070,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Burglary,calendar_year,2001,32694,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Burglary,calendar_year,1998,47181,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Burglary,calendar_year,1993,100936,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Burglary,calendar_year,1990,122055,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Fel. Assault,calendar_year,2024,29461,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Fel. Assault,calendar_year,2001,23020,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Fel. Assault,calendar_year,1998,28848,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Fel. Assault,calendar_year,1993,41121,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Fel. Assault,calendar_year,1990,44122,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,G.L.A.,calendar_year,2024,14199,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,G.L.A.,calendar_year,2001,29607,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,G.L.A.,calendar_year,1998,43315,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,G.L.A.,calendar_year,1993,111622,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,G.L.A.,calendar_year,1990,146925,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2024,48450,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Gr. Larceny,calendar_year,2001,46291,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1998,51461,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1993,85737,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Gr. Larceny,calendar_year,1990,108487,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Murder,calendar_year,2024,382,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Murder,calendar_year,2001,649,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Murder,calendar_year,1998,629,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Murder,calendar_year,1993,1927,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Murder,calendar_year,1990,2262,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Rape,calendar_year,2024,1748,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Rape,calendar_year,2001,1930,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Rape,calendar_year,1998,2476,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Rape,calendar_year,1993,3225,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Rape,calendar_year,1990,3126,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Robbery,calendar_year,2024,16580,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Robbery,calendar_year,2001,27873,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Robbery,calendar_year,1998,39003,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Robbery,calendar_year,1993,85892,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,Robbery,calendar_year,1990,100280,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,TOTAL,calendar_year,2024,123890,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,TOTAL,calendar_year,2001,162064,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,TOTAL,calendar_year,1998,212913,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,TOTAL,calendar_year,1993,430460,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Historical Perspective,TOTAL,calendar_year,1990,527257,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,28d,2025,15,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,28d,2024,24,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2025,1,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,wtd,2024,5,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2025,185,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd,2024,222,count
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_1993,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2010,2025,,percent
+compstat,raw/compstat/2025-11-09/cs-en-us-city.xlsx,Citywide,,2025-11-03,2025-11-09,CompStat,Traffic Statistics,Traffic Fatalities,ytd_pct_change_vs_2023,2025,-19.213973799126,percent

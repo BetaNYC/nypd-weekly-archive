@@ -17,7 +17,10 @@ and the original, un-rewritten content is returned" (pywb documentation,
 https://pywb.readthedocs.io/en/latest/manual/rewriter.html, which implements
 the Wayback URL scheme). Every download is checked against the CDX digest
 (base32 SHA-1 of the content) before it is kept, so a rewritten or truncated
-response is never stored as a capture.
+response is never stored as a capture. A capture archived with a
+Content-Encoding (gzip) is served still encoded, and its digest covers the
+encoded bytes (cscity.pdf, capture 20140720002526, 2026-11-23), so the digest
+is checked on the bytes as sent and the file is stored decoded.
 
 Requests are sequential, at least 3 seconds apart, and wait at least 60
 seconds after a 429 or a 5xx. Five download failures in a row stop the run
@@ -38,8 +41,10 @@ ignores case, so one prefix finds every case variant.
 from __future__ import annotations
 
 import base64
+import gzip
 import hashlib
 import json
+import zlib
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlencode
@@ -138,6 +143,21 @@ def wayback_digest(body: bytes) -> str:
     return base64.b32encode(hashlib.sha1(body).digest()).decode()  # noqa: S324 - matching the CDX field
 
 
+def decode_body(sent: bytes, encoding: str | None) -> bytes:
+    """Undo a Content-Encoding of gzip or deflate; anything else is refused."""
+    enc = (encoding or "identity").strip().lower()
+    if enc == "identity":
+        return sent
+    if enc in ("gzip", "x-gzip"):
+        return gzip.decompress(sent)
+    if enc == "deflate":
+        try:
+            return zlib.decompress(sent)
+        except zlib.error:
+            return zlib.decompress(sent, -zlib.MAX_WBITS)  # raw deflate, no zlib header
+    raise ValueError(f"unsupported Content-Encoding {encoding!r}")
+
+
 def safe_listing_name(prefix: str) -> str:
     """A file name for a saved CDX answer: www.nyc.gov/html/.../pdf/crime_statistics/cscity. -> www-html-cscity"""
     host, _, path = prefix.partition("/")
@@ -209,15 +229,18 @@ def backfill_wayback(
             status = 1
             break
         try:
-            body = fetcher.get(raw_url(row)).content
-        except FetchError as exc:
+            resp, sent = fetcher.get_encoded(raw_url(row))
+            encoding = resp.headers.get("content-encoding")
+            body = decode_body(sent, encoding)
+        except (FetchError, ValueError, OSError, EOFError, zlib.error) as exc:
             log("wayback_download_failed", url=row["original"], timestamp=row["timestamp"], error=str(exc))
             status = 1
             failed_in_a_row += 1
             continue
-        if wayback_digest(body) != row["digest"]:
+        if row["digest"] not in (wayback_digest(sent), wayback_digest(body)):
             log("wayback_digest_mismatch", url=row["original"], timestamp=row["timestamp"],
-                bytes=len(body), starts=body[:40].decode("latin-1"))
+                bytes=len(body), sent_bytes=len(sent), content_encoding=encoding or "",
+                starts=body[:40].decode("latin-1"))
             status = 1
             failed_in_a_row += 1
             continue
