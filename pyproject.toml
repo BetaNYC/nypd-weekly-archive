@@ -30,6 +30,9 @@ nypd-archive = "nypd_weekly_archive.cli:main"
 
 [tool.ruff]
 line-length = 120
+# scripts/whats_changed.py is BetaNYC's shared What's changed tool, copied in unchanged from
+# betanyc-ai-workspace. Never edit the copy, so it is not held to this repo's lint rules.
+extend-exclude = ["scripts/whats_changed.py"]
 target-version = "py311"
 
 [tool.ruff.lint]
