@@ -36,6 +36,7 @@ The Traffic Fatalities page also links `cityacc-en-us.xlsx`, a monthly collision
 - `data/housing/<week ending>.csv` holds the NYCHA Housing Bureau report, about 21,500 numbers a week: every development, precinct, Police Service Area and citywide total NYPD prints. See "NYCHA Housing Bureau report" below.
 - `data/compstat_mcdermott/<year>.csv.gz` holds CompStat numbers from January 2015 to February 2026, from weekly CSVs made by Tim McDermott, a BetaNYC volunteer. `data/compstat_greenman/<year>.csv.gz` holds CompStat numbers from March 2026 on, parsed by Josh Greenman's [nypd-compstat-scraper](https://github.com/joshgreenman1973/nypd-compstat-scraper), used with his permission. Both are kept apart from `data/compstat/` because this repo did not read them from NYPD's files. Each is one gzip-compressed CSV per year, in the same columns as `data/`, so that millions of rows fit in a few megabytes; read one with `pandas.read_csv("2020.csv.gz")` or `gzip -dc 2020.csv.gz`. See "CompStat backfill" below.
 - `data/trafficstat_dashboard_map/<week ending>.csv` holds the TrafficStat dashboard's map points for that week, one row per crash. See "Dashboard maps" below.
+- `data/recount/` compares our numbers with a recount from NYC Open Data: one file per report (`compstat.csv.gz`, `citywide.csv`, `correction.csv`, `housing.csv`, `trafficstat.csv`, `trafficstat_precinct.csv`, `fatalities.csv`, `qteam.csv`), one row per number compared, and `summary.csv`, one row per report, week and period, with the query behind it. See "Recounting from NYC Open Data" below.
 - `data/anomalies.csv` lists places where an NYPD file disagrees with itself but could still be read. The first one: in the Staten Island fatalities file for the week ending November 15, 2026, the citywide "CHANGE" cell is typed in as -2 while the two counts beside it are 3 and 1. The counts are kept as published.
 - `docs/` is the GitHub Pages site (see "Website" below). `docs/data/<series>-coverage.json` (one per series) is rebuilt from `captures.csv` and `data/` on every scheduled run.
 - `data/stale_files.csv` lists files whose newest week is at least 7 days behind the newest week in their series. nyc.gov can keep serving an old file with a normal response (the Bronx patrol borough file from before the 2026 north/south split is one), so the week printed inside the file is what counts, not the server's answer.
@@ -158,6 +159,7 @@ uv run nypd-archive capture      # only download what changed
 uv run nypd-archive build        # only rebuild data/ from raw/
 uv run nypd-archive site         # only rebuild docs/data/ for the website
 uv run nypd-archive dashboard-map  # save this week's TrafficStat dashboard map points
+uv run nypd-archive recount      # recount the reports from NYC Open Data into data/recount/
 uv run pytest
 ```
 
@@ -250,6 +252,17 @@ On November 23, 2026 the same command, with the old folder and old names, added 
 - "Hate Crimes" from the week ending October 11, 2020, and "Retail Theft" and the "Traffic Statistics" section from the week ending September 15, 2024.
 
 On November 23, 2026 `redate` filed all 1,294 under their report weeks, which added 133 weeks to `data/compstat/`; `moves.csv` lists each move. As a check, 25 of them (22 weeks, from 2015 to 2024: precincts, citywide and Correction) were compared with NYPD's PDF for the same week, using the PDF's own text: all 3,988 numbers compared match.
+
+## Recounting from NYC Open Data
+
+`uv run nypd-archive recount --per-precinct-year 2026` counts each report's numbers again from the records on [NYC Open Data](https://opendata.cityofnewyork.us/) and writes the comparison to `data/recount/`. `--checks compstat housing trafficstat fatalities qteam` runs only some of them; `compstat` also covers citywide CompStat and the Department of Correction. The About page (`docs/about.html#recount`) says what each check found. The code is `src/nypd_weekly_archive/recount.py`.
+
+- CompStat, citywide and Department of Correction: crime complaints (`5uac-w243` for this year, `qgea-i56i` for 2006 to last year) by report date, offense code, precinct and jurisdiction, one query a week, for every week in `data/compstat/`, `data/compstat_greenman/` and `data/compstat_mcdermott/` that the data covers. Each source is compared on its own.
+- NYCHA: the same complaints by development (`hadevelopt`), for the developments whose names appear in both.
+- TrafficStat and traffic fatalities: crashes (`h9gi-nx95`) by day, citywide. `--per-precinct-year` also downloads that year's crash locations and places each in a precinct on the Police Precincts map (`y76i-bdw7`), by point in polygon.
+- Quality of life: NYPD's 311 requests (`erm2-nwe9`) by precinct and complaint type. Lines that also count 911 calls are not checked.
+
+Field names and dataset ids come from each dataset's metadata (`/api/views/<id>.json`). Requests go one at a time, at least 2 seconds apart, and use aggregated queries except for the crash locations. If `SOCRATA_APP_TOKEN` is set, it is sent as `X-App-Token`. Answers are cached for the day under `raw/recount/<date>/`, so a rerun the same day sends nothing. An empty answer to a query that must have rows stops the run instead of counting as zero: the historic complaint dataset once answered a valid week with no rows, and the same query returned 385 rows a minute later. A week the data does not fully cover, or one that crosses New Year's Day, is skipped. A precinct and crime with no complaint rows count as zero.
 
 ## Website
 
