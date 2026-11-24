@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: TrafficStat from August to December 2024
+
+- **Tags:** Data
+- **What changed:** 27 TrafficStat spreadsheets from 2024, copies from the Internet Archive, used a layout we could not read. Now we can. This adds 12 weeks of TrafficStat, from the week ending August 4 to the week ending December 15, 2024. The 27 files were moved to folders named for the week they report, and `moves.csv` lists each move. For 12 of the files, NYPD's PDF of the same report was saved the same day; all 4,980 numbers in them match.
+- **More detail:** [TrafficStat](docs/trafficstat.html) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/35)
+
 ## 2026-11-23: Older CompStat spreadsheets read, and files refiled by week
 
 - **Tags:** Data
