@@ -7,6 +7,12 @@ This page lists the changes to BetaNYC's NYPD Weekly Archive that a reader would
 
 To report a bug in this site or ask for a new feature, [open an issue on GitHub](https://github.com/BetaNYC/nypd-weekly-archive/issues) or write to [lab@beta.nyc](mailto:lab@beta.nyc).
 
+## 2026-11-23: Numbers from the NYCHA Housing Bureau report
+
+- **Tags:** Data
+- **What changed:** We now read the numbers in NYPD's weekly NYCHA Housing Bureau report, from all 35 of its sheets: each Police Service Area, Staten Island and Rockaway, the Viper sheets and the citywide housing totals. Many older files say each sheet holds a single cell when it holds a full table, which is why they looked empty before; we now read the whole sheet. The data has 19 weeks so far, in `data/housing/`.
+- **More detail:** [NYCHA Housing Bureau report](docs/nycha-housing.html) · [Pull request](https://github.com/BetaNYC/nypd-weekly-archive/pull/32)
+
 ## 2026-11-23: Citywide CompStat for the week ending November 9, 2025
 
 - **Tags:** Data
