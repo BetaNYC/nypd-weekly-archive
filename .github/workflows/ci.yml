@@ -14,8 +14,8 @@ jobs:
     name: Lockfile, dependencies, lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
       - run: uv lock --check
       - run: uv run --python 3.14 deptry .
       - run: uv run --python 3.14 ruff check .
@@ -28,8 +28,8 @@ jobs:
       matrix:
         python: ["3.11", "3.14"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.3.3
       - run: uv run --python ${{ matrix.python }} pytest -q
 
   # WHATS-CHANGED.md parses, dates and tags hold, corrections say what to re-check, and old
@@ -39,7 +39,7 @@ jobs:
     name: What's changed
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Check WHATS-CHANGED.md
